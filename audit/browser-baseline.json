@@ -1,0 +1,68 @@
+{
+  "first": {
+    "title": "MAREA & AZOTEA · Crónica de las Cocinas del Pacífico",
+    "cover": {
+      "complete": true,
+      "width": 1600
+    },
+    "sensorial": [
+      {
+        "src": "https://drive.google.com/thumbnail?id=1SBMpRwPXsDneH03gMtImLKrOwg3G3i5m&sz=w1200",
+        "width": 1200,
+        "complete": true,
+        "hidden": false
+      },
+      {
+        "src": "https://drive.google.com/thumbnail?id=1KarzUQyM3z1QLzK33cPErQu8UzJ_O1kV&sz=w1200",
+        "width": 1200,
+        "complete": true,
+        "hidden": false
+      },
+      {
+        "src": "https://drive.google.com/thumbnail?id=1HU1Wmp8zINq3Sdjv2VSCQSVUSZW3DecD&sz=w1200",
+        "width": 1200,
+        "complete": true,
+        "hidden": false
+      },
+      {
+        "src": "https://drive.google.com/thumbnail?id=1mI6RKKdmMC3_-r747TPuDKM6TX6uvKqq&sz=w1200",
+        "width": 1200,
+        "complete": true,
+        "hidden": false
+      },
+      {
+        "src": "https://drive.google.com/thumbnail?id=1U74oI6Dm7gWoivGS3XhlX6JhRzzDWhzX&sz=w1200",
+        "width": 1200,
+        "complete": true,
+        "hidden": false
+      },
+      {
+        "src": "https://drive.google.com/thumbnail?id=1a4fwCuSBxCNXm4EbpNOXDMqQ3gB-3TQR&sz=w1200",
+        "width": 1200,
+        "complete": true,
+        "hidden": false
+      },
+      {
+        "src": "https://drive.google.com/thumbnail?id=1yxZPVLl9ojOzuGLhU6FjJM22G-RRPfLr&sz=w1200",
+        "width": 1200,
+        "complete": true,
+        "hidden": false
+      },
+      {
+        "src": "https://drive.google.com/thumbnail?id=1q7uKOMBCHG1NvrVmFeSdACidAwagB6d7&sz=w1200",
+        "width": 1200,
+        "complete": true,
+        "hidden": false
+      }
+    ],
+    "driveBannerVisible": false,
+    "bodyFont": "\"Plus Jakarta Sans\", sans-serif"
+  },
+  "gallery": {
+    "photos": 47,
+    "loadedImages": 40,
+    "failedImages": 0
+  },
+  "errors": [],
+  "failures": []
+}
