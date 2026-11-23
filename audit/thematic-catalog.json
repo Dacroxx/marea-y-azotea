@@ -1,0 +1,4403 @@
+[
+  {
+    "sourceId": "1ZUBVkzKuezqQAaJDmfCP_LrkG1IEJgNZ",
+    "originalName": "0cada753-8d82-4713-bad6-74e35790bf19.JPG",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [],
+    "visualDescription": "Bocados redondos dorados sobre plato negro, con cobertura blanca rallada; ingredientes no confirmados.",
+    "proposedFilename": "bocados-dorados-cobertura-blanca--1ZUBVkzKuezq.JPG",
+    "evidence": {
+      "sheet": "sheet-01.jpg",
+      "cell": 1,
+      "number": 1,
+      "thumbnailSha256": "3f462af1d27d542929e3c18948573d4f2ed35dac57bf5927af0108fd1b6fa4cd",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "12as6RE-Xos4vYFo5bM5yvuQb4OJGXuKc",
+    "originalName": "1365bef9-95e1-4359-bb09-193d42b5bd98.JPG",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [],
+    "visualDescription": "Bocados dorados con cobertura blanca rallada sobre plato negro; al fondo, láminas amarillas.",
+    "proposedFilename": "bocados-dorados-cobertura-blanca--12as6RE-Xos4.JPG",
+    "evidence": {
+      "sheet": "sheet-01.jpg",
+      "cell": 2,
+      "number": 2,
+      "thumbnailSha256": "d1f7523e316848e58dbec822dd037c860cc4ca851306d14c32e54df3096cf773",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1lo-ho5j7ESnYl7GeFceeq_QdJKb4zNRM",
+    "originalName": "1365bef9-95e1-4359-bb09-193d42b5bd98.JPG",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [],
+    "visualDescription": "Bocados dorados con cobertura blanca rallada sobre plato negro; al fondo, láminas amarillas.",
+    "proposedFilename": "bocados-dorados-cobertura-blanca--1lo-ho5j7ESn.JPG",
+    "evidence": {
+      "sheet": "sheet-01.jpg",
+      "cell": 3,
+      "number": 3,
+      "thumbnailSha256": "3c0d4ea4653f34a5e60ec9dee4a2814148aef582ddec42111b5a429c80e56a47",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1C7r_LcmfzuioltWf5e2YMyeg54j0-S8Y",
+    "originalName": "156eb8d0-447f-44d3-a2e6-115d306ae203.JPG",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Hierbas de Azotea y Aromas de la Selva",
+    "secondaryCategories": [
+      "Coco, Tubérculos y Fogón"
+    ],
+    "visualDescription": "Mezcla amarilla húmeda con fragmentos verdes y rojos en sartén metálica; no se confirma receta ni hierbas.",
+    "proposedFilename": "mezcla-amarilla-fragmentos-sarten--1C7r_Lcmfzui.JPG",
+    "evidence": {
+      "sheet": "sheet-01.jpg",
+      "cell": 4,
+      "number": 4,
+      "thumbnailSha256": "c0ba26a6c3af06030de60aed33b5ac3c26d5f8d03a95273fde7cd57c0e6a4aaa",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1QvZjDrbySmq68sXNjh7xcYTaZit4VhGx",
+    "originalName": "4091444c-2a09-47c6-bdfa-db031841c3bf.JPG",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Frutos del Mar, Río y Manglar",
+    "secondaryCategories": [],
+    "visualDescription": "Crustáceo de caparazón oscuro con patas y pinzas, sostenido frente a una mesa de cocina; especie no determinada.",
+    "proposedFilename": "crustaceo-entero-sostenido--1QvZjDrbySmq.JPG",
+    "evidence": {
+      "sheet": "sheet-01.jpg",
+      "cell": 5,
+      "number": 5,
+      "thumbnailSha256": "d4abeb0a36c98cbccfec67384de3da87ef7b0e1eaabcde50072c474f2e46126f",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1qsViRj5UEFpt9qbZIaZer6OghYT1VLC1",
+    "originalName": "4091444c-2a09-47c6-bdfa-db031841c3bf.JPG",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Frutos del Mar, Río y Manglar",
+    "secondaryCategories": [],
+    "visualDescription": "Crustáceo de caparazón oscuro con patas y pinzas, sostenido frente a una mesa de cocina; especie no determinada.",
+    "proposedFilename": "crustaceo-entero-sostenido--1qsViRj5UEFp.JPG",
+    "evidence": {
+      "sheet": "sheet-01.jpg",
+      "cell": 6,
+      "number": 6,
+      "thumbnailSha256": "9229fff0f413462eb7994185511b222ea3eeca4ce96aa02be17490e142562610",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1Xqnv_BTH8F_dqV9vmNc-vd6ywuAb_RnY",
+    "originalName": "4650ed8c-3b9d-4763-ac51-ad61f189fd64.JPG",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [
+      "Territorio, Saberes y Herramientas Ancestrales"
+    ],
+    "visualDescription": "Mesa con varias preparaciones amarillas, una de granos y otra en láminas; no se confirma composición.",
+    "proposedFilename": "platos-preparaciones-amarillas--1Xqnv_BTH8F_.JPG",
+    "evidence": {
+      "sheet": "sheet-01.jpg",
+      "cell": 7,
+      "number": 7,
+      "thumbnailSha256": "f6fd627c02b2f655e0d5e27fac20dad7cf9f0ebb497683b9e73cf29c3524a5d2",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1j0MgfcisvKs5M3mw7n5nWLpeKBXOXBHi",
+    "originalName": "4650ed8c-3b9d-4763-ac51-ad61f189fd64.JPG",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [
+      "Territorio, Saberes y Herramientas Ancestrales"
+    ],
+    "visualDescription": "Mesa con varias preparaciones amarillas, una de granos y otra en láminas; no se confirma composición.",
+    "proposedFilename": "platos-preparaciones-amarillas--1j0MgfcisvKs.JPG",
+    "evidence": {
+      "sheet": "sheet-01.jpg",
+      "cell": 8,
+      "number": 8,
+      "thumbnailSha256": "e0001c59e3d86ac29b1b21ee3c20c4d2d8d79aae476de761accf060ade8c7c6c",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1-MRIq6Vl2MaTsG3kn_v15AsZLevX80fq",
+    "originalName": "526d3d81-b680-4650-8578-f2539600716e.JPG",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [
+      "Territorio, Saberes y Herramientas Ancestrales"
+    ],
+    "visualDescription": "Vista cenital de platos con arroz blanco, preparación amarilla, láminas amarillas y bocados con cobertura blanca.",
+    "proposedFilename": "mesa-platos-arroz-laminas--1-MRIq6Vl2Ma.JPG",
+    "evidence": {
+      "sheet": "sheet-01.jpg",
+      "cell": 9,
+      "number": 9,
+      "thumbnailSha256": "83d7439f8bce75c64f5b715ba9e07e3f8909d93d760e49d4eee5a998b83ae99f",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1jVClGPMhu0xReOFkj3kWrvsvGOw9XbNT",
+    "originalName": "5c5b1cf0-d8a1-4c93-96a9-88c0110703a7.JPG",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [],
+    "visualDescription": "Plato negro con arroz blanco y algunos fragmentos beige; no se confirma leche de coco ni plato específico.",
+    "proposedFilename": "plato-arroz-blanco--1jVClGPMhu0x.JPG",
+    "evidence": {
+      "sheet": "sheet-01.jpg",
+      "cell": 10,
+      "number": 10,
+      "thumbnailSha256": "f746d89c473fa10ed55de719a9f69e6591c288b8f8155b7ecc17e7d32985c1b2",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1oIrU0IrPWarqT1xAzdKkm6pzFDpQiova",
+    "originalName": "5c5b1cf0-d8a1-4c93-96a9-88c0110703a7.JPG",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [],
+    "visualDescription": "Plato negro con arroz blanco y algunos fragmentos beige; no se confirma leche de coco ni plato específico.",
+    "proposedFilename": "plato-arroz-blanco--1oIrU0IrPWar.JPG",
+    "evidence": {
+      "sheet": "sheet-01.jpg",
+      "cell": 11,
+      "number": 11,
+      "thumbnailSha256": "78b1542c9ecb83e53f563775e21382f101fe1c87343717e5360c7babe7816916",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1h03_Yj9J3NOz-nU1jxQ0fKA3RE6gt19g",
+    "originalName": "7fe56124-7df7-4c32-bd7d-1d7b17a0cf2f.JPG",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Frutos del Mar, Río y Manglar",
+    "secondaryCategories": [
+      "Coco, Tubérculos y Fogón"
+    ],
+    "visualDescription": "Plato negro con trozos que parecen pescado en salsa amarilla y fragmentos vegetales; no se confirma especie ni encocado.",
+    "proposedFilename": "preparacion-trozos-salsa-amarilla--1h03_Yj9J3NO.JPG",
+    "evidence": {
+      "sheet": "sheet-01.jpg",
+      "cell": 12,
+      "number": 12,
+      "thumbnailSha256": "4a21b45c34c73f207a393b038a2f983efe626ebf81975f659ae6d8f01cb55fd6",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1sFA9tSTe91o-VMtP5fW5gU9ObWadYeUW",
+    "originalName": "7fe56124-7df7-4c32-bd7d-1d7b17a0cf2f.JPG",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Frutos del Mar, Río y Manglar",
+    "secondaryCategories": [
+      "Coco, Tubérculos y Fogón"
+    ],
+    "visualDescription": "Plato negro con trozos que parecen pescado en salsa amarilla y fragmentos vegetales; no se confirma especie ni encocado.",
+    "proposedFilename": "preparacion-trozos-salsa-amarilla--1sFA9tSTe91o.JPG",
+    "evidence": {
+      "sheet": "sheet-01.jpg",
+      "cell": 13,
+      "number": 13,
+      "thumbnailSha256": "176d9a71f95cbf79c4a44083c2f05ddac6395a9fcc93563e73705c75841e3a0e",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1Sqk2vCkVfm_LFxb1D-VnTbKwjUOegcaa",
+    "originalName": "IMG_1874.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Personas con uniformes de cocina alrededor de una mesa; el alimento o actividad temática dominante no se distingue.",
+    "proposedFilename": "grupo-en-cocina--1Sqk2vCkVfm_.HEIC",
+    "evidence": {
+      "sheet": "sheet-01.jpg",
+      "cell": 14,
+      "number": 14,
+      "thumbnailSha256": "5ea187402646d8dd4f9a0112dc54bf23d30b0c2eb2126002ea8c4ff36d73d48f",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "needs-human"
+  },
+  {
+    "sourceId": "1BFfTL6UaeeSBzE1iseblaRQ6MHIUvnC9",
+    "originalName": "IMG_1875.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [
+      "Hierbas de Azotea y Aromas de la Selva"
+    ],
+    "visualDescription": "Mesa con recipientes de apariencia vegetal, utensilios de madera, hojas y pequeños ingredientes dispuestos sobre tela.",
+    "proposedFilename": "mesa-utensilios-ingredientes--1BFfTL6UaeeS.HEIC",
+    "evidence": {
+      "sheet": "sheet-01.jpg",
+      "cell": 15,
+      "number": 15,
+      "thumbnailSha256": "539e5babf8ef4abfe7ac5b5c5933485cf746f6094de28ebfde086e359dafc3b6",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1OP80YOHBVsoXeUPiPsbnIvmQR-cKnvUL",
+    "originalName": "IMG_1876.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [
+      "Hierbas de Azotea y Aromas de la Selva"
+    ],
+    "visualDescription": "Vista superior de recipientes, utensilios de madera, hojas y pequeños ingredientes sobre una mesa cubierta con tela.",
+    "proposedFilename": "mesa-utensilios-ingredientes--1OP80YOHBVso.HEIC",
+    "evidence": {
+      "sheet": "sheet-01.jpg",
+      "cell": 16,
+      "number": 16,
+      "thumbnailSha256": "d5bb1d5876cbfc57a9f6c5caf4dd8cebd054688ee92b2cfc4b463ad2f7c891cc",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1xXQ1S2iKMaSF4KlEV5PO_BZhc8l-cBS3",
+    "originalName": "IMG_1877.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Material marrón desmenuzado sobre papel blanco en un plato negro; no se identifica su naturaleza.",
+    "proposedFilename": "material-marron-sobre-papel--1xXQ1S2iKMaS.HEIC",
+    "evidence": {
+      "sheet": "sheet-02.jpg",
+      "cell": 1,
+      "number": 17,
+      "thumbnailSha256": "d6b9a566e6728373e7ea6300f02b9bc5c921c484f96275c68c73d20d642f9343",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "needs-human"
+  },
+  {
+    "sourceId": "1T1GSHisnbyotbKcVkKUokwaijKf_6gY4",
+    "originalName": "IMG_1878.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Una mano toca material marrón desmenuzado dispuesto sobre papel blanco; ingrediente no identificado.",
+    "proposedFilename": "mano-material-marron--1T1GSHisnbyo.HEIC",
+    "evidence": {
+      "sheet": "sheet-02.jpg",
+      "cell": 2,
+      "number": 18,
+      "thumbnailSha256": "dfcca8d818fddeb7eb078e660ec4e0c072575bde53ae5e826462c569c3996354",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "needs-human"
+  },
+  {
+    "sourceId": "12T7WSzDmx9LwTdkU62mlEYVyr6Bw6nn6",
+    "originalName": "IMG_1879.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Una mano toca material marrón desmenuzado dispuesto sobre papel blanco; ingrediente no identificado.",
+    "proposedFilename": "mano-material-marron--12T7WSzDmx9L.HEIC",
+    "evidence": {
+      "sheet": "sheet-02.jpg",
+      "cell": 3,
+      "number": 19,
+      "thumbnailSha256": "718e75ff20459f9eaeb8c011e9e30866c2da3506db83cb322a5e84cd057462c0",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "needs-human"
+  },
+  {
+    "sourceId": "1x9RjqCyOxfE5FjVDmgj_-RNK5j6_6fEh",
+    "originalName": "IMG_1880.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Una mano toca material marrón desmenuzado dispuesto sobre papel blanco; ingrediente no identificado.",
+    "proposedFilename": "mano-material-marron--1x9RjqCyOxfE.HEIC",
+    "evidence": {
+      "sheet": "sheet-02.jpg",
+      "cell": 4,
+      "number": 20,
+      "thumbnailSha256": "dfc9246df95fc4b38fcd9597e6f4ccecf4f0ab30b399a20898130937eb4e48bd",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "needs-human"
+  },
+  {
+    "sourceId": "1Du9mhNZd2paVEpb7_xO_ClHIM-p5-7Os",
+    "originalName": "IMG_1881.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Una mano toca material marrón desmenuzado dispuesto sobre papel blanco; ingrediente no identificado.",
+    "proposedFilename": "mano-material-marron--1Du9mhNZd2pa.HEIC",
+    "evidence": {
+      "sheet": "sheet-02.jpg",
+      "cell": 5,
+      "number": 21,
+      "thumbnailSha256": "872c42cd600867cac9566dab2282750977c05d41c8e673ccfddaa6b8ee8dd416",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "needs-human"
+  },
+  {
+    "sourceId": "1rcm3iAvMihaZY7ns1AC_EAhccoVJqVPz",
+    "originalName": "IMG_1882.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Bebidas, Cultura Viva e Identidad",
+    "secondaryCategories": [
+      "Territorio, Saberes y Herramientas Ancestrales"
+    ],
+    "visualDescription": "Persona sostiene un instrumento formado por tubos junto a recipientes y botellas en una mesa; no se confirma música ni bebida específica.",
+    "proposedFilename": "instrumento-tubos-y-recipientes--1rcm3iAvMiha.HEIC",
+    "evidence": {
+      "sheet": "sheet-02.jpg",
+      "cell": 6,
+      "number": 22,
+      "thumbnailSha256": "fe5fc1d331e3ce4f64516ac6df0328e39b527238f7a9760d2f33f06b6a31b149",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1L3xpqYdGslaDWT7AFHWrBe3VF4NKTXo9",
+    "originalName": "IMG_1883.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Bebidas, Cultura Viva e Identidad",
+    "secondaryCategories": [],
+    "visualDescription": "Personas en uniforme de cocina; una sostiene un libro abierto y gesticula. No se confirma el contenido de la lectura.",
+    "proposedFilename": "lectura-libro-en-grupo--1L3xpqYdGsla.HEIC",
+    "evidence": {
+      "sheet": "sheet-02.jpg",
+      "cell": 7,
+      "number": 23,
+      "thumbnailSha256": "9e51fe034d5f14e9e3bd9f44e6d359b53469d066731488274c6344b0b2800b12",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1oryqQyRwW2ejIQV56ShGxO19H97UKD5N",
+    "originalName": "IMG_1884.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Primer plano de una página de libro con texto impreso; el contenido no se transcribe ni se identifica con esta vista.",
+    "proposedFilename": "pagina-libro-abierto--1oryqQyRwW2e.HEIC",
+    "evidence": {
+      "sheet": "sheet-02.jpg",
+      "cell": 8,
+      "number": 24,
+      "thumbnailSha256": "e53eacc33aab133d3020a622403287bc9e33666c05b2c0886d4f60473f3beac5",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "needs-human"
+  },
+  {
+    "sourceId": "1uht9jTTTDNxwc5-17usH4I2aBVpnVTkX",
+    "originalName": "IMG_1885.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Cestas, recipientes y objetos alargados sobre una mesa, con personas detrás; no se identifica el uso de cada objeto.",
+    "proposedFilename": "recipientes-cesteria-mesa--1uht9jTTTDNx.HEIC",
+    "evidence": {
+      "sheet": "sheet-02.jpg",
+      "cell": 9,
+      "number": 25,
+      "thumbnailSha256": "04503ebf6315896a7cd145a85b4a8bae54c1f793c5d8e4fa437585cb43fcd633",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1TjpiB96VVCi8Hz8PHamIOX0ih8k2YKQd",
+    "originalName": "IMG_1886.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Tallos y hojas verdes sobre piedra; especie y uso por confirmar.",
+    "proposedFilename": "tallos-hojas-sobre-piedra--1TjpiB96VVCi.HEIC",
+    "evidence": {
+      "sheet": "sheet-02.jpg",
+      "cell": 10,
+      "number": 26,
+      "thumbnailSha256": "350d6f7d4b96dd30fdb5ff9c256e9d8ef48350215d401b3fb72db67a673ae7de",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "173JY9SaBdpqThPJTsdKwXnlobM74JIKB",
+    "originalName": "IMG_1889.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Grupo en uniformes de cocina alrededor de una mesa con hojas, recipientes y utensilios; no se confirma nombre de taller.",
+    "proposedFilename": "grupo-mesa-utensilios--173JY9SaBdpq.HEIC",
+    "evidence": {
+      "sheet": "sheet-02.jpg",
+      "cell": 11,
+      "number": 27,
+      "thumbnailSha256": "48b9db93c0b71a7b6a7af94dc344c72dcf40d18bd4a0b1d4e769789722c52007",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1aaHIVOTXxR-h2L_hI--cRVEMF_Sw4q_1",
+    "originalName": "IMG_1890.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Grupo en uniformes de cocina alrededor de una mesa con hojas, recipientes y utensilios; no se confirma nombre de taller.",
+    "proposedFilename": "grupo-mesa-utensilios--1aaHIVOTXxR-.HEIC",
+    "evidence": {
+      "sheet": "sheet-02.jpg",
+      "cell": 12,
+      "number": 28,
+      "thumbnailSha256": "7d35d408e683d8c6628250a0146fb8064f00bd04b191ab929e5cb4a0dbca6a96",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1SOSZeKpSVjDw1MF5KJexrJOMpDjtd4oZ",
+    "originalName": "IMG_1891.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Grupo en uniformes de cocina alrededor de una mesa con hojas, recipientes y utensilios; no se confirma nombre de taller.",
+    "proposedFilename": "grupo-mesa-utensilios--1SOSZeKpSVjD.HEIC",
+    "evidence": {
+      "sheet": "sheet-02.jpg",
+      "cell": 13,
+      "number": 29,
+      "thumbnailSha256": "2e349e38dfcace70cdaa7d25b7dd06aa85a33abe40de6de8459bc1d0c98b706e",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1W4epB3u7PJNRl-WAJrvIXLXXPRr7WNFa",
+    "originalName": "IMG_1892.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Grupo en uniformes de cocina alrededor de una mesa con hojas, recipientes y utensilios; no se confirma nombre de taller.",
+    "proposedFilename": "grupo-mesa-utensilios--1W4epB3u7PJN.HEIC",
+    "evidence": {
+      "sheet": "sheet-02.jpg",
+      "cell": 14,
+      "number": 30,
+      "thumbnailSha256": "158a7a7f3ce3576b14b65ddde11dd04e578f60313a8d2897f8c36f6d1b9c0026",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1XU8t3P46XZ8SOj9h-KUfElbB_SRk0ziw",
+    "originalName": "IMG_1893.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Grupo en uniformes de cocina alrededor de una mesa con hojas, recipientes y utensilios; no se confirma nombre de taller.",
+    "proposedFilename": "grupo-mesa-utensilios--1XU8t3P46XZ8.HEIC",
+    "evidence": {
+      "sheet": "sheet-02.jpg",
+      "cell": 15,
+      "number": 31,
+      "thumbnailSha256": "00862816d99c2c2fe9d3c6e0fb7567d0059c62288576d34efeced1e0fc1d4126",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1DTAGIXhZwCOXuQ2v6bJKpSNR233mhcds",
+    "originalName": "IMG_1894.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Mesa cubierta con hojas grandes, recipientes y utensilios, rodeada por personas en uniforme de cocina.",
+    "proposedFilename": "mesa-hojas-recipientes--1DTAGIXhZwCO.HEIC",
+    "evidence": {
+      "sheet": "sheet-02.jpg",
+      "cell": 16,
+      "number": 32,
+      "thumbnailSha256": "f39182f45e53f24ba32cf05acc7ab87be978990bef7aaaaeb13a8231d5f4e0eb",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1kYMlG7xlaADIO3z-a9LXRshTF8HqMsqV",
+    "originalName": "IMG_1895.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [
+      "Hierbas de Azotea y Aromas de la Selva"
+    ],
+    "visualDescription": "Hojas grandes, mazorca seca con envolturas, dos piezas vegetales redondas y pequeño recipiente con sustancias claras y oscuras.",
+    "proposedFilename": "hojas-maiz-recipiente--1kYMlG7xlaAD.HEIC",
+    "evidence": {
+      "sheet": "sheet-03.jpg",
+      "cell": 1,
+      "number": 33,
+      "thumbnailSha256": "78631449c8a1418bdb3aa863ded50534d30c985be4c8e2a6a8b05dd12337942b",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1uu9Hrbl5K1uN9Dpbs0jNNiwI4rQhqANo",
+    "originalName": "IMG_1896.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Cesta con frutos rojos alargados y recipiente con fragmentos amarillentos sobre tela; ingredientes no confirmados.",
+    "proposedFilename": "cesta-frutos-rojos-recipiente--1uu9Hrbl5K1u.HEIC",
+    "evidence": {
+      "sheet": "sheet-03.jpg",
+      "cell": 2,
+      "number": 34,
+      "thumbnailSha256": "6bb3e1c88aa485a87566fdc5c4ddbfb7485c5d19a41701e93b44fb534dc9bf54",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1dRl4mv929zfHl_NAW2PAB_uEbD9TAzf1",
+    "originalName": "IMG_1897.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Primer plano de cesta y utensilios de madera; al fondo, una mano manipula material sobre papel.",
+    "proposedFilename": "cesta-utensilios-madera--1dRl4mv929zf.HEIC",
+    "evidence": {
+      "sheet": "sheet-03.jpg",
+      "cell": 3,
+      "number": 35,
+      "thumbnailSha256": "133492ed20e04b3542d1a5cb43a2f9adcdbb871c308452b2d8dea2231c8f29f4",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1jMeLokjKWlpVlkg_X67NqsVLP9nFM-QV",
+    "originalName": "IMG_1898.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Mortero y mano de madera junto a recipientes negros, sobre tela y hojas.",
+    "proposedFilename": "mortero-madera-recipientes--1jMeLokjKWlp.HEIC",
+    "evidence": {
+      "sheet": "sheet-03.jpg",
+      "cell": 4,
+      "number": 36,
+      "thumbnailSha256": "7625efcc72eef8cf1d1ecb00b44f59f0eb78e2941e6bd124488817e9d7a968eb",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "131imc57tI1zqX0OMFcfWuCmpg5LKE1Bh",
+    "originalName": "IMG_1899.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Mortero y mano de madera junto a recipientes negros, sobre tela y hojas.",
+    "proposedFilename": "mortero-madera-recipientes--131imc57tI1z.HEIC",
+    "evidence": {
+      "sheet": "sheet-03.jpg",
+      "cell": 5,
+      "number": 37,
+      "thumbnailSha256": "c66ce763057adc27ef7d3bc7a8461caa1850d0a960cdbaa64da2762f144f7d19",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1KxZKr1ghrtxBH4VmcWjpkazDWMP8EFm_",
+    "originalName": "IMG_1900.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Una mano sostiene una cesta con frutos rojos brillantes; especie y eje temático no confirmados.",
+    "proposedFilename": "cesta-frutos-rojos--1KxZKr1ghrtx.HEIC",
+    "evidence": {
+      "sheet": "sheet-03.jpg",
+      "cell": 6,
+      "number": 38,
+      "thumbnailSha256": "d62a2b6f7b558e2331243aa248bb458363b2c8c760c6de5d3690006810de9a1a",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "needs-human"
+  },
+  {
+    "sourceId": "1y-r8g6Ag_0WYW-TSeb99uwvc1164LA8J",
+    "originalName": "IMG_1901.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Recipiente oscuro en primer plano y personas alrededor de una mesa al fondo; imagen oscura, detalles limitados.",
+    "proposedFilename": "recipiente-primer-plano-grupo--1y-r8g6Ag_0W.HEIC",
+    "evidence": {
+      "sheet": "sheet-03.jpg",
+      "cell": 7,
+      "number": 39,
+      "thumbnailSha256": "b0112a60f6f74963cf336e74abf4c387997dac316f898e06aadb19a0c05280b5",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1jI-6j3DDCr1TrvuJw1Ry5TPW_9iJ_ljv",
+    "originalName": "IMG_1902.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Mortero de madera con mano y recipiente negro en primer plano; personas y utensilios detrás.",
+    "proposedFilename": "mortero-primer-plano--1jI-6j3DDCr1.HEIC",
+    "evidence": {
+      "sheet": "sheet-03.jpg",
+      "cell": 8,
+      "number": 40,
+      "thumbnailSha256": "a98474d5015cef18cb1b0b941d6100cf66acaa4325d46eb2678d52d65fc22e72",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1ZLww1SSWUV3aID77-v2PLgYCzH5x6UET",
+    "originalName": "IMG_1903.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Mortero de madera con mano y recipiente negro en primer plano; personas y utensilios detrás.",
+    "proposedFilename": "mortero-primer-plano--1ZLww1SSWUV3.HEIC",
+    "evidence": {
+      "sheet": "sheet-03.jpg",
+      "cell": 9,
+      "number": 41,
+      "thumbnailSha256": "b8546d29717e43f8ae77fb90929ffff3890302f1e35385a690fcf45f312ef1c2",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1ZzsrevmJtYHZXtrmUWKPjg_VNGgC4oIk",
+    "originalName": "IMG_1904.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Detalle lateral de mortero y mano de madera sobre tela; fondo desenfocado.",
+    "proposedFilename": "mortero-madera-detalle--1ZzsrevmJtYH.HEIC",
+    "evidence": {
+      "sheet": "sheet-03.jpg",
+      "cell": 10,
+      "number": 42,
+      "thumbnailSha256": "bf030d8db65f51627ebe8b5d939b43c92391ce5184c7f204f8f7d531f95342de",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1iD-4wctcUrjH-hSN5ovb0D1r5cCmyatZ",
+    "originalName": "IMG_1905.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Detalle lateral de mortero y mano de madera sobre tela; fondo desenfocado.",
+    "proposedFilename": "mortero-madera-detalle--1iD-4wctcUrj.HEIC",
+    "evidence": {
+      "sheet": "sheet-03.jpg",
+      "cell": 11,
+      "number": 43,
+      "thumbnailSha256": "73d896f427a5257aa2e523502dc62686c9147522c63f0eb87bf047a810ae6417",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "12UsnXp10AdsKDqezV3QyuZbzkhqgQWFv",
+    "originalName": "IMG_1906.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Detalle lateral de mortero y mano de madera sobre tela; fondo desenfocado.",
+    "proposedFilename": "mortero-madera-detalle--12UsnXp10Ads.HEIC",
+    "evidence": {
+      "sheet": "sheet-03.jpg",
+      "cell": 12,
+      "number": 44,
+      "thumbnailSha256": "96a03ccce5a29bdec0fde55a5eca9d3fa3acd3ca92239d222ed380c8b804c286",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1DlfeBkwzzuAP9fk6SNSA1d-letuT7rfl",
+    "originalName": "IMG_1907.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Hierbas de Azotea y Aromas de la Selva",
+    "secondaryCategories": [
+      "Territorio, Saberes y Herramientas Ancestrales"
+    ],
+    "visualDescription": "Manojo de tallos y hojas verdes en cesta tejida; no se determina especie.",
+    "proposedFilename": "hierbas-en-cesta--1DlfeBkwzzuA.HEIC",
+    "evidence": {
+      "sheet": "sheet-03.jpg",
+      "cell": 13,
+      "number": 45,
+      "thumbnailSha256": "208ff0dae02e67b57cc34162325d6963d21e59a38c2a6b417f4f551dd8a13116",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1hYl9yih6e-MrT76ea-ZKIE_kZozFpeNO",
+    "originalName": "IMG_1908.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Hierbas de Azotea y Aromas de la Selva",
+    "secondaryCategories": [
+      "Territorio, Saberes y Herramientas Ancestrales"
+    ],
+    "visualDescription": "Manojo de tallos y hojas verdes en cesta tejida, sostenido por una persona; especie no determinada.",
+    "proposedFilename": "hierbas-en-cesta--1hYl9yih6e-M.HEIC",
+    "evidence": {
+      "sheet": "sheet-03.jpg",
+      "cell": 14,
+      "number": 46,
+      "thumbnailSha256": "325ca936e58f7f004ca20fc5d4b37da2eb999f3c621d45ef37d5b005ef40bfa9",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1-RdVJi_t5mdDTKcuc0oUM1coG_eOaexe",
+    "originalName": "IMG_1909.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Detalle de tejido con patrón geométrico amarillo y oscuro; no se identifica comunidad ni procedencia.",
+    "proposedFilename": "tejido-geometrico-amarillo-negro--1-RdVJi_t5md.HEIC",
+    "evidence": {
+      "sheet": "sheet-03.jpg",
+      "cell": 15,
+      "number": 47,
+      "thumbnailSha256": "047997159325570ca20eff7808133674c73c0e08241854caacf3be22cf4fc492",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1beiloKCMWKYWyQbI-tIUVMs6RfoKJEql",
+    "originalName": "IMG_1910.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Detalle de tejido con patrón geométrico amarillo y oscuro; no se identifica comunidad ni procedencia.",
+    "proposedFilename": "tejido-geometrico-amarillo-negro--1beiloKCMWKY.HEIC",
+    "evidence": {
+      "sheet": "sheet-03.jpg",
+      "cell": 16,
+      "number": 48,
+      "thumbnailSha256": "a8d04c0dda74049e7e00774bac66f2f69de0b97108ca8dee4f0b605d40d84932",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "12cMFCiEKMNGfCsdXmsdim-mIPucQ8t-i",
+    "originalName": "IMG_1911.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Bebidas, Cultura Viva e Identidad",
+    "secondaryCategories": [],
+    "visualDescription": "Persona en uniforme sostiene un instrumento de tubos; no se confirma interpretación musical ni contexto cultural específico.",
+    "proposedFilename": "instrumento-tubos-sostenido--12cMFCiEKMNG.HEIC",
+    "evidence": {
+      "sheet": "sheet-04.jpg",
+      "cell": 1,
+      "number": 49,
+      "thumbnailSha256": "7543ae3909e324342c978560282c0787bb5403a48c2736f429963bf0cb7a02e2",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1NE6lKtnOoIgxWp6Kqj5gvt4vH__GRpBo",
+    "originalName": "IMG_1912.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Bebidas, Cultura Viva e Identidad",
+    "secondaryCategories": [],
+    "visualDescription": "Persona en uniforme sostiene un instrumento de tubos; no se confirma interpretación musical ni contexto cultural específico.",
+    "proposedFilename": "instrumento-tubos-sostenido--1NE6lKtnOoIg.HEIC",
+    "evidence": {
+      "sheet": "sheet-04.jpg",
+      "cell": 2,
+      "number": 50,
+      "thumbnailSha256": "7501c6972273a65cae0140a54dcc43e12041c30ec19099950da8c926b525b799",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1581WGAQ2IHm1MLfIwwwXENgex9DRk2On",
+    "originalName": "IMG_2094.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Hierbas de Azotea y Aromas de la Selva",
+    "secondaryCategories": [],
+    "visualDescription": "Manos pican material de hojas verdes con cuchillo sobre tabla verde; especie no determinada.",
+    "proposedFilename": "picado-hojas-tabla-verde--1581WGAQ2IHm.HEIC",
+    "evidence": {
+      "sheet": "sheet-04.jpg",
+      "cell": 3,
+      "number": 51,
+      "thumbnailSha256": "0bb0d568a05817bf39694321d40b3e836ee1249b2671e825df108225b768a430",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1r3rbmX52JdUWEnZWkxJbDZ3nbmJ58mJd",
+    "originalName": "IMG_2095.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Hierbas de Azotea y Aromas de la Selva",
+    "secondaryCategories": [],
+    "visualDescription": "Manos y cuchillo sobre tabla verde con pequeños fragmentos vegetales; ingrediente no distinguible.",
+    "proposedFilename": "cuchillo-tabla-verde--1r3rbmX52JdU.HEIC",
+    "evidence": {
+      "sheet": "sheet-04.jpg",
+      "cell": 4,
+      "number": 52,
+      "thumbnailSha256": "87ec4790e5ed8bf99ed7cec15b093276f60b4decb55a39526ec972c418967fd0",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1OQdrkkoZo54nxHJjJWx8ykbWVytGG6SG",
+    "originalName": "IMG_2096.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Hierbas de Azotea y Aromas de la Selva",
+    "secondaryCategories": [],
+    "visualDescription": "Manos y cuchillo sobre tabla verde con pequeños fragmentos vegetales; ingrediente no distinguible.",
+    "proposedFilename": "cuchillo-tabla-verde--1OQdrkkoZo54.HEIC",
+    "evidence": {
+      "sheet": "sheet-04.jpg",
+      "cell": 5,
+      "number": 53,
+      "thumbnailSha256": "d0157fb450ab1c5d85bd575b0332c7ec2a461614ae6b8cd3d8ba551551816ab1",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1-YhR_lqzC9jCjUnPDeAY4nqXiDqdR8eM",
+    "originalName": "IMG_2097.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Hierbas de Azotea y Aromas de la Selva",
+    "secondaryCategories": [],
+    "visualDescription": "Manos y cuchillo sobre tabla verde con pequeños fragmentos vegetales; ingrediente no distinguible.",
+    "proposedFilename": "cuchillo-tabla-verde--1-YhR_lqzC9j.HEIC",
+    "evidence": {
+      "sheet": "sheet-04.jpg",
+      "cell": 6,
+      "number": 54,
+      "thumbnailSha256": "f87e44867d84f2d4302d860a446c6627b4e1731305fc5e3c9c9f9cf27cc23334",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1C8_TNMRDgYNlHcJlCIBknmUEvhYFWuoz",
+    "originalName": "IMG_2098.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Hierbas de Azotea y Aromas de la Selva",
+    "secondaryCategories": [],
+    "visualDescription": "Recipientes metálicos con hojas verdes picadas, tallos y otros fragmentos vegetales junto a tabla de cortar.",
+    "proposedFilename": "recipientes-hojas-tallos--1C8_TNMRDgYN.HEIC",
+    "evidence": {
+      "sheet": "sheet-04.jpg",
+      "cell": 7,
+      "number": 55,
+      "thumbnailSha256": "9055017ebdd8f4d793afc276795e39bca364e21875aad11a58aa96ed9c96fa3f",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1CXmujFuPRhLA_yTHiVmmKkabKjE0HcyN",
+    "originalName": "IMG_2099.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Hierbas de Azotea y Aromas de la Selva",
+    "secondaryCategories": [],
+    "visualDescription": "Manos separan material vegetal sobre un recipiente junto a tallos y hojas, con tabla y paño a un lado.",
+    "proposedFilename": "separacion-hojas-tallos--1CXmujFuPRhL.HEIC",
+    "evidence": {
+      "sheet": "sheet-04.jpg",
+      "cell": 8,
+      "number": 56,
+      "thumbnailSha256": "ae6f98d5f5c6a07a39cfd5cd68437dc49e2c57b82b3c9504f66b3aab812e4d44",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1Go3kmI7JbNLSFuw32ZQGUKMZH6uUFrRA",
+    "originalName": "IMG_2100.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Hierbas de Azotea y Aromas de la Selva",
+    "secondaryCategories": [
+      "Territorio, Saberes y Herramientas Ancestrales"
+    ],
+    "visualDescription": "Mortero metálico con pasta clara y recipiente metálico con vegetales blancos y verdes picados; especies no determinadas.",
+    "proposedFilename": "mortero-vegetales-picados--1Go3kmI7JbNL.HEIC",
+    "evidence": {
+      "sheet": "sheet-04.jpg",
+      "cell": 9,
+      "number": 57,
+      "thumbnailSha256": "1d8bfde901d706c27fa68da56f58983898fec6a575d5610dcfeac42b5581f400",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1px22mhrHnMnUfsFZ4fD7WQ6FkSpdHR-2",
+    "originalName": "IMG_2101.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [
+      "Hierbas de Azotea y Aromas de la Selva"
+    ],
+    "visualDescription": "Persona tritura mezcla marrón en un mortero; a un lado hay recipientes con líquidos y una mezcla verde.",
+    "proposedFilename": "triturado-en-mortero--1px22mhrHnMn.HEIC",
+    "evidence": {
+      "sheet": "sheet-04.jpg",
+      "cell": 10,
+      "number": 58,
+      "thumbnailSha256": "9c3ca198202656764a37a67819879b264c124289b4abeb46e6e0ba05f18fd2ef",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1IBq1hlAsa4KAf1Kb5s5lkynL1tF1-GhG",
+    "originalName": "IMG_2102.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [
+      "Hierbas de Azotea y Aromas de la Selva"
+    ],
+    "visualDescription": "Persona tritura mezcla marrón en un mortero; a un lado hay recipientes con líquidos y una mezcla verde.",
+    "proposedFilename": "triturado-en-mortero--1IBq1hlAsa4K.HEIC",
+    "evidence": {
+      "sheet": "sheet-04.jpg",
+      "cell": 11,
+      "number": 59,
+      "thumbnailSha256": "43772a4355e475e39bfb92f8db05f4c1ca18c59ee0ee80731d65dce3fd702425",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1qAT37jnz9OaovjYAIu4UzYPosv_Dkm1w",
+    "originalName": "IMG_2103.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Hierbas de Azotea y Aromas de la Selva",
+    "secondaryCategories": [],
+    "visualDescription": "Mezcla de fragmentos verdes, blancos y rojos en un recipiente cubierto parcialmente con película transparente.",
+    "proposedFilename": "vegetales-picados-recipiente--1qAT37jnz9Oa.HEIC",
+    "evidence": {
+      "sheet": "sheet-04.jpg",
+      "cell": 12,
+      "number": 60,
+      "thumbnailSha256": "cbd0d81a15dfe3e60c79e9a4e4755320d1e4a5753ed4ae4624869db62d4fde6a",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1V2s2dys7Fd7gHXU8yEbUIfzIQl8GBbLh",
+    "originalName": "IMG_2104.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Hierbas de Azotea y Aromas de la Selva",
+    "secondaryCategories": [],
+    "visualDescription": "Recipiente metálico con tallos, hojas y recortes vegetales de varios colores; no se identifican especies.",
+    "proposedFilename": "tallos-y-recortes-vegetales--1V2s2dys7Fd7.HEIC",
+    "evidence": {
+      "sheet": "sheet-04.jpg",
+      "cell": 13,
+      "number": 61,
+      "thumbnailSha256": "55f78ebb9c28a734b9ca335683a99fc2fdae922977007dcae2fd219a7ae89415",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "18vIqHVe_c3Ys617jcCkjKuE7yqCdkOV3",
+    "originalName": "IMG_2105.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [
+      "Coco, Tubérculos y Fogón"
+    ],
+    "visualDescription": "Manos sostienen una hoja grande rectangular frente a una cocina; no se confirma preparación de envoltorio.",
+    "proposedFilename": "hoja-sostenida-frente-fogon--18vIqHVe_c3Y.HEIC",
+    "evidence": {
+      "sheet": "sheet-04.jpg",
+      "cell": 14,
+      "number": 62,
+      "thumbnailSha256": "66392b076fc047ddc415ef7326c3094b123dcdf39b733966a3a96c18c59acb0d",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1XQce90ZqTeCL8y-59nWryX6dlboHpB5L",
+    "originalName": "IMG_2106.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [
+      "Territorio, Saberes y Herramientas Ancestrales"
+    ],
+    "visualDescription": "Una hoja grande es sostenida sobre un quemador encendido de cocina.",
+    "proposedFilename": "hoja-sobre-llama--1XQce90ZqTeC.HEIC",
+    "evidence": {
+      "sheet": "sheet-04.jpg",
+      "cell": 15,
+      "number": 63,
+      "thumbnailSha256": "510cfe3a1829ff0c03202bc4251d9dc9305099524ed7cf7615124ab5a5727458",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1r3JN_0ekYPMk8ys8EGQsYEcgh0CM2cHw",
+    "originalName": "IMG_2107.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [
+      "Territorio, Saberes y Herramientas Ancestrales"
+    ],
+    "visualDescription": "Una hoja grande es sostenida sobre un quemador encendido de cocina.",
+    "proposedFilename": "hoja-sobre-llama--1r3JN_0ekYPM.HEIC",
+    "evidence": {
+      "sheet": "sheet-04.jpg",
+      "cell": 16,
+      "number": 64,
+      "thumbnailSha256": "7239bb0a0414f918380586f93b0487d32b30c4e9cb25c0ff541543a2f8a8ce4a",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1_PNEOac34hIWIEZHKLGaQWaoLcSqaw_a",
+    "originalName": "IMG_2111.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [
+      "Territorio, Saberes y Herramientas Ancestrales"
+    ],
+    "visualDescription": "Primer plano de una mezcla seca clara de textura harinosa con algunos grumos; ingrediente no identificado.",
+    "proposedFilename": "mezcla-seca-clara--1_PNEOac34hI.HEIC",
+    "evidence": {
+      "sheet": "sheet-05.jpg",
+      "cell": 1,
+      "number": 65,
+      "thumbnailSha256": "fde93f2bc9589ce841862bf301416a429e6e43d3a6320fc51f602afec49dd778",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1FBX6TCs6V9giALfxLNMWkukO06mwpkdw",
+    "originalName": "IMG_2112.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Personas con uniforme frente a una mesa de cocina con utensilios; no se distingue preparación temática dominante.",
+    "proposedFilename": "grupo-mesa-cocina--1FBX6TCs6V9g.HEIC",
+    "evidence": {
+      "sheet": "sheet-05.jpg",
+      "cell": 2,
+      "number": 66,
+      "thumbnailSha256": "8fc538c6ff486ced6aba060d48decd3cacb30cda6d22eafe9f392d7c01bd2b22",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "needs-human"
+  },
+  {
+    "sourceId": "1-ZKLwN-tc6YQonMKc-eZ2aqFi8SVcuxR",
+    "originalName": "IMG_2113.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Persona en uniforme junto a utensilios y una hoja de papel en una mesa metálica; preparación no identificable.",
+    "proposedFilename": "persona-utensilios-mesa--1-ZKLwN-tc6Y.HEIC",
+    "evidence": {
+      "sheet": "sheet-05.jpg",
+      "cell": 3,
+      "number": 67,
+      "thumbnailSha256": "1813e4c6f7a0ecec148a08d6e2d914f8aade76beefab09d1ff9963fb15621424",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "needs-human"
+  },
+  {
+    "sourceId": "116_zJOxABh0ospfH4hR7XVhz1vssZ_QW",
+    "originalName": "IMG_2114.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Persona en uniforme gesticula junto a utensilios sobre mesa metálica; preparación no identificable.",
+    "proposedFilename": "persona-utensilios-mesa--116_zJOxABh0.HEIC",
+    "evidence": {
+      "sheet": "sheet-05.jpg",
+      "cell": 4,
+      "number": 68,
+      "thumbnailSha256": "00b83d1dfea33e1d4cb734005e0ee8439ca589ed3799b99a9b7fca61f2e26fa4",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "needs-human"
+  },
+  {
+    "sourceId": "1KAlX4rBtX8O7LTqdhjYQ9wMFBMmykDTB",
+    "originalName": "IMG_2115.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Persona en uniforme gesticula junto a utensilios sobre mesa metálica; preparación no identificable.",
+    "proposedFilename": "persona-utensilios-mesa--1KAlX4rBtX8O.HEIC",
+    "evidence": {
+      "sheet": "sheet-05.jpg",
+      "cell": 5,
+      "number": 69,
+      "thumbnailSha256": "f43677ccf70c0eb0011e6df9415636da08a84c718d2014ebc7f1880194b97831",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "needs-human"
+  },
+  {
+    "sourceId": "1A2no1aw_N3rV4vY90t1gMGX8Dt-TQYq3",
+    "originalName": "IMG_2116.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Persona en uniforme gesticula junto a utensilios sobre mesa metálica; una parte de la imagen está obstruida.",
+    "proposedFilename": "persona-utensilios-mesa--1A2no1aw_N3r.HEIC",
+    "evidence": {
+      "sheet": "sheet-05.jpg",
+      "cell": 6,
+      "number": 70,
+      "thumbnailSha256": "9f0ff4c046af625c191fe765976b5fb5fc6eea95e92ee91395cef0b1fb6c2837",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "needs-human"
+  },
+  {
+    "sourceId": "1ZLqcN5pVMJqFhShFm3URppR7cQMMD53R",
+    "originalName": "IMG_2145.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Molino manual metálico con granos claros y amarillentos en la tolva; ingrediente por confirmar. No se acredita ancestralidad del utensilio.",
+    "proposedFilename": "molino-metalico-granos-claros--1ZLqcN5pVMJq.HEIC",
+    "evidence": {
+      "sheet": "sheet-05.jpg",
+      "cell": 7,
+      "number": 71,
+      "thumbnailSha256": "697a3eb064de65b65a82e4d0d709d17a563506feb6d620799ea99fd741b65e3a",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1cjVdOnDfZpgxnG0mg7kXGOziUCdZ7knx",
+    "originalName": "IMG_2155.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [
+      "Coco, Tubérculos y Fogón"
+    ],
+    "visualDescription": "Hojas grandes verdosas y amarillentas apiladas sobre una bandeja en la mesa; especie y uso por confirmar.",
+    "proposedFilename": "hojas-apiladas-bandeja--1cjVdOnDfZpg.HEIC",
+    "evidence": {
+      "sheet": "sheet-05.jpg",
+      "cell": 8,
+      "number": 72,
+      "thumbnailSha256": "ce2ddfddf6d03c6176bec7cbbe14255d1feb620a64a593da93bfae1d7ef502b8",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1Rffd7cSMNDtEgMnuaq86p61UPkqaTVOL",
+    "originalName": "IMG_2157.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Personas en uniforme de cocina junto a mesa con paños y utensilios; actividad temática no distinguible.",
+    "proposedFilename": "persona-grupo-en-cocina--1Rffd7cSMNDt.HEIC",
+    "evidence": {
+      "sheet": "sheet-05.jpg",
+      "cell": 9,
+      "number": 73,
+      "thumbnailSha256": "5ee482c9d81c5e1b1492f41585a9eb947c274c7e45882b4a6e141a68cb2ab4bc",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "needs-human"
+  },
+  {
+    "sourceId": "1dNdUriZFALX4olCP8IQawdcEt4iftCpT",
+    "originalName": "IMG_2158.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Personas en uniforme manipulan recipientes sobre mesa; una mano en primer plano y el tamaño limitan la identificación de alimentos.",
+    "proposedFilename": "grupo-preparacion-en-mesa--1dNdUriZFALX.HEIC",
+    "evidence": {
+      "sheet": "sheet-05.jpg",
+      "cell": 10,
+      "number": 74,
+      "thumbnailSha256": "60f00f3e351a35c819ef1747ea4b4bade108f9562ec68bd3dbe2cff7231e9057",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "needs-human"
+  },
+  {
+    "sourceId": "1qa9nqzTjPXHAiiDfh7YMJfcl-8Wze0HZ",
+    "originalName": "IMG_2159.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [],
+    "visualDescription": "Personas en uniforme trabajan sobre recipientes metálicos y una preparación amarillenta; no se identifica receta.",
+    "proposedFilename": "mezcla-en-recipiente--1qa9nqzTjPXH.HEIC",
+    "evidence": {
+      "sheet": "sheet-05.jpg",
+      "cell": 11,
+      "number": 75,
+      "thumbnailSha256": "d1aa9112048a8a3bd8ea4a4eb42205d4cebec289cfe3f3ee6c064bb3aa6e9b3f",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1uLdQ7xD_We7zUA5oQPtsEt5_v0sXgrJS",
+    "originalName": "IMG_2160.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [],
+    "visualDescription": "Personas en uniforme trabajan sobre recipientes metálicos y una preparación amarillenta; no se identifica receta.",
+    "proposedFilename": "mezcla-en-recipiente--1uLdQ7xD_We7.HEIC",
+    "evidence": {
+      "sheet": "sheet-05.jpg",
+      "cell": 12,
+      "number": 76,
+      "thumbnailSha256": "16c5f91c75039e28fd6f2392c6ede2b5f1f7a8454c51c7a1d30ef75b73cd0b75",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1Uec51eijnumjaLmpH-Yrmrhvzt8LVGwr",
+    "originalName": "IMG_2161.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Grupo en uniforme alrededor de recipientes metálicos en cocina; alimento dominante no identificable.",
+    "proposedFilename": "grupo-recipientes-cocina--1Uec51eijnum.HEIC",
+    "evidence": {
+      "sheet": "sheet-05.jpg",
+      "cell": 13,
+      "number": 77,
+      "thumbnailSha256": "5c2d5f684742914b9142596c2e37bea577270d98c5a4960d5f251a546dd5e93a",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "needs-human"
+  },
+  {
+    "sourceId": "1Oia24x_RXk8eBp30SAkzY3c7RkiRxXqZ",
+    "originalName": "IMG_2162.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Personas en uniforme frente a una estufa industrial; alimento o preparación no visible con detalle.",
+    "proposedFilename": "grupo-frente-estufa--1Oia24x_RXk8.HEIC",
+    "evidence": {
+      "sheet": "sheet-05.jpg",
+      "cell": 14,
+      "number": 78,
+      "thumbnailSha256": "bbbe353254ea33faecabfd30e495b188d260a75d0d41749e040ad90c86add9ef",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "needs-human"
+  },
+  {
+    "sourceId": "1aC2cSmeTmUq6tpdnvAWuw3CmLysjjiPL",
+    "originalName": "IMG_2163.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Personas en uniforme frente a una estufa industrial; alimento o preparación no visible con detalle.",
+    "proposedFilename": "grupo-frente-estufa--1aC2cSmeTmUq.HEIC",
+    "evidence": {
+      "sheet": "sheet-05.jpg",
+      "cell": 15,
+      "number": 79,
+      "thumbnailSha256": "29e7ca4d8a55d771276ba830d555c4e759bec9cc055ccd9870150a9bbcaa9932",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "needs-human"
+  },
+  {
+    "sourceId": "1tzYQhsWt69VqcT6O8hgq1luuf0Ve02x9",
+    "originalName": "IMG_2176.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [
+      "Coco, Tubérculos y Fogón"
+    ],
+    "visualDescription": "Una mano sostiene un disco de masa amarilla delante de una hoja grande; no se confirma ingrediente ni nombre.",
+    "proposedFilename": "disco-masa-amarilla-en-mano--1tzYQhsWt69V.HEIC",
+    "evidence": {
+      "sheet": "sheet-05.jpg",
+      "cell": 16,
+      "number": 80,
+      "thumbnailSha256": "93a262591c7ab0d0781a6a263b0ccca1f4e6763e35187e43e9fa1555120cca5f",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "18z_7v_krs_t3uWnuE14UdXUC-o1c6K3x",
+    "originalName": "IMG_2183.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Frutos del Mar, Río y Manglar",
+    "secondaryCategories": [
+      "Hierbas de Azotea y Aromas de la Selva",
+      "Coco, Tubérculos y Fogón"
+    ],
+    "visualDescription": "Camarones curvados y trozos blancos sobre una mezcla amarilla con fragmentos verdes en sartén; no se confirma receta ni leche de coco.",
+    "proposedFilename": "camarones-en-sarten--18z_7v_krs_t.HEIC",
+    "evidence": {
+      "sheet": "sheet-06.jpg",
+      "cell": 1,
+      "number": 81,
+      "thumbnailSha256": "13c78f27848ff640a7e68bf679dfc22a7155b00c13ea9bc2e7c319f97f86a13a",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1GmA-NImLRpd5B2afkUj5S-eSEDGQvyBf",
+    "originalName": "IMG_2185.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [
+      "Frutos del Mar, Río y Manglar",
+      "Coco, Tubérculos y Fogón"
+    ],
+    "visualDescription": "Mesa con láminas amarillas, discos amarillos, arroz y preparación con trozos en salsa; manos disponen un plato sobre hoja.",
+    "proposedFilename": "mesa-platos-laminas-arroz--1GmA-NImLRpd.HEIC",
+    "evidence": {
+      "sheet": "sheet-06.jpg",
+      "cell": 2,
+      "number": 82,
+      "thumbnailSha256": "62af4dd8c829e255e01a0f3bf2d9d49e4a2b63693ce7bfae5f5e224ee44ec3b0",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1-zyzIUWlv8oP_qX4SX8jCN6Q9bxnW_84",
+    "originalName": "IMG_2186.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [
+      "Frutos del Mar, Río y Manglar",
+      "Coco, Tubérculos y Fogón"
+    ],
+    "visualDescription": "Vista superior de láminas amarillas, discos amarillos, arroz y preparación con trozos en salsa; ingredientes no confirmados en conjunto.",
+    "proposedFilename": "mesa-platos-laminas-arroz--1-zyzIUWlv8o.HEIC",
+    "evidence": {
+      "sheet": "sheet-06.jpg",
+      "cell": 3,
+      "number": 83,
+      "thumbnailSha256": "feedd385499248a2875d70b50a2134545cb2da5e2845d2b639aa5d0157351532",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1eqofpIzb8XgRQjr8nyLdctlWYI4MvQNZ",
+    "originalName": "IMG_2187.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [
+      "Frutos del Mar, Río y Manglar",
+      "Coco, Tubérculos y Fogón"
+    ],
+    "visualDescription": "Vista superior de láminas amarillas, discos amarillos, arroz y preparación con trozos en salsa; ingredientes no confirmados en conjunto.",
+    "proposedFilename": "mesa-platos-laminas-arroz--1eqofpIzb8Xg.HEIC",
+    "evidence": {
+      "sheet": "sheet-06.jpg",
+      "cell": 4,
+      "number": 84,
+      "thumbnailSha256": "02591ff48b4295443ec473d80db7b9bbafdbe8364cc4e3363ad4e5cc17c1bcd5",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "166Awy0GV5NbDv9Y7YYLnkSAWyAXdNeot",
+    "originalName": "IMG_2188.jpg",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [
+      "Coco, Tubérculos y Fogón",
+      "Bebidas, Cultura Viva e Identidad"
+    ],
+    "visualDescription": "Mesa con pequeños plátanos, preparaciones amarillas, arroz, recipientes y una hilera de vasos con líquido marrón; bebida no identificada.",
+    "proposedFilename": "mesa-preparaciones-vasos--166Awy0GV5Nb.jpg",
+    "evidence": {
+      "sheet": "sheet-06.jpg",
+      "cell": 5,
+      "number": 85,
+      "thumbnailSha256": "c58fa21c9d79dc2ece0c32069cb8a44c8b83e4c123fce45058c9d6804cabca48",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1-pXWD4BMS2frbLrD9k5bUVEar1l_DxaV",
+    "originalName": "IMG_2189.jpg",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [
+      "Coco, Tubérculos y Fogón",
+      "Bebidas, Cultura Viva e Identidad"
+    ],
+    "visualDescription": "Mesa con pequeños plátanos, preparaciones amarillas, arroz, recipientes y una hilera de vasos con líquido marrón; bebida no identificada.",
+    "proposedFilename": "mesa-preparaciones-vasos--1-pXWD4BMS2f.jpg",
+    "evidence": {
+      "sheet": "sheet-06.jpg",
+      "cell": 6,
+      "number": 86,
+      "thumbnailSha256": "fb2128f7bca87f2a4fbdf44a7dabcf532af840f86ecedb0b8efe514790c0e5ad",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1My8GxuBFE6qNLx2G_KoCu9XUiVRIUaC6",
+    "originalName": "IMG_2190.jpg",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [
+      "Coco, Tubérculos y Fogón",
+      "Bebidas, Cultura Viva e Identidad"
+    ],
+    "visualDescription": "Mesa con pequeños plátanos, preparaciones amarillas, arroz, recipientes y una hilera de vasos con líquido marrón; bebida no identificada.",
+    "proposedFilename": "mesa-preparaciones-vasos--1My8GxuBFE6q.jpg",
+    "evidence": {
+      "sheet": "sheet-06.jpg",
+      "cell": 7,
+      "number": 87,
+      "thumbnailSha256": "619da9d46948ebdf2b3061867b97ac54de49a73cd10fd61809890a56790f65d9",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1hN6chSU_TCmowrtI4ujYReAbO5U6Yeew",
+    "originalName": "IMG_2192.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [
+      "Frutos del Mar, Río y Manglar",
+      "Coco, Tubérculos y Fogón"
+    ],
+    "visualDescription": "Vista superior de un racimo de plátanos pequeños, láminas amarillas, arroz, discos y otras preparaciones en platos.",
+    "proposedFilename": "mesa-platanos-platos--1hN6chSU_TCm.HEIC",
+    "evidence": {
+      "sheet": "sheet-06.jpg",
+      "cell": 8,
+      "number": 88,
+      "thumbnailSha256": "e1040cd16dbeda0b6eec1529d289a3e99ffb986f6963d1cbb7f80785871a58fd",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1bsdyk4AZRUeMxdmzc5153y0w-jAYm76i",
+    "originalName": "IMG_2193.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Bebidas, Cultura Viva e Identidad",
+    "secondaryCategories": [
+      "Territorio, Saberes y Herramientas Ancestrales",
+      "Coco, Tubérculos y Fogón"
+    ],
+    "visualDescription": "Mesa con hilera de vasos con líquido marrón junto a arroz, racimo de plátanos y otras preparaciones; bebida no identificada.",
+    "proposedFilename": "hilera-vasos-y-platos--1bsdyk4AZRUe.HEIC",
+    "evidence": {
+      "sheet": "sheet-06.jpg",
+      "cell": 9,
+      "number": 89,
+      "thumbnailSha256": "a886513c4a8ead1e6548ea17a89b645fbf2540b52a40195f96b509880c9db406",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1KK7EvghNnKerFX6rqKaL1gCCHIhLq2iO",
+    "originalName": "IMG_2194.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Bebidas, Cultura Viva e Identidad",
+    "secondaryCategories": [
+      "Territorio, Saberes y Herramientas Ancestrales",
+      "Coco, Tubérculos y Fogón"
+    ],
+    "visualDescription": "Vista cenital de hilera de vasos con líquido marrón y varios platos, incluido arroz y plátanos; bebida no identificada.",
+    "proposedFilename": "hilera-vasos-y-platos--1KK7EvghNnKe.HEIC",
+    "evidence": {
+      "sheet": "sheet-06.jpg",
+      "cell": 10,
+      "number": 90,
+      "thumbnailSha256": "59e1cb3d5ce9c9232f690ce0c2884c36ea22a5d4e3da07ad51545a048b9baf18",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1A8VTJJ1Ai9q9raSU-S2ee_oUU0jGE9fU",
+    "originalName": "IMG_2195.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [
+      "Coco, Tubérculos y Fogón"
+    ],
+    "visualDescription": "Manos manipulan un racimo de plátanos sobre una mesa con preparaciones amarillas y otros platos.",
+    "proposedFilename": "manos-racimo-platanos--1A8VTJJ1Ai9q.HEIC",
+    "evidence": {
+      "sheet": "sheet-06.jpg",
+      "cell": 11,
+      "number": 91,
+      "thumbnailSha256": "ff368ab230e7adac25565c50c3118d5e06dbf84dafd53377c72ac0e90319cda5",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1pLGlZVFMRM0Z_lKzhxoLUWTx5ycbWXPt",
+    "originalName": "IMG_2601.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [
+      "Territorio, Saberes y Herramientas Ancestrales"
+    ],
+    "visualDescription": "Vista cenital de arroz blanco, láminas amarillas, preparación de granos y bocados con cobertura blanca; recetas no confirmadas.",
+    "proposedFilename": "mesa-platos-arroz-laminas--1pLGlZVFMRM0.HEIC",
+    "evidence": {
+      "sheet": "sheet-06.jpg",
+      "cell": 12,
+      "number": 92,
+      "thumbnailSha256": "812e6fa42569ff7577c79f2930097d5f2f2831e6d345e9f33098f628c8b3463f",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1sdkEphR6ZdU_TxauGPLBto34f7BEB3Ps",
+    "originalName": "IMG_2602.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [
+      "Territorio, Saberes y Herramientas Ancestrales"
+    ],
+    "visualDescription": "Vista cenital de arroz blanco, láminas amarillas, preparación de granos y bocados con cobertura blanca; recetas no confirmadas.",
+    "proposedFilename": "mesa-platos-arroz-laminas--1sdkEphR6ZdU.HEIC",
+    "evidence": {
+      "sheet": "sheet-06.jpg",
+      "cell": 13,
+      "number": 93,
+      "thumbnailSha256": "eb2d10084f8a8fbd3ee0d3e474cfde7a05efd1d541acbf83a859bcaabd884860",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1UDSr-GX1FOIROyjy68bdjUGANO8qyVpI",
+    "originalName": "IMG_2810.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [],
+    "visualDescription": "Piezas alargadas claras y piezas doradas se fríen en líquido burbujeante dentro de un recipiente metálico; masa no identificada.",
+    "proposedFilename": "fritura-piezas-alargadas--1UDSr-GX1FOI.HEIC",
+    "evidence": {
+      "sheet": "sheet-06.jpg",
+      "cell": 14,
+      "number": 94,
+      "thumbnailSha256": "10c6350149d0fb42e74852794e18ac9e4b530a85842474a2656e4559ea4f6c15",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1KsqNWUdwDxR5PmZ_T2QcaHAWyTNS7v9m",
+    "originalName": "IMG_2818.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [],
+    "visualDescription": "Cesta redonda con bocados ovalados dorados; ingredientes y nombre de preparación no confirmados.",
+    "proposedFilename": "bocados-dorados-en-cesta--1KsqNWUdwDxR.HEIC",
+    "evidence": {
+      "sheet": "sheet-06.jpg",
+      "cell": 15,
+      "number": 95,
+      "thumbnailSha256": "40ec5d8c4fded2a1ef1ae6c6016384b208ca61510aeb233a7555be935708badb",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "16vdspFT0kkWbO82P65d2apd6D0uPXBbJ",
+    "originalName": "IMG_2819.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [],
+    "visualDescription": "Cesta redonda con bocados ovalados dorados; ingredientes y nombre de preparación no confirmados.",
+    "proposedFilename": "bocados-dorados-en-cesta--16vdspFT0kkW.HEIC",
+    "evidence": {
+      "sheet": "sheet-06.jpg",
+      "cell": 16,
+      "number": 96,
+      "thumbnailSha256": "bc98992e6515214a118f6b3f3fa6a0e4ec2cadbe063779d69fda005ba7f68915",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "143hGnFJPyi-_Pg1YJZ48O2IR5pMdWdZ_",
+    "originalName": "IMG_2820.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [],
+    "visualDescription": "Cesta redonda con bocados ovalados dorados; ingredientes y nombre de preparación no confirmados.",
+    "proposedFilename": "bocados-dorados-en-cesta--143hGnFJPyi-.HEIC",
+    "evidence": {
+      "sheet": "sheet-07.jpg",
+      "cell": 1,
+      "number": 97,
+      "thumbnailSha256": "797fde55f973a621778a4ffe81f1458290f1d0ea83ed90731b1fbd9481dfdf9c",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1Ob-0KS0hb2pM4lZfGZ748sooQyzczvIG",
+    "originalName": "IMG_2821.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [],
+    "visualDescription": "Cesta redonda con bocados ovalados dorados; ingredientes y nombre de preparación no confirmados.",
+    "proposedFilename": "bocados-dorados-en-cesta--1Ob-0KS0hb2p.HEIC",
+    "evidence": {
+      "sheet": "sheet-07.jpg",
+      "cell": 2,
+      "number": 98,
+      "thumbnailSha256": "190a435ab9a0fe6eda04d4db7d44ebf860d4b38a60db7803e7bea1bcdf0f830a",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1dbH8Dl62WmEGOjogwmLm38PaFRGc_T8B",
+    "originalName": "IMG_2822.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [],
+    "visualDescription": "Primer plano de bocados ovalados dorados en una cesta; ingredientes y nombre de preparación no confirmados.",
+    "proposedFilename": "bocados-dorados-en-cesta--1dbH8Dl62WmE.HEIC",
+    "evidence": {
+      "sheet": "sheet-07.jpg",
+      "cell": 3,
+      "number": 99,
+      "thumbnailSha256": "a2e41991cf0256bfbbad79a2af70babb1f1d5e2bd231e4fd0551c17f780c98f2",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1huTNBD90_dSM2d2qPQBkDNOTGal8ROrW",
+    "originalName": "IMG_2823.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Olla con líquido blanco y utensilio metálico; no se confirma leche de coco, bebida ni preparación.",
+    "proposedFilename": "liquido-blanco-en-olla--1huTNBD90_dS.HEIC",
+    "evidence": {
+      "sheet": "sheet-07.jpg",
+      "cell": 4,
+      "number": 100,
+      "thumbnailSha256": "fc324f1b646644809a2963733a3b9c827d11819db3860d273fe388f023a8ad80",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "needs-human"
+  },
+  {
+    "sourceId": "1dteumbNbSafwftUf3CwHrOr7KKiYZ5NN",
+    "originalName": "IMG_2825.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [
+      "Territorio, Saberes y Herramientas Ancestrales"
+    ],
+    "visualDescription": "Mesa con bocados dorados, discos amarillos sobre hojas, una preparación plana amarillenta y un recipiente con líquido blanco.",
+    "proposedFilename": "mesa-bocados-discos-liquido--1dteumbNbSaf.HEIC",
+    "evidence": {
+      "sheet": "sheet-07.jpg",
+      "cell": 5,
+      "number": 101,
+      "thumbnailSha256": "ebe3b3ad81136e5abc1059a7590d122e3dec6f6bd890d6b77efa811fdba6d4f1",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1Vxc0Mq_CSIE91reoFXL2lI-iuQI4uvsj",
+    "originalName": "IMG_2826.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [
+      "Territorio, Saberes y Herramientas Ancestrales"
+    ],
+    "visualDescription": "Mesa con bocados dorados, discos amarillos sobre hojas, una preparación plana amarillenta y un recipiente con líquido blanco.",
+    "proposedFilename": "mesa-bocados-discos-liquido--1Vxc0Mq_CSIE.HEIC",
+    "evidence": {
+      "sheet": "sheet-07.jpg",
+      "cell": 6,
+      "number": 102,
+      "thumbnailSha256": "e14443e6cdc1500a3c7d6f64fce4beb690dad764459680e752fa8d4ec8e84202",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1bvIPiDFFDdyq7SDZzfNPjLanGk7tMAaa",
+    "originalName": "IMG_2827.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [
+      "Territorio, Saberes y Herramientas Ancestrales"
+    ],
+    "visualDescription": "Bocados dorados, discos sobre hojas, preparación plana amarillenta, recipiente con líquido blanco y otro con líquido marrón.",
+    "proposedFilename": "mesa-bocados-discos-salsas--1bvIPiDFFDdy.HEIC",
+    "evidence": {
+      "sheet": "sheet-07.jpg",
+      "cell": 7,
+      "number": 103,
+      "thumbnailSha256": "e2eb6cd6029e40b84f1be9767e707cad1066677354ba76691eef445832a4fa79",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1WUyONsGn_EX9Waq4kZUKb16b-i6VrPCM",
+    "originalName": "IMG_2828.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [
+      "Territorio, Saberes y Herramientas Ancestrales"
+    ],
+    "visualDescription": "Bocados dorados, discos sobre hojas, preparación plana amarillenta, recipiente con líquido blanco y otro con líquido marrón.",
+    "proposedFilename": "mesa-bocados-discos-salsas--1WUyONsGn_EX.HEIC",
+    "evidence": {
+      "sheet": "sheet-07.jpg",
+      "cell": 8,
+      "number": 104,
+      "thumbnailSha256": "0109f19749e7ea27929cee68a43e877d00c7b6347e7d48a012b165ff3f67d104",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1d0Mx8B8fUy5bM0wqRNVvvFQ47MU7jTCZ",
+    "originalName": "IMG_2829.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [
+      "Territorio, Saberes y Herramientas Ancestrales"
+    ],
+    "visualDescription": "Bocados dorados, discos sobre hojas, preparación plana amarillenta, recipiente con líquido blanco y otro con líquido marrón.",
+    "proposedFilename": "mesa-bocados-discos-salsas--1d0Mx8B8fUy5.HEIC",
+    "evidence": {
+      "sheet": "sheet-07.jpg",
+      "cell": 9,
+      "number": 105,
+      "thumbnailSha256": "bc1b7468ac1a51139e44944657f8e6ac713e314bea91a987e8eec37576bf895c",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1B4unKHpqcGcp2a-mQ8JCGVV1bbn2M6Cb",
+    "originalName": "IMG_2830.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [
+      "Territorio, Saberes y Herramientas Ancestrales"
+    ],
+    "visualDescription": "Bocados dorados, discos sobre hojas, preparación plana amarillenta, recipiente con líquido blanco y otro con líquido marrón.",
+    "proposedFilename": "mesa-bocados-discos-salsas--1B4unKHpqcGc.HEIC",
+    "evidence": {
+      "sheet": "sheet-07.jpg",
+      "cell": 10,
+      "number": 106,
+      "thumbnailSha256": "b833fd7883482794feddc1a64c9fd3c7d0dfa8d3eee889ef8f37c7b08f46d5eb",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1_qw-21LPhtqEJBONB7LJ-vbBrsB1KFRJ",
+    "originalName": "IMG_2831.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [
+      "Territorio, Saberes y Herramientas Ancestrales"
+    ],
+    "visualDescription": "Bocados dorados, discos sobre hojas, preparación plana amarillenta, recipiente con líquido blanco y otro con líquido marrón.",
+    "proposedFilename": "mesa-bocados-discos-salsas--1_qw-21LPhtq.HEIC",
+    "evidence": {
+      "sheet": "sheet-07.jpg",
+      "cell": 11,
+      "number": 107,
+      "thumbnailSha256": "63607886b60290851ed2096269439804437856b493fda80d1a3e2b01a4e51b09",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1Mw7nc4Ngs3O2TPaj8RjcfAk_vILrWmj7",
+    "originalName": "IMG_2832.HEIC",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [
+      "Territorio, Saberes y Herramientas Ancestrales"
+    ],
+    "visualDescription": "Bocados dorados, discos sobre hojas, preparación plana amarillenta, recipiente con líquido blanco y otro con líquido marrón.",
+    "proposedFilename": "mesa-bocados-discos-salsas--1Mw7nc4Ngs3O.HEIC",
+    "evidence": {
+      "sheet": "sheet-07.jpg",
+      "cell": 12,
+      "number": 108,
+      "thumbnailSha256": "4bbd576b4b67e59a120d7769f4e4508fafb89afa6cc01c447d4da1671ef82058",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1Zd1Wy289lV9ms_PcXolaYGgmjVksGAOq",
+    "originalName": "a51d7149-a67d-44d5-94ec-c40fcfcc5099.JPG",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [
+      "Territorio, Saberes y Herramientas Ancestrales",
+      "Frutos del Mar, Río y Manglar"
+    ],
+    "visualDescription": "Mesa con arroz blanco, láminas amarillas, bocados con cobertura blanca y un plato con crustáceo; recetas no confirmadas.",
+    "proposedFilename": "platos-arroz-laminas-crustaceo--1Zd1Wy289lV9.JPG",
+    "evidence": {
+      "sheet": "sheet-07.jpg",
+      "cell": 13,
+      "number": 109,
+      "thumbnailSha256": "4c38716738ffce6d1a0f2763ae70e13552bdead4ebf20dfbbb99eb5b584fdd29",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1voGpSAfRmz57W2hzYaYnLl7LB3d2RGV1",
+    "originalName": "a51d7149-a67d-44d5-94ec-c40fcfcc5099.JPG",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [
+      "Territorio, Saberes y Herramientas Ancestrales",
+      "Frutos del Mar, Río y Manglar"
+    ],
+    "visualDescription": "Mesa con arroz blanco, láminas amarillas, bocados con cobertura blanca y un plato con crustáceo; recetas no confirmadas.",
+    "proposedFilename": "platos-arroz-laminas-crustaceo--1voGpSAfRmz5.JPG",
+    "evidence": {
+      "sheet": "sheet-07.jpg",
+      "cell": 14,
+      "number": 110,
+      "thumbnailSha256": "dc18fd6a94f209c9c8d608726911c71af81bc1090b88b15cef224ac57d0a5fde",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1bAmhKzEVRBIo5J3na0HxptuwZw9LtVej",
+    "originalName": "b1521fdb-0a1a-4d15-873b-02a32f41cffa.JPG",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [
+      "Coco, Tubérculos y Fogón"
+    ],
+    "visualDescription": "Láminas redondeadas amarillas y doradas apiladas sobre plato negro; parecen plátano aplanado, sin confirmar preparación.",
+    "proposedFilename": "laminas-doradas-plato--1bAmhKzEVRBI.JPG",
+    "evidence": {
+      "sheet": "sheet-07.jpg",
+      "cell": 15,
+      "number": 111,
+      "thumbnailSha256": "76c2b009399eaf036185c919da337c78dada5c9b389595c6aec8a35a56465dfc",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1m8Ud_Qer7am5ohGeukJls73wPJNDI5kc",
+    "originalName": "b1521fdb-0a1a-4d15-873b-02a32f41cffa.JPG",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [
+      "Coco, Tubérculos y Fogón"
+    ],
+    "visualDescription": "Láminas redondeadas amarillas y doradas apiladas sobre plato negro; parecen plátano aplanado, sin confirmar preparación.",
+    "proposedFilename": "laminas-doradas-plato--1m8Ud_Qer7am.JPG",
+    "evidence": {
+      "sheet": "sheet-07.jpg",
+      "cell": 16,
+      "number": 112,
+      "thumbnailSha256": "f2c03c47f279655f498958e9f404efd58bdea45f3da2342fcf053629724fac9b",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "12WjR2n6XoD6PpvnOFkdmTYQBu3eb4JIp",
+    "originalName": "b93b114a-9b65-4c2b-9556-f2d36de53bbd.JPG",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [
+      "Territorio, Saberes y Herramientas Ancestrales"
+    ],
+    "visualDescription": "Plato negro con granos anaranjados y fragmentos rojos junto a láminas amarillas doradas; receta no confirmada.",
+    "proposedFilename": "granos-anaranjados-laminas--12WjR2n6XoD6.JPG",
+    "evidence": {
+      "sheet": "sheet-08.jpg",
+      "cell": 1,
+      "number": 113,
+      "thumbnailSha256": "ebd98d50dd6a1c5f7ceeea88d5ee144aa18f6bd0a5714899fa068cb98f175c96",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1HALm9ALy_Bfga-AaoB7hx1YaTQihHvrC",
+    "originalName": "b93b114a-9b65-4c2b-9556-f2d36de53bbd.JPG",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [
+      "Territorio, Saberes y Herramientas Ancestrales"
+    ],
+    "visualDescription": "Plato negro con granos anaranjados y fragmentos rojos junto a láminas amarillas doradas; receta no confirmada.",
+    "proposedFilename": "granos-anaranjados-laminas--1HALm9ALy_Bf.JPG",
+    "evidence": {
+      "sheet": "sheet-08.jpg",
+      "cell": 2,
+      "number": 114,
+      "thumbnailSha256": "bd4a3163aeed8662fc4cc6f3412b0eb8cf0aaaeba6d9e0e9f78d4e33231a9954",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1COqpd4IuPsC0XOH1HL0GBx5PLthpcVHt",
+    "originalName": "c8c38385-70f2-4aaa-a0b1-f8f8fb892609.JPG",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Frutos del Mar, Río y Manglar",
+    "secondaryCategories": [],
+    "visualDescription": "Crustáceo de caparazón oscuro azulado con patas y pinzas sostenido con las manos; especie no determinada.",
+    "proposedFilename": "crustaceo-entero-sostenido--1COqpd4IuPsC.JPG",
+    "evidence": {
+      "sheet": "sheet-08.jpg",
+      "cell": 3,
+      "number": 115,
+      "thumbnailSha256": "55a78c356b9477ef445f579d006af6f256fea66897211f726d38239265b82b69",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1RYUHheJNLCcT1nTHruZpj9OK_vAjT4mL",
+    "originalName": "c8c38385-70f2-4aaa-a0b1-f8f8fb892609.JPG",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Frutos del Mar, Río y Manglar",
+    "secondaryCategories": [],
+    "visualDescription": "Crustáceo de caparazón oscuro azulado con patas y pinzas sostenido con las manos; especie no determinada.",
+    "proposedFilename": "crustaceo-entero-sostenido--1RYUHheJNLCc.JPG",
+    "evidence": {
+      "sheet": "sheet-08.jpg",
+      "cell": 4,
+      "number": 116,
+      "thumbnailSha256": "766b4e91624ae7e50ca6dd6bf08f63efbc7d5b712aa961c91ff9d9eece90fc5f",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1Hq1Ra023MzIcXKuo-E7wM5VRjnTKNhOa",
+    "originalName": "c9e8644d-f724-4539-b4b0-e59087ff2bfa.JPG",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Frutos del Mar, Río y Manglar",
+    "secondaryCategories": [],
+    "visualDescription": "Varios crustáceos con pinzas y patas rojizas en un recipiente metálico; especie no determinada.",
+    "proposedFilename": "crustaceos-recipiente-metalico--1Hq1Ra023MzI.JPG",
+    "evidence": {
+      "sheet": "sheet-08.jpg",
+      "cell": 5,
+      "number": 117,
+      "thumbnailSha256": "f055df8b76f44dec946c5f88367d8ef7149e0a80efbbf196852a9add038e5abc",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1s0NJpYxwyVAUNEDRP37l_QzlEf0Yr59i",
+    "originalName": "c9e8644d-f724-4539-b4b0-e59087ff2bfa.JPG",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Frutos del Mar, Río y Manglar",
+    "secondaryCategories": [],
+    "visualDescription": "Varios crustáceos con pinzas y patas rojizas en un recipiente metálico; especie no determinada.",
+    "proposedFilename": "crustaceos-recipiente-metalico--1s0NJpYxwyVA.JPG",
+    "evidence": {
+      "sheet": "sheet-08.jpg",
+      "cell": 6,
+      "number": 118,
+      "thumbnailSha256": "5aa27f347285f00dfa0354d1aed635da1ae0578bec70414e1f2a134997708283",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1SeftpTLZLYvbJFKoVtOcoXqO9RZ4fPPn",
+    "originalName": "ed6450eb-0706-4dfe-9517-4a20f8a53f10.JPG",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Frutos del Mar, Río y Manglar",
+    "secondaryCategories": [
+      "Coco, Tubérculos y Fogón"
+    ],
+    "visualDescription": "Crustáceo abierto con patas y pinzas rojas sobre un plato blanco con salsa; no se confirma receta ni leche de coco.",
+    "proposedFilename": "crustaceo-abierto-plato--1SeftpTLZLYv.JPG",
+    "evidence": {
+      "sheet": "sheet-08.jpg",
+      "cell": 7,
+      "number": 119,
+      "thumbnailSha256": "1be0cd5a979f0a51ed3afeb396be3a8e2497cd829d80b7c3fbf6d8f709a075d3",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1nlGtTFat62Hm3F-ix4O8Uyz1rTxvy1rZ",
+    "originalName": "ed6450eb-0706-4dfe-9517-4a20f8a53f10.JPG",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Frutos del Mar, Río y Manglar",
+    "secondaryCategories": [
+      "Coco, Tubérculos y Fogón"
+    ],
+    "visualDescription": "Crustáceo abierto con patas y pinzas rojas sobre un plato blanco con salsa; no se confirma receta ni leche de coco.",
+    "proposedFilename": "crustaceo-abierto-plato--1nlGtTFat62H.JPG",
+    "evidence": {
+      "sheet": "sheet-08.jpg",
+      "cell": 8,
+      "number": 120,
+      "thumbnailSha256": "49d2a7ca461df6bf0f345edb815c875a450ced11718894f9cc71eff9de07b3a5",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1eX91VWGF8IoTu_v2AW7Q6gv2BdxJxyyO",
+    "originalName": "f297fdbf-4618-4baf-80ad-0471993622fc.JPG",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [
+      "Territorio, Saberes y Herramientas Ancestrales",
+      "Frutos del Mar, Río y Manglar"
+    ],
+    "visualDescription": "Vista cenital de arroz blanco, láminas amarillas, preparación de granos, bocados con cobertura blanca y un plato con crustáceo.",
+    "proposedFilename": "platos-arroz-laminas-crustaceo--1eX91VWGF8Io.JPG",
+    "evidence": {
+      "sheet": "sheet-08.jpg",
+      "cell": 9,
+      "number": 121,
+      "thumbnailSha256": "4d09d87df0abee5f290ccfc95fca1311493da27a1a1550ede9f9cf3ed2889285",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1JgVXJZGL2O3qdefWM-MB_7_u09LaY2uf",
+    "originalName": "IMG_2094.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/clase 31 agosto",
+    "mediaType": "photo",
+    "primaryCategory": "Hierbas de Azotea y Aromas de la Selva",
+    "secondaryCategories": [],
+    "visualDescription": "Manos pican material de hojas verdes con cuchillo sobre tabla verde; especie no determinada.",
+    "proposedFilename": "picado-hojas-tabla-verde--1JgVXJZGL2O3.HEIC",
+    "evidence": {
+      "sheet": "sheet-08.jpg",
+      "cell": 10,
+      "number": 122,
+      "thumbnailSha256": "0bb0d568a05817bf39694321d40b3e836ee1249b2671e825df108225b768a430",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1AaRFMaZxw2uPhSPy2g0NA4ANPMZixeTC",
+    "originalName": "IMG_2098.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/clase 31 agosto",
+    "mediaType": "photo",
+    "primaryCategory": "Hierbas de Azotea y Aromas de la Selva",
+    "secondaryCategories": [],
+    "visualDescription": "Recipientes metálicos con hojas verdes picadas, tallos y otros fragmentos vegetales junto a tabla de cortar.",
+    "proposedFilename": "recipientes-hojas-tallos--1AaRFMaZxw2u.HEIC",
+    "evidence": {
+      "sheet": "sheet-08.jpg",
+      "cell": 11,
+      "number": 123,
+      "thumbnailSha256": "9055017ebdd8f4d793afc276795e39bca364e21875aad11a58aa96ed9c96fa3f",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1RRKClbC6aFah3C_fGUUe0_3HWcEuvgGj",
+    "originalName": "IMG_2099.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/clase 31 agosto",
+    "mediaType": "photo",
+    "primaryCategory": "Hierbas de Azotea y Aromas de la Selva",
+    "secondaryCategories": [],
+    "visualDescription": "Manos separan material vegetal sobre un recipiente junto a tallos y hojas, con tabla y paño a un lado.",
+    "proposedFilename": "separacion-hojas-tallos--1RRKClbC6aFa.HEIC",
+    "evidence": {
+      "sheet": "sheet-08.jpg",
+      "cell": 12,
+      "number": 124,
+      "thumbnailSha256": "ae6f98d5f5c6a07a39cfd5cd68437dc49e2c57b82b3c9504f66b3aab812e4d44",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1i5R9Z88aIrSZs1ADTfp3aF4uyPtxvH6f",
+    "originalName": "IMG_2100.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/clase 31 agosto",
+    "mediaType": "photo",
+    "primaryCategory": "Hierbas de Azotea y Aromas de la Selva",
+    "secondaryCategories": [
+      "Territorio, Saberes y Herramientas Ancestrales"
+    ],
+    "visualDescription": "Mortero metálico con pasta clara y recipiente metálico con vegetales blancos y verdes picados; especies no determinadas.",
+    "proposedFilename": "mortero-vegetales-picados--1i5R9Z88aIrS.HEIC",
+    "evidence": {
+      "sheet": "sheet-08.jpg",
+      "cell": 13,
+      "number": 125,
+      "thumbnailSha256": "1d8bfde901d706c27fa68da56f58983898fec6a575d5610dcfeac42b5581f400",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1t5C4L27UlIGhidZ8mbTY8Hfr83FP9Mrv",
+    "originalName": "IMG_2101.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/clase 31 agosto",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [
+      "Hierbas de Azotea y Aromas de la Selva"
+    ],
+    "visualDescription": "Persona tritura mezcla marrón en un mortero; a un lado hay recipientes con líquidos y una mezcla verde.",
+    "proposedFilename": "triturado-en-mortero--1t5C4L27UlIG.HEIC",
+    "evidence": {
+      "sheet": "sheet-08.jpg",
+      "cell": 14,
+      "number": 126,
+      "thumbnailSha256": "9c3ca198202656764a37a67819879b264c124289b4abeb46e6e0ba05f18fd2ef",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1-wfJzKAQ73vTdeUezxwWdW51_bEyLtvi",
+    "originalName": "IMG_2102.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/clase 31 agosto",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [
+      "Hierbas de Azotea y Aromas de la Selva"
+    ],
+    "visualDescription": "Persona tritura mezcla marrón en un mortero; a un lado hay recipientes con líquidos y una mezcla verde.",
+    "proposedFilename": "triturado-en-mortero--1-wfJzKAQ73v.HEIC",
+    "evidence": {
+      "sheet": "sheet-08.jpg",
+      "cell": 15,
+      "number": 127,
+      "thumbnailSha256": "43772a4355e475e39bfb92f8db05f4c1ca18c59ee0ee80731d65dce3fd702425",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1JfioNWBCILM-hETUnnzxPmerZ7hMl2fW",
+    "originalName": "IMG_2104.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/clase 31 agosto",
+    "mediaType": "photo",
+    "primaryCategory": "Hierbas de Azotea y Aromas de la Selva",
+    "secondaryCategories": [],
+    "visualDescription": "Recipiente metálico con tallos, hojas y recortes vegetales de varios colores; no se identifican especies.",
+    "proposedFilename": "tallos-y-recortes-vegetales--1JfioNWBCILM.HEIC",
+    "evidence": {
+      "sheet": "sheet-08.jpg",
+      "cell": 16,
+      "number": 128,
+      "thumbnailSha256": "55f78ebb9c28a734b9ca335683a99fc2fdae922977007dcae2fd219a7ae89415",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1ktJ6QBf1jzvyKniPSz9smsyCL7LHlh5Q",
+    "originalName": "IMG_2105.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/clase 31 agosto",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [
+      "Coco, Tubérculos y Fogón"
+    ],
+    "visualDescription": "Manos sostienen una hoja grande rectangular frente a una cocina; no se confirma preparación de envoltorio.",
+    "proposedFilename": "hoja-sostenida-frente-fogon--1ktJ6QBf1jzv.HEIC",
+    "evidence": {
+      "sheet": "sheet-09.jpg",
+      "cell": 1,
+      "number": 129,
+      "thumbnailSha256": "7e11c44b03a98475e0851268a35688cf2910a26ad6d13e61ad7ed63762d03223",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1bPmCQ-f7T-L_2bwHi_tINjydBtqiZwgw",
+    "originalName": "IMG_2106.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/clase 31 agosto",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [
+      "Territorio, Saberes y Herramientas Ancestrales"
+    ],
+    "visualDescription": "Una hoja grande es sostenida sobre un quemador encendido de cocina.",
+    "proposedFilename": "hoja-sobre-llama--1bPmCQ-f7T-L.HEIC",
+    "evidence": {
+      "sheet": "sheet-09.jpg",
+      "cell": 2,
+      "number": 130,
+      "thumbnailSha256": "510cfe3a1829ff0c03202bc4251d9dc9305099524ed7cf7615124ab5a5727458",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "12t6eXVd6D7T8j0Yi_pQwc0ygEqRkXNJX",
+    "originalName": "IMG_2107.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/clase 31 agosto",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [
+      "Territorio, Saberes y Herramientas Ancestrales"
+    ],
+    "visualDescription": "Una hoja grande es sostenida sobre un quemador encendido de cocina.",
+    "proposedFilename": "hoja-sobre-llama--12t6eXVd6D7T.HEIC",
+    "evidence": {
+      "sheet": "sheet-09.jpg",
+      "cell": 3,
+      "number": 131,
+      "thumbnailSha256": "5249f3297ecf701233ba442b3a709011bf9882248402c5ea4b57ec7b95a31e6e",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1gYe08TDhGvixk5Vff6WRk8mXF4TntZ0t",
+    "originalName": "IMG_2113.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/clase 31 agosto",
+    "mediaType": "photo",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Persona en uniforme junto a utensilios y una hoja de papel en una mesa metálica; preparación no identificable.",
+    "proposedFilename": "persona-utensilios-mesa--1gYe08TDhGvi.HEIC",
+    "evidence": {
+      "sheet": "sheet-09.jpg",
+      "cell": 4,
+      "number": 132,
+      "thumbnailSha256": "1813e4c6f7a0ecec148a08d6e2d914f8aade76beefab09d1ff9963fb15621424",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "needs-human"
+  },
+  {
+    "sourceId": "1pLqUcj20Oxced6AH6aApjc4Dm8Cr1rH_",
+    "originalName": "IMG_2114.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/clase 31 agosto",
+    "mediaType": "photo",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Persona en uniforme gesticula junto a utensilios sobre mesa metálica; preparación no identificable.",
+    "proposedFilename": "persona-utensilios-mesa--1pLqUcj20Oxc.HEIC",
+    "evidence": {
+      "sheet": "sheet-09.jpg",
+      "cell": 5,
+      "number": 133,
+      "thumbnailSha256": "76ddf38bfde0ef387c9b42050de1c5f24e550b56bb911e662aa08854c3893436",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "needs-human"
+  },
+  {
+    "sourceId": "13MpbJzuPDKPNt6vK2JGW19tbNksN5kBP",
+    "originalName": "IMG_2115.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/clase 31 agosto",
+    "mediaType": "photo",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Persona en uniforme gesticula junto a utensilios sobre mesa metálica; preparación no identificable.",
+    "proposedFilename": "persona-utensilios-mesa--13MpbJzuPDKP.HEIC",
+    "evidence": {
+      "sheet": "sheet-09.jpg",
+      "cell": 6,
+      "number": 134,
+      "thumbnailSha256": "d7cdbafec170d08950ba1eee5892c7a2747fe654a769d20bb0ddf3e2c3b89b1a",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "needs-human"
+  },
+  {
+    "sourceId": "1SdjY0lP4aeSUwJTcUiDnboYdZbF_hq2K",
+    "originalName": "IMG_2116.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/clase 31 agosto",
+    "mediaType": "photo",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Persona en uniforme gesticula junto a utensilios sobre mesa metálica; una parte de la imagen está obstruida.",
+    "proposedFilename": "persona-utensilios-mesa--1SdjY0lP4aeS.HEIC",
+    "evidence": {
+      "sheet": "sheet-09.jpg",
+      "cell": 7,
+      "number": 135,
+      "thumbnailSha256": "817816380e717504295b0157afe2ee7460cde9b2e7090dc300bd96657ed5bb1b",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "needs-human"
+  },
+  {
+    "sourceId": "1dDIE_w1mH485RaMJ0NMfy6Q4VSj5nAeW",
+    "originalName": "IMG_2155.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/clase 31 agosto",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [
+      "Coco, Tubérculos y Fogón"
+    ],
+    "visualDescription": "Hojas grandes verdosas y amarillentas apiladas sobre una bandeja en la mesa; especie y uso por confirmar.",
+    "proposedFilename": "hojas-apiladas-bandeja--1dDIE_w1mH48.HEIC",
+    "evidence": {
+      "sheet": "sheet-09.jpg",
+      "cell": 8,
+      "number": 136,
+      "thumbnailSha256": "e219c3596331e16b296725bcdfa3a4e5b137c514a4811e5617d841102a15327d",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1Vxj12j49H4ukxJcmBQ5XBCbRCtcjGWtg",
+    "originalName": "IMG_2159.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/clase 31 agosto",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [],
+    "visualDescription": "Personas en uniforme trabajan sobre recipientes metálicos y una preparación amarillenta; no se identifica receta.",
+    "proposedFilename": "mezcla-en-recipiente--1Vxj12j49H4u.HEIC",
+    "evidence": {
+      "sheet": "sheet-09.jpg",
+      "cell": 9,
+      "number": 137,
+      "thumbnailSha256": "d1aa9112048a8a3bd8ea4a4eb42205d4cebec289cfe3f3ee6c064bb3aa6e9b3f",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1IwfBEABtEcXv4A_q2IipEwLsdR65mcHI",
+    "originalName": "IMG_2160.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/clase 31 agosto",
+    "mediaType": "photo",
+    "primaryCategory": "Coco, Tubérculos y Fogón",
+    "secondaryCategories": [],
+    "visualDescription": "Personas en uniforme trabajan sobre recipientes metálicos y una preparación amarillenta; no se identifica receta.",
+    "proposedFilename": "mezcla-en-recipiente--1IwfBEABtEcX.HEIC",
+    "evidence": {
+      "sheet": "sheet-09.jpg",
+      "cell": 10,
+      "number": 138,
+      "thumbnailSha256": "16c5f91c75039e28fd6f2392c6ede2b5f1f7a8454c51c7a1d30ef75b73cd0b75",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1JVBBTkpRvDtrSmVoHEKohqYH5uMStxEO",
+    "originalName": "IMG_2185.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/clase 31 agosto",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [
+      "Frutos del Mar, Río y Manglar",
+      "Coco, Tubérculos y Fogón"
+    ],
+    "visualDescription": "Mesa con láminas amarillas, discos amarillos, arroz y preparación con trozos en salsa; manos disponen un plato sobre hoja.",
+    "proposedFilename": "mesa-platos-laminas-arroz--1JVBBTkpRvDt.HEIC",
+    "evidence": {
+      "sheet": "sheet-09.jpg",
+      "cell": 11,
+      "number": 139,
+      "thumbnailSha256": "62af4dd8c829e255e01a0f3bf2d9d49e4a2b63693ce7bfae5f5e224ee44ec3b0",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1WsXYuvtGwM94rMHztf8tyl1dSTPgts02",
+    "originalName": "IMG_2186.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/clase 31 agosto",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [
+      "Frutos del Mar, Río y Manglar",
+      "Coco, Tubérculos y Fogón"
+    ],
+    "visualDescription": "Vista superior de láminas amarillas, discos amarillos, arroz y preparación con trozos en salsa; ingredientes no confirmados en conjunto.",
+    "proposedFilename": "mesa-platos-laminas-arroz--1WsXYuvtGwM9.HEIC",
+    "evidence": {
+      "sheet": "sheet-09.jpg",
+      "cell": 12,
+      "number": 140,
+      "thumbnailSha256": "feedd385499248a2875d70b50a2134545cb2da5e2845d2b639aa5d0157351532",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1V8KyGxd731MsQqZkHgXPZAt-JV7IbF4M",
+    "originalName": "IMG_2187.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/clase 31 agosto",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [
+      "Frutos del Mar, Río y Manglar",
+      "Coco, Tubérculos y Fogón"
+    ],
+    "visualDescription": "Vista superior de láminas amarillas, discos amarillos, arroz y preparación con trozos en salsa; ingredientes no confirmados en conjunto.",
+    "proposedFilename": "mesa-platos-laminas-arroz--1V8KyGxd731M.HEIC",
+    "evidence": {
+      "sheet": "sheet-09.jpg",
+      "cell": 13,
+      "number": 141,
+      "thumbnailSha256": "02591ff48b4295443ec473d80db7b9bbafdbe8364cc4e3363ad4e5cc17c1bcd5",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1r4OYEQtf00TzGKc7I8qH2Dg-lIHsKg9o",
+    "originalName": "IMG_2188.JPG",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/clase 31 agosto",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [
+      "Coco, Tubérculos y Fogón",
+      "Bebidas, Cultura Viva e Identidad"
+    ],
+    "visualDescription": "Mesa con pequeños plátanos, preparaciones amarillas, arroz, recipientes y una hilera de vasos con líquido marrón; bebida no identificada.",
+    "proposedFilename": "mesa-preparaciones-vasos--1r4OYEQtf00T.JPG",
+    "evidence": {
+      "sheet": "sheet-09.jpg",
+      "cell": 14,
+      "number": 142,
+      "thumbnailSha256": "c58fa21c9d79dc2ece0c32069cb8a44c8b83e4c123fce45058c9d6804cabca48",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "19EuRmH2swBcWv4ckvpmpbvKnzSN01lLS",
+    "originalName": "IMG_2189.JPG",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/clase 31 agosto",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [
+      "Coco, Tubérculos y Fogón",
+      "Bebidas, Cultura Viva e Identidad"
+    ],
+    "visualDescription": "Mesa con pequeños plátanos, preparaciones amarillas, arroz, recipientes y una hilera de vasos con líquido marrón; bebida no identificada.",
+    "proposedFilename": "mesa-preparaciones-vasos--19EuRmH2swBc.JPG",
+    "evidence": {
+      "sheet": "sheet-09.jpg",
+      "cell": 15,
+      "number": 143,
+      "thumbnailSha256": "fb2128f7bca87f2a4fbdf44a7dabcf532af840f86ecedb0b8efe514790c0e5ad",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1vqcCP3iWxDZECf2Q7agTBQLfN12Gszdj",
+    "originalName": "IMG_2190.JPG",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/clase 31 agosto",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [
+      "Coco, Tubérculos y Fogón",
+      "Bebidas, Cultura Viva e Identidad"
+    ],
+    "visualDescription": "Mesa con pequeños plátanos, preparaciones amarillas, arroz, recipientes y una hilera de vasos con líquido marrón; bebida no identificada.",
+    "proposedFilename": "mesa-preparaciones-vasos--1vqcCP3iWxDZ.JPG",
+    "evidence": {
+      "sheet": "sheet-09.jpg",
+      "cell": 16,
+      "number": 144,
+      "thumbnailSha256": "619da9d46948ebdf2b3061867b97ac54de49a73cd10fd61809890a56790f65d9",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1BQM4fsOKnSbN2vKL9I5tDKSTaK9szkOS",
+    "originalName": "IMG_2195.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/clase 31 agosto",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [
+      "Coco, Tubérculos y Fogón"
+    ],
+    "visualDescription": "Manos manipulan un racimo de plátanos sobre una mesa con preparaciones amarillas y otros platos.",
+    "proposedFilename": "manos-racimo-platanos--1BQM4fsOKnSb.HEIC",
+    "evidence": {
+      "sheet": "sheet-10.jpg",
+      "cell": 1,
+      "number": 145,
+      "thumbnailSha256": "ff368ab230e7adac25565c50c3118d5e06dbf84dafd53377c72ac0e90319cda5",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1SBMpRwPXsDneH03gMtImLKrOwg3G3i5m",
+    "originalName": "IMG_1874.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/taller sensorial",
+    "mediaType": "photo",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Personas con uniformes de cocina alrededor de una mesa; el alimento o actividad temática dominante no se distingue.",
+    "proposedFilename": "grupo-en-cocina--1SBMpRwPXsDn.HEIC",
+    "evidence": {
+      "sheet": "sheet-10.jpg",
+      "cell": 2,
+      "number": 146,
+      "thumbnailSha256": "87325b0ae89068ce56a92202055cd36424c8be33a84b970a24bb688bac31aac5",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "needs-human"
+  },
+  {
+    "sourceId": "1KarzUQyM3z1QLzK33cPErQu8UzJ_O1kV",
+    "originalName": "IMG_1875.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/taller sensorial",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [
+      "Hierbas de Azotea y Aromas de la Selva"
+    ],
+    "visualDescription": "Mesa con recipientes de apariencia vegetal, utensilios de madera, hojas y pequeños ingredientes dispuestos sobre tela.",
+    "proposedFilename": "mesa-utensilios-ingredientes--1KarzUQyM3z1.HEIC",
+    "evidence": {
+      "sheet": "sheet-10.jpg",
+      "cell": 3,
+      "number": 147,
+      "thumbnailSha256": "539e5babf8ef4abfe7ac5b5c5933485cf746f6094de28ebfde086e359dafc3b6",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1HU1Wmp8zINq3Sdjv2VSCQSVUSZW3DecD",
+    "originalName": "IMG_1876.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/taller sensorial",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [
+      "Hierbas de Azotea y Aromas de la Selva"
+    ],
+    "visualDescription": "Vista superior de recipientes, utensilios de madera, hojas y pequeños ingredientes sobre una mesa cubierta con tela.",
+    "proposedFilename": "mesa-utensilios-ingredientes--1HU1Wmp8zINq.HEIC",
+    "evidence": {
+      "sheet": "sheet-10.jpg",
+      "cell": 4,
+      "number": 148,
+      "thumbnailSha256": "d5bb1d5876cbfc57a9f6c5caf4dd8cebd054688ee92b2cfc4b463ad2f7c891cc",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1mI6RKKdmMC3_-r747TPuDKM6TX6uvKqq",
+    "originalName": "IMG_1877.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/taller sensorial",
+    "mediaType": "photo",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Material marrón desmenuzado sobre papel blanco en un plato negro; no se identifica su naturaleza.",
+    "proposedFilename": "material-marron-sobre-papel--1mI6RKKdmMC3.HEIC",
+    "evidence": {
+      "sheet": "sheet-10.jpg",
+      "cell": 5,
+      "number": 149,
+      "thumbnailSha256": "d6b9a566e6728373e7ea6300f02b9bc5c921c484f96275c68c73d20d642f9343",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "needs-human"
+  },
+  {
+    "sourceId": "1U74oI6Dm7gWoivGS3XhlX6JhRzzDWhzX",
+    "originalName": "IMG_1878.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/taller sensorial",
+    "mediaType": "photo",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Una mano toca material marrón desmenuzado dispuesto sobre papel blanco; ingrediente no identificado.",
+    "proposedFilename": "mano-material-marron--1U74oI6Dm7gW.HEIC",
+    "evidence": {
+      "sheet": "sheet-10.jpg",
+      "cell": 6,
+      "number": 150,
+      "thumbnailSha256": "dfcca8d818fddeb7eb078e660ec4e0c072575bde53ae5e826462c569c3996354",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "needs-human"
+  },
+  {
+    "sourceId": "1a4fwCuSBxCNXm4EbpNOXDMqQ3gB-3TQR",
+    "originalName": "IMG_1879.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/taller sensorial",
+    "mediaType": "photo",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Una mano toca material marrón desmenuzado dispuesto sobre papel blanco; ingrediente no identificado.",
+    "proposedFilename": "mano-material-marron--1a4fwCuSBxCN.HEIC",
+    "evidence": {
+      "sheet": "sheet-10.jpg",
+      "cell": 7,
+      "number": 151,
+      "thumbnailSha256": "718e75ff20459f9eaeb8c011e9e30866c2da3506db83cb322a5e84cd057462c0",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "needs-human"
+  },
+  {
+    "sourceId": "1yxZPVLl9ojOzuGLhU6FjJM22G-RRPfLr",
+    "originalName": "IMG_1880.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/taller sensorial",
+    "mediaType": "photo",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Una mano toca material marrón desmenuzado dispuesto sobre papel blanco; ingrediente no identificado.",
+    "proposedFilename": "mano-material-marron--1yxZPVLl9ojO.HEIC",
+    "evidence": {
+      "sheet": "sheet-10.jpg",
+      "cell": 8,
+      "number": 152,
+      "thumbnailSha256": "dfc9246df95fc4b38fcd9597e6f4ccecf4f0ab30b399a20898130937eb4e48bd",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "needs-human"
+  },
+  {
+    "sourceId": "1q7uKOMBCHG1NvrVmFeSdACidAwagB6d7",
+    "originalName": "IMG_1881.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/taller sensorial",
+    "mediaType": "photo",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Una mano toca material marrón desmenuzado dispuesto sobre papel blanco; ingrediente no identificado.",
+    "proposedFilename": "mano-material-marron--1q7uKOMBCHG1.HEIC",
+    "evidence": {
+      "sheet": "sheet-10.jpg",
+      "cell": 9,
+      "number": 153,
+      "thumbnailSha256": "872c42cd600867cac9566dab2282750977c05d41c8e673ccfddaa6b8ee8dd416",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "needs-human"
+  },
+  {
+    "sourceId": "1Zfj9ynbu2KzRsrbH1fyEf-YKpnTgmer6",
+    "originalName": "IMG_1882.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/taller sensorial",
+    "mediaType": "photo",
+    "primaryCategory": "Bebidas, Cultura Viva e Identidad",
+    "secondaryCategories": [
+      "Territorio, Saberes y Herramientas Ancestrales"
+    ],
+    "visualDescription": "Persona sostiene un instrumento formado por tubos junto a recipientes y botellas en una mesa; no se confirma música ni bebida específica.",
+    "proposedFilename": "instrumento-tubos-y-recipientes--1Zfj9ynbu2Kz.HEIC",
+    "evidence": {
+      "sheet": "sheet-10.jpg",
+      "cell": 10,
+      "number": 154,
+      "thumbnailSha256": "fe5fc1d331e3ce4f64516ac6df0328e39b527238f7a9760d2f33f06b6a31b149",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1pQOl8_K0jq7TegIZoSKSHsRVKakhD5F3",
+    "originalName": "IMG_1883.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/taller sensorial",
+    "mediaType": "photo",
+    "primaryCategory": "Bebidas, Cultura Viva e Identidad",
+    "secondaryCategories": [],
+    "visualDescription": "Personas en uniforme de cocina; una sostiene un libro abierto y gesticula. No se confirma el contenido de la lectura.",
+    "proposedFilename": "lectura-libro-en-grupo--1pQOl8_K0jq7.HEIC",
+    "evidence": {
+      "sheet": "sheet-10.jpg",
+      "cell": 11,
+      "number": 155,
+      "thumbnailSha256": "9e51fe034d5f14e9e3bd9f44e6d359b53469d066731488274c6344b0b2800b12",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1l5WDaUlzst2u6UVIu1Htev2qeoLhQauE",
+    "originalName": "IMG_1884.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/taller sensorial",
+    "mediaType": "photo",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Primer plano de una página de libro con texto impreso; el contenido no se transcribe ni se identifica con esta vista.",
+    "proposedFilename": "pagina-libro-abierto--1l5WDaUlzst2.HEIC",
+    "evidence": {
+      "sheet": "sheet-10.jpg",
+      "cell": 12,
+      "number": 156,
+      "thumbnailSha256": "e53eacc33aab133d3020a622403287bc9e33666c05b2c0886d4f60473f3beac5",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "needs-human"
+  },
+  {
+    "sourceId": "1-Y3jL4HmEkwBCWBfceRKjM9hZClAwx0L",
+    "originalName": "IMG_1885.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/taller sensorial",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Cestas, recipientes y objetos alargados sobre una mesa, con personas detrás; no se identifica el uso de cada objeto.",
+    "proposedFilename": "recipientes-cesteria-mesa--1-Y3jL4HmEkw.HEIC",
+    "evidence": {
+      "sheet": "sheet-10.jpg",
+      "cell": 13,
+      "number": 157,
+      "thumbnailSha256": "04503ebf6315896a7cd145a85b4a8bae54c1f793c5d8e4fa437585cb43fcd633",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1Xyx9QkNFauXQsVG9_5T_W2pZy4qOJHxS",
+    "originalName": "IMG_1886.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/taller sensorial",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Tallos y hojas verdes sobre piedra; especie y uso por confirmar.",
+    "proposedFilename": "tallos-hojas-sobre-piedra--1Xyx9QkNFauX.HEIC",
+    "evidence": {
+      "sheet": "sheet-10.jpg",
+      "cell": 14,
+      "number": 158,
+      "thumbnailSha256": "350d6f7d4b96dd30fdb5ff9c256e9d8ef48350215d401b3fb72db67a673ae7de",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1JxqwEQw-bOMye9-gHsuuQd98kjad02sl",
+    "originalName": "IMG_1887.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/taller sensorial",
+    "mediaType": "photo",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Cesta con piezas marrones de superficie reticulada junto a un objeto liso negro y un elemento tejido amarillo; naturaleza no identificada.",
+    "proposedFilename": "cesta-piezas-textura-reticulada--1JxqwEQw-bOM.HEIC",
+    "evidence": {
+      "sheet": "sheet-10.jpg",
+      "cell": 15,
+      "number": 159,
+      "thumbnailSha256": "be4d92b35c2e15067f6bcde9119bdf8c14ecea3a1144e406d8c237bc063fd81a",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "needs-human"
+  },
+  {
+    "sourceId": "1QdJ7bR9VF-e8ql6f6DWUwHvdEwQ3T2DV",
+    "originalName": "IMG_1889.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/taller sensorial",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Grupo en uniformes de cocina alrededor de una mesa con hojas, recipientes y utensilios; no se confirma nombre de taller.",
+    "proposedFilename": "grupo-mesa-utensilios--1QdJ7bR9VF-e.HEIC",
+    "evidence": {
+      "sheet": "sheet-10.jpg",
+      "cell": 16,
+      "number": 160,
+      "thumbnailSha256": "48b9db93c0b71a7b6a7af94dc344c72dcf40d18bd4a0b1d4e769789722c52007",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1TAPQks8zqytt79kpJIWkD_992bJU82qw",
+    "originalName": "IMG_1890.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/taller sensorial",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Grupo en uniformes de cocina alrededor de una mesa con hojas, recipientes y utensilios; no se confirma nombre de taller.",
+    "proposedFilename": "grupo-mesa-utensilios--1TAPQks8zqyt.HEIC",
+    "evidence": {
+      "sheet": "sheet-11.jpg",
+      "cell": 1,
+      "number": 161,
+      "thumbnailSha256": "78032e0bfe44c697ff046f5ed6859b4d876aa6e98a45f8bb1bb66b9631e50104",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1f9l4mt1wDqz-Fwv-n7NLlGNLkezyz1Y-",
+    "originalName": "IMG_1891.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/taller sensorial",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Grupo en uniformes de cocina alrededor de una mesa con hojas, recipientes y utensilios; no se confirma nombre de taller.",
+    "proposedFilename": "grupo-mesa-utensilios--1f9l4mt1wDqz.HEIC",
+    "evidence": {
+      "sheet": "sheet-11.jpg",
+      "cell": 2,
+      "number": 162,
+      "thumbnailSha256": "0de0ae6b731f48aec3f4d02828749ca47a9e69c51d4f61b4460213c2d968a083",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1SC5TID8SfiS0DzkNEfifyI7Vq3-3X9-2",
+    "originalName": "IMG_1892.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/taller sensorial",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Grupo en uniformes de cocina alrededor de una mesa con hojas, recipientes y utensilios; no se confirma nombre de taller.",
+    "proposedFilename": "grupo-mesa-utensilios--1SC5TID8SfiS.HEIC",
+    "evidence": {
+      "sheet": "sheet-11.jpg",
+      "cell": 3,
+      "number": 163,
+      "thumbnailSha256": "158a7a7f3ce3576b14b65ddde11dd04e578f60313a8d2897f8c36f6d1b9c0026",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1Tvle9ygGqhUiFCbPNpGJd1_T5lJ2W7ZJ",
+    "originalName": "IMG_1893.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/taller sensorial",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Grupo en uniformes de cocina alrededor de una mesa con hojas, recipientes y utensilios; no se confirma nombre de taller.",
+    "proposedFilename": "grupo-mesa-utensilios--1Tvle9ygGqhU.HEIC",
+    "evidence": {
+      "sheet": "sheet-11.jpg",
+      "cell": 4,
+      "number": 164,
+      "thumbnailSha256": "e85fd2a6d7def790a5732aaab36749e533c95a7b8341a3ae38b6138d90fab32b",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1i_3mxAtOMgL-SjBswfDn7GmR6jcFZQYA",
+    "originalName": "IMG_1894.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/taller sensorial",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Mesa cubierta con hojas grandes, recipientes y utensilios, rodeada por personas en uniforme de cocina.",
+    "proposedFilename": "mesa-hojas-recipientes--1i_3mxAtOMgL.HEIC",
+    "evidence": {
+      "sheet": "sheet-11.jpg",
+      "cell": 5,
+      "number": 165,
+      "thumbnailSha256": "f39182f45e53f24ba32cf05acc7ab87be978990bef7aaaaeb13a8231d5f4e0eb",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1IJnU2Q1i3_r6M3-l19AK3QJaL5mseJb8",
+    "originalName": "IMG_1895.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/taller sensorial",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [
+      "Hierbas de Azotea y Aromas de la Selva"
+    ],
+    "visualDescription": "Hojas grandes, mazorca seca con envolturas, dos piezas vegetales redondas y pequeño recipiente con sustancias claras y oscuras.",
+    "proposedFilename": "hojas-maiz-recipiente--1IJnU2Q1i3_r.HEIC",
+    "evidence": {
+      "sheet": "sheet-11.jpg",
+      "cell": 6,
+      "number": 166,
+      "thumbnailSha256": "78631449c8a1418bdb3aa863ded50534d30c985be4c8e2a6a8b05dd12337942b",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1YYhtyNhPxs0ptfW41DjNx98hhF88ksd3",
+    "originalName": "IMG_1896.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/taller sensorial",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Cesta con frutos rojos alargados y recipiente con fragmentos amarillentos sobre tela; ingredientes no confirmados.",
+    "proposedFilename": "cesta-frutos-rojos-recipiente--1YYhtyNhPxs0.HEIC",
+    "evidence": {
+      "sheet": "sheet-11.jpg",
+      "cell": 7,
+      "number": 167,
+      "thumbnailSha256": "6bb3e1c88aa485a87566fdc5c4ddbfb7485c5d19a41701e93b44fb534dc9bf54",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1b_7-klpCpaK5EIOn5UXKDaoLbv-jVdGW",
+    "originalName": "IMG_1897.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/taller sensorial",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Primer plano de cesta y utensilios de madera; al fondo, una mano manipula material sobre papel.",
+    "proposedFilename": "cesta-utensilios-madera--1b_7-klpCpaK.HEIC",
+    "evidence": {
+      "sheet": "sheet-11.jpg",
+      "cell": 8,
+      "number": 168,
+      "thumbnailSha256": "133492ed20e04b3542d1a5cb43a2f9adcdbb871c308452b2d8dea2231c8f29f4",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1PjOkjFnzk_Vh-nwbFJX7byeqLs8Kx6VU",
+    "originalName": "IMG_1898.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/taller sensorial",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Mortero y mano de madera junto a recipientes negros, sobre tela y hojas.",
+    "proposedFilename": "mortero-madera-recipientes--1PjOkjFnzk_V.HEIC",
+    "evidence": {
+      "sheet": "sheet-11.jpg",
+      "cell": 9,
+      "number": 169,
+      "thumbnailSha256": "7625efcc72eef8cf1d1ecb00b44f59f0eb78e2941e6bd124488817e9d7a968eb",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "12shCF04SvndaYRQ8VZJLa9L3rv4w2PN1",
+    "originalName": "IMG_1899.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/taller sensorial",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Mortero y mano de madera junto a recipientes negros, sobre tela y hojas.",
+    "proposedFilename": "mortero-madera-recipientes--12shCF04Svnd.HEIC",
+    "evidence": {
+      "sheet": "sheet-11.jpg",
+      "cell": 10,
+      "number": 170,
+      "thumbnailSha256": "c66ce763057adc27ef7d3bc7a8461caa1850d0a960cdbaa64da2762f144f7d19",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "10Mv_pundZsAmINPSZO4WHoGN_ZUgzjOA",
+    "originalName": "IMG_1900.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/taller sensorial",
+    "mediaType": "photo",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Una mano sostiene una cesta con frutos rojos brillantes; especie y eje temático no confirmados.",
+    "proposedFilename": "cesta-frutos-rojos--10Mv_pundZsA.HEIC",
+    "evidence": {
+      "sheet": "sheet-11.jpg",
+      "cell": 11,
+      "number": 171,
+      "thumbnailSha256": "d62a2b6f7b558e2331243aa248bb458363b2c8c760c6de5d3690006810de9a1a",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "low",
+    "reviewStatus": "needs-human"
+  },
+  {
+    "sourceId": "1sgFlJ1fl6UvRggBDwEguv8nTx8z3pRA8",
+    "originalName": "IMG_1901.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/taller sensorial",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Recipiente oscuro en primer plano y personas alrededor de una mesa al fondo; imagen oscura, detalles limitados.",
+    "proposedFilename": "recipiente-primer-plano-grupo--1sgFlJ1fl6Uv.HEIC",
+    "evidence": {
+      "sheet": "sheet-11.jpg",
+      "cell": 12,
+      "number": 172,
+      "thumbnailSha256": "b0112a60f6f74963cf336e74abf4c387997dac316f898e06aadb19a0c05280b5",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1iPAQoPowKoZFWKMumGKcRlkZrg8VNdir",
+    "originalName": "IMG_1902.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/taller sensorial",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Mortero de madera con mano y recipiente negro en primer plano; personas y utensilios detrás.",
+    "proposedFilename": "mortero-primer-plano--1iPAQoPowKoZ.HEIC",
+    "evidence": {
+      "sheet": "sheet-11.jpg",
+      "cell": 13,
+      "number": 173,
+      "thumbnailSha256": "1690623f6cb65fb5cdc84ffce57efb4d4492c0047182b4ee8e1b6453100ec458",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1zT-1epvMucQqzugiFoBOzjHQ_HnfMFvj",
+    "originalName": "IMG_1903.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/taller sensorial",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Mortero de madera con mano y recipiente negro en primer plano; personas y utensilios detrás.",
+    "proposedFilename": "mortero-primer-plano--1zT-1epvMucQ.HEIC",
+    "evidence": {
+      "sheet": "sheet-11.jpg",
+      "cell": 14,
+      "number": 174,
+      "thumbnailSha256": "b8546d29717e43f8ae77fb90929ffff3890302f1e35385a690fcf45f312ef1c2",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1RmD3ONN5SL2XdvqSUSwyNpJmh3Wvahxo",
+    "originalName": "IMG_1904.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/taller sensorial",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Detalle lateral de mortero y mano de madera sobre tela; fondo desenfocado.",
+    "proposedFilename": "mortero-madera-detalle--1RmD3ONN5SL2.HEIC",
+    "evidence": {
+      "sheet": "sheet-11.jpg",
+      "cell": 15,
+      "number": 175,
+      "thumbnailSha256": "bf030d8db65f51627ebe8b5d939b43c92391ce5184c7f204f8f7d531f95342de",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1pKWxM_UkLS35zZg4uaeaUa5BHIyWJ4rW",
+    "originalName": "IMG_1905.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/taller sensorial",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Detalle lateral de mortero y mano de madera sobre tela; fondo desenfocado.",
+    "proposedFilename": "mortero-madera-detalle--1pKWxM_UkLS3.HEIC",
+    "evidence": {
+      "sheet": "sheet-11.jpg",
+      "cell": 16,
+      "number": 176,
+      "thumbnailSha256": "73d896f427a5257aa2e523502dc62686c9147522c63f0eb87bf047a810ae6417",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "10a7fyB3a2KIGAMXtgs3aZdoMugSWm9MP",
+    "originalName": "IMG_1906.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/taller sensorial",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Detalle lateral de mortero y mano de madera sobre tela; fondo desenfocado.",
+    "proposedFilename": "mortero-madera-detalle--10a7fyB3a2KI.HEIC",
+    "evidence": {
+      "sheet": "sheet-12.jpg",
+      "cell": 1,
+      "number": 177,
+      "thumbnailSha256": "96a03ccce5a29bdec0fde55a5eca9d3fa3acd3ca92239d222ed380c8b804c286",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1eUS39rI89zuxuBM4bcI6Y_4brxVo4diG",
+    "originalName": "IMG_1907.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/taller sensorial",
+    "mediaType": "photo",
+    "primaryCategory": "Hierbas de Azotea y Aromas de la Selva",
+    "secondaryCategories": [
+      "Territorio, Saberes y Herramientas Ancestrales"
+    ],
+    "visualDescription": "Manojo de tallos y hojas verdes en cesta tejida; no se determina especie.",
+    "proposedFilename": "hierbas-en-cesta--1eUS39rI89zu.HEIC",
+    "evidence": {
+      "sheet": "sheet-12.jpg",
+      "cell": 2,
+      "number": 178,
+      "thumbnailSha256": "a77a4bc83f31744aeae725c09992c4831ca35b1beaf26ba619386c2f23efb61f",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "1oSeImpY5nddhdPQlz9H-Cu53TDIf6118",
+    "originalName": "IMG_1908.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/taller sensorial",
+    "mediaType": "photo",
+    "primaryCategory": "Hierbas de Azotea y Aromas de la Selva",
+    "secondaryCategories": [
+      "Territorio, Saberes y Herramientas Ancestrales"
+    ],
+    "visualDescription": "Manojo de tallos y hojas verdes en cesta tejida, sostenido por una persona; especie no determinada.",
+    "proposedFilename": "hierbas-en-cesta--1oSeImpY5ndd.HEIC",
+    "evidence": {
+      "sheet": "sheet-12.jpg",
+      "cell": 3,
+      "number": 179,
+      "thumbnailSha256": "325ca936e58f7f004ca20fc5d4b37da2eb999f3c621d45ef37d5b005ef40bfa9",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "high",
+    "reviewStatus": "verified"
+  },
+  {
+    "sourceId": "17bgh_b63jngO8eF3ZUiUAIWAgQe8nenH",
+    "originalName": "IMG_1909.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/taller sensorial",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Detalle de tejido con patrón geométrico amarillo y oscuro; no se identifica comunidad ni procedencia.",
+    "proposedFilename": "tejido-geometrico-amarillo-negro--17bgh_b63jng.HEIC",
+    "evidence": {
+      "sheet": "sheet-12.jpg",
+      "cell": 4,
+      "number": 180,
+      "thumbnailSha256": "047997159325570ca20eff7808133674c73c0e08241854caacf3be22cf4fc492",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1RXr-uCpEpT9ETGG9WzT_reIfZ6g8MMZy",
+    "originalName": "IMG_1910.HEIC",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/taller sensorial",
+    "mediaType": "photo",
+    "primaryCategory": "Territorio, Saberes y Herramientas Ancestrales",
+    "secondaryCategories": [],
+    "visualDescription": "Detalle de tejido con patrón geométrico amarillo y oscuro; no se identifica comunidad ni procedencia.",
+    "proposedFilename": "tejido-geometrico-amarillo-negro--1RXr-uCpEpT9.HEIC",
+    "evidence": {
+      "sheet": "sheet-12.jpg",
+      "cell": 5,
+      "number": 181,
+      "thumbnailSha256": "a8d04c0dda74049e7e00774bac66f2f69de0b97108ca8dee4f0b605d40d84932",
+      "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "medium",
+    "reviewStatus": "provisional"
+  },
+  {
+    "sourceId": "1h-j6u0bv_KJOodC96b4N1VPB21f3LtQr",
+    "originalName": "IMG_1888.MOV",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "video",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Miniatura estática: vainas verdes alargadas sobre superficie metálica, ligeramente desenfocadas. MOV no reproducido; contenido temporal y audio no inspeccionados.",
+    "proposedFilename": "miniatura-vainas-verdes--1h-j6u0bv_KJ.MOV",
+    "evidence": {
+      "sheet": "sheet-12.jpg",
+      "cell": 6,
+      "number": 182,
+      "thumbnailSha256": "d052c1784a70eefcaa69339faca165ac62fa064c0b8936bda602d155552b9c0a",
+      "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "none",
+    "reviewStatus": "uninspected-video"
+  },
+  {
+    "sourceId": "12o661wcAUzxGfYgluwbE55DwIL5kMHbK",
+    "originalName": "IMG_2108.MOV",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "video",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Miniatura estática: quemador de cocina con llama azul. MOV no reproducido; contenido temporal y audio no inspeccionados.",
+    "proposedFilename": "miniatura-quemador-encendido--12o661wcAUzx.MOV",
+    "evidence": {
+      "sheet": "sheet-12.jpg",
+      "cell": 7,
+      "number": 183,
+      "thumbnailSha256": "45e56efacc57a3e8d164497a3a8c2f7c41bc85100552816b7fd7cfc678640650",
+      "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "none",
+    "reviewStatus": "uninspected-video"
+  },
+  {
+    "sourceId": "1AACznwFMBuIHFwwWnw20A59lwbkiMaj0",
+    "originalName": "IMG_2109.MOV",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "video",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Miniatura estática: mano sobre mezcla granulada clara y amarillenta. MOV no reproducido; ingrediente, contenido temporal y audio no inspeccionados.",
+    "proposedFilename": "miniatura-mano-mezcla-clara--1AACznwFMBuI.MOV",
+    "evidence": {
+      "sheet": "sheet-12.jpg",
+      "cell": 8,
+      "number": 184,
+      "thumbnailSha256": "3d122ce15c78b18fd71787f89d7759a99894bec30a39faecd3c88b3fdba5513c",
+      "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "none",
+    "reviewStatus": "uninspected-video"
+  },
+  {
+    "sourceId": "1d6Bjij6UO-w6q3c0Sd3AxHgx-tVOGHB2",
+    "originalName": "IMG_2110.MOV",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "video",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Miniatura estática: mezcla seca clara de textura harinosa. MOV no reproducido; ingrediente, contenido temporal y audio no inspeccionados.",
+    "proposedFilename": "miniatura-mezcla-seca-clara--1d6Bjij6UO-w.MOV",
+    "evidence": {
+      "sheet": "sheet-12.jpg",
+      "cell": 9,
+      "number": 185,
+      "thumbnailSha256": "32672ee5a5d48d1073e0e5a1f192d0cb6db4725053948a297de5b6834f949e0b",
+      "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "none",
+    "reviewStatus": "uninspected-video"
+  },
+  {
+    "sourceId": "1EZ4RGGx2DCn4o0Jg1aQIvnZssVt3W2Mb",
+    "originalName": "IMG_2117.MOV",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "video",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Miniatura estática: mano con espátula y vegetales verdes y blancos en sartén. MOV no reproducido; contenido temporal y audio no inspeccionados.",
+    "proposedFilename": "miniatura-vegetales-en-sarten--1EZ4RGGx2DCn.MOV",
+    "evidence": {
+      "sheet": "sheet-12.jpg",
+      "cell": 10,
+      "number": 186,
+      "thumbnailSha256": "cf280ba7c260f0f7f5b0742c50b18bdb1cc09b20e519de22ce2bc696ee8c203a",
+      "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "none",
+    "reviewStatus": "uninspected-video"
+  },
+  {
+    "sourceId": "17ImZOYAuMTYvksqk5EdW0M-pZ1NlB8Sk",
+    "originalName": "IMG_2118.MOV",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "video",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Miniatura estática: cuchillo, manos y hojas verdes picadas sobre tabla verde. MOV no reproducido; especies, contenido temporal y audio no inspeccionados.",
+    "proposedFilename": "miniatura-cuchillo-hierbas--17ImZOYAuMTY.MOV",
+    "evidence": {
+      "sheet": "sheet-12.jpg",
+      "cell": 11,
+      "number": 187,
+      "thumbnailSha256": "22e00c406397fe97c23a466ef3b910f678cb6ce8f39d88c2836e875b64aa65e6",
+      "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "none",
+    "reviewStatus": "uninspected-video"
+  },
+  {
+    "sourceId": "1NGzHbsJc372n8Eh3mkP3PqjC2ta8XBdu",
+    "originalName": "IMG_2119.MOV",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "video",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Miniatura estática: cuchillo y manos junto a fragmentos rojos en tabla verde. MOV no reproducido; ingrediente, contenido temporal y audio no inspeccionados.",
+    "proposedFilename": "miniatura-cuchillo-vegetal-rojo--1NGzHbsJc372.MOV",
+    "evidence": {
+      "sheet": "sheet-12.jpg",
+      "cell": 12,
+      "number": 188,
+      "thumbnailSha256": "844c041b1051ffa376b6457d769989196309548b67b9711790bafff8c44ef413",
+      "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "none",
+    "reviewStatus": "uninspected-video"
+  },
+  {
+    "sourceId": "1e0ln0Opd0kghZzUJypZpb8AbfPD8l9Sb",
+    "originalName": "IMG_2120.MOV",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "video",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Miniatura estática: olla con líquido blanco sobre cocina. MOV no reproducido; composición, contenido temporal y audio no inspeccionados.",
+    "proposedFilename": "miniatura-olla-liquido-blanco--1e0ln0Opd0kg.MOV",
+    "evidence": {
+      "sheet": "sheet-12.jpg",
+      "cell": 13,
+      "number": 189,
+      "thumbnailSha256": "4be115f121d4f49dc76381c42703a8e094166113d7ec39eb3074492cc2a2d85c",
+      "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "none",
+    "reviewStatus": "uninspected-video"
+  },
+  {
+    "sourceId": "12bCkZUjRzcRjb3vJbKh5gnXfLL7xof-O",
+    "originalName": "IMG_2121.MOV",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "video",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Miniatura estática: mano con material blanco rallado o desmenuzado sobre un recipiente. MOV no reproducido; ingrediente, contenido temporal y audio no inspeccionados.",
+    "proposedFilename": "miniatura-mano-material-blanco--12bCkZUjRzcR.MOV",
+    "evidence": {
+      "sheet": "sheet-12.jpg",
+      "cell": 14,
+      "number": 190,
+      "thumbnailSha256": "ceacb35af01fbf53f018611c1e9528363c80c7e0b9b149d3bbee2149fd470d44",
+      "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "none",
+    "reviewStatus": "uninspected-video"
+  },
+  {
+    "sourceId": "13hLbMS7AGHakDWKSvjmpTHUABspih844",
+    "originalName": "IMG_2122.MOV",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "video",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Miniatura estática: manos sobre camarones en un recipiente metálico. MOV no reproducido; especie, contenido temporal y audio no inspeccionados.",
+    "proposedFilename": "miniatura-manos-camarones--13hLbMS7AGHa.MOV",
+    "evidence": {
+      "sheet": "sheet-12.jpg",
+      "cell": 15,
+      "number": 191,
+      "thumbnailSha256": "fcd240f0923f3d19812068bd5e8b45811c4787a526d8b8fcdc05784cb9b7ef21",
+      "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "none",
+    "reviewStatus": "uninspected-video"
+  },
+  {
+    "sourceId": "1WnNdQtRfUlxzGWoIyomcWxxuj60Az6SM",
+    "originalName": "IMG_2123.MOV",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "video",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Miniatura estática: recipiente con líquido blanco. MOV no reproducido; composición, contenido temporal y audio no inspeccionados.",
+    "proposedFilename": "miniatura-recipiente-liquido-blanco--1WnNdQtRfUlx.MOV",
+    "evidence": {
+      "sheet": "sheet-12.jpg",
+      "cell": 16,
+      "number": 192,
+      "thumbnailSha256": "292f18dd8104956c469fa7c8a0baef6389c06d9695c0162fc41ffc05907bb418",
+      "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "none",
+    "reviewStatus": "uninspected-video"
+  },
+  {
+    "sourceId": "1ropZAwbtFgJXwdGR-8gRStfgREPOnaHD",
+    "originalName": "IMG_2124.MOV",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "video",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Miniatura estática: trozos gruesos de plátano con cáscara oscura y amarilla en recipiente. MOV no reproducido; contenido temporal y audio no inspeccionados.",
+    "proposedFilename": "miniatura-trozos-platano--1ropZAwbtFgJ.MOV",
+    "evidence": {
+      "sheet": "sheet-13.jpg",
+      "cell": 1,
+      "number": 193,
+      "thumbnailSha256": "eaac036b40b2ba424922ac24a0fdbd5cc990ff69df5a161f92d1bfb621b3f498",
+      "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "none",
+    "reviewStatus": "uninspected-video"
+  },
+  {
+    "sourceId": "1lQOSoehGwSuCWHpBGl5CLj_r6n0PVEgj",
+    "originalName": "IMG_2125.MOV",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "video",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Miniatura estática: fragmentos verdes de hojas en recipiente metálico. MOV no reproducido; especies, contenido temporal y audio no inspeccionados.",
+    "proposedFilename": "miniatura-hierbas-recipiente--1lQOSoehGwSu.MOV",
+    "evidence": {
+      "sheet": "sheet-13.jpg",
+      "cell": 2,
+      "number": 194,
+      "thumbnailSha256": "609c977de2bbaf4f15f405e7361bf15165950b3a696357ddc8d370c95914bcb6",
+      "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "none",
+    "reviewStatus": "uninspected-video"
+  },
+  {
+    "sourceId": "1RrZcBLkonLh3klFBDMvXGEgQk1GaMEZF",
+    "originalName": "IMG_2126.MOV",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "video",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Miniatura estática: manos y piedra oscura pequeña sobre una piedra grande plana. MOV no reproducido; acción completa y audio no inspeccionados.",
+    "proposedFilename": "miniatura-piedra-manos--1RrZcBLkonLh.MOV",
+    "evidence": {
+      "sheet": "sheet-13.jpg",
+      "cell": 3,
+      "number": 195,
+      "thumbnailSha256": "2b1d3f98df2ec849d7dbb05ba086aab7b19d0706198d1657bde27fe96123d8a4",
+      "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "none",
+    "reviewStatus": "uninspected-video"
+  },
+  {
+    "sourceId": "14VU5tG5iBFhli_CL6alaYxjJVdyGXum0",
+    "originalName": "IMG_2127.MOV",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "video",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Miniatura estática: manos y materia amarilla sobre piedra plana con utensilio oscuro. MOV no reproducido; ingrediente, acción completa y audio no inspeccionados.",
+    "proposedFilename": "miniatura-piedra-materia-amarilla--14VU5tG5iBFh.MOV",
+    "evidence": {
+      "sheet": "sheet-13.jpg",
+      "cell": 4,
+      "number": 196,
+      "thumbnailSha256": "83076f17f30882bf4ea48816aef6044054bc75b9a186763fb2a4952f81906486",
+      "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "none",
+    "reviewStatus": "uninspected-video"
+  },
+  {
+    "sourceId": "1rjeC0gsopzjn_TEjwRTqviZmx8Lk1nAs",
+    "originalName": "IMG_2128.MOV",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "video",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Miniatura estática: manos sobre piedra plana, junto a una pieza amarilla y utensilio oscuro. MOV no reproducido; ingrediente, acción completa y audio no inspeccionados.",
+    "proposedFilename": "miniatura-manos-piedra--1rjeC0gsopzj.MOV",
+    "evidence": {
+      "sheet": "sheet-13.jpg",
+      "cell": 5,
+      "number": 197,
+      "thumbnailSha256": "80830af3b4eec68521da0a5df4ef56753ccd758e9476b31fb1d8acc1264a6ca5",
+      "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "none",
+    "reviewStatus": "uninspected-video"
+  },
+  {
+    "sourceId": "1EhdCEdujvt9IRU5vY-LOOkoOr6u2hoNM",
+    "originalName": "IMG_2129.MOV",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "video",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Miniatura estática: personas en uniforme alrededor de una mesa, con manos y piedra plana en primer plano. MOV no reproducido; contenido temporal y audio no inspeccionados.",
+    "proposedFilename": "miniatura-grupo-piedra--1EhdCEdujvt9.MOV",
+    "evidence": {
+      "sheet": "sheet-13.jpg",
+      "cell": 6,
+      "number": 198,
+      "thumbnailSha256": "25122ea4e397f3cf479166b72dd5cf45c19c80157fdd18b61bcc59292006c1c2",
+      "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "none",
+    "reviewStatus": "uninspected-video"
+  },
+  {
+    "sourceId": "1U7gdpVBD6tJg_k2qoZqdu32DQGEgAX5Z",
+    "originalName": "IMG_2131.MOV",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "video",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Miniatura estática: mezcla verde y blanca picada en sartén. MOV no reproducido; ingredientes, contenido temporal y audio no inspeccionados.",
+    "proposedFilename": "miniatura-vegetales-verdes-sarten--1U7gdpVBD6tJ.MOV",
+    "evidence": {
+      "sheet": "sheet-13.jpg",
+      "cell": 7,
+      "number": 199,
+      "thumbnailSha256": "9e1b63ac79775e485961b55c626336b7ac45d03e24903db693751349bbcc39bf",
+      "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "none",
+    "reviewStatus": "uninspected-video"
+  },
+  {
+    "sourceId": "1nE72YVo-RfLP5CcglIeC4uq02cepoqz7",
+    "originalName": "IMG_2132.MOV",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "video",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Miniatura estática: mano junto a granos blancos adheridos a un recipiente inclinado sobre otro. MOV no reproducido; contenido temporal y audio no inspeccionados.",
+    "proposedFilename": "miniatura-granos-blancos-recipiente--1nE72YVo-RfL.MOV",
+    "evidence": {
+      "sheet": "sheet-13.jpg",
+      "cell": 8,
+      "number": 200,
+      "thumbnailSha256": "a106728d6a9a45cebc4f6fb0ec0f570d72d3ef46c8b4c2c13f3cdbe383dc0b8e",
+      "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "none",
+    "reviewStatus": "uninspected-video"
+  },
+  {
+    "sourceId": "1j9qGmzNOGb53mVVTzbrAfcjqMRKSV2Km",
+    "originalName": "IMG_2133.MOV",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "video",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Miniatura estática: pequeña cantidad de material marrón en recipiente metálico. MOV no reproducido; ingrediente, contenido temporal y audio no inspeccionados.",
+    "proposedFilename": "miniatura-polvo-marron-recipiente--1j9qGmzNOGb5.MOV",
+    "evidence": {
+      "sheet": "sheet-13.jpg",
+      "cell": 9,
+      "number": 201,
+      "thumbnailSha256": "3391159f45a3b85eb359934745c330b1dd4d6a1d6936636e8d2378a33ee76e73",
+      "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "none",
+    "reviewStatus": "uninspected-video"
+  },
+  {
+    "sourceId": "1VK-hLM0E2LziSqXbjFSysG7sIRSmF8vb",
+    "originalName": "IMG_2134.MOV",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "video",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Miniatura estática: dos personas con uniforme de cocina junto a mesa y recipientes. MOV no reproducido; actividad temporal y audio no inspeccionados.",
+    "proposedFilename": "miniatura-dos-personas-cocina--1VK-hLM0E2Lz.MOV",
+    "evidence": {
+      "sheet": "sheet-13.jpg",
+      "cell": 10,
+      "number": 202,
+      "thumbnailSha256": "6d071989aad95d95e770e70d4fcc67b6b46637049fe85f1ab298ae92dbfacea9",
+      "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "none",
+    "reviewStatus": "uninspected-video"
+  },
+  {
+    "sourceId": "1V9_wfxk7J0Qg0A8RSccVJiLnkES0MEaF",
+    "originalName": "IMG_2135.MOV",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "video",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Miniatura estática: olla con líquido blanquecino sobre cocina. MOV no reproducido; composición, contenido temporal y audio no inspeccionados.",
+    "proposedFilename": "miniatura-olla-liquido-claro--1V9_wfxk7J0Q.MOV",
+    "evidence": {
+      "sheet": "sheet-13.jpg",
+      "cell": 11,
+      "number": 203,
+      "thumbnailSha256": "a07a5b81e967e79a717c6fec4b11148dd6be7d906d7d97bfbe3a989e59b58aa6",
+      "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "none",
+    "reviewStatus": "uninspected-video"
+  },
+  {
+    "sourceId": "1s-d456DTyl4kXrHHaUyq7oG7s4ZrtLkL",
+    "originalName": "IMG_2138.MOV",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "video",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Miniatura estática: manos, cuchillo y plátano con cáscara sobre tabla verde. MOV no reproducido; contenido temporal y audio no inspeccionados.",
+    "proposedFilename": "miniatura-platano-tabla-verde--1s-d456DTyl4.MOV",
+    "evidence": {
+      "sheet": "sheet-13.jpg",
+      "cell": 12,
+      "number": 204,
+      "thumbnailSha256": "45658bb472d5986e83d2221798068729611b9dfecafcb41a1bb7728f4a1bb669",
+      "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "none",
+    "reviewStatus": "uninspected-video"
+  },
+  {
+    "sourceId": "1z21A5-H_QeFl7-y6KVQaN7Oyub7ETe28",
+    "originalName": "IMG_2140.MOV",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "video",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Miniatura estática: mesa, cocina industrial y parte de una persona; detalle limitado. MOV no reproducido; actividad y audio no inspeccionados.",
+    "proposedFilename": "miniatura-cocina-mesa--1z21A5-H_QeF.MOV",
+    "evidence": {
+      "sheet": "sheet-13.jpg",
+      "cell": 13,
+      "number": 205,
+      "thumbnailSha256": "47b33a78781fdbdac5d6304bc24639b1f0c4ca27003b0430ec62301c5df0972e",
+      "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "none",
+    "reviewStatus": "uninspected-video"
+  },
+  {
+    "sourceId": "1CDxTvlLBCV8kZxTyqTQvkYHvr_6lTtiP",
+    "originalName": "IMG_2142.MOV",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "video",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Miniatura estática: recipiente lleno de pequeños trozos claros y amarillentos. MOV no reproducido; ingrediente, contenido temporal y audio no inspeccionados.",
+    "proposedFilename": "miniatura-trozos-claros-recipiente--1CDxTvlLBCV8.MOV",
+    "evidence": {
+      "sheet": "sheet-13.jpg",
+      "cell": 14,
+      "number": 206,
+      "thumbnailSha256": "fbaa0f474391e48ab64be9be2e39651f299ffc7301b4587ce2ea521e45643700",
+      "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "none",
+    "reviewStatus": "uninspected-video"
+  },
+  {
+    "sourceId": "1fSKjMfS01KgE2LBL2KsIzshg6rDsIFNn",
+    "originalName": "IMG_2143.MOV",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "video",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Miniatura estática: pequeños trozos claros y amarillentos en cuenco metálico. MOV no reproducido; ingrediente, contenido temporal y audio no inspeccionados.",
+    "proposedFilename": "miniatura-trozos-claros-cuenco--1fSKjMfS01Kg.MOV",
+    "evidence": {
+      "sheet": "sheet-13.jpg",
+      "cell": 15,
+      "number": 207,
+      "thumbnailSha256": "6b1965fb195eb74a76c52c382a8745590177ae9a6972a909b10b2fc8f9e56661",
+      "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "none",
+    "reviewStatus": "uninspected-video"
+  },
+  {
+    "sourceId": "10P1v4tFZEMCFriZOluccEual6re4yTo3",
+    "originalName": "IMG_2144.MOV",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "video",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Miniatura estática: hoja grande amarillenta junto a recipiente metálico. MOV no reproducido; especie, contenido temporal y audio no inspeccionados.",
+    "proposedFilename": "miniatura-hoja-amarillenta--10P1v4tFZEMC.MOV",
+    "evidence": {
+      "sheet": "sheet-13.jpg",
+      "cell": 16,
+      "number": 208,
+      "thumbnailSha256": "e12ca14a86b891ab455f934648949644fc3365ad6b37e5c74f3550bbbae752cd",
+      "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "none",
+    "reviewStatus": "uninspected-video"
+  },
+  {
+    "sourceId": "1mU0BjNxWKF6bV4Jq7yEZurAkK-aeiq0w",
+    "originalName": "IMG_2148.MOV",
+    "sourceFolder": "Fotitos importantes",
+    "mediaType": "video",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Miniatura estática: mano sobre pequeños trozos claros y amarillentos dentro de un recipiente. MOV no reproducido; ingrediente, contenido temporal y audio no inspeccionados.",
+    "proposedFilename": "miniatura-mano-trozos-claros--1mU0BjNxWKF6.MOV",
+    "evidence": {
+      "sheet": "sheet-14.jpg",
+      "cell": 1,
+      "number": 209,
+      "thumbnailSha256": "6d4233daa0b2fb091d15005aaac47e49484a16d85e6e35cde545f26107c0b34f",
+      "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "none",
+    "reviewStatus": "uninspected-video"
+  },
+  {
+    "sourceId": "1j109_qVr_FH5nmwlfcFUz4m4Ka5wryK2",
+    "originalName": "IMG_2110.MOV",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/clase 31 agosto",
+    "mediaType": "video",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Miniatura estática: mezcla seca clara de textura harinosa. MOV no reproducido; ingrediente, contenido temporal y audio no inspeccionados.",
+    "proposedFilename": "miniatura-mezcla-harinosa--1j109_qVr_FH.MOV",
+    "evidence": {
+      "sheet": "sheet-14.jpg",
+      "cell": 2,
+      "number": 210,
+      "thumbnailSha256": "4cad925babe48f7e6028ab2e8e77b2781a498bf44c745a54ef2432b841aa210f",
+      "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "none",
+    "reviewStatus": "uninspected-video"
+  },
+  {
+    "sourceId": "1tEtBpROW4-X1yAnFVTO-NU5WpSSyQ7IC",
+    "originalName": "IMG_2152.MOV",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/clase 31 agosto",
+    "mediaType": "video",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Miniatura estática: manos, cuchillo y un bloque amarillo cortado en láminas. MOV no reproducido; ingrediente, contenido temporal y audio no inspeccionados.",
+    "proposedFilename": "miniatura-corte-bloque-amarillo--1tEtBpROW4-X.MOV",
+    "evidence": {
+      "sheet": "sheet-14.jpg",
+      "cell": 3,
+      "number": 211,
+      "thumbnailSha256": "b36826b583c6dc928a212485581812614d2c11d01be64af5644ef15782a451cd",
+      "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "none",
+    "reviewStatus": "uninspected-video"
+  },
+  {
+    "sourceId": "1gBA-glWMbJZ94hHygw1LlGIqAO53hekU",
+    "originalName": "IMG_1888.MOV",
+    "sourceFolder": "Fotitos importantes/cocinas del pacifico/taller sensorial",
+    "mediaType": "video",
+    "primaryCategory": null,
+    "secondaryCategories": [],
+    "visualDescription": "Miniatura estática: vainas verdes alargadas sobre superficie metálica, ligeramente desenfocadas. MOV no reproducido; contenido temporal y audio no inspeccionados.",
+    "proposedFilename": "miniatura-vainas-verdes--1gBA-glWMbJZ.MOV",
+    "evidence": {
+      "sheet": "sheet-14.jpg",
+      "cell": 4,
+      "number": 212,
+      "thumbnailSha256": "3014a83d33f5c2f22d95e9a2a56d6f8a278c8d3ae1bc877f77f456c42a7e145f",
+      "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos.",
+      "localEvidenceDirectory": "../visual-evidence"
+    },
+    "confidence": "none",
+    "reviewStatus": "uninspected-video"
+  }
+]

@@ -1,0 +1,49 @@
+number	category	secondary	status	confidence	label	description
+49	5		provisional	medium	instrumento-tubos-sostenido	Persona en uniforme sostiene un instrumento de tubos; no se confirma interpretación musical ni contexto cultural específico.
+50	5		provisional	medium	instrumento-tubos-sostenido	Persona en uniforme sostiene un instrumento de tubos; no se confirma interpretación musical ni contexto cultural específico.
+51	2		verified	high	picado-hojas-tabla-verde	Manos pican material de hojas verdes con cuchillo sobre tabla verde; especie no determinada.
+52	2		provisional	medium	cuchillo-tabla-verde	Manos y cuchillo sobre tabla verde con pequeños fragmentos vegetales; ingrediente no distinguible.
+53	2		provisional	medium	cuchillo-tabla-verde	Manos y cuchillo sobre tabla verde con pequeños fragmentos vegetales; ingrediente no distinguible.
+54	2		provisional	medium	cuchillo-tabla-verde	Manos y cuchillo sobre tabla verde con pequeños fragmentos vegetales; ingrediente no distinguible.
+55	2		verified	high	recipientes-hojas-tallos	Recipientes metálicos con hojas verdes picadas, tallos y otros fragmentos vegetales junto a tabla de cortar.
+56	2		verified	high	separacion-hojas-tallos	Manos separan material vegetal sobre un recipiente junto a tallos y hojas, con tabla y paño a un lado.
+57	2	1	verified	high	mortero-vegetales-picados	Mortero metálico con pasta clara y recipiente metálico con vegetales blancos y verdes picados; especies no determinadas.
+58	1	2	verified	high	triturado-en-mortero	Persona tritura mezcla marrón en un mortero; a un lado hay recipientes con líquidos y una mezcla verde.
+59	1	2	verified	high	triturado-en-mortero	Persona tritura mezcla marrón en un mortero; a un lado hay recipientes con líquidos y una mezcla verde.
+60	2		verified	high	vegetales-picados-recipiente	Mezcla de fragmentos verdes, blancos y rojos en un recipiente cubierto parcialmente con película transparente.
+61	2		verified	high	tallos-y-recortes-vegetales	Recipiente metálico con tallos, hojas y recortes vegetales de varios colores; no se identifican especies.
+62	1	4	provisional	medium	hoja-sostenida-frente-fogon	Manos sostienen una hoja grande rectangular frente a una cocina; no se confirma preparación de envoltorio.
+63	4	1	verified	high	hoja-sobre-llama	Una hoja grande es sostenida sobre un quemador encendido de cocina.
+64	4	1	verified	high	hoja-sobre-llama	Una hoja grande es sostenida sobre un quemador encendido de cocina.
+65	4	1	provisional	medium	mezcla-seca-clara	Primer plano de una mezcla seca clara de textura harinosa con algunos grumos; ingrediente no identificado.
+66	0		needs-human	low	grupo-mesa-cocina	Personas con uniforme frente a una mesa de cocina con utensilios; no se distingue preparación temática dominante.
+67	0		needs-human	low	persona-utensilios-mesa	Persona en uniforme junto a utensilios y una hoja de papel en una mesa metálica; preparación no identificable.
+68	0		needs-human	low	persona-utensilios-mesa	Persona en uniforme gesticula junto a utensilios sobre mesa metálica; preparación no identificable.
+69	0		needs-human	low	persona-utensilios-mesa	Persona en uniforme gesticula junto a utensilios sobre mesa metálica; preparación no identificable.
+70	0		needs-human	low	persona-utensilios-mesa	Persona en uniforme gesticula junto a utensilios sobre mesa metálica; una parte de la imagen está obstruida.
+71	1		provisional	medium	molino-metalico-granos-claros	Molino manual metálico con granos claros y amarillentos en la tolva; ingrediente por confirmar. No se acredita ancestralidad del utensilio.
+72	1	4	provisional	medium	hojas-apiladas-bandeja	Hojas grandes verdosas y amarillentas apiladas sobre una bandeja en la mesa; especie y uso por confirmar.
+73	0		needs-human	low	persona-grupo-en-cocina	Personas en uniforme de cocina junto a mesa con paños y utensilios; actividad temática no distinguible.
+74	0		needs-human	low	grupo-preparacion-en-mesa	Personas en uniforme manipulan recipientes sobre mesa; una mano en primer plano y el tamaño limitan la identificación de alimentos.
+75	4		provisional	low	mezcla-en-recipiente	Personas en uniforme trabajan sobre recipientes metálicos y una preparación amarillenta; no se identifica receta.
+76	4		provisional	low	mezcla-en-recipiente	Personas en uniforme trabajan sobre recipientes metálicos y una preparación amarillenta; no se identifica receta.
+77	0		needs-human	low	grupo-recipientes-cocina	Grupo en uniforme alrededor de recipientes metálicos en cocina; alimento dominante no identificable.
+78	0		needs-human	low	grupo-frente-estufa	Personas en uniforme frente a una estufa industrial; alimento o preparación no visible con detalle.
+79	0		needs-human	low	grupo-frente-estufa	Personas en uniforme frente a una estufa industrial; alimento o preparación no visible con detalle.
+80	1	4	provisional	medium	disco-masa-amarilla-en-mano	Una mano sostiene un disco de masa amarilla delante de una hoja grande; no se confirma ingrediente ni nombre.
+81	3	2,4	verified	high	camarones-en-sarten	Camarones curvados y trozos blancos sobre una mezcla amarilla con fragmentos verdes en sartén; no se confirma receta ni leche de coco.
+82	1	3,4	provisional	medium	mesa-platos-laminas-arroz	Mesa con láminas amarillas, discos amarillos, arroz y preparación con trozos en salsa; manos disponen un plato sobre hoja.
+83	1	3,4	provisional	medium	mesa-platos-laminas-arroz	Vista superior de láminas amarillas, discos amarillos, arroz y preparación con trozos en salsa; ingredientes no confirmados en conjunto.
+84	1	3,4	provisional	medium	mesa-platos-laminas-arroz	Vista superior de láminas amarillas, discos amarillos, arroz y preparación con trozos en salsa; ingredientes no confirmados en conjunto.
+85	1	4,5	provisional	medium	mesa-preparaciones-vasos	Mesa con pequeños plátanos, preparaciones amarillas, arroz, recipientes y una hilera de vasos con líquido marrón; bebida no identificada.
+86	1	4,5	provisional	medium	mesa-preparaciones-vasos	Mesa con pequeños plátanos, preparaciones amarillas, arroz, recipientes y una hilera de vasos con líquido marrón; bebida no identificada.
+87	1	4,5	provisional	medium	mesa-preparaciones-vasos	Mesa con pequeños plátanos, preparaciones amarillas, arroz, recipientes y una hilera de vasos con líquido marrón; bebida no identificada.
+88	1	3,4	verified	high	mesa-platanos-platos	Vista superior de un racimo de plátanos pequeños, láminas amarillas, arroz, discos y otras preparaciones en platos.
+89	5	1,4	provisional	medium	hilera-vasos-y-platos	Mesa con hilera de vasos con líquido marrón junto a arroz, racimo de plátanos y otras preparaciones; bebida no identificada.
+90	5	1,4	provisional	medium	hilera-vasos-y-platos	Vista cenital de hilera de vasos con líquido marrón y varios platos, incluido arroz y plátanos; bebida no identificada.
+91	1	4	verified	high	manos-racimo-platanos	Manos manipulan un racimo de plátanos sobre una mesa con preparaciones amarillas y otros platos.
+92	4	1	provisional	medium	mesa-platos-arroz-laminas	Vista cenital de arroz blanco, láminas amarillas, preparación de granos y bocados con cobertura blanca; recetas no confirmadas.
+93	4	1	provisional	medium	mesa-platos-arroz-laminas	Vista cenital de arroz blanco, láminas amarillas, preparación de granos y bocados con cobertura blanca; recetas no confirmadas.
+94	4		verified	high	fritura-piezas-alargadas	Piezas alargadas claras y piezas doradas se fríen en líquido burbujeante dentro de un recipiente metálico; masa no identificada.
+95	4		provisional	medium	bocados-dorados-en-cesta	Cesta redonda con bocados ovalados dorados; ingredientes y nombre de preparación no confirmados.
+96	4		provisional	medium	bocados-dorados-en-cesta	Cesta redonda con bocados ovalados dorados; ingredientes y nombre de preparación no confirmados.

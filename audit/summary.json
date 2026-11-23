@@ -1,0 +1,31 @@
+{
+  "checkedAt": "2026-11-22T23:54:45.623178+00:00",
+  "sourceFolderId": "1Fqf4PVjly0UXCLWEN4zByLekWpJAmOPk",
+  "listingMethod": "public embeddedfolderview, recursive; no visible pagination controls; public visibility only",
+  "visibleFolders": 4,
+  "visibleMedia": 212,
+  "mediaByFolder": {
+    "Fotitos importantes/cocinas del pacifico/clase 31 agosto": 26,
+    "Fotitos importantes/cocinas del pacifico/taller sensorial": 37,
+    "Fotitos importantes": 149
+  },
+  "mediaByCategory": {
+    "agosto": 51,
+    "sensorial": 60,
+    "pending-review": 101
+  },
+  "pageReferences": 50,
+  "pagePhotos": 47,
+  "pageVideos": 3,
+  "missingPageIds": [],
+  "notReferencedByPage": 162,
+  "validThumbnailResponses": 47,
+  "thumbnailErrors": [],
+  "limitations": [
+    "Same filename does not prove duplicate contents.",
+    "Caption accuracy has not been visually verified.",
+    "HTTP image response is not an end-to-end browser rendering test.",
+    "Video playback not tested.",
+    "Public listings do not establish whether inaccessible files exist."
+  ]
+}

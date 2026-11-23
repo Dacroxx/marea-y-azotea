@@ -1,0 +1,1864 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAREA &amp; AZOTEA · Crónica viva de las Cocinas del Pacífico Colombiano</title>
+  <meta name="description" content="Revista digital editorial de la cátedra Cocinas del Pacífico · Gastronomía y Artes Culinarias · Pontificia Universidad Javeriana Cali." />
+
+  <!-- Tipografías editoriales de Google Fonts: Playfair Display, Fraunces y Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,500;1,700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Configuración de paleta vibrante del Pacífico y tipografías -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            coco: '#FAF4E8',
+            selva: '#0F4C3A',
+            marea: '#104E6B',
+            achiote: '#D94E28',
+            platano: '#F4B942',
+            chontaduro: '#E86F51',
+            carbon: '#1D2320',
+            arena: '#EFE6D5'
+          },
+          fontFamily: {
+            editorial: ['"Playfair Display"', 'Georgia', 'serif'],
+            fraunces: ['"Fraunces"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    :root {
+      --coco: #FAF4E8;
+      --selva: #0F4C3A;
+      --marea: #104E6B;
+      --achiote: #D94E28;
+      --platano: #F4B942;
+      --chontaduro: #E86F51;
+      --carbon: #1D2320;
+    }
+
+    body {
+      background-color: var(--coco);
+      color: var(--carbon);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* Letra capitular editorial */
+    .drop-cap::first-letter {
+      font-family: 'Playfair Display', serif;
+      font-weight: 900;
+      float: left;
+      font-size: 4.2rem;
+      line-height: 0.78;
+      padding-right: 0.75rem;
+      padding-top: 0.3rem;
+      color: var(--achiote);
+    }
+
+    .drop-cap-gold::first-letter {
+      color: var(--platano);
+    }
+
+    /* Términos subrayados interactivos que abren el Glosario */
+    .glossary-link {
+      border-bottom: 2px dashed var(--achiote);
+      color: var(--selva);
+      font-weight: 600;
+      cursor: pointer;
+      padding: 0 2px;
+      border-radius: 4px;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+    .glossary-link:hover {
+      background-color: rgba(244, 185, 66, 0.35);
+      color: var(--marea);
+    }
+
+    .glossary-link-light {
+      border-bottom: 2px dashed var(--platano);
+      color: var(--platano);
+      font-weight: 600;
+      cursor: pointer;
+      padding: 0 2px;
+      border-radius: 4px;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+    .glossary-link-light:hover {
+      background-color: rgba(244, 185, 66, 0.2);
+      color: var(--coco);
+    }
+
+    /* Textura sutil de ondas del Pacífico */
+    .bg-pacific-pattern {
+      background-image: url("data:image/svg+xml,%3Csvg width='120' height='24' viewBox='0 0 120 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 12 Q 15 0, 30 12 T 60 12 T 90 12 T 120 12' fill='none' stroke='%230F4C3A' stroke-opacity='0.055' stroke-width='2'/%3E%3C/svg%3E");
+    }
+
+    /* Separador rítmico inspirado en la marimba de chonta */
+    .marimba-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+    }
+    .marimba-bar {
+      border-radius: 999px;
+      background: linear-gradient(180deg, var(--achiote), var(--platano));
+    }
+
+    /* Animaciones suaves de aparición al desplazarse */
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1), transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Estilos de impresión / Guardar como PDF */
+    @media print {
+      header,
+      #drive-notice,
+      #lightbox-modal,
+      #glossary-modal,
+      .no-print {
+        display: none !important;
+      }
+      body {
+        background: #FAF4E8 !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      section, article, figure {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+      .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-platano/40 selection:text-carbon">
+
+  <!-- ===================================================================== -->
+  <!-- BARRA DE NAVEGACIÓN SUPERIOR (100% LECTURA, LIMPIA Y ELEGANTE)        -->
+  <!-- ===================================================================== -->
+  <header class="fixed top-0 left-0 right-0 z-40 bg-coco/95 backdrop-blur-md border-b border-selva/15 transition-all">
+    <!-- Barra de progreso de lectura -->
+    <div class="w-full h-1 bg-arena">
+      <div id="reading-progress" class="h-full bg-gradient-to-r from-selva via-achiote to-platano w-0 transition-all duration-150"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-3">
+      <!-- Identidad Editorial -->
+      <a href="#portada" class="flex items-center gap-2.5 group shrink-0">
+        <span class="w-9 h-9 rounded-full bg-selva text-platano flex items-center justify-center font-editorial font-black text-lg shadow-sm group-hover:bg-achiote group-hover:text-coco transition-colors">
+          M
+        </span>
+        <div class="leading-tight">
+          <span class="font-editorial font-bold text-base sm:text-lg tracking-tight text-marea block">MAREA &amp; AZOTEA</span>
+          <span class="text-[10px] font-semibold uppercase tracking-widest text-selva/80 hidden sm:block">Cocinas del Pacífico</span>
+        </div>
+      </a>
+
+      <!-- Enlaces rápidos a las 5 crónicas y Glosario (Escritorio) -->
+      <nav class="hidden lg:flex items-center gap-5 text-xs font-semibold uppercase tracking-wider text-carbon/80">
+        <a href="#cronica-1" class="hover:text-selva transition-colors">I. Territorio</a>
+        <a href="#cronica-2" class="hover:text-achiote transition-colors">II. Azotea</a>
+        <a href="#cronica-3" class="hover:text-chontaduro transition-colors">III. Coco &amp; Fogón</a>
+        <a href="#cronica-4" class="hover:text-marea transition-colors">IV. Mar &amp; Manglar</a>
+        <a href="#cronica-5" class="hover:text-achiote transition-colors">V. Cultura Viva</a>
+        <a href="#glosario" class="px-3 py-1.5 rounded-full bg-selva/10 text-selva hover:bg-selva hover:text-coco transition-colors">Glosario</a>
+      </nav>
+
+      <!-- Botón Guardar PDF y Menú Móvil -->
+      <div class="flex items-center gap-2">
+        <button id="print-pdf-btn" type="button" title="Guardar revista como PDF"
+          class="flex items-center gap-1.5 px-3.5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-marea text-coco hover:bg-achiote transition-colors shadow-sm cursor-pointer">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0110.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0l.229 2.523a1.125 1.125 0 01-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0021 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 00-1.913-.247M6.34 18H5.25A2.25 2.25 0 013 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 011.913-.247m10.5 0a48.536 48.536 0 00-10.5 0m10.5 0V3.375c0-.621-.504-1.125-1.125-1.125h-8.25c-.621 0-1.125.504-1.125 1.125v3.659M18 10.5h.008v.008H18V10.5z" />
+          </svg>
+          <span>Guardar PDF</span>
+        </button>
+
+        <button id="mobile-menu-btn" type="button" aria-label="Abrir navegación"
+          class="lg:hidden p-2 rounded-xl text-marea hover:bg-arena transition-colors cursor-pointer">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Aviso discreto solo si alguna imagen de Drive aún no tiene acceso público -->
+    <div id="drive-notice" class="hidden bg-platano/95 text-carbon border-t border-carbon/10 px-4 py-2 text-xs">
+      <div class="max-w-7xl mx-auto flex items-center justify-between gap-3">
+        <p class="leading-snug">
+          <strong>Nota de visualización:</strong> Algunas fotografías se muestran en modo reserva. Asegúrate de que la carpeta compartida en Google Drive esté configurada como <em>"Cualquier persona con el enlace · Lector"</em>.
+        </p>
+        <button type="button" onclick="dismissDriveNotice()" class="shrink-0 px-2.5 py-1 rounded-full bg-carbon/10 hover:bg-carbon/20 font-semibold cursor-pointer">
+          Cerrar ✕
+        </button>
+      </div>
+    </div>
+
+    <!-- Menú desplegable móvil -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-coco border-t border-selva/15 px-4 py-4 space-y-1 text-xs font-semibold uppercase tracking-wider">
+      <a href="#editorial" class="block py-2.5 px-3 rounded-xl hover:bg-arena text-marea">Carta Editorial e Índice</a>
+      <a href="#cronica-1" class="block py-2.5 px-3 rounded-xl hover:bg-arena text-selva">I · Territorio y Herramientas Ancestrales</a>
+      <a href="#cronica-2" class="block py-2.5 px-3 rounded-xl hover:bg-arena text-achiote">II · Hierbas de Azotea y Aromas de la Selva</a>
+      <a href="#cronica-3" class="block py-2.5 px-3 rounded-xl hover:bg-arena text-chontaduro">III · Coco, Tubérculos y Fogón</a>
+      <a href="#cronica-4" class="block py-2.5 px-3 rounded-xl hover:bg-arena text-marea">IV · Frutos del Mar, Río y Manglar</a>
+      <a href="#cronica-5" class="block py-2.5 px-3 rounded-xl hover:bg-arena text-achiote">V · Bebidas, Cultura Viva e Identidad</a>
+      <a href="#glosario" class="block py-2.5 px-3 rounded-xl bg-selva/10 text-selva">Glosario Interactivo del Pacífico</a>
+    </div>
+  </header>
+
+  <!-- ===================================================================== -->
+  <!-- 1. PORTADA EDITORIAL A PANTALLA COMPLETA                              -->
+  <!-- ===================================================================== -->
+  <section id="portada" class="relative min-h-screen pt-20 pb-14 flex items-center bg-marea text-coco overflow-hidden">
+    <!-- Fondo con fotografía de portada + respaldo artístico SVG -->
+    <div class="absolute inset-0 z-0">
+      <svg id="cover-fallback-svg" class="w-full h-full object-cover" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="pacificHero" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#104E6B"/>
+            <stop offset="50%" stop-color="#0F4C3A"/>
+            <stop offset="100%" stop-color="#1D2320"/>
+          </linearGradient>
+          <radialGradient id="pacificSun" cx="78%" cy="26%" r="42%">
+            <stop offset="0%" stop-color="#F4B942" stop-opacity="0.6"/>
+            <stop offset="50%" stop-color="#D94E28" stop-opacity="0.32"/>
+            <stop offset="100%" stop-color="#104E6B" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect width="1440" height="900" fill="url(#pacificHero)"/>
+        <rect width="1440" height="900" fill="url(#pacificSun)"/>
+        <path d="M0 640 Q 180 580, 360 640 T 720 640 T 1080 640 T 1440 640 L 1440 900 L 0 900 Z" fill="#104E6B" fill-opacity="0.55"/>
+        <path d="M0 725 Q 200 675, 400 725 T 800 725 T 1200 725 T 1440 725 L 1440 900 L 0 900 Z" fill="#0A3448" fill-opacity="0.75"/>
+      </svg>
+
+      <img
+        id="cover-hero-img"
+        src="https://drive.google.com/thumbnail?id=1r4OYEQtf00TzGKc7I8qH2Dg-lIHsKg9o&sz=w1600"
+        data-drive-id="1r4OYEQtf00TzGKc7I8qH2Dg-lIHsKg9o"
+        alt="Portada editorial Marea & Azotea"
+        class="w-full h-full object-cover absolute inset-0 transition-opacity duration-700"
+        onload="document.getElementById('cover-fallback-svg').classList.add('hidden')"
+        onerror="handleCoverFallback(this)"
+      />
+
+      <!-- Velo degradado para alto contraste tipográfico -->
+      <div class="absolute inset-0 bg-gradient-to-t from-carbon/90 via-marea/55 to-carbon/60"></div>
+    </div>
+
+    <!-- Composición Editorial de Portada -->
+    <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 w-full flex flex-col justify-between min-h-[82vh]">
+      <!-- Cintillo superior -->
+      <div class="flex flex-wrap items-center justify-between gap-3 border-b border-coco/25 pb-4 text-[11px] sm:text-xs font-semibold uppercase tracking-[0.2em] text-coco/90">
+        <span>Edición Especial · Gastronomía y Artes Culinarias</span>
+        <span class="text-platano">Pontificia Universidad Javeriana Cali</span>
+        <span>Crónica de Aida Arteaga</span>
+      </div>
+
+      <!-- Masthead Monumental -->
+      <div class="my-12 sm:my-16 max-w-4xl">
+        <p class="font-fraunces italic text-lg sm:text-2xl text-platano mb-3">
+          Facultad de Creación y Hábitat · Cátedra Cocinas del Pacífico
+        </p>
+        <h1 class="font-editorial font-black text-6xl sm:text-7xl md:text-8xl lg:text-[6.8rem] leading-[0.92] tracking-tight text-coco drop-shadow-xl">
+          MAREA <span class="text-achiote italic font-normal">&amp;</span> AZOTEA
+        </h1>
+        <p class="mt-5 font-fraunces text-xl sm:text-3xl text-coco/95 font-normal leading-snug max-w-2xl">
+          Crónica viva de las Cocinas del Pacífico Colombiano
+        </p>
+        <p class="mt-4 text-sm sm:text-base text-coco/80 max-w-xl leading-relaxed">
+          Un recorrido sensorial y gastronómico en cinco capítulos: de la piedra de moler y el perfume de la azotea hasta el coco recién estrujado, el pulso del manglar y la memoria viva del litoral.
+        </p>
+
+        <div class="mt-8 flex flex-wrap items-center gap-4">
+          <a href="#editorial"
+            class="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-platano text-carbon font-bold text-xs sm:text-sm uppercase tracking-wider hover:bg-coco transition-all shadow-xl">
+            Explorar la Crónica
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+            </svg>
+          </a>
+          <a href="#glosario"
+            class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-coco/15 hover:bg-coco/25 border border-coco/30 text-coco font-semibold text-xs sm:text-sm uppercase tracking-wider backdrop-blur-sm transition-all">
+            Glosario del Pacífico
+          </a>
+        </div>
+      </div>
+
+      <!-- Franja inferior de síntesis -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-coco/25 pt-5 text-xs text-coco/85">
+        <div>
+          <span class="block font-editorial text-2xl font-bold text-platano">05</span>
+          <span class="uppercase tracking-wider text-[10px]">Crónicas Temáticas</span>
+        </div>
+        <div>
+          <span class="block font-editorial text-2xl font-bold text-platano">78</span>
+          <span class="uppercase tracking-wider text-[10px]">Postales de Taller</span>
+        </div>
+        <div>
+          <span class="block font-editorial text-2xl font-bold text-platano">18</span>
+          <span class="uppercase tracking-wider text-[10px]">Memorias en Video</span>
+        </div>
+        <div>
+          <span class="block font-editorial text-2xl font-bold text-platano">44</span>
+          <span class="uppercase tracking-wider text-[10px]">Voces en el Glosario</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 2. CARTA EDITORIAL E ÍNDICE VISUAL DE 5 TARJETAS DE COLOR             -->
+  <!-- ===================================================================== -->
+  <section id="editorial" class="py-20 sm:py-28 bg-coco bg-pacific-pattern border-b border-selva/15">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+
+      <!-- Carta Editorial -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <div class="lg:col-span-7 reveal">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="px-3.5 py-1 rounded-full bg-selva text-coco text-[11px] font-bold uppercase tracking-widest">Carta Editorial</span>
+            <span class="text-xs font-semibold uppercase tracking-widest text-carbon/50">Cali · 2026</span>
+          </div>
+
+          <h2 class="font-editorial font-black text-3xl sm:text-5xl text-marea leading-tight mb-7">
+            Cocinar el Pacífico es aprender a escuchar el territorio con las manos
+          </h2>
+
+          <div class="space-y-5 text-base sm:text-lg leading-relaxed text-carbon/90">
+            <p class="drop-cap">
+              Esta revista nace del asombro compartido en la cátedra de <strong>Cocinas del Pacífico</strong> de la Pontificia Universidad Javeriana Cali. Más que un recetario académico, estas páginas condensan una memoria sensorial: el peso sereno de la
+              <button type="button" class="glossary-link" onclick="openGlossary('piedra_moler')">piedra de moler</button>,
+              el perfume verde e indomable de la
+              <button type="button" class="glossary-link" onclick="openGlossary('azotea')">azotea</button>,
+              la paciencia de estrujar la
+              <button type="button" class="glossary-link" onclick="openGlossary('leche_coco')">leche de coco</button>
+              y el orgullo con el que cada preparación cuenta la historia de un litoral entero.
+            </p>
+            <p>
+              Organizamos nuestro archivo en cinco crónicas temáticas que dialogan entre sí. Cada capítulo entrelaza fotografía documental, memorias en movimiento y voces reales recogidas en el aula para honrar a las cocineras tradicionales, a las comunidades afrodescendientes e indígenas del Pacífico y a la responsabilidad ética que asumimos como futuros gastrónomos.
+            </p>
+          </div>
+        </div>
+
+        <!-- Tarjeta de Firma Editorial -->
+        <aside class="lg:col-span-5 reveal">
+          <div class="rounded-3xl bg-selva text-coco p-8 sm:p-10 shadow-xl relative overflow-hidden">
+            <div class="absolute -right-8 -top-8 w-40 h-40 rounded-full bg-platano/15 pointer-events-none"></div>
+            <span class="text-[11px] font-bold uppercase tracking-[0.22em] text-platano">Nota de la Autora</span>
+            <p class="mt-4 font-fraunces italic text-xl sm:text-2xl leading-snug text-coco/95">
+              “En el fogón del Pacífico descubrimos que el sabor nunca es un accidente técnico: es paisaje, es canto, es resistencia y es mesa compartida.”
+            </p>
+            <div class="mt-6 pt-5 border-t border-coco/20 flex items-center justify-between gap-4">
+              <div>
+                <p class="font-editorial font-bold text-lg text-platano">Aida Arteaga</p>
+                <p class="text-xs text-coco/75">Gastronomía y Artes Culinarias · PUJ Cali</p>
+              </div>
+              <span class="w-11 h-11 rounded-full bg-achiote text-coco flex items-center justify-center font-editorial font-bold text-lg">A</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Índice Visual de 5 Tarjetas de Color -->
+      <div class="mt-16 sm:mt-20 reveal">
+        <div class="flex flex-wrap items-end justify-between gap-4 mb-8">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-[0.2em] text-achiote">Mapa de Lectura</span>
+            <h3 class="font-editorial font-black text-2xl sm:text-4xl text-carbon mt-1">Cinco Crónicas del Litoral</h3>
+          </div>
+          <p class="text-sm text-carbon/70 max-w-md">Selecciona cualquier capítulo para sumergirte en sus crónicas, mosaicos fotográficos y memorias en video.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          <!-- Tarjeta I -->
+          <a href="#cronica-1" class="group rounded-3xl p-6 bg-selva text-coco shadow-md hover:-translate-y-1.5 hover:shadow-xl transition-all flex flex-col justify-between min-h-[210px]">
+            <div class="flex items-center justify-between">
+              <span class="font-editorial text-3xl font-black text-platano">I</span>
+              <span class="text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full bg-coco/15 text-coco">18 fotos · 4 videos</span>
+            </div>
+            <div class="mt-6">
+              <h4 class="font-editorial font-bold text-xl leading-snug group-hover:text-platano transition-colors">Territorio, Saberes y Herramientas</h4>
+              <p class="text-xs text-coco/75 mt-2">Piedra de moler, maíz, plátano, fufú y Juan Valerio.</p>
+            </div>
+          </a>
+
+          <!-- Tarjeta II -->
+          <a href="#cronica-2" class="group rounded-3xl p-6 bg-achiote text-coco shadow-md hover:-translate-y-1.5 hover:shadow-xl transition-all flex flex-col justify-between min-h-[210px]">
+            <div class="flex items-center justify-between">
+              <span class="font-editorial text-3xl font-black text-platano">II</span>
+              <span class="text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full bg-coco/15 text-coco">15 fotos · 3 videos</span>
+            </div>
+            <div class="mt-6">
+              <h4 class="font-editorial font-bold text-xl leading-snug group-hover:text-platano transition-colors">Hierbas de Azotea y Selva</h4>
+              <p class="text-xs text-coco/85 mt-2">Chillangua, chirarán, poleo, pipilongo y refrito solar.</p>
+            </div>
+          </a>
+
+          <!-- Tarjeta III -->
+          <a href="#cronica-3" class="group rounded-3xl p-6 bg-platano text-carbon shadow-md hover:-translate-y-1.5 hover:shadow-xl transition-all flex flex-col justify-between min-h-[210px]">
+            <div class="flex items-center justify-between">
+              <span class="font-editorial text-3xl font-black text-selva">III</span>
+              <span class="text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full bg-carbon/10 text-carbon">15 fotos · 4 videos</span>
+            </div>
+            <div class="mt-6">
+              <h4 class="font-editorial font-bold text-xl leading-snug group-hover:text-achiote transition-colors">Coco, Tubérculos y Fogón</h4>
+              <p class="text-xs text-carbon/80 mt-2">Leche de coco artesanal, encocados, tapao y amasijos.</p>
+            </div>
+          </a>
+
+          <!-- Tarjeta IV -->
+          <a href="#cronica-4" class="group rounded-3xl p-6 bg-marea text-coco shadow-md hover:-translate-y-1.5 hover:shadow-xl transition-all flex flex-col justify-between min-h-[210px]">
+            <div class="flex items-center justify-between">
+              <span class="font-editorial text-3xl font-black text-platano">IV</span>
+              <span class="text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full bg-coco/15 text-coco">15 fotos · 4 videos</span>
+            </div>
+            <div class="mt-6">
+              <h4 class="font-editorial font-bold text-xl leading-snug group-hover:text-platano transition-colors">Mar, Río y Manglar</h4>
+              <p class="text-xs text-coco/80 mt-2">Piangüeras, bocana, cangrejos, jaiba y biodiversidad.</p>
+            </div>
+          </a>
+
+          <!-- Tarjeta V -->
+          <a href="#cronica-5" class="group rounded-3xl p-6 bg-chontaduro text-coco shadow-md hover:-translate-y-1.5 hover:shadow-xl transition-all flex flex-col justify-between min-h-[210px]">
+            <div class="flex items-center justify-between">
+              <span class="font-editorial text-3xl font-black text-coco">V</span>
+              <span class="text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full bg-carbon/20 text-coco">15 fotos · 3 videos</span>
+            </div>
+            <div class="mt-6">
+              <h4 class="font-editorial font-bold text-xl leading-snug group-hover:text-carbon transition-colors">Bebidas y Cultura Viva</h4>
+              <p class="text-xs text-coco/90 mt-2">Viche, cantos de cocina, San Pacho y pueblos originarios.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- CRÓNICA I · TERRITORIO, SABERES Y HERRAMIENTAS ANCESTRALES            -->
+  <!-- Acento: Verde Selva (#0F4C3A) + Amarillo Plátano (#F4B942)            -->
+  <!-- ===================================================================== -->
+  <article id="cronica-1" class="py-20 sm:py-28 bg-coco relative">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+
+      <!-- Cabecera de Crónica I -->
+      <div class="max-w-4xl reveal">
+        <div class="flex flex-wrap items-center gap-3 mb-4">
+          <span class="px-4 py-1.5 rounded-full bg-selva text-platano text-xs font-bold uppercase tracking-widest">Crónica I</span>
+          <span class="text-xs font-semibold uppercase tracking-widest text-selva/80">Taller Sensorial · Materia y Memoria</span>
+        </div>
+        <h2 class="font-editorial font-black text-4xl sm:text-6xl text-selva leading-[1.04]">
+          Territorio, Saberes y Herramientas Ancestrales
+        </h2>
+        <p class="mt-4 font-fraunces italic text-xl sm:text-2xl text-carbon/75">
+          Antes de la electricidad y el acero inoxidable, el pulso del Pacífico se talló en piedra, madera y manos pacientes.
+        </p>
+      </div>
+
+      <!-- Texto Editorial de Crónica I -->
+      <div class="mt-10 grid grid-cols-1 lg:grid-cols-12 gap-8 reveal">
+        <div class="lg:col-span-6 space-y-4 text-base sm:text-lg leading-relaxed text-carbon/90">
+          <p class="drop-cap">
+            Nuestro primer encuentro con el Pacífico fue un acto de desaceleración. En el taller sensorial dejamos a un lado la prisa de la cocina industrial para conversar con la materia prima desde el tacto y el peso real de los utensilios. Frente a la
+            <button type="button" class="glossary-link" onclick="openGlossary('piedra_moler')">piedra de moler</button>,
+            descubrimos que en los territorios no basta una sola superficie: existe una piedra más áspera dedicada a quebrar el grano de maíz y otra de grano fino para molerlo hasta transformarlo en masa viva.
+          </p>
+        </div>
+        <div class="lg:col-span-6 space-y-4 text-base sm:text-lg leading-relaxed text-carbon/90">
+          <p>
+            Allí también escuchamos al plátano verde y al maduro contar historias sin fronteras. Al majarlo tibio con las manos entendimos el linaje que une al
+            <button type="button" class="glossary-link" onclick="openGlossary('fufu')">fufú</button>
+            con los
+            <button type="button" class="glossary-link" onclick="openGlossary('bolones')">bolones</button>
+            del litoral ecuatoriano, y con nuestra propia marranita vallecaucana —celebrada en el Pacífico como
+            <button type="button" class="glossary-link" onclick="openGlossary('juan_valerio')">Juan Valerio</button>—.
+            Comprendimos que la técnica culinaria solo cobra sentido cuando reconoce el cuerpo y la geografía que la sostienen.
+          </p>
+        </div>
+      </div>
+
+      <!-- Mosaico Visual Editorial con Bloques de Color (18 fotos únicas + 3 cápsulas de color) -->
+      <div id="mosaic-c1" class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 auto-rows-[220px] sm:auto-rows-[240px] gap-4 grid-flow-dense reveal"></div>
+
+      <!-- Franja Memorias en Movimiento (4 videos de Crónica I) -->
+      <div class="mt-16 reveal">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-6">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-[0.2em] text-selva">Memorias en Movimiento · Capítulo I</span>
+            <h3 class="font-editorial font-bold text-2xl sm:text-3xl text-carbon mt-1">La piedra, el plátano y la voz del aula</h3>
+          </div>
+          <span class="px-3.5 py-1 rounded-full bg-platano/35 text-selva text-xs font-bold">4 registros audiovisuales</span>
+        </div>
+        <div id="videos-c1" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Separador Marimba -->
+  <div class="py-6 bg-coco">
+    <div class="marimba-divider">
+      <span class="marimba-bar w-2 h-5"></span>
+      <span class="marimba-bar w-2 h-9"></span>
+      <span class="marimba-bar w-2 h-14"></span>
+      <span class="marimba-bar w-2 h-9"></span>
+      <span class="marimba-bar w-2 h-5"></span>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- CRÓNICA II · HIERBAS DE AZOTEA Y AROMAS DE LA SELVA                   -->
+  <!-- Acento: Naranja Achiote (#D94E28) + Verde Selva (#0F4C3A)             -->
+  <!-- ===================================================================== -->
+  <article id="cronica-2" class="py-20 sm:py-28 bg-arena/65 border-y border-achiote/15 relative">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+
+      <!-- Cabecera de Crónica II -->
+      <div class="max-w-4xl reveal">
+        <div class="flex flex-wrap items-center gap-3 mb-4">
+          <span class="px-4 py-1.5 rounded-full bg-achiote text-coco text-xs font-bold uppercase tracking-widest">Crónica II</span>
+          <span class="text-xs font-semibold uppercase tracking-widest text-selva">Botánica Viva · El Corazón del Refrito</span>
+        </div>
+        <h2 class="font-editorial font-black text-4xl sm:text-6xl text-achiote leading-[1.04]">
+          Hierbas de Azotea y Aromas de la Selva
+        </h2>
+        <p class="mt-4 font-fraunces italic text-xl sm:text-2xl text-carbon/75">
+          En el Pacífico, la sazón se aprende primero con la nariz y se cultiva a un paso de la cocina, elevada sobre la humedad de la tierra.
+        </p>
+      </div>
+
+      <!-- Texto Editorial de Crónica II -->
+      <div class="mt-10 grid grid-cols-1 lg:grid-cols-12 gap-8 reveal">
+        <div class="lg:col-span-6 space-y-4 text-base sm:text-lg leading-relaxed text-carbon/90">
+          <p class="drop-cap">
+            La <button type="button" class="glossary-link" onclick="openGlossary('azotea')">azotea</button>
+            es mucho más que una huerta doméstica: instalada en viejas canoas de madera o plataformas elevadas para proteger los brotes de la lluvia y los animales, funciona como despensa cotidiana, botica familiar y archivo vivo de conocimiento femenino. Al picar sus hojas en clase, el aula entera cambió de temperatura y paisaje.
+          </p>
+        </div>
+        <div class="lg:col-span-6 space-y-4 text-base sm:text-lg leading-relaxed text-carbon/90">
+          <p>
+            Reconocimos el trío aromático inconfundible: la fuerza silvestre de la
+            <button type="button" class="glossary-link" onclick="openGlossary('chillangua')">chillangua</button>,
+            el perfume anisado del
+            <button type="button" class="glossary-link" onclick="openGlossary('chiraran')">chirarán</button>
+            y la frescura balsámica del
+            <button type="button" class="glossary-link" onclick="openGlossary('poleo')">poleo</button>,
+            abrazados por el picor cálido del
+            <button type="button" class="glossary-link" onclick="openGlossary('pipilongo')">pipilongo</button>
+            y el abrazo solar del
+            <button type="button" class="glossary-link" onclick="openGlossary('achiote')">achiote</button>.
+            Como gran lección de taller, aprendimos a dejar que el olfato guíe el punto exacto del refrito antes de llevar la cuchara a la boca.
+          </p>
+        </div>
+      </div>
+
+      <!-- Mosaico Visual Editorial con Bloques de Color (15 fotos únicas + 3 cápsulas de color) -->
+      <div id="mosaic-c2" class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 auto-rows-[220px] sm:auto-rows-[240px] gap-4 grid-flow-dense reveal"></div>
+
+      <!-- Franja Memorias en Movimiento (3 videos de Crónica II) -->
+      <div class="mt-16 reveal">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-6">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-[0.2em] text-achiote">Memorias en Movimiento · Capítulo II</span>
+            <h3 class="font-editorial font-bold text-2xl sm:text-3xl text-carbon mt-1">Ritmo, mesa y aromas de azotea</h3>
+          </div>
+          <span class="px-3.5 py-1 rounded-full bg-achiote/15 text-achiote text-xs font-bold">3 registros audiovisuales</span>
+        </div>
+        <div id="videos-c2" class="grid grid-cols-1 lg:grid-cols-3 gap-6"></div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===================================================================== -->
+  <!-- CRÓNICA III · COCO, TUBÉRCULOS Y FOGÓN                                -->
+  <!-- Acento: Amarillo Plátano (#F4B942) + Coral Chontaduro (#E86F51)       -->
+  <!-- ===================================================================== -->
+  <article id="cronica-3" class="py-20 sm:py-28 bg-coco relative">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+
+      <!-- Cabecera de Crónica III -->
+      <div class="max-w-4xl reveal">
+        <div class="flex flex-wrap items-center gap-3 mb-4">
+          <span class="px-4 py-1.5 rounded-full bg-platano text-carbon text-xs font-bold uppercase tracking-widest">Crónica III</span>
+          <span class="text-xs font-semibold uppercase tracking-widest text-chontaduro">Alquimia del Fogón · Guisos y Raíces</span>
+        </div>
+        <h2 class="font-editorial font-black text-4xl sm:text-6xl text-carbon leading-[1.04]">
+          Coco, Tubérculos y Fogón
+        </h2>
+        <p class="mt-4 font-fraunces italic text-xl sm:text-2xl text-carbon/75">
+          El tiempo en las ollas del Pacífico no se mide en cronómetros: se escucha hasta que el coco se vuelve seda y los tubérculos abrazan el caldo.
+        </p>
+      </div>
+
+      <!-- Texto Editorial de Crónica III -->
+      <div class="mt-10 grid grid-cols-1 lg:grid-cols-12 gap-8 reveal">
+        <div class="lg:col-span-6 space-y-4 text-base sm:text-lg leading-relaxed text-carbon/90">
+          <p class="drop-cap">
+            Pocas técnicas revelan tanto cariño como rallar y estrujar el coco a mano para separar sus dos vidas: la
+            <button type="button" class="glossary-link" onclick="openGlossary('leche_coco')">segunda leche</button>,
+            más ligera, que cuece y perfuma despacio, y la primera extracción, densa y brillante, que se reserva para el cierre a fuego suave sin hervir de más. Sobre esa emulsión nacen monumentos del sabor como el
+            <button type="button" class="glossary-link" onclick="openGlossary('encocado')">encocado</button>,
+            el <button type="button" class="glossary-link" onclick="openGlossary('tapao')">tapao</button>,
+            el <button type="button" class="glossary-link" onclick="openGlossary('atollado')">atollado</button>,
+            el <button type="button" class="glossary-link" onclick="openGlossary('pusandao')">pusandao</button>
+            y el <button type="button" class="glossary-link" onclick="openGlossary('arroz_clavado')">arroz clavado</button>.
+          </p>
+        </div>
+        <div class="lg:col-span-6 space-y-4 text-base sm:text-lg leading-relaxed text-carbon/90">
+          <p>
+            Junto a la palma crecen las raíces generosas de los
+            <button type="button" class="glossary-link" onclick="openGlossary('pancoger')">cultivos de pancoger</button>:
+            yuca, <button type="button" class="glossary-link" onclick="openGlossary('name')">ñame</button>,
+            <button type="button" class="glossary-link" onclick="openGlossary('papa_china')">papa china o achín</button>
+            y <button type="button" class="glossary-link" onclick="openGlossary('rascadera')">rascadera</button>.
+            A su alrededor florece también la tradición horneada de los
+            <button type="button" class="glossary-link" onclick="openGlossary('amasijos')">amasijos del Pacífico</button>,
+            recordándonos que la cocina costera es tan rica en texturas crocantes y masas tibias como en caldos profundos.
+          </p>
+        </div>
+      </div>
+
+      <!-- Mosaico Visual Editorial con Bloques de Color (15 fotos únicas + 3 cápsulas de color) -->
+      <div id="mosaic-c3" class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 auto-rows-[220px] sm:auto-rows-[240px] gap-4 grid-flow-dense reveal"></div>
+
+      <!-- Franja Memorias en Movimiento (4 videos de Crónica III) -->
+      <div class="mt-16 reveal">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-6">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-[0.2em] text-chontaduro">Memorias en Movimiento · Capítulo III</span>
+            <h3 class="font-editorial font-bold text-2xl sm:text-3xl text-carbon mt-1">Estrujar el coco y cuidar la llama</h3>
+          </div>
+          <span class="px-3.5 py-1 rounded-full bg-platano/45 text-carbon text-xs font-bold">4 registros audiovisuales</span>
+        </div>
+        <div id="videos-c3" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===================================================================== -->
+  <!-- CRÓNICA IV · FRUTOS DEL MAR, RÍO Y MANGLAR                            -->
+  <!-- Acento: Azul Marea (#104E6B) + Verde Selva (#0F4C3A)                  -->
+  <!-- ===================================================================== -->
+  <article id="cronica-4" class="py-20 sm:py-28 bg-marea text-coco relative overflow-hidden">
+    <!-- Detalle orgánico de onda superior -->
+    <svg class="absolute top-0 left-0 w-full h-20 text-coco/10 pointer-events-none" viewBox="0 0 1440 100" preserveAspectRatio="none">
+      <path fill="currentColor" d="M0,50 C360,110 720,-10 1080,50 C1260,80 1380,60 1440,40 L1440,0 L0,0 Z"/>
+    </svg>
+
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 relative z-10">
+
+      <!-- Cabecera de Crónica IV -->
+      <div class="max-w-4xl reveal">
+        <div class="flex flex-wrap items-center gap-3 mb-4">
+          <span class="px-4 py-1.5 rounded-full bg-platano text-carbon text-xs font-bold uppercase tracking-widest">Crónica IV</span>
+          <span class="text-xs font-semibold uppercase tracking-widest text-platano/90">Agua Dulce y Agua Salada · Biodiversidad</span>
+        </div>
+        <h2 class="font-editorial font-black text-4xl sm:text-6xl text-coco leading-[1.04]">
+          Frutos del Mar, Río y Manglar
+        </h2>
+        <p class="mt-4 font-fraunces italic text-xl sm:text-2xl text-coco/85">
+          Donde el río abraza al océano nacen los oficios que sostienen la mesa costera: la lectura de las mareas y la sabiduría del barro.
+        </p>
+      </div>
+
+      <!-- Texto Editorial de Crónica IV -->
+      <div class="mt-10 grid grid-cols-1 lg:grid-cols-12 gap-8 reveal">
+        <div class="lg:col-span-6 space-y-4 text-base sm:text-lg leading-relaxed text-coco/90">
+          <p class="drop-cap drop-cap-gold">
+            En la <button type="button" class="glossary-link-light" onclick="openGlossary('bocana')">bocana</button>
+            se encuentran dos mundos. Allí la
+            <button type="button" class="glossary-link-light" onclick="openGlossary('pesca_artesanal')">pesca artesanal</button>
+            respetuosa de las tallas y las vedas convive con la
+            <button type="button" class="glossary-link-light" onclick="openGlossary('pesca_manglar')">pesca de manglar</button>,
+            protagonizada por las mujeres piangüeras que entran entre raíces y lodo para leer el suelo con la yema de los dedos y hallar la
+            <button type="button" class="glossary-link-light" onclick="openGlossary('piangua')">piangua</button>.
+          </p>
+        </div>
+        <div class="lg:col-span-6 space-y-4 text-base sm:text-lg leading-relaxed text-coco/90">
+          <p>
+            Desde el Pacífico norte —Nuquí, Bahía Solano y Juradó— hasta el Valle del Atrato y las costas caucanas, el paisaje entrega cangrejos,
+            <button type="button" class="glossary-link-light" onclick="openGlossary('jaiba')">jaiba</button>,
+            <button type="button" class="glossary-link-light" onclick="openGlossary('camaron_titi')">camarón tití</button>
+            y pescados de río y de mar. En clase evocamos el legado inmenso de cocineras investigadoras como la maestra <strong>Teófila Betancur de Guapi</strong>, cuya vida enseñó a todo un país que el producto del manglar merece rigor, gratitud y conservación.
+          </p>
+        </div>
+      </div>
+
+      <!-- Mosaico Visual Editorial con Bloques de Color (15 fotos únicas + 3 cápsulas de color) -->
+      <div id="mosaic-c4" class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 auto-rows-[220px] sm:auto-rows-[240px] gap-4 grid-flow-dense reveal"></div>
+
+      <!-- Franja Memorias en Movimiento (4 videos de Crónica IV) -->
+      <div class="mt-16 reveal">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-6">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-[0.2em] text-platano">Memorias en Movimiento · Capítulo IV</span>
+            <h3 class="font-editorial font-bold text-2xl sm:text-3xl text-coco mt-1">Sincronía en estación y mesa común</h3>
+          </div>
+          <span class="px-3.5 py-1 rounded-full bg-coco/15 text-platano text-xs font-bold">4 registros audiovisuales</span>
+        </div>
+        <div id="videos-c4" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===================================================================== -->
+  <!-- CRÓNICA V · BEBIDAS, CULTURA VIVA E IDENTIDAD                         -->
+  <!-- Acento: Coral Chontaduro (#E86F51) + Azul Marea (#104E6B)             -->
+  <!-- ===================================================================== -->
+  <article id="cronica-5" class="py-20 sm:py-28 bg-coco bg-pacific-pattern border-b border-selva/15 relative">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+
+      <!-- Cabecera de Crónica V -->
+      <div class="max-w-4xl reveal">
+        <div class="flex flex-wrap items-center gap-3 mb-4">
+          <span class="px-4 py-1.5 rounded-full bg-chontaduro text-coco text-xs font-bold uppercase tracking-widest">Crónica V</span>
+          <span class="text-xs font-semibold uppercase tracking-widest text-marea">Espiritualidad, Fiesta y Ética Culinaria</span>
+        </div>
+        <h2 class="font-editorial font-black text-4xl sm:text-6xl text-marea leading-[1.04]">
+          Bebidas, Cultura Viva e Identidad
+        </h2>
+        <p class="mt-4 font-fraunces italic text-xl sm:text-2xl text-carbon/75">
+          En el Pacífico se cocina cantando, se destila memoria y se defiende la vida a través de la soberanía alimentaria.
+        </p>
+      </div>
+
+      <!-- Texto Editorial de Crónica V -->
+      <div class="mt-10 grid grid-cols-1 lg:grid-cols-12 gap-8 reveal">
+        <div class="lg:col-span-6 space-y-4 text-base sm:text-lg leading-relaxed text-carbon/90">
+          <p class="drop-cap">
+            Cocinar en el litoral es un acto comunitario, espiritual y político. El
+            <button type="button" class="glossary-link" onclick="openGlossary('viche')">viche o biche</button>
+            —reconocido como patrimonio cultural inmaterial mediante la Ley 2158 de 2021— acompaña nacimientos, curaciones y celebraciones. Mientras las ollas borbotean, los
+            <button type="button" class="glossary-link" onclick="openGlossary('cantos_cocina')">cantos de cocina</button>
+            sazonan la memoria al lado de los
+            <button type="button" class="glossary-link" onclick="openGlossary('alabaos')">alabaos</button>,
+            la <button type="button" class="glossary-link" onclick="openGlossary('chirimia')">chirimía</button>
+            y el <button type="button" class="glossary-link" onclick="openGlossary('currulao')">currulao</button>,
+            vibrando en escenarios como
+            <button type="button" class="glossary-link" onclick="openGlossary('san_pacho')">San Pacho</button>
+            y el <button type="button" class="glossary-link" onclick="openGlossary('petronio')">Festival Petronio Álvarez</button>.
+          </p>
+        </div>
+        <div class="lg:col-span-6 space-y-4 text-base sm:text-lg leading-relaxed text-carbon/90">
+          <p>
+            Esta riqueza nace también del encuentro intercultural con los pueblos indígenas
+            <button type="button" class="glossary-link" onclick="openGlossary('embera_wounaan')">Emberá (Dobida y Eyabida) y Wounaan</button>,
+            guardianes de la selva húmeda y los ríos. Cerrar esta cátedra nos deja una convicción ética: como gastrónomos no podemos celebrar los sabores del Pacífico ignorando las brechas sociales del territorio. Honrar su cocina exige defender la dignidad de quienes la siembran, la pescan y la cocinan.
+          </p>
+        </div>
+      </div>
+
+      <!-- Mosaico Visual Editorial con Bloques de Color (15 fotos únicas + 3 cápsulas de color) -->
+      <div id="mosaic-c5" class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 auto-rows-[220px] sm:auto-rows-[240px] gap-4 grid-flow-dense reveal"></div>
+
+      <!-- Franja Memorias en Movimiento (3 videos de Crónica V) -->
+      <div class="mt-16 reveal">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-6">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-[0.2em] text-chontaduro">Memorias en Movimiento · Capítulo V</span>
+            <h3 class="font-editorial font-bold text-2xl sm:text-3xl text-carbon mt-1">Memoria viva, diálogo y degustación</h3>
+          </div>
+          <span class="px-3.5 py-1 rounded-full bg-chontaduro/15 text-chontaduro text-xs font-bold">3 registros audiovisuales</span>
+        </div>
+        <div id="videos-c5" class="grid grid-cols-1 lg:grid-cols-3 gap-6"></div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ===================================================================== -->
+  <!-- 6. GLOSARIO INTERACTIVO DEL PACÍFICO EN 5 CATEGORÍAS                  -->
+  <!-- ===================================================================== -->
+  <section id="glosario" class="py-20 sm:py-28 bg-arena/80 border-b border-selva/15">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+
+      <!-- Cabecera del Glosario -->
+      <div class="text-center max-w-3xl mx-auto mb-10 reveal">
+        <span class="px-4 py-1.5 rounded-full bg-selva text-platano text-xs font-bold uppercase tracking-widest">Saberes del Litoral · 44 Voces</span>
+        <h2 class="mt-4 font-editorial font-black text-4xl sm:text-5xl text-marea">
+          Glosario Interactivo del Pacífico
+        </h2>
+        <p class="mt-3 text-base sm:text-lg text-carbon/80">
+          Explora por categoría o busca cualquier hierba, ingrediente, técnica, oficio o expresión cultural trabajada durante nuestra cátedra.
+        </p>
+      </div>
+
+      <!-- Buscador rápido + Pestañas de 5 Categorías -->
+      <div class="max-w-5xl mx-auto mb-10 space-y-5 no-print reveal">
+        <!-- Buscador -->
+        <div class="relative max-w-xl mx-auto">
+          <svg class="w-5 h-5 text-selva/60 absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+          </svg>
+          <input
+            id="glossary-search"
+            type="text"
+            placeholder="Buscar término (ej. chillangua, piangua, viche, fufú, piedra...)"
+            oninput="renderGlossaryGrid()"
+            class="w-full pl-12 pr-4 py-3.5 rounded-full bg-coco border border-selva/20 text-sm text-carbon placeholder:text-carbon/50 focus:outline-none focus:ring-2 focus:ring-achiote shadow-sm"
+          />
+        </div>
+
+        <!-- Pestañas de Categoría -->
+        <div id="glossary-tabs" class="flex flex-wrap items-center justify-center gap-2">
+          <button type="button" data-cat="all" onclick="setGlossaryCategory('all')"
+            class="g-tab px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-carbon text-coco shadow-sm cursor-pointer transition-all">
+            Todos (44)
+          </button>
+          <button type="button" data-cat="azotea" onclick="setGlossaryCategory('azotea')"
+            class="g-tab px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-coco text-selva border border-selva/25 hover:bg-selva hover:text-coco cursor-pointer transition-all">
+            🌿 Hierbas de Azotea (7)
+          </button>
+          <button type="button" data-cat="ingredientes" onclick="setGlossaryCategory('ingredientes')"
+            class="g-tab px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-coco text-achiote border border-achiote/25 hover:bg-achiote hover:text-coco cursor-pointer transition-all">
+            🥥 Ingredientes (11)
+          </button>
+          <button type="button" data-cat="tecnicas" onclick="setGlossaryCategory('tecnicas')"
+            class="g-tab px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-coco text-carbon border border-platano hover:bg-platano cursor-pointer transition-all">
+            🔥 Técnicas y Platos (11)
+          </button>
+          <button type="button" data-cat="oficios" onclick="setGlossaryCategory('oficios')"
+            class="g-tab px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-coco text-marea border border-marea/25 hover:bg-marea hover:text-coco cursor-pointer transition-all">
+            🪨 Utensilios y Oficios (6)
+          </button>
+          <button type="button" data-cat="cultura" onclick="setGlossaryCategory('cultura')"
+            class="g-tab px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-coco text-chontaduro border border-chontaduro/30 hover:bg-chontaduro hover:text-coco cursor-pointer transition-all">
+            🥁 Bebidas y Patrimonio (9)
+          </button>
+        </div>
+      </div>
+
+      <!-- Cuadrícula de Tarjetas del Glosario -->
+      <div id="glossary-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 reveal"></div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 7. CONTRAPORTADA EDITORIAL Y CRÉDITOS                                 -->
+  <!-- ===================================================================== -->
+  <footer id="creditos" class="bg-carbon text-coco pt-20 pb-16 relative overflow-hidden">
+    <!-- Franja multicolor del Pacífico -->
+    <div class="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-selva via-platano via-achiote to-marea"></div>
+
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center border-b border-coco/15 pb-14">
+        <div class="lg:col-span-6">
+          <span class="text-xs font-bold uppercase tracking-[0.25em] text-platano">Contraportada · Edición Definitiva</span>
+          <h2 class="mt-3 font-editorial font-black text-4xl sm:text-6xl text-coco leading-none">
+            MAREA <span class="text-achiote italic font-normal">&amp;</span> AZOTEA
+          </h2>
+          <p class="mt-5 text-coco/75 max-w-lg leading-relaxed text-sm sm:text-base">
+            Crónica de las Cocinas del Pacífico. Un tributo a las portadoras de tradición, a los ecosistemas de selva y manglar, y a cada aprendizaje vivido frente al fogón universitario.
+          </p>
+
+          <div class="mt-7 flex flex-wrap gap-3 no-print">
+            <a href="#portada"
+              class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-platano text-carbon font-bold text-xs uppercase tracking-wider hover:bg-coco transition-colors">
+              ↑ Volver a la Portada
+            </a>
+            <button type="button" onclick="window.print()"
+              class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-coco/10 hover:bg-achiote text-coco border border-coco/20 font-semibold text-xs uppercase tracking-wider transition-colors cursor-pointer">
+              Guardar como PDF
+            </button>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="p-7 sm:p-9 rounded-3xl bg-coco/5 border border-coco/15 grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <span class="text-[10px] font-bold uppercase tracking-widest text-platano block">Crónica y Curaduría</span>
+              <p class="font-editorial font-bold text-xl text-coco mt-1">Aida Arteaga</p>
+            </div>
+            <div>
+              <span class="text-[10px] font-bold uppercase tracking-widest text-platano block">Programa Académico</span>
+              <p class="font-editorial font-bold text-xl text-coco mt-1">Gastronomía y Artes Culinarias</p>
+            </div>
+            <div>
+              <span class="text-[10px] font-bold uppercase tracking-widest text-platano block">Facultad</span>
+              <p class="font-editorial font-semibold text-lg text-coco/95 mt-1">Facultad de Creación y Hábitat</p>
+            </div>
+            <div>
+              <span class="text-[10px] font-bold uppercase tracking-widest text-platano block">Institución y Año</span>
+              <p class="font-editorial font-semibold text-lg text-coco/95 mt-1">Pontificia Universidad Javeriana Cali · 2026</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-coco/55">
+        <p>MAREA &amp; AZOTEA · Crónica de las Cocinas del Pacífico Colombiano</p>
+        <p>Publicación digital académica · Cali, Valle del Cauca</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL: GLOSARIO INTERACTIVO                                           -->
+  <!-- ===================================================================== -->
+  <div id="glossary-modal" class="hidden fixed inset-0 z-50 bg-carbon/80 backdrop-blur-sm flex items-center justify-center p-4" onclick="closeGlossary()">
+    <div class="bg-coco text-carbon max-w-lg w-full rounded-3xl p-7 sm:p-8 shadow-2xl border border-selva/20 relative" onclick="event.stopPropagation()">
+      <button type="button" onclick="closeGlossary()" aria-label="Cerrar ficha del glosario"
+        class="absolute top-4 right-4 w-9 h-9 rounded-full bg-arena hover:bg-achiote hover:text-coco flex items-center justify-center transition-colors cursor-pointer font-bold">
+        ✕
+      </button>
+      <span id="gm-cat" class="inline-block px-3.5 py-1 rounded-full text-[11px] font-bold uppercase tracking-widest"></span>
+      <h3 id="gm-title" class="font-editorial font-black text-3xl text-marea mt-3"></h3>
+      <p id="gm-subtitle" class="font-fraunces italic text-sm text-achiote mt-1"></p>
+      <p id="gm-desc" class="mt-4 text-sm sm:text-base text-carbon/90 leading-relaxed"></p>
+      <div class="mt-5 p-4 rounded-2xl bg-arena border border-selva/10">
+        <span class="text-[10px] font-bold uppercase tracking-widest text-selva block">En la cocina y el territorio</span>
+        <p id="gm-note" class="text-xs sm:text-sm text-carbon/85 mt-1 leading-relaxed"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL: LIGHTBOX FLUIDO SIN NOMBRES DE ARCHIVO                         -->
+  <!-- ===================================================================== -->
+  <div id="lightbox-modal" class="hidden fixed inset-0 z-50 bg-carbon/95 backdrop-blur-md flex items-center justify-center p-3 sm:p-6" onclick="closeLightbox()">
+    <div class="max-w-5xl w-full flex flex-col items-center relative" onclick="event.stopPropagation()">
+
+      <!-- Barra superior del Lightbox (Sin nombres de archivo) -->
+      <div class="w-full flex items-center justify-between gap-3 mb-3 text-coco">
+        <div class="flex items-center gap-3 text-xs font-semibold">
+          <span id="lb-counter" class="px-3.5 py-1 rounded-full bg-platano text-carbon font-bold">1 / 78</span>
+          <span id="lb-chapter" class="text-coco/85 uppercase tracking-wider text-[11px] hidden sm:inline"></span>
+        </div>
+        <div class="flex items-center gap-2">
+          <a id="lb-drive-btn" href="#" target="_blank" rel="noopener noreferrer"
+            class="px-3.5 py-1.5 rounded-full bg-coco/15 hover:bg-platano hover:text-carbon text-coco text-xs font-semibold transition-colors">
+            Abrir en Drive ↗
+          </a>
+          <button type="button" onclick="closeLightbox()" aria-label="Cerrar visor"
+            class="px-3.5 py-1.5 rounded-full bg-achiote hover:bg-chontaduro text-coco text-xs font-bold uppercase transition-colors cursor-pointer">
+            Cerrar ✕
+          </button>
+        </div>
+      </div>
+
+      <!-- Visor central con flechas Anterior / Siguiente -->
+      <div class="relative w-full flex items-center justify-center">
+        <button type="button" onclick="navigateLightbox(-1)" aria-label="Fotografía anterior"
+          class="absolute left-1 sm:left-3 z-20 w-11 h-11 rounded-full bg-carbon/80 hover:bg-platano hover:text-carbon text-coco border border-coco/20 flex items-center justify-center text-2xl transition-colors cursor-pointer shadow-lg">
+          ‹
+        </button>
+
+        <div id="lb-stage" class="w-full min-h-[45vh] max-h-[72vh] rounded-2xl overflow-hidden shadow-2xl flex items-center justify-center bg-carbon/60 border border-coco/10"></div>
+
+        <button type="button" onclick="navigateLightbox(1)" aria-label="Fotografía siguiente"
+          class="absolute right-1 sm:right-3 z-20 w-11 h-11 rounded-full bg-carbon/80 hover:bg-platano hover:text-carbon text-coco border border-coco/20 flex items-center justify-center text-2xl transition-colors cursor-pointer shadow-lg">
+          ›
+        </button>
+      </div>
+
+      <!-- Pie de foto editorial poético -->
+      <p id="lb-caption" class="mt-4 max-w-2xl text-center font-fraunces italic text-base sm:text-lg text-coco/95 px-4"></p>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- DATOS EDITORIALES, MOSAICOS, VIDEOS, LIGHTBOX Y GLOSARIO (JS)         -->
+  <!-- ===================================================================== -->
+  <script>
+    // =========================================================================
+    // 1. UTILIDADES INTELIGENTES PARA GOOGLE DRIVE (CON RESPALDO EN CASCADA)
+    // =========================================================================
+    const driveThumb = (id, sz = 1200) => `https://drive.google.com/thumbnail?id=${id}&sz=w${sz}`;
+    const driveLh3 = (id, sz = 1200) => `https://lh3.googleusercontent.com/d/${id}=w${sz}`;
+    const driveView = (id) => `https://drive.google.com/file/d/${id}/view`;
+    const drivePreview = (id) => `https://drive.google.com/file/d/${id}/preview`;
+
+    let driveNoticeTriggered = false;
+    let driveNoticeDismissed = false;
+
+    function showDriveNotice() {
+      if (driveNoticeTriggered || driveNoticeDismissed) return;
+      driveNoticeTriggered = true;
+      const el = document.getElementById('drive-notice');
+      if (el) el.classList.remove('hidden');
+    }
+
+    function dismissDriveNotice() {
+      driveNoticeDismissed = true;
+      const el = document.getElementById('drive-notice');
+      if (el) el.classList.add('hidden');
+    }
+
+    // Respaldo en cascada para la imagen de portada
+    function handleCoverFallback(img) {
+      const id = img.dataset.driveId;
+      if (!img.dataset.triedLh3) {
+        img.dataset.triedLh3 = '1';
+        img.src = driveLh3(id, 1600);
+        return;
+      }
+      img.classList.add('hidden');
+      document.getElementById('cover-fallback-svg').classList.remove('hidden');
+      showDriveNotice();
+    }
+
+    // Respaldo en cascada para fotografías de mosaico (thumbnail -> lh3 -> tarjeta artística)
+    function handleMosaicImgError(img) {
+      const id = img.dataset.driveId;
+      if (!img.dataset.triedLh3) {
+        img.dataset.triedLh3 = '1';
+        img.src = driveLh3(id, 1200);
+        return;
+      }
+      img.classList.add('hidden');
+      const fallback = img.parentElement.querySelector('.artistic-fallback');
+      if (fallback) fallback.classList.remove('hidden');
+      showDriveNotice();
+    }
+
+    // Respaldo en cascada para imagen dentro del Lightbox
+    function handleLightboxImgError(img) {
+      const id = img.dataset.driveId;
+      if (!img.dataset.triedLh3) {
+        img.dataset.triedLh3 = '1';
+        img.src = driveLh3(id, 1600);
+        return;
+      }
+      img.classList.add('hidden');
+      const fallback = img.parentElement.querySelector('.lb-fallback');
+      if (fallback) fallback.classList.remove('hidden');
+      showDriveNotice();
+    }
+
+    // =========================================================================
+    // 2. CATÁLOGO COMPLETO DE LAS 5 CRÓNICAS (78 FOTOS ÚNICAS + 18 VIDEOS)
+    // =========================================================================
+    const chroniclesData = {
+      c1: {
+        chapterTitle: 'Crónica I · Territorio, Saberes y Herramientas Ancestrales',
+        fallbackGrad: 'from-selva via-marea to-platano',
+        photos: [
+          { id: '1SBMpRwPXsDneH03gMtImLKrOwg3G3i5m', caption: 'Primer encuentro sensorial con la despensa viva del litoral.', span: 'sm:col-span-2 lg:col-span-2 lg:row-span-2' },
+          { id: '1KarzUQyM3z1QLzK33cPErQu8UzJ_O1kV', caption: 'Reconocimiento táctil de semillas, frutos y hojas recién llegadas.' },
+          { id: '1HU1Wmp8zINq3Sdjv2VSCQSVUSZW3DecD', caption: 'La belleza silvestre de la materia prima antes de tocar el fuego.' },
+          { id: '1mI6RKKdmMC3_-r747TPuDKM6TX6uvKqq', caption: 'Diálogo cercano en mesa: observar y oler como primer gesto técnico.', span: 'lg:row-span-2' },
+          { id: '1U74oI6Dm7gWoivGS3XhlX6JhRzzDWhzX', caption: 'La piedra de moler: memoria sólida que atraviesa generaciones.' },
+          { id: '1a4fwCuSBxCNXm4EbpNOXDMqQ3gB-3TQR', caption: 'El grano de maíz quebrado a pulso, conservando su aroma natural.', span: 'sm:col-span-2' },
+          { id: '1yxZPVLl9ojOzuGLhU6FjJM22G-RRPfLr', caption: 'Paciencia y ritmo constante en la molienda artesanal.' },
+          { id: '1q7uKOMBCHG1NvrVmFeSdACidAwagB6d7', caption: 'Del grano entero a la masa húmeda lista para el fogón.' },
+          { id: '1JxqwEQw-bOMye9-gHsuuQd98kjad02sl', caption: 'Plátano cocido y tibio: el corazón maleable de bolones y fufú.', span: 'sm:col-span-2 lg:row-span-2' },
+          { id: '1QdJ7bR9VF-e8ql6f6DWUwHvdEwQ3T2DV', caption: 'Manos moldeando el Juan Valerio con generosidad y destreza.' },
+          { id: '1TAPQks8zqytt79kpJIWkD_992bJU82qw', caption: 'Contraste de texturas entre el verde, el dorado y la tierra.' },
+          { id: '1i_3mxAtOMgL-SjBswfDn7GmR6jcFZQYA', caption: 'Acompañamiento y retroalimentación en el punto exacto de la masa.' },
+          { id: '1IJnU2Q1i3_r6M3-l19AK3QJaL5mseJb8', caption: 'Herramientas ancestrales que dialogan con la formación universitaria.' },
+          { id: '1YYhtyNhPxs0ptfW41DjNx98hhF88ksd3', caption: 'Detalles del taller sensorial donde cada sentido aprende a recordar.', span: 'sm:col-span-2' },
+          { id: '1b_7-klpCpaK5EIOn5UXKDaoLbv-jVdGW', caption: 'Concentración colectiva alrededor de la preparación tradicional.' },
+          { id: '1PjOkjFnzk_Vh-nwbFJX7byeqLs8Kx6VU', caption: 'Aromas tibios de maíz y plátano que anuncian la degustación.' },
+          { id: '12shCF04SvndaYRQ8VZJLa9L3rv4w2PN1', caption: 'Primeras formas terminadas: crocancia exterior y centro suave.' },
+          { id: '10Mv_pundZsAmINPSZO4WHoGN_ZUgzjOA', caption: 'Mesa compartida al cierre del encuentro sensorial.' }
+        ],
+        cards: [
+          {
+            insertAfterIndex: 2,
+            span: 'sm:col-span-2',
+            bgClass: 'bg-selva text-coco',
+            tag: 'Voz real de clase',
+            tagClass: 'text-platano',
+            quote: '“En nuestros territorios hay dos piedras: una para quebrar el maíz y otra para molerlo. Aquí se cocina el plátano y se hace fufú, o los bolones que comparten raíz con la marranita y el Juan Valerio.”'
+          },
+          {
+            insertAfterIndex: 9,
+            span: '',
+            bgClass: 'bg-platano text-carbon',
+            tag: 'Retroalimentación',
+            tagClass: 'text-selva',
+            quote: 'Trabajar el plátano aún tibio permite sellar el relleno sin fracturar la masa y potencia su dulzor natural.'
+          },
+          {
+            insertAfterIndex: 14,
+            span: '',
+            bgClass: 'bg-marea text-coco',
+            tag: 'Puente Cultural',
+            tagClass: 'text-platano',
+            quote: 'Del fufú al bolón y al Juan Valerio: la cocina del Pacífico no entiende de fronteras políticas, sino de agua y memoria.'
+          }
+        ],
+        videos: [
+          { id: '1gBA-glWMbJZ94hHygw1LlGIqAO53hekU', title: 'La piedra de moler, el maíz y el Juan Valerio', subtitle: 'Explicación viva sobre las dos piedras tradicionales y las masas de plátano.', cardBg: 'bg-selva text-coco', badgeBg: 'bg-platano text-carbon' },
+          { id: '1rjeC0gsopzjn_TEjwRTqviZmx8Lk1nAs', title: 'Las piedras grandes del territorio', subtitle: 'El peso y la ergonomía ancestral detrás de la molienda comunitaria.', cardBg: 'bg-marea text-coco', badgeBg: 'bg-platano text-carbon' },
+          { id: '14VU5tG5iBFhli_CL6alaYxjJVdyGXum0', title: 'Preparando el fufú: manos al plátano maduro', subtitle: 'Técnica de pelado, cocción y majado para lograr una textura sedosa.', cardBg: 'bg-achiote text-coco', badgeBg: 'bg-coco text-achiote' },
+          { id: '1EhdCEdujvt9IRU5vY-LOOkoOr6u2hoNM', title: 'Bolones, chicharrón y fronteras compartidas', subtitle: 'Encuentro gastronómico entre el Pacífico colombiano y la costa ecuatoriana.', cardBg: 'bg-carbon text-coco', badgeBg: 'bg-platano text-carbon' }
+        ]
+      },
+
+      c2: {
+        chapterTitle: 'Crónica II · Hierbas de Azotea y Aromas de la Selva',
+        fallbackGrad: 'from-achiote via-selva to-platano',
+        photos: [
+          { id: '1iPAQoPowKoZFWKMumGKcRlkZrg8VNdir', caption: 'Frescura recién cortada: el verde profundo que anuncia la azotea.', span: 'sm:col-span-2 lg:row-span-2' },
+          { id: '1zT-1epvMucQqzugiFoBOzjHQ_HnfMFvj', caption: 'Aromas que despiertan la memoria botánica del litoral.' },
+          { id: '1RmD3ONN5SL2XdvqSUSwyNpJmh3Wvahxo', caption: 'Hojas de chillangua, chirarán y poleo listas para el cuchillo.' },
+          { id: '1pKWxM_UkLS35zZg4uaeaUa5BHIyWJ4rW', caption: 'Preparación minuciosa del mise en place aromático.', span: 'lg:row-span-2' },
+          { id: '10a7fyB3a2KIGAMXtgs3aZdoMugSWm9MP', caption: 'Estudio olfativo en brigada antes de encender las hornillas.' },
+          { id: '1JgVXJZGL2O3qdefWM-MB_7_u09LaY2uf', caption: 'Orden y color en la estación de cocina al iniciar la jornada.', span: 'sm:col-span-2' },
+          { id: '1AaRFMaZxw2uPhSPy2g0NA4ANPMZixeTC', caption: 'Cortes precisos que respetan la fibra y los aceites esenciales.' },
+          { id: '1RRKClbC6aFah3C_fGUUe0_3HWcEuvgGj', caption: 'Vegetales y hierbas de azotea en armonía cromática.' },
+          { id: '1i5R9Z88aIrSZs1ADTfp3aF4uyPtxvH6f', caption: 'El perfume verde se encuentra con el calor suave de la sartén.', span: 'sm:col-span-2 lg:row-span-2' },
+          { id: '1t5C4L27UlIGhidZ8mbTY8Hfr83FP9Mrv', caption: 'Construyendo bases profundas para sostener el sabor del plato.' },
+          { id: '1-wfJzKAQ73vTdeUezxwWdW51_bEyLtvi', caption: 'Ritmo compartido en estación: manos coordinadas en el refrito.' },
+          { id: '1JfioNWBCILM-hETUnnzxPmerZ7hMl2fW', caption: 'Aceite teñido con achiote: brillo solar y notas terrosas.' },
+          { id: '1ktJ6QBf1jzvyKniPSz9smsyCL7LHlh5Q', caption: 'Sofrito paciente a fuego bajo hasta perfumar toda la cocina.' },
+          { id: '1bPmCQ-f7T-L_2bwHi_tINjydBtqiZwgw', caption: 'Control del calor para proteger la delicadeza del pipilongo y el poleo.', span: 'sm:col-span-2' },
+          { id: '12t6eXVd6D7T8j0Yi_pQwc0ygEqRkXNJX', caption: 'El punto justo del refrito: base irremplazable de la cocina pacífica.' }
+        ],
+        cards: [
+          {
+            insertAfterIndex: 2,
+            span: 'sm:col-span-2',
+            bgClass: 'bg-achiote text-coco',
+            tag: 'Trío de Azotea',
+            tagClass: 'text-platano',
+            quote: 'Chillangua, chirarán y poleo: tres hojas cultivadas en canoas elevadas que definen la firma olfativa del Pacífico colombiano.'
+          },
+          {
+            insertAfterIndex: 7,
+            span: '',
+            bgClass: 'bg-selva text-coco',
+            tag: 'Dato de Taller',
+            tagClass: 'text-platano',
+            quote: 'El achiote nunca se quema: se infunde suavemente en aceite tibio y se retira para obtener un naranja limpio y sedoso.'
+          },
+          {
+            insertAfterIndex: 11,
+            span: '',
+            bgClass: 'bg-platano text-carbon',
+            tag: 'Olfato y Sazón',
+            tagClass: 'text-achiote',
+            quote: 'Cuando el refrito suelta su primer perfume dulce y herbal, el olfato avisa el instante exacto para recibir el caldo.'
+          }
+        ],
+        videos: [
+          { id: '1j109_qVr_FH5nmwlfcFUz4m4Ka5wryK2', title: 'Aromas y mise en place de azotea', subtitle: 'Organización de hierbas frescas y construcción del refrito base.', cardBg: 'bg-achiote text-coco', badgeBg: 'bg-platano text-carbon' },
+          { id: '1AACznwFMBuIHFwwWnw20A59lwbkiMaj0', title: 'El pulso de la técnica en mesa', subtitle: 'Cortes, texturas y diálogo entre ingredientes de selva.', cardBg: 'bg-selva text-coco', badgeBg: 'bg-platano text-carbon' },
+          { id: '12o661wcAUzxGfYgluwbE55DwIL5kMHbK', title: 'Ritmos y diálogo en el aula', subtitle: 'Acompañamiento docente y escucha activa alrededor del fogón.', cardBg: 'bg-marea text-coco', badgeBg: 'bg-coco text-marea' }
+        ]
+      },
+
+      c3: {
+        chapterTitle: 'Crónica III · Coco, Tubérculos y Fogón',
+        fallbackGrad: 'from-platano via-chontaduro to-achiote',
+        photos: [
+          { id: '19EuRmH2swBcWv4ckvpmpbvKnzSN01lLS', caption: 'Emplatado luminoso donde la crema de coco y el achiote se abrazan.', span: 'sm:col-span-2 lg:row-span-2' },
+          { id: '1vqcCP3iWxDZECf2Q7agTBQLfN12Gszdj', caption: 'Identidad en el plato: color vibrante y técnica al servicio de la tradición.' },
+          { id: '1gYe08TDhGvixk5Vff6WRk8mXF4TntZ0t', caption: 'Fuego vivo y reducción paciente en la línea caliente.' },
+          { id: '1pLqUcj20Oxced6AH6aApjc4Dm8Cr1rH_', caption: 'Integrando la leche de coco fresca para lograr brillo sin cortar la emulsión.', span: 'lg:row-span-2' },
+          { id: '13MpbJzuPDKPNt6vK2JGW19tbNksN5kBP', caption: 'Tubérculos y guarniciones doradas al punto exacto de crocancia.' },
+          { id: '1SdjY0lP4aeSUwJTcUiDnboYdZbF_hq2K', caption: 'Ajuste final de sazón, acidez y untuosidad antes de servir.', span: 'sm:col-span-2' },
+          { id: '1dDIE_w1mH485RaMJ0NMfy6Q4VSj5nAeW', caption: 'El borboteo suave que anuncia un encocado en su mejor momento.' },
+          { id: '1Vxj12j49H4ukxJcmBQ5XBCbRCtcjGWtg', caption: 'Alistando la vajilla para recibir los guisos de selva y costa.' },
+          { id: '1IwfBEABtEcXv4A_q2IipEwLsdR65mcHI', caption: 'Montaje en equipo cuidando temperatura, altura y armonía visual.', span: 'sm:col-span-2 lg:row-span-2' },
+          { id: '1JVBBTkpRvDtrSmVoHEKohqYH5uMStxEO', caption: 'Platos listos para la mesa de retroalimentación académica.' },
+          { id: '1WsXYuvtGwM94rMHztf8tyl1dSTPgts02', caption: 'Contraste entre salsas sedosas, arroces y raíces de pancoger.' },
+          { id: '1V8KyGxd731MsQqZkHgXPZAt-JV7IbF4M', caption: 'Orgullo de brigada frente al resultado de una jornada intensa.' },
+          { id: '1KK7EvghNnKerFX6rqKaL1gCCHIhLq2iO', caption: 'Detalle de cocciones lentas que concentran el alma del territorio.' },
+          { id: '1BQM4fsOKnSbN2vKL9I5tDKSTaK9szkOS', caption: 'Texturas de amasijos y raíces que redondean el menú del Pacífico.', span: 'sm:col-span-2' },
+          { id: '1sdkEphR6ZdU_TxauGPLBto34f7BEB3Ps', caption: 'Postal de cierre junto al fogón: sabores que permanecen en la memoria.' }
+        ],
+        cards: [
+          {
+            insertAfterIndex: 2,
+            span: 'sm:col-span-2',
+            bgClass: 'bg-platano text-carbon',
+            tag: 'Voz real de clase',
+            tagClass: 'text-achiote',
+            quote: '“Aquí estamos estrujando el coco: el tiempo en el fogón no se apura, se escucha hasta que la leche se convierte en crema.”'
+          },
+          {
+            insertAfterIndex: 7,
+            span: '',
+            bgClass: 'bg-chontaduro text-coco',
+            tag: 'Dos Extracciones',
+            tagClass: 'text-coco',
+            quote: 'La segunda leche cocina los tubérculos y carnes; la primera corona el plato al final para regalar brillo y sedosidad.'
+          },
+          {
+            insertAfterIndex: 11,
+            span: '',
+            bgClass: 'bg-selva text-coco',
+            tag: 'Raíces de Pancoger',
+            tagClass: 'text-platano',
+            quote: 'Yuca, ñame, papa china (achín) y rascadera: el sustento silencioso que equilibra la riqueza del coco.'
+          }
+        ],
+        videos: [
+          { id: '12bCkZUjRzcRjb3vJbKh5gnXfLL7xof-O', title: 'Estrujando el coco: extracción artesanal de la leche', subtitle: 'Prensado manual del coco rallado para separar primera y segunda extracción.', cardBg: 'bg-platano text-carbon', badgeBg: 'bg-selva text-coco' },
+          { id: '1tEtBpROW4-X1yAnFVTO-NU5WpSSyQ7IC', title: 'Fuego lento y reducción en olla', subtitle: 'Control de temperatura para concentrar sabores sin romper la emulsión.', cardBg: 'bg-chontaduro text-coco', badgeBg: 'bg-carbon text-platano' },
+          { id: '1lQOSoehGwSuCWHpBGl5CLj_r6n0PVEgj', title: 'El avance del fogón en equipo', subtitle: 'Coordinación en brigada durante la cocción de guisos y arroces.', cardBg: 'bg-selva text-coco', badgeBg: 'bg-platano text-carbon' },
+          { id: '1RrZcBLkonLh3klFBDMvXGEgQk1GaMEZF', title: 'Preparación de ingredientes base', subtitle: 'Alistamiento de tubérculos, fondos y acompañamientos tradicionales.', cardBg: 'bg-carbon text-coco', badgeBg: 'bg-platano text-carbon' }
+        ]
+      },
+
+      c4: {
+        chapterTitle: 'Crónica IV · Frutos del Mar, Río y Manglar',
+        fallbackGrad: 'from-marea via-selva to-carbon',
+        photos: [
+          { id: '1UDSr-GX1FOIROyjy68bdjUGANO8qyVpI', caption: 'Frescura del litoral: respeto absoluto por el producto de agua dulce y salada.', span: 'sm:col-span-2 lg:row-span-2' },
+          { id: '1KsqNWUdwDxR5PmZ_T2QcaHAWyTNS7v9m', caption: 'Limpieza cuidadosa y trazabilidad en cada estación de cocina.' },
+          { id: '16vdspFT0kkWbO82P65d2apd6D0uPXBbJ', caption: 'Encuentro de texturas marinas con el perfume de la selva húmeda.' },
+          { id: '143hGnFJPyi-_Pg1YJZ48O2IR5pMdWdZ_', caption: 'El ritmo de la cocina rinde tributo a la pesca artesanal de la bocana.', span: 'lg:row-span-2' },
+          { id: '1Ob-0KS0hb2pM4lZfGZ748sooQyzczvIG', caption: 'Puntos de cocción breves para conservar la jugosidad de pescados y mariscos.' },
+          { id: '1dbH8Dl62WmEGOjogwmLm38PaFRGc_T8B', caption: 'Trabajo colaborativo en la preparación de fondos y caldos costeros.', span: 'sm:col-span-2' },
+          { id: '1huTNBD90_dSM2d2qPQBkDNOTGal8ROrW', caption: 'Colores del mar y del manglar traduciéndose en el plato.' },
+          { id: '1dteumbNbSafwftUf3CwHrOr7KKiYZ5NN', caption: 'Atención al detalle en cada corte y porcionado.' },
+          { id: '1Vxc0Mq_CSIE91reoFXL2lI-iuQI4uvsj', caption: 'Armonía entre la delicadeza del marisco y la potencia del refrito.', span: 'sm:col-span-2 lg:row-span-2' },
+          { id: '1bvIPiDFFDdyq7SDZzfNPjLanGk7tMAaa', caption: 'Salsas brillantes que envuelven sin opacar el sabor marino.' },
+          { id: '1WUyONsGn_EX9Waq4kZUKb16b-i6VrPCM', caption: 'Porcionado generoso pensando siempre en la mesa compartida.' },
+          { id: '1d0Mx8B8fUy5bM0wqRNVvvFQ47MU7jTCZ', caption: 'Instante previo al pase: verificación de aroma y temperatura.' },
+          { id: '1B4unKHpqcGcp2a-mQ8JCGVV1bbn2M6Cb', caption: 'Presentación contemporánea con raíces profundas en Guapi y Nuquí.' },
+          { id: '1_qw-21LPhtqEJBONB7LJ-vbBrsB1KFRJ', caption: 'Conversación sobre sostenibilidad, vedas y cuidado del manglar.', span: 'sm:col-span-2' },
+          { id: '1Mw7nc4Ngs3O2TPaj8RjcfAk_vILrWmj7', caption: 'Cierre de servicio honrando a las mujeres piangüeras del Pacífico.' }
+        ],
+        cards: [
+          {
+            insertAfterIndex: 2,
+            span: 'sm:col-span-2',
+            bgClass: 'bg-selva text-coco border border-coco/15',
+            tag: 'Homenaje',
+            tagClass: 'text-platano',
+            quote: '“El legado de maestras como Teófila Betancur de Guapi nos recuerda que investigar la cocina del manglar es proteger la vida misma.”'
+          },
+          {
+            insertAfterIndex: 7,
+            span: '',
+            bgClass: 'bg-platano text-carbon',
+            tag: 'Oficio de Marea',
+            tagClass: 'text-marea',
+            quote: 'Las piangüeras leen el barro con las manos desnudas, guiadas por los ciclos lunares y el pulso de la marea baja.'
+          },
+          {
+            insertAfterIndex: 11,
+            span: '',
+            bgClass: 'bg-achiote text-coco',
+            tag: 'Biodiversidad',
+            tagClass: 'text-platano',
+            quote: 'De Nuquí y Bahía Solano al Valle del Atrato: respetar las tallas de pesca es el primer ingrediente de una cocina responsable.'
+          }
+        ],
+        videos: [
+          { id: '1s-d456DTyl4kXrHHaUyq7oG7s4ZrtLkL', title: 'Porcionado y servicio para la mesa común', subtitle: 'Distribución equitativa y cuidado estético antes de compartir en grupo.', cardBg: 'bg-carbon/45 text-coco border border-coco/15', badgeBg: 'bg-platano text-carbon' },
+          { id: '1j9qGmzNOGb53mVVTzbrAfcjqMRKSV2Km', title: 'Sincronía en estación de cocina', subtitle: 'Comunicación en brigada durante el momento más intenso del taller.', cardBg: 'bg-selva text-coco border border-coco/15', badgeBg: 'bg-platano text-carbon' },
+          { id: '1U7gdpVBD6tJg_k2qoZqdu32DQGEgAX5Z', title: 'Puntos de cocción y texturas', subtitle: 'Observación directa de jugosidad, temperatura y emulsión.', cardBg: 'bg-carbon/45 text-coco border border-coco/15', badgeBg: 'bg-platano text-carbon' },
+          { id: '1mU0BjNxWKF6bV4Jq7yEZurAkK-aeiq0w', title: 'Montaje y emplatado final', subtitle: 'Últimos trazos de color y aroma antes de presentar el plato.', cardBg: 'bg-selva text-coco border border-coco/15', badgeBg: 'bg-platano text-carbon' }
+        ]
+      },
+
+      c5: {
+        chapterTitle: 'Crónica V · Bebidas, Cultura Viva e Identidad',
+        fallbackGrad: 'from-chontaduro via-marea to-selva',
+        photos: [
+          { id: '1C7r_LcmfzuioltWf5e2YMyeg54j0-S8Y', caption: 'La cocina como espacio de encuentro, palabra y celebración colectiva.', span: 'sm:col-span-2 lg:row-span-2' },
+          { id: '1jVClGPMhu0xReOFkj3kWrvsvGOw9XbNT', caption: 'Memoria oral y aprendizaje compartido alrededor de la mesa.' },
+          { id: '1ZUBVkzKuezqQAaJDmfCP_LrkG1IEJgNZ', caption: 'Rostros, sonrisas y complicidad después de una jornada de fogón.' },
+          { id: '12WjR2n6XoD6PpvnOFkdmTYQBu3eb4JIp', caption: 'Detalles culturales que transforman una receta en patrimonio vivo.', span: 'lg:row-span-2' },
+          { id: '1bAmhKzEVRBIo5J3na0HxptuwZw9LtVej', caption: 'Degustación reflexiva: cada bocado cuenta la historia de una comunidad.' },
+          { id: '1voGpSAfRmz57W2hzYaYnLl7LB3d2RGV1', caption: 'Diálogo entre saberes afrodescendientes e indígenas del litoral.', span: 'sm:col-span-2' },
+          { id: '12as6RE-Xos4vYFo5bM5yvuQb4OJGXuKc', caption: 'Brindis simbólico por la tradición vichera y la música del Pacífico.' },
+          { id: '1nlGtTFat62Hm3F-ix4O8Uyz1rTxvy1rZ', caption: 'La alegría del currulao y la chirimía latiendo detrás de cada plato.' },
+          { id: '1RYUHheJNLCcT1nTHruZpj9OK_vAjT4mL', caption: 'Comunidad académica reunida para celebrar el cierre del ciclo.', span: 'sm:col-span-2 lg:row-span-2' },
+          { id: '1-MRIq6Vl2MaTsG3kn_v15AsZLevX80fq', caption: 'Colores festivos que evocan a San Pacho y al Festival Petronio Álvarez.' },
+          { id: '1eX91VWGF8IoTu_v2AW7Q6gv2BdxJxyyO', caption: 'Reflexión ética sobre soberanía alimentaria y justicia social.' },
+          { id: '1sFA9tSTe91o-VMtP5fW5gU9ObWadYeUW', caption: 'Instantáneas de gratitud hacia las portadoras de saber tradicional.' },
+          { id: '1Hq1Ra023MzIcXKuo-E7wM5VRjnTKNhOa', caption: 'El orgullo de pertenecer a una generación que cocina con conciencia.' },
+          { id: '1Xqnv_BTH8F_dqV9vmNc-vd6ywuAb_RnY', caption: 'Últimos abrazos y aprendizajes de la cátedra Cocinas del Pacífico.', span: 'sm:col-span-2' },
+          { id: '1QvZjDrbySmq68sXNjh7xcYTaZit4VhGx', caption: 'Postal final: el Pacífico se queda para siempre en nuestra manera de cocinar.' }
+        ],
+        cards: [
+          {
+            insertAfterIndex: 2,
+            span: 'sm:col-span-2',
+            bgClass: 'bg-chontaduro text-coco',
+            tag: 'Patrimonio Vivo',
+            tagClass: 'text-coco',
+            quote: '“El viche es destilado de caña, medicina ancestral y símbolo de libertad: protegido por la Ley 2158 de 2021 como patrimonio cultural inmaterial.”'
+          },
+          {
+            insertAfterIndex: 7,
+            span: '',
+            bgClass: 'bg-marea text-coco',
+            tag: 'Cantos de Cocina',
+            tagClass: 'text-platano',
+            quote: 'Cantar mientras se cocina no es adorno: es el ritmo que cuida el tiempo del fuego y transmite la historia a los más jóvenes.'
+          },
+          {
+            insertAfterIndex: 11,
+            span: '',
+            bgClass: 'bg-selva text-coco',
+            tag: 'Ética Gastronómica',
+            tagClass: 'text-platano',
+            quote: 'Celebrar la cocina del Pacífico nos compromete a visibilizar y defender la soberanía alimentaria de sus comunidades.'
+          }
+        ],
+        videos: [
+          { id: '1nE72YVo-RfLP5CcglIeC4uq02cepoqz7', title: 'Memoria viva y conversación en aula', subtitle: 'Reflexiones compartidas sobre identidad, territorio y oficio culinario.', cardBg: 'bg-chontaduro text-coco', badgeBg: 'bg-carbon text-platano' },
+          { id: '1fSKjMfS01KgE2LBL2KsIzshg6rDsIFNn', title: 'Cierre de jornada y degustación', subtitle: 'El momento de probar en comunidad los resultados del aprendizaje.', cardBg: 'bg-marea text-coco', badgeBg: 'bg-platano text-carbon' },
+          { id: '1z21A5-H_QeFl7-y6KVQaN7Oyub7ETe28', title: 'Saberes compartidos en movimiento', subtitle: 'Energía colectiva y celebración de las raíces del litoral.', cardBg: 'bg-selva text-coco', badgeBg: 'bg-platano text-carbon' }
+        ]
+      }
+    };
+
+    // =========================================================================
+    // 3. GLOSARIO COMPLETO DEL PACÍFICO (44 TÉRMINOS EN 5 CATEGORÍAS)
+    // =========================================================================
+    const glossaryCategories = {
+      azotea: { label: 'Hierbas de Azotea y Especias', badge: 'bg-selva text-platano', border: 'border-selva/20', accent: 'text-selva' },
+      ingredientes: { label: 'Ingredientes del Territorio', badge: 'bg-achiote text-coco', border: 'border-achiote/20', accent: 'text-achiote' },
+      tecnicas: { label: 'Técnicas y Preparaciones', badge: 'bg-platano text-carbon', border: 'border-platano/50', accent: 'text-carbon' },
+      oficios: { label: 'Utensilios, Ecosistemas y Oficios', badge: 'bg-marea text-coco', border: 'border-marea/20', accent: 'text-marea' },
+      cultura: { label: 'Bebidas y Patrimonio Cultural', badge: 'bg-chontaduro text-coco', border: 'border-chontaduro/25', accent: 'text-chontaduro' }
+    };
+
+    const glossaryEntries = {
+      // 1. Hierbas de Azotea y Especias (7)
+      azotea: {
+        cat: 'azotea', title: 'Azotea', subtitle: 'Huerta elevada en canoa o plataforma de madera',
+        desc: 'Espacio de cultivo doméstico elevado sobre el suelo húmedo de la selva, tradicionalmente armado en viejas canoas o tarimas de madera cerca de la cocina.',
+        note: 'Protege las plantas aromáticas y medicinales de lluvias intensas y animales, y representa un bastión del conocimiento femenino del Pacífico.'
+      },
+      chillangua: {
+        cat: 'azotea', title: 'Chillangua (Cimarrón)', subtitle: 'Eryngium foetidum',
+        desc: 'Hierba de hoja alargada y bordes dentados con un aroma mucho más penetrante y terroso que el cilantro convencional.',
+        note: 'Columna vertebral de refritos, encocados, sancochos y tapados; se integra tanto en la cocción como picada fresca al cierre.'
+      },
+      chiraran: {
+        cat: 'azotea', title: 'Chirarán (Albahaca negra)', subtitle: 'Ocimum campechianum',
+        desc: 'Albahaca silvestre de tallo oscuro y perfume floral ligeramente anisado, indispensable en la tríada aromática del litoral.',
+        note: 'Aporta elegancia y equilibrio frente a la intensidad de los mariscos, el pescado ahumado y la leche de coco.'
+      },
+      poleo: {
+        cat: 'azotea', title: 'Poleo de Azotea', subtitle: 'Lippia alba / Satureja brownei',
+        desc: 'Hierba aromática de hoja suave con notas mentoladas, cítricas y balsámicas muy características de la selva húmeda.',
+        note: 'Aligera la untuosidad de los guisos con coco y suma frescura persistente cuando se dosifica con mesura.'
+      },
+      pipilongo: {
+        cat: 'azotea', title: 'Pipilongo', subtitle: 'Piper tuberculatum',
+        desc: 'Espiga silvestre pariente de la pimienta negra, de picor cálido, amaderado y ligeramente especiado.',
+        note: 'Molido o infusionado en caldos y refritos, entrega un calor sutil que despierta los demás sabores del plato.'
+      },
+      achiote: {
+        cat: 'azotea', title: 'Achiote', subtitle: 'Bixa orellana',
+        desc: 'Semilla rojiza de origen ancestral utilizada para teñir aceites, arroces y guisos de un tono naranja solar vibrante.',
+        note: 'Debe infundirse a fuego bajo y retirarse antes de oscurecer para regalar color limpio y aroma terroso sin amargor.'
+      },
+      hierbas_misticas: {
+        cat: 'azotea', title: 'Hierbas Místicas', subtitle: 'Botánica medicinal y espiritual de azotea',
+        desc: 'Conjunto de plantas cultivadas junto a las culinarias —como albahaca blanca, ruda, matarratón o gallinazo— empleadas en baños, curaciones y protección.',
+        note: 'Demuestran que en el Pacífico la frontera entre alimento, medicina y espiritualidad es indivisible.'
+      },
+
+      // 2. Ingredientes del Territorio (11)
+      piangua: {
+        cat: 'ingredientes', title: 'Piangua', subtitle: 'Anadara tuberculosa · Molusco de manglar',
+        desc: 'Concha bivalva de carne oscura, firme y sabor profundo a mar y barro limpio, recolectada a mano entre las raíces del mangle.',
+        note: 'Protagonista de empanadas, arroces atollados, ceviches y encocados; su recolección sostenible sostiene a miles de familias piangüeras.'
+      },
+      jaiba: {
+        cat: 'ingredientes', title: 'Jaiba', subtitle: 'Callinectes spp. · Crustáceo costero',
+        desc: 'Cangrejo nadador de caparazón azulado y carne blanca, dulce y delicada, habitual en esteros y bocanas.',
+        note: 'Su caldo concentra un umami marino excepcional para sopas, arroces y encocados.'
+      },
+      camaron_titi: {
+        cat: 'ingredientes', title: 'Camarón Tití', subtitle: 'Xiphopenaeus riveti',
+        desc: 'Camarón pequeño y sumamente sabroso propio de las aguas someras del Pacífico colombiano.',
+        note: 'Apreciado en arroces, empanadas, carimañolas y refritos rápidos por su dulzor concentrado.'
+      },
+      leche_coco: {
+        cat: 'ingredientes', title: 'Leche de Coco (1.ª y 2.ª)', subtitle: 'Cocos nucifera · Extracción artesanal',
+        desc: 'Al rallar y estrujar el coco fresco con agua tibia se obtiene primero una leche espesa y cremosa, y en un segundo prensado una leche más ligera.',
+        note: 'La segunda leche cuece el guiso lentamente; la primera se añade al final a fuego muy bajo para lograr brillo y textura sedosa.'
+      },
+      papa_china: {
+        cat: 'ingredientes', title: 'Papa China (Achín)', subtitle: 'Colocasia esculenta',
+        desc: 'Tubérculo tropical de pulpa densa y ligeramente cremosa, cultivado en suelos húmedos del Pacífico.',
+        note: 'Aporta cuerpo y espesor natural a sancochos, pusandaos y tapados, además de disfrutarse frita o cocida.'
+      },
+      rascadera: {
+        cat: 'ingredientes', title: 'Rascadera', subtitle: 'Xanthosoma sagittifolium · Mafafa',
+        desc: 'Raíz tuberosa de la familia de las aráceas, muy valorada en los cultivos de pancoger por su rendimiento y textura harinosa.',
+        note: 'Requiere buena cocción para revelar su sabor suave y acompañar pescados guisados y carnes ahumadas.'
+      },
+      name: {
+        cat: 'ingredientes', title: 'Ñame', subtitle: 'Dioscorea spp.',
+        desc: 'Tubérculo de gran tamaño, piel rugosa y pulpa blanca que se deshace ligeramente al cocinarse, espesando los caldos.',
+        note: 'Fundamental en la soberanía alimentaria rural, presente en sopas, purés y acompañamientos cotidianos.'
+      },
+      chontaduro: {
+        cat: 'ingredientes', title: 'Chontaduro', subtitle: 'Bactris gasipaes',
+        desc: 'Fruto de palma de color naranja encendido, rico en aceites saludables, almidón y betacarotenos.',
+        note: 'Se consume cocido con sal y miel, pero también brilla en salsas, cremas, helados y jugos energéticos.'
+      },
+      borojo: {
+        cat: 'ingredientes', title: 'Borojó', subtitle: 'Alibertia patinoi',
+        desc: 'Fruto selvático de pulpa densa, aromática y agridulce, famoso en todo el Chocó y el Valle del Cauca por su poder nutritivo.',
+        note: 'Protagonista de jugos espesos, mermeladas, postres y bebidas tradicionales con viche.'
+      },
+      almirajo: {
+        cat: 'ingredientes', title: 'Almirajó', subtitle: 'Patinoa almirajo',
+        desc: 'Fruta endémica del Pacífico húmedo de pulpa suave, dulce y aromática que recuerda notas de crema y cacao.',
+        note: 'Tesoro poco conocido fuera del litoral, ideal para sorbetes, dulces y bebidas frescas.'
+      },
+      bacao: {
+        cat: 'ingredientes', title: 'Bacao', subtitle: 'Theobroma bicolor · Cacao blanco',
+        desc: 'Pariente silvestre del cacao cuyas semillas se tuestan o cocinan, mientras su pulpa blanca se aprovecha en jugos refrescantes.',
+        note: 'Muestra la inmensa riqueza agroalimentaria de los bosques tropicales del Pacífico.'
+      },
+
+      // 3. Técnicas y Preparaciones (11)
+      encocado: {
+        cat: 'tecnicas', title: 'Encocado', subtitle: 'Guiso emblemático en leche de coco',
+        desc: 'Preparación insignia donde pescados, mariscos, cangrejos o carnes se cocinan en refrito de azotea y leche de coco recién extraída.',
+        note: 'El equilibrio entre achiote, hierbas frescas y reducción suave define su carácter sedoso.'
+      },
+      tapao: {
+        cat: 'tecnicas', title: 'Tapao', subtitle: 'Cocción al vapor y caldo cubierto',
+        desc: 'Plato tradicional de pescado (fresco o seco) y plátano verde cocidos en olla cubierta —a veces con hojas de plátano— para concentrar jugos y aromas.',
+        note: 'Celebra la pureza del producto con una técnica sencilla, limpia y profundamente aromática.'
+      },
+      atollado: {
+        cat: 'tecnicas', title: 'Arroz Atollado', subtitle: 'Arroz caldoso y meloso del litoral',
+        desc: 'Arroz cocido con abundante caldo, refrito achiotado y proteínas como piangua, camarón, longaniza o pollo hasta quedar húmedo y untuoso.',
+        note: 'Debe servirse de inmediato para preservar su textura melosa característica.'
+      },
+      pusandao: {
+        cat: 'tecnicas', title: 'Pusandao', subtitle: 'Sancocho festivo del Pacífico sur',
+        desc: 'Caldo suculento de carne serrana (salada y ahumada), gallina criolla, plátano, papa, yuca, huevo duro y leche de coco.',
+        note: 'Plato de celebración comunitaria que combina lo mejor de la tierra y la técnica del ahumado.'
+      },
+      arroz_clavado: {
+        cat: 'tecnicas', title: 'Arroz Clavado', subtitle: 'Tradición chocoana con queso y longaniza',
+        desc: 'Arroz sazonado con refrito y longaniza ahumada al que se le insertan ("clavan") trozos de queso costeño o campesino para que se fundan con el vapor.',
+        note: 'Contrasta el ahumado salado del embutido con la cremosidad cálida del queso.'
+      },
+      fufu: {
+        cat: 'tecnicas', title: 'Fufú', subtitle: 'Masa majada de plátano y memoria afro',
+        desc: 'Preparación de raíces africanas elaborada majando plátano verde o maduro cocido hasta lograr una masa suave y cohesiva.',
+        note: 'Acompaña guisos y caldos o sirve de base para bolones y rellenos de chicharrón o queso.'
+      },
+      juan_valerio: {
+        cat: 'tecnicas', title: 'Juan Valerio / Marranita', subtitle: 'Plátano majado relleno y dorado',
+        desc: 'Esfera de plátano cocido o frito majado a mano que envuelve un relleno sabroso —tradicionalmente chicharrón— y se dora hasta quedar crocante.',
+        note: 'Demuestra el parentesco directo entre la cocina del Pacífico y la tradición del Valle del Cauca.'
+      },
+      bolones: {
+        cat: 'tecnicas', title: 'Bolones', subtitle: 'Puente culinario con la costa ecuatoriana',
+        desc: 'Bolas generosas de plátano verde majado y mezclado con queso o chicharrón, compartidas a lo largo del Pacífico colombo-ecuatoriano.',
+        note: 'Ejemplo vivo de cómo los ríos y el mar tejen una sola cultura gastronómica sin fronteras.'
+      },
+      ahumado: {
+        cat: 'tecnicas', title: 'Ahumado Tradicional', subtitle: 'Conservación y sabor sobre leña',
+        desc: 'Técnica ancestral que aprovecha el humo de maderas locales para conservar pescados, carnes y embutidos en climas de alta humedad.',
+        note: 'Aporta notas profundas que perfuman desde sancochos hasta arroces y guisos cotidianos.'
+      },
+      longaniza_chocoana: {
+        cat: 'tecnicas', title: 'Longaniza Chocoana', subtitle: 'Embutido artesanal condimentado y ahumado',
+        desc: 'Cerdo picado a cuchillo adobado con achiote, hierbas de azotea, ajo y especias, embutido en tripa natural y curado al humo.',
+        note: 'Ingrediente estrella del arroz clavado y de múltiples preparaciones del Chocó.'
+      },
+      amasijos: {
+        cat: 'tecnicas', title: 'Amasijos y Panadería del Pacífico', subtitle: 'Pan de yuca, pan de maíz, hallullas y hojaldras',
+        desc: 'Repertorio horneado y frito elaborado con almidón de yuca, maíz molido, coco y harinas locales para acompañar desayunos y tardes de café.',
+        note: 'Rescata una faceta cálida y cotidiana muchas veces olvidada frente a los platos de mar.'
+      },
+
+      // 4. Utensilios, Ecosistemas y Oficios (6)
+      piedra_moler: {
+        cat: 'oficios', title: 'Piedra de Moler', subtitle: 'Dos piedras: quebrar y moler el maíz',
+        desc: 'Utensilio lítico tradicional compuesto por una base cóncava y una mano de piedra. En el territorio se emplea una piedra rústica para quebrar el grano y otra fina para molerlo.',
+        note: 'Su fricción natural produce masas con una humedad y textura imposibles de replicar exactamente en molinos eléctricos.'
+      },
+      bocana: {
+        cat: 'oficios', title: 'Bocana', subtitle: 'Encuentro del río con el mar',
+        desc: 'Zona de desembocadura donde el agua dulce de los ríos selváticos se mezcla con el agua salada del océano Pacífico.',
+        note: 'Ecosistema de altísima productividad biológica que nutre manglares, esteros y pesquerías locales.'
+      },
+      pesca_artesanal: {
+        cat: 'oficios', title: 'Pesca Artesanal', subtitle: 'Oficio de marea, atarraya y cordel',
+        desc: 'Actividad pesquera de pequeña escala realizada en embarcaciones tradicionales con artes selectivas que respetan los ciclos reproductivos del mar.',
+        note: 'Garantiza frescura incomparable y protege la biodiversidad del Pacífico norte y sur.'
+      },
+      pesca_manglar: {
+        cat: 'oficios', title: 'Pesca de Manglar', subtitle: 'Recolección en raíces y esteros',
+        desc: 'Oficio desarrollado durante la marea baja entre las raíces del mangle para recolectar piangua, jaiba, cangrejo azul y almejas.',
+        note: 'Liderado mayoritariamente por mujeres piangüeras que transmiten el respeto por las tallas mínimas.'
+      },
+      pancoger: {
+        cat: 'oficios', title: 'Cultivos de Pancoger', subtitle: 'Agricultura familiar de subsistencia',
+        desc: 'Pequeñas parcelas diversas donde las familias siembran plátano, yuca, ñame, papa china, maíz y frutales para su propio sustento.',
+        note: 'Base de la soberanía alimentaria y de la resiliencia comunitaria en el litoral.'
+      },
+      barequeo: {
+        cat: 'oficios', title: 'Barequeo', subtitle: 'Minería artesanal tradicional con batea',
+        desc: 'Oficio ancestral de lavado manual de arenas de río en batea de madera, profundamente ligado a la historia social y económica del Pacífico.',
+        note: 'Sus jornadas y campamentos moldearon recetas portátiles, técnicas de conservación y lazos comunitarios.'
+      },
+
+      // 5. Bebidas y Patrimonio Cultural (9)
+      viche: {
+        cat: 'cultura', title: 'Viche / Biche', subtitle: 'Destilado artesanal de caña · Ley 2158 de 2021',
+        desc: 'Bebida ancestral destilada de la caña de azúcar por comunidades afrodescendientes del Pacífico, protegida legalmente como patrimonio cultural inmaterial.',
+        note: 'Base de bebidas curadas como el arrechón, la tomaseca y el tumbacatre; acompaña rituales de vida, salud y fiesta.'
+      },
+      alabaos: {
+        cat: 'cultura', title: 'Alabaos', subtitle: 'Cantos fúnebres y espirituales a capella',
+        desc: 'Cánticos responsoriales entonados principalmente por mujeres mayores para despedir a los difuntos, acompañar velorios y expresar memoria colectiva.',
+        note: 'Expresión conmovedora de resistencia, espiritualidad y cohesión comunitaria.'
+      },
+      chirimia: {
+        cat: 'cultura', title: 'Chirimía Chocoana', subtitle: 'Formato musical festivo del Pacífico norte',
+        desc: 'Agrupación alegre de clarinete, bombardino, tambora, redoblante y platillos que anima comparsas, fiestas patronales y bailes.',
+        note: 'Su energía contagiosa marca el compás de celebraciones donde la comida y la danza se funden.'
+      },
+      currulao: {
+        cat: 'cultura', title: 'Currulao', subtitle: 'Ritmo mayor de marimba y cununos',
+        desc: 'Música y danza emblemática del Pacífico sur interpretada con marimba de chonta, bombos, cununos, guasás y cantadoras.',
+        note: 'Patrimonio Inmaterial de la Humanidad (UNESCO) que vibra en armonía con el espíritu del fogón.'
+      },
+      bunde_abozao: {
+        cat: 'cultura', title: 'Bunde y Abozao', subtitle: 'Aires tradicionales del litoral',
+        desc: 'El bunde acompaña rituales infantiles y celebraciones navideñas, mientras el abozao es una danza vibrante y cadenciosa propia del Chocó.',
+        note: 'Muestran la diversidad musical que rodea las cocinas festivas de norte a sur.'
+      },
+      cantos_cocina: {
+        cat: 'cultura', title: 'Cantos de Cocina', subtitle: 'Oralidad que sazona el fogón',
+        desc: 'Coplas, versos y melodías entonadas por las cocineras mientras pilan, muelen o revuelven la olla para alegrar el trabajo y enseñar a los niños.',
+        note: 'Demuestran que en el Pacífico la cocina es también escenario de poesía y transmisión oral.'
+      },
+      san_pacho: {
+        cat: 'cultura', title: 'Fiesta de San Pacho', subtitle: 'Fiestas de San Francisco de Asís en Quibdó',
+        desc: 'Celebración patronal de Quibdó declarada Patrimonio Inmaterial de la Humanidad, con comparsas barriales, chirimías, balsadas y gastronomía tradicional.',
+        note: 'Durante semanas los barrios cocinan y comparten en comunidad como acto de fe y orgullo chocoano.'
+      },
+      petronio: {
+        cat: 'cultura', title: 'Festival Petronio Álvarez', subtitle: 'Encuentro anual del Pacífico en Cali',
+        desc: 'El festival de cultura afrocolombiana más grande de Latinoamérica, donde confluyen música de marimba, chirimía, bebidas vicheras y cocinas tradicionales.',
+        note: 'Puente vivo que conecta al litoral Pacífico con Cali y el mundo entero.'
+      },
+      embera_wounaan: {
+        cat: 'cultura', title: 'Emberá y Wounaan', subtitle: 'Pueblos indígenas Dobida, Eyabida y Wounaan',
+        desc: 'Pueblos originarios del Pacífico húmedo: los Emberá Dobida (gente de río), Eyabida (gente de montaña) y el pueblo Wounaan, maestros de la cestería en werregue y del manejo selvático.',
+        note: 'Sus saberes sobre peces de río, plátano, maíz, caza sostenible y botánica enriquecen profundamente la identidad culinaria del territorio.'
+      }
+    };
+
+    // =========================================================================
+    // 4. RENDERIZADO DE MOSAICOS EDITORIALES Y VIDEOS POR CRÓNICA
+    // =========================================================================
+    const flatLightboxPhotos = [];
+
+    function buildChronicle(key) {
+      const data = chroniclesData[key];
+      const mosaicEl = document.getElementById(`mosaic-${key}`);
+      const videosEl = document.getElementById(`videos-${key}`);
+      if (!mosaicEl || !videosEl) return;
+
+      const mosaicItemsHTML = [];
+
+      data.photos.forEach((photo, idx) => {
+        const globalIndex = flatLightboxPhotos.length;
+        flatLightboxPhotos.push({
+          id: photo.id,
+          caption: photo.caption,
+          chapterTitle: data.chapterTitle
+        });
+
+        const spanClass = photo.span || '';
+
+        // Tarjeta fotográfica limpia (sin nombres de archivo en pantalla)
+        mosaicItemsHTML.push(`
+          <figure class="group relative rounded-3xl overflow-hidden bg-carbon/10 shadow-md hover:shadow-2xl transition-all duration-500 cursor-pointer ${spanClass}"
+            onclick="openLightbox(${globalIndex})">
+            <img
+              src="${driveThumb(photo.id, 1200)}"
+              data-drive-id="${photo.id}"
+              alt="${photo.caption}"
+              loading="lazy"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              onerror="handleMosaicImgError(this)"
+            />
+
+            <!-- Respaldo artístico del Pacífico si Drive aún no está público -->
+            <div class="artistic-fallback hidden absolute inset-0 p-6 flex flex-col items-center justify-center text-center bg-gradient-to-br ${data.fallbackGrad} text-coco">
+              <span class="w-10 h-10 rounded-full bg-coco/15 border border-coco/30 flex items-center justify-center text-lg mb-3">✦</span>
+              <p class="font-fraunces italic text-sm leading-snug max-w-[230px]">${photo.caption}</p>
+              <a href="${driveView(photo.id)}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()"
+                class="mt-3 px-4 py-1.5 rounded-full bg-coco text-carbon text-[11px] font-bold uppercase tracking-wider hover:bg-platano transition-colors shadow">
+                Abrir en Drive ↗
+              </a>
+            </div>
+
+            <!-- Pie de foto editorial sutil en degradado inferior -->
+            <figcaption class="absolute inset-x-0 bottom-0 p-4 pt-10 bg-gradient-to-t from-carbon/85 via-carbon/40 to-transparent text-coco opacity-95 group-hover:opacity-100 transition-opacity">
+              <p class="text-xs sm:text-[13px] leading-snug font-medium drop-shadow">${photo.caption}</p>
+            </figcaption>
+          </figure>
+        `);
+
+        // Insertar tarjeta editorial de color intercalada dentro del mosaico
+        const matchingCard = data.cards.find((c) => c.insertAfterIndex === idx);
+        if (matchingCard) {
+          mosaicItemsHTML.push(`
+            <div class="rounded-3xl p-6 sm:p-7 flex flex-col justify-between shadow-lg ${matchingCard.bgClass} ${matchingCard.span || ''}">
+              <span class="text-[10px] font-bold uppercase tracking-[0.22em] ${matchingCard.tagClass}">${matchingCard.tag}</span>
+              <p class="font-fraunces italic text-base sm:text-lg leading-snug mt-3">${matchingCard.quote}</p>
+              <div class="mt-4 flex items-center gap-1.5 opacity-60">
+                <span class="w-6 h-1 rounded-full bg-current"></span>
+                <span class="w-2 h-1 rounded-full bg-current"></span>
+              </div>
+            </div>
+          `);
+        }
+      });
+
+      mosaicEl.innerHTML = mosaicItemsHTML.join('');
+
+      // Renderizar franja de Videos ("Memorias en Movimiento")
+      videosEl.innerHTML = data.videos.map((vid) => `
+        <div class="rounded-3xl overflow-hidden shadow-lg flex flex-col ${vid.cardBg}">
+          <div class="aspect-video w-full bg-carbon relative">
+            <iframe
+              src="${drivePreview(vid.id)}"
+              class="w-full h-full border-0"
+              allow="autoplay; fullscreen"
+              allowfullscreen
+              loading="lazy"
+              title="${vid.title}"
+            ></iframe>
+          </div>
+          <div class="p-5 sm:p-6 flex items-start justify-between gap-4 flex-1">
+            <div>
+              <span class="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-widest ${vid.badgeBg}">Memoria en Video</span>
+              <h4 class="font-editorial font-bold text-lg sm:text-xl mt-2 leading-snug">${vid.title}</h4>
+              <p class="text-xs sm:text-sm opacity-80 mt-1 leading-relaxed">${vid.subtitle}</p>
+            </div>
+            <a href="${driveView(vid.id)}" target="_blank" rel="noopener noreferrer"
+              class="shrink-0 mt-1 px-3 py-1.5 rounded-full bg-coco/15 hover:bg-coco/30 text-[11px] font-semibold transition-colors">
+              Drive ↗
+            </a>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // =========================================================================
+    // 5. VISOR LIGHTBOX CON TECLADO Y FLECHAS (SIN NOMBRES DE ARCHIVO)
+    // =========================================================================
+    let currentLightboxIdx = 0;
+
+    function openLightbox(index) {
+      currentLightboxIdx = index;
+      updateLightbox();
+      document.getElementById('lightbox-modal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function updateLightbox() {
+      const item = flatLightboxPhotos[currentLightboxIdx];
+      if (!item) return;
+
+      const stage = document.getElementById('lb-stage');
+      stage.innerHTML = `
+        <img
+          src="${driveThumb(item.id, 1600)}"
+          data-drive-id="${item.id}"
+          alt="${item.caption}"
+          class="max-h-[70vh] w-auto object-contain rounded-xl"
+          onerror="handleLightboxImgError(this)"
+        />
+        <div class="lb-fallback hidden p-10 text-center text-coco max-w-md">
+          <span class="inline-flex w-14 h-14 rounded-full bg-platano/20 border border-platano/40 items-center justify-center text-2xl mb-4">✦</span>
+          <p class="font-fraunces italic text-lg">${item.caption}</p>
+          <p class="text-xs text-coco/70 mt-2">Activa el acceso público en Google Drive o ábrela directamente desde el enlace.</p>
+          <a href="${driveView(item.id)}" target="_blank" rel="noopener noreferrer"
+            class="mt-5 inline-block px-5 py-2 rounded-full bg-platano text-carbon text-xs font-bold uppercase tracking-wider">
+            Abrir en Drive ↗
+          </a>
+        </div>
+      `;
+
+      document.getElementById('lb-counter').textContent = `${currentLightboxIdx + 1} / ${flatLightboxPhotos.length}`;
+      document.getElementById('lb-chapter').textContent = item.chapterTitle;
+      document.getElementById('lb-caption').textContent = item.caption;
+      document.getElementById('lb-drive-btn').href = driveView(item.id);
+    }
+
+    function navigateLightbox(delta) {
+      if (!flatLightboxPhotos.length) return;
+      currentLightboxIdx = (currentLightboxIdx + delta + flatLightboxPhotos.length) % flatLightboxPhotos.length;
+      updateLightbox();
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox-modal').classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    // =========================================================================
+    // 6. GLOSARIO INTERACTIVO (5 CATEGORÍAS + BUSCADOR + MODAL)
+    // =========================================================================
+    let activeGlossaryCat = 'all';
+
+    function setGlossaryCategory(cat) {
+      activeGlossaryCat = cat;
+      document.querySelectorAll('.g-tab').forEach((btn) => {
+        const selected = btn.dataset.cat === cat;
+        if (selected) {
+          btn.className = 'g-tab px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-carbon text-coco shadow-md cursor-pointer transition-all';
+        } else {
+          btn.className = 'g-tab px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-coco text-carbon/80 border border-carbon/15 hover:border-achiote hover:text-achiote cursor-pointer transition-all';
+        }
+      });
+      renderGlossaryGrid();
+    }
+
+    function renderGlossaryGrid() {
+      const grid = document.getElementById('glossary-grid');
+      const query = (document.getElementById('glossary-search')?.value || '').trim().toLowerCase();
+
+      const filtered = Object.entries(glossaryEntries).filter(([_, item]) => {
+        const matchCat = activeGlossaryCat === 'all' || item.cat === activeGlossaryCat;
+        const matchQuery = !query ||
+          item.title.toLowerCase().includes(query) ||
+          item.subtitle.toLowerCase().includes(query) ||
+          item.desc.toLowerCase().includes(query);
+        return matchCat && matchQuery;
+      });
+
+      if (!filtered.length) {
+        grid.innerHTML = `
+          <div class="col-span-full text-center py-12 text-carbon/65">
+            <p class="font-fraunces italic text-lg">No encontramos coincidencias para "${query}".</p>
+          </div>
+        `;
+        return;
+      }
+
+      grid.innerHTML = filtered.map(([key, item]) => {
+        const meta = glossaryCategories[item.cat];
+        return `
+          <button type="button" onclick="openGlossary('${key}')"
+            class="text-left p-6 rounded-3xl bg-coco hover:-translate-y-1 hover:shadow-xl border ${meta.border} transition-all duration-300 flex flex-col justify-between cursor-pointer group">
+            <div>
+              <span class="inline-block px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider ${meta.badge}">
+                ${meta.label}
+              </span>
+              <h3 class="font-editorial font-bold text-xl text-carbon group-hover:text-achiote transition-colors mt-3">
+                ${item.title}
+              </h3>
+              <p class="font-fraunces italic text-xs text-carbon/65 mt-0.5">${item.subtitle}</p>
+              <p class="text-xs sm:text-sm text-carbon/80 mt-3 leading-relaxed line-clamp-3">${item.desc}</p>
+            </div>
+            <span class="mt-4 inline-block text-xs font-bold uppercase tracking-wider ${meta.accent} group-hover:translate-x-1 transition-transform">
+              Leer ficha →
+            </span>
+          </button>
+        `;
+      }).join('');
+    }
+
+    function openGlossary(key) {
+      const item = glossaryEntries[key];
+      if (!item) return;
+      const meta = glossaryCategories[item.cat];
+      const catEl = document.getElementById('gm-cat');
+      catEl.textContent = meta.label;
+      catEl.className = `inline-block px-3.5 py-1 rounded-full text-[11px] font-bold uppercase tracking-widest ${meta.badge}`;
+
+      document.getElementById('gm-title').textContent = item.title;
+      document.getElementById('gm-subtitle').textContent = item.subtitle;
+      document.getElementById('gm-desc').textContent = item.desc;
+      document.getElementById('gm-note').textContent = item.note;
+      document.getElementById('glossary-modal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeGlossary() {
+      document.getElementById('glossary-modal').classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    // =========================================================================
+    // 7. EVENTOS GLOBALES, TECLADO, PROGRESO DE LECTURA Y SCROLL REVEAL
+    // =========================================================================
+    document.addEventListener('keydown', (e) => {
+      const lbOpen = !document.getElementById('lightbox-modal').classList.contains('hidden');
+      const gmOpen = !document.getElementById('glossary-modal').classList.contains('hidden');
+      if (e.key === 'Escape') {
+        if (lbOpen) closeLightbox();
+        if (gmOpen) closeGlossary();
+      } else if (lbOpen && e.key === 'ArrowRight') {
+        navigateLightbox(1);
+      } else if (lbOpen && e.key === 'ArrowLeft') {
+        navigateLightbox(-1);
+      }
+    });
+
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      document.getElementById('reading-progress').style.width = `${pct}%`;
+    });
+
+    // Menú móvil y botón PDF
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    mobileMenu.querySelectorAll('a').forEach((a) => {
+      a.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+    });
+
+    document.getElementById('print-pdf-btn').addEventListener('click', () => window.print());
+
+    // Inicialización al cargar el documento
+    window.addEventListener('DOMContentLoaded', () => {
+      ['c1', 'c2', 'c3', 'c4', 'c5'].forEach(buildChronicle);
+      renderGlossaryGrid();
+
+      const revealEls = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.06 }
+        );
+        revealEls.forEach((el) => observer.observe(el));
+      } else {
+        revealEls.forEach((el) => el.classList.add('visible'));
+      }
+    });
+  </script>
+</body>
+</html>
