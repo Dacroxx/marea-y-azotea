@@ -738,8 +738,37 @@ def build(runtime=False):
     </div>
   </div>
 '''
+    ambient_html = '''
+  <!-- Reproductor ambiental sutil (YouTube Playlist) -->
+  <aside id="ambient-player" class="ambient-player no-print" aria-label="Música ambiental del Pacífico">
+    <div id="ambient-yt-wrap" class="ambient-yt-wrap is-collapsed" aria-hidden="true"></div>
+    <div id="ambient-prompt" class="ambient-pill">
+      <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="#F4B942" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M9 18V5l12-2v13"/>
+        <circle cx="6" cy="18" r="3"/>
+        <circle cx="18" cy="16" r="3"/>
+      </svg>
+      <span class="ambient-text">Música del Pacífico</span>
+      <button type="button" id="ambient-start" class="ambient-start-btn">Escuchar</button>
+      <button type="button" id="ambient-dismiss" class="ambient-icon-btn" aria-label="Ocultar aviso de música" title="Ocultar">×</button>
+    </div>
+    <div id="ambient-controls" class="ambient-pill hidden">
+      <span class="ambient-eq" aria-hidden="true"><span></span><span></span><span></span></span>
+      <button type="button" id="ambient-toggle" class="ambient-icon-btn" aria-label="Pausar música" title="Pausar / Reproducir">⏸</button>
+      <button type="button" id="ambient-next" class="ambient-icon-btn" aria-label="Siguiente canción" title="Siguiente canción">⏭</button>
+      <button type="button" id="ambient-peek" class="ambient-icon-btn" aria-label="Mostrar reproductor" aria-expanded="false" title="Ver canción">▴</button>
+    </div>
+    <button type="button" id="ambient-mini-open" class="ambient-mini-fab hidden" aria-label="Abrir música ambiental" title="Música del Pacífico">
+      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="#F4B942" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M9 18V5l12-2v13"/>
+        <circle cx="6" cy="18" r="3"/>
+        <circle cx="18" cy="16" r="3"/>
+      </svg>
+    </button>
+  </aside>
+'''
     behavior = (ROOT / 'source/accessibility.js').read_text(encoding='utf-8')
-    text = text.replace('</body>', flipbook_html + '\n<script>\n' + behavior + '\n</script>\n<noscript><p>Los mosaicos y el glosario interactivo requieren JavaScript. Las crónicas se pueden leer sin él.</p></noscript>\n</body>')
+    text = text.replace('</body>', flipbook_html + ambient_html + '\n<script>\n' + behavior + '\n</script>\n<noscript><p>Los mosaicos y el glosario interactivo requieren JavaScript. Las crónicas se pueden leer sin él.</p></noscript>\n</body>')
     extra = (ROOT / 'source/standalone.css').read_text(encoding='utf-8')
     text = text.replace('</head>', '<style id="editorial-refinements">' + extra + '</style>\n</head>')
     if not runtime:

@@ -86,8 +86,8 @@ if(progressBar){
 
 // Body scroll lock for modals (re-entrant safe)
 let savedOverflow='',isScrollLocked=false;
-const lockScroll=()=>{if(!isScrollLocked){savedOverflow=document.documentElement.style.overflow;isScrollLocked=true;}document.documentElement.style.overflow='hidden';document.getElementById('flipbook-fab')?.classList.add('is-hidden-modal');};
-const unlockScroll=()=>{document.documentElement.style.overflow=savedOverflow;document.body.style.overflow='';isScrollLocked=false;document.getElementById('flipbook-fab')?.classList.remove('is-hidden-modal');};
+const lockScroll=()=>{if(!isScrollLocked){savedOverflow=document.documentElement.style.overflow;isScrollLocked=true;}document.documentElement.style.overflow='hidden';document.getElementById('flipbook-fab')?.classList.add('is-hidden-modal');document.getElementById('ambient-player')?.classList.add('is-hidden-modal');};
+const unlockScroll=()=>{document.documentElement.style.overflow=savedOverflow;document.body.style.overflow='';isScrollLocked=false;document.getElementById('flipbook-fab')?.classList.remove('is-hidden-modal');document.getElementById('ambient-player')?.classList.remove('is-hidden-modal');};
 
 let modalReturnFocus = null;
 const focusModal = (id) => {
@@ -178,6 +178,72 @@ function closeFlipbook(){
 flipbookFab?.addEventListener('click',openFlipbook);
 flipbookClose?.addEventListener('click',closeFlipbook);
 flipbookModal?.addEventListener('click',e=>{if(e.target===flipbookModal)closeFlipbook();});
+
+// Subtle ambient music player (YouTube playlist)
+const ambYtWrap=document.getElementById('ambient-yt-wrap');
+const ambPrompt=document.getElementById('ambient-prompt');
+const ambControls=document.getElementById('ambient-controls');
+const ambMiniOpen=document.getElementById('ambient-mini-open');
+const ambStart=document.getElementById('ambient-start');
+const ambDismiss=document.getElementById('ambient-dismiss');
+const ambToggle=document.getElementById('ambient-toggle');
+const ambNext=document.getElementById('ambient-next');
+const ambPeek=document.getElementById('ambient-peek');
+const ambEq=ambControls?.querySelector('.ambient-eq');
+let ambIframe=null,ambPlaying=false;
+const sendYtCmd=(func,args=[])=>{
+  ambIframe?.contentWindow?.postMessage(JSON.stringify({event:'command',func,args}),'*');
+};
+const syncAmbState=(playing)=>{
+  ambPlaying=playing;
+  if(ambToggle){
+    ambToggle.textContent=playing?'⏸':'▶';
+    ambToggle.setAttribute('aria-label',playing?'Pausar música':'Reproducir música');
+  }
+  ambEq?.classList.toggle('is-paused',!playing);
+};
+ambStart?.addEventListener('click',()=>{
+  if(!ambYtWrap)return;
+  if(!ambIframe){
+    ambIframe=document.createElement('iframe');
+    ambIframe.src='https://www.youtube.com/embed/videoseries?list=PLu6tcNIO60QZLhGkdA5pKm9ayYFgYWCsT&autoplay=1&enablejsapi=1&rel=0';
+    ambIframe.title='Música ambiental del Pacífico (YouTube)';
+    ambIframe.allow='autoplay; encrypted-media';
+    ambIframe.addEventListener('load',()=>{setTimeout(()=>sendYtCmd('setVolume',[35]),400);});
+    ambYtWrap.appendChild(ambIframe);
+  }else{
+    sendYtCmd('playVideo');
+  }
+  ambPrompt?.classList.add('hidden');
+  ambMiniOpen?.classList.add('hidden');
+  ambControls?.classList.remove('hidden');
+  syncAmbState(true);
+});
+ambDismiss?.addEventListener('click',()=>{
+  ambPrompt?.classList.add('hidden');
+  ambMiniOpen?.classList.remove('hidden');
+});
+ambMiniOpen?.addEventListener('click',()=>{
+  ambMiniOpen.classList.add('hidden');
+  if(ambIframe){ambControls?.classList.remove('hidden');}
+  else{ambPrompt?.classList.remove('hidden');}
+});
+ambToggle?.addEventListener('click',()=>{
+  if(ambPlaying){sendYtCmd('pauseVideo');syncAmbState(false);}
+  else{sendYtCmd('playVideo');syncAmbState(true);}
+});
+ambNext?.addEventListener('click',()=>{
+  sendYtCmd('nextVideo');
+  syncAmbState(true);
+});
+ambPeek?.addEventListener('click',()=>{
+  if(!ambYtWrap)return;
+  const collapsed=ambYtWrap.classList.toggle('is-collapsed');
+  ambYtWrap.setAttribute('aria-hidden',String(collapsed));
+  ambPeek.setAttribute('aria-expanded',String(!collapsed));
+  ambPeek.textContent=collapsed?'▴':'▾';
+  ambPeek.setAttribute('aria-label',collapsed?'Mostrar reproductor':'Ocultar reproductor');
+});
 mobileMenuBtn.setAttribute('aria-controls','mobile-menu');mobileMenuBtn.setAttribute('aria-expanded','false');
 new MutationObserver(()=>mobileMenuBtn.setAttribute('aria-expanded',String(!mobileMenu.classList.contains('hidden')))).observe(mobileMenu,{attributes:true,attributeFilter:['class']});
 document.querySelectorAll('.g-tab').forEach(btn=>btn.setAttribute('aria-pressed',String(btn.dataset.cat===activeGlossaryCat)));
