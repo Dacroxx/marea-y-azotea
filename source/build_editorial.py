@@ -323,17 +323,26 @@ def build(runtime=False):
     text = text.replace('15 fotos · 4 videos', f'{c5_n} fotos', 1)
     text = text.replace('15 fotos · 3 videos', f'{total_videos} videos', 1)
 
+    text = text.replace('Territorio, Saberes y Herramientas</h4>', 'Taller Sensorial</h4>')
+    text = text.replace('Piedra de moler, maíz, plátano, fufú y Juan Valerio.', 'Piedra de moler, utensilios tradicionales, maíz, bijao y despensa del litoral.')
+    text = text.replace('Hierbas de Azotea y Selva</h4>', 'Azotea</h4>')
+    text = text.replace('Chillangua, chirarán, poleo, pipilongo y refrito solar.', 'Chillangua, chirarán, poleo, pipilongo y refrito con achiote.')
+    text = text.replace('Coco, Tubérculos y Fogón</h4>', 'Fogón, Mar &amp; Mesa</h4>')
+    text = text.replace('Leche de coco artesanal, encocados, tapao y amasijos.', 'Leche de coco artesanal, encocados, mariscos, arroces y amasijos.')
     text = text.replace(
         '<h4 class="font-editorial font-bold text-xl leading-snug group-hover:text-platano transition-colors">Mar, Río y Manglar</h4>\n              <p class="text-xs text-coco/80 mt-2">Piangüeras, bocana, cangrejos, jaiba y biodiversidad.</p>',
-        '<h4 class="font-editorial font-bold text-xl leading-snug group-hover:text-platano transition-colors">Brigada y Cultura Viva</h4>\n              <p class="text-xs text-coco/80 mt-2">Trabajo en equipo, libros de consulta y tradición oral.</p>',
+        '<h4 class="font-editorial font-bold text-xl leading-snug group-hover:text-platano transition-colors">Brigada &amp; Cultura</h4>\n              <p class="text-xs text-coco/80 mt-2">Trabajo en equipo, libros de consulta, guasá y tradición oral.</p>',
     )
     text = text.replace('href="#cronica-4"', 'href="#cronica-5"')
     text = text.replace(
+        '<span class="font-editorial text-3xl font-black text-coco">V</span>',
+        '<span class="font-editorial text-2xl font-black text-coco">AV</span>',
+    )
+    text = text.replace(
         '<h4 class="font-editorial font-bold text-xl leading-snug group-hover:text-carbon transition-colors">Bebidas y Cultura Viva</h4>\n              <p class="text-xs text-coco/90 mt-2">Viche, cantos de cocina, San Pacho y pueblos originarios.</p>',
-        '<h4 class="font-editorial font-bold text-xl leading-snug group-hover:text-carbon transition-colors">Videos en Secuencia</h4>\n              <p class="text-xs text-coco/90 mt-2">Taller sensorial, maíz, refrito, arroz con coco, fufú y camarón.</p>',
+        '<h4 class="font-editorial font-bold text-xl leading-snug group-hover:text-carbon transition-colors">Videos</h4>\n              <p class="text-xs text-coco/90 mt-2">Taller sensorial, maíz, refrito, arroz con coco y fufú en secuencia.</p>',
     )
     text = text.replace('href="#cronica-5" class="group rounded-3xl p-6 bg-chontaduro', 'href="#videos-eje" class="group rounded-3xl p-6 bg-chontaduro')
-    text = text.replace('Coco, Tubérculos y Fogón</h4>', 'Fogón, Mar y Mesa</h4>')
 
     # Actualizar encabezados de Ejes I-IV con tono editorial equilibrado (cálido, natural y sin cursilerías)
     text = text.replace('>Crónica I</span>', '>Eje I</span>')
