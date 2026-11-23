@@ -1,5 +1,11 @@
 # CONTINUAR AQUÍ — Gemini, DeepSeek u otro modelo
 
+## Checkpoint más reciente: restauración implementada, para revisión
+
+Esta actualización prevalece sobre la descripción del trabajo activo que sigue. El implementador terminó; no queda un subagente editando este clon. Se restauró el diseño del HTML aportado, con CSS/JS inline, 58 IDs verified, 15 cápsulas y 44 voces. Null ejecutó personalmente 21 tests Python, contrato standalone, ocho grupos funcionales offline y smoke Drive real (cinco IDs distintos + visor), todos aprobados, y miró capturas de portada móvil y mosaico desktop. No se ha realizado una revisión independiente completa de esta nueva restauración ni una aprobación de David.
+
+La implementación y las fuentes reproducibles se conservan en esta rama como candidato revisable, NO como página simplificada anterior. Consultar HEAD de la rama/PR para SHA exacto y HANDOFF.md para detalles. Pendiente no bloqueante para preservar el avance: confirmar posible solapamiento temporal del aviso de red con el encabezado al cambiar viewport; está registrado, no certificado resuelto. No iniciar otra reconstrucción ni clasificación. Siguiente acción: abrir el index autocontenido y revisar con David o un modelo sucesor, luego corregir puntualmente. No se ha cambiado de modelo, fusionado ni desplegado.
+
 ## Encargo vigente (prioridad sobre el handoff histórico)
 
 David quiere terminar la revista **Marea & Azotea** y dejar los cambios revisables en SU fork, no solo documentos. La primera implementación fue rechazada porque simplificó demasiado la revista. El ZIP se mostró plano en su entorno.

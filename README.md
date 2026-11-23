@@ -1,74 +1,75 @@
 # Marea & Azotea — revista de Cocinas del Pacífico
 
-Edición estática de cinco ejes temáticos. Conserva la identidad editorial, la paleta selva/marea/achiote/plátano/coco y las fuentes Playfair Display, Plus Jakarta Sans y Space Mono. Sin framework, backend, Tailwind de ejecución ni dependencias nuevas.
+## Abrir: solo hace falta `index.html`
 
-## Abrir la revista
+Descargar el ZIP de la rama `audit/thematic-draft` del fork [Dacroxx/marea-y-azotea](https://github.com/Dacroxx/marea-y-azotea/tree/audit/thematic-draft), extraerlo y abrir `index.html`. **También se puede copiar únicamente ese HTML a otra carpeta vacía y abrirlo:** contiene todos los estilos y JavaScript, sin `assets/`, Tailwind CDN ni paquetes de ejecución. GitHub muestra código, no ejecuta la revista en su visor de archivos. No se ha autorizado merge ni deploy.
 
-Abrir `index.html` directamente funciona; también se puede servir el repositorio:
+Las fotos de Drive y las fuentes de Google necesitan Internet. Si la red, el servicio o el acceso fallan, se conserva el diseño con fuentes de respaldo y un estado neutral; la portada conserva su SVG. No se alojan originales ni se cambian permisos de Drive. Alternativa opcional:
 
 ```sh
 python -m http.server 8080 --bind 127.0.0.1
 ```
 
-Visitar <http://127.0.0.1:8080>. `index.html` y `assets/` deben viajar juntos al publicar en un alojamiento estático como GitHub Pages. Las fuentes de Google y las miniaturas de Drive necesitan Internet; el contenido, los estilos, los filtros y el visor son locales. Los enlaces al catálogo abren los metadatos de auditoría, **no** otra selección pública de imágenes.
+Abrir <http://127.0.0.1:8080>. No es necesario ejecutar un build para leer la página.
 
-## Alcance editorial
+## La referencia aprobada, no una galería de reemplazo
 
-Solo se publican fotos cuyo `reviewStatus` es `verified` en [el catálogo temático](audit/thematic-catalog.json). En este checkpoint son **58 registros**, distribuidos según su categoría principal:
+La base editorial y visual es el HTML aportado por David, preservado exactamente en `source/editorial-template.html`: portada full-bleed con fotografía/SVG y superposición tipográfica; Playfair Display, Fraunces y Plus Jakarta Sans; carta, firma y créditos originales de **Aida Arteaga**; cinco crónicas extensas; mosaicos con spans y 15 cápsulas intercaladas; separadores, cinco espacios audiovisuales, glosario de 44 voces con buscador/filtros/fichas y footer.
 
-| Eje | Registros publicados |
+Se distingue **contenido editorial aportado** de **evidencia fotográfica**. Las crónicas, citas, recetas, identificaciones botánicas y voces del glosario no han sido verificadas como transcripciones ni revisión científica. Se conserva su voz con una nota de alcance visible, sin convertirla en prueba de lo que aparece en cada foto. La entrega estilística simplificada anterior fue rechazada. El parent abrió el ZIP completo anterior: CSS aplicado y cero errores JS; el fallo general de estilos **no se reprodujo**. Esta corrección restaura la identidad autorizada y elimina, además, la fragilidad de separar el HTML de sus assets; no atribuye una causa al equipo de David.
+
+## Selección fotográfica: 58 IDs verified
+
+| Categoría principal exacta (orden visual de la referencia) | IDs publicados |
 | --- | ---: |
 | Territorio, Saberes y Herramientas Ancestrales | 29 |
 | Hierbas de Azotea y Aromas de la Selva | 15 |
-| Frutos del Mar, Río y Manglar | 9 |
 | Coco, Tubérculos y Fogón | 5 |
+| Frutos del Mar, Río y Manglar | 9 |
 | Bebidas, Cultura Viva e Identidad | 0 |
 
-`verified` significa sujeto visible y encaje en un eje amplio; no es certificación de recetas, especies, procedencias o identidades. Cada pie y alt reproduce `visualDescription` exactamente, y cada foto conserva su nombre original y enlace por ID. La portada utiliza `IMG_1898.HEIC`, ID `1jMeLokjKWlpVlkg_X67NqsVLP9nFM-QV`, del eje Territorio.
+Cada pie/alt reproduce `visualDescription` exactamente y muestra el nombre original y un enlace por ID. El visor conserva esa trazabilidad. La portada usa `IMG_1898.HEIC`, `1jMeLokjKWlpVlkg_X67NqsVLP9nFM-QV`, verificado en Territorio. `verified` significa sujeto visible y encaje temático amplio, no certificación de receta, especie, procedencia o identidad. No se deduplican escenas por nombre o parecido.
 
-No se deduplican registros por nombre, parecido ni hash. **58 es el número de IDs de la selección**, no de escenas diferentes ni de todas las fotos del archivo. Se muestra solo una apertura por eje con imágenes disponibles y una galería completa, evitando dos rejillas de 58 tarjetas. El eje sin fotos tiene un estado vacío explícito.
+No se publican 91 fotos `provisional`, 32 `needs-human` ni los 31 MOV `uninspected-video`. No se inventan títulos audiovisuales ni se incrustan videos sin revisar. Las franjas mantienen su espacio editorial como archivo pendiente, con cero videos publicados. El quinto eje conserva crónica, cápsulas y glosario, con estado visual vacío explícito. Los conteos de portada, sumario, franjas y visor reflejan la selección real. El catálogo de 212 registros y la auditoría histórica no se reclasificaron para encajar el diseño.
 
-Se excluyen de la revista 91 fotos `provisional`, 32 `needs-human` y 31 MOV `uninspected-video`. Los 212 registros siguen accesibles en el catálogo completo, que no se modificó. Se retiraron `Personalizar`, cargas locales y glosario botánico/recetario no respaldado: no hay persistencia ni promesa de guardado. Imprimir/PDF abre la impresión del navegador y prepara **toda** la selección, independientemente del filtro activo; el PDF no es una revista editable. La disponibilidad de imágenes depende de la red y de Drive; el fallback no atribuye todos los errores a permisos.
-
-## Actualizar y comprobar
-
-La fuente del markup es `tools/build_magazine.py`; **regenerar `index.html` después de editar la plantilla o tras una revisión autorizada del catálogo**:
+## Regeneración reproducible, sin instalar paquetes
 
 ```sh
 python tools/build_magazine.py
+```
+
+El generador usa la fuente editorial exacta, el catálogo, los suplementos de `source/` y el CSS estático versionado `source/tailwind.generated.css`; regenera `index.html` **sin red**. No escribe en el catálogo ni descarga fotos. Los viejos `assets/magazine.css` y `.js` se conservan como archivos históricos, pero el HTML ya no los solicita.
+
+Si se añaden clases Tailwind a las fuentes, actualizar el CSS en Chrome con las herramientas **ya instaladas** (sin npm install):
+
+```sh
+python tools/build_magazine.py --runtime
+node tools/capture-editorial-css.cjs
+python tools/build_magazine.py
+```
+
+Solo esa regeneración opcional de utilidades necesita el CDN en un navegador de build. El script ejercita fichas/categorías del glosario, visor, fallback y menú; captura las reglas de las clases presentes, incluidas variantes responsive/hover. El HTML temporal `source/build-runtime.html` está ignorado y no es el entregable. Se guardan hashes de CSS y runtime en `source/css-build.json`. El CDN no está fijado para siempre: una versión futura puede producir otro CSS; revisar el hash/diff y repetir las pruebas de referencia. El build offline a partir de CSS versionado sí es determinista. La procedencia y checksum exactos del adjunto están en `source/README.md`.
+
+## Pruebas reales
+
+```sh
 python -m unittest discover -s tests -v
 node tests/magazine.test.cjs
 node tests/magazine-functional.cjs
+node tests/editorial-reference.cjs
 node tests/magazine-real-smoke.cjs
 ```
 
-No es necesario ejecutar el generador para ver la página. No renombra archivos de Drive ni descarga imágenes. CSS y comportamiento están en `assets/magazine.css` y `assets/magazine.js`.
+Las pruebas de navegador usan Playwright/Chrome existentes. Valores por defecto: `C:/Users/D/node_modules/playwright`, `C:/Program Files/Google/Chrome/Application/chrome.exe`; se pueden especificar `PLAYWRIGHT_PATH` y `CHROME_PATH`. `MAGAZINE_URL` permite hacer smoke contra un servidor en lugar de file.
 
-Las pruebas de navegador usan Playwright y Chrome ya instalados en este equipo. Por defecto buscan `C:/Users/D/node_modules/playwright` y `C:/Program Files/Google/Chrome/Application/chrome.exe`. En otro equipo se pueden especificar `PLAYWRIGHT_PATH` (ruta del módulo instalado) y `CHROME_PATH`. No se instala nada automáticamente. `MAGAZINE_URL` permite ejecutar el smoke real contra un servidor estático en lugar de `file:`.
+- `magazine.test.cjs` → contrato de la referencia: su RED real dio 0 mosaicos frente a 5 sobre `f8e3ab1`; ahora pasa.
+- `magazine-functional.cjs` → HTML copiado a un directorio vacío, **todo HTTP(S) bloqueado**, sin imágenes fixture. Verifica 58 IDs/pies/alt/nombres/links, categorías 29/15/5/9/0, 15 cápsulas, 44 fichas, buscador/filtros e inyección escapada, enlaces de glosario, navegación, menú, visor/teclado/Esc/foco, fallbacks neutrales, impresión y ausencia de requests a assets/CDN. Pantallas 1440, 390 y 360; PDF con medios no disponibles, no evidencia de fotografías cargadas.
+- `editorial-reference.cjs` → compara estilos computados de 14 componentes y 12 propiedades contra el adjunto original en tres anchuras; comprueba también 33 nodos editoriales originales sin reescritura. Es una prueba de red para compilar la referencia, no dependencia del entregable.
+- `magazine-real-smoke.cjs` → Drive real, sin fixtures: exige cinco IDs distintos con dimensiones naturales válidas y la foto ampliada. No certifica las 58 cargas ni videos/otros navegadores.
+- Tests Python mantienen el contrato del catálogo y el snapshot legacy (47 fotos + 3 videos) separado del manifiesto actual de 58.
 
-- `magazine.test.cjs`: contrato DOM mínimo usado para RED antes de implementar los cinco ejes.
-- `magazine-functional.cjs`: imágenes fixture explícitamente simuladas, DOM/JS/CSS reales. Contrasta cada ID/pie/alt/nombre/enlace, seis filtros, navegación en 1440/390/360, visor y foco, móvil, fallback con solicitudes abortadas e impresión. Genera `print-layout-MOCK.pdf`; **no** es evidencia de carga fotográfica real.
-- `magazine-real-smoke.cjs`: red Drive real sin sustituir imágenes; exige al menos cinco IDs distintos con dimensiones naturales válidas y la imagen ampliada. Genera capturas desktop/móvil y JSON de respuestas, fallos y errores JS. No afirma haber probado las 58 cargas, reproducción de videos ni otros navegadores.
+Capturas y PDFs privados se escriben fuera del repo en `C:/Users/D/AppData/Local/hermes/profiles/null/cache/scratch/marea-editorial-qa/`, configurable por `ARTIFACT_DIR`. **No commitear fotografías/personas ni PDFs.** Ver resultados y límites de esta corrección en [audit/EDITORIAL-RESTORATION.md](audit/EDITORIAL-RESTORATION.md). El informe `audit/FRONTEND-REVIEW.md` corresponde al diseño anterior, no a una aprobación independiente de este nuevo HTML.
 
-Los artefactos privados se escriben fuera del repo, por defecto en `C:/Users/D/AppData/Local/hermes/profiles/null/cache/scratch/marea-magazine-qa/`. Se puede cambiar con `ARTIFACT_DIR`. No commitear capturas ni PDFs con fotografías/personas.
+## Auditoría conservada
 
-## Auditoría histórica frente a edición actual
-
-- [Taxonomía y límites de verified](audit/TAXONOMY.md).
-- [Relectura de seis correcciones](audit/THEMATIC-CORRECTIONS-RECHECK.md).
-- [Catálogo temático CSV](audit/thematic-catalog.csv) y [JSON](audit/thematic-catalog.json): 212 IDs.
-- `audit/page-references.json`, `inventory.json`, `summary.json`, `media-catalog.csv` y `thumbnail-checks.json` son el **snapshot histórico** de la página anterior (47 fotos + 3 videos); no se sobrescribieron para hacer coincidir la edición actual.
-
-`tools/audit_media.py` reconoce el manifiesto de publicación actual y conserva el parser del HTML anterior. Los tests distinguen los 50 registros históricos de los 58 actuales. Si se decide repetir el inventario público de Drive:
-
-```sh
-python tools/audit_media.py
-```
-
-Ahora escribe en `audit/current/`, separado del snapshot histórico. Ese comando hace lectura de red y comprueba miniaturas; **no** valida semántica ni sustituye los tests de navegador. `python tools/thematic_media.py validate` requiere la evidencia privada `../visual-evidence` ya existente; un clon remoto sin ella no reproduce esa validación completa. No ejecutar `build` del catálogo para cambiar estados sin revisión.
-
-## Entrega para revisión
-
-La página y sus assets se entregan juntos en la rama `audit/thematic-draft` del fork [Dacroxx/marea-y-azotea](https://github.com/Dacroxx/marea-y-azotea/tree/audit/thematic-draft). Para verla, descargar el ZIP de esa rama, extraerlo y abrir `index.html`; GitHub muestra código, no una vista ejecutada de la revista. También se puede usar el servidor local indicado arriba.
-
-Revisión frontend independiente: aprobada con límites, sin bloqueos críticos. Evidencia y límites en [FRONTEND-REVIEW.md](audit/FRONTEND-REVIEW.md). No hay merge a dev/main ni despliegue autorizado; el sitio original continúa sin cambios. No se tocó el WIP del clon de Documents ni se cambiaron permisos/originales de Drive.
+[TAXONOMY.md](audit/TAXONOMY.md), [catálogo JSON](audit/thematic-catalog.json), [CSV](audit/thematic-catalog.csv) y [correcciones](audit/THEMATIC-CORRECTIONS-RECHECK.md) conservan la revisión existente. `tools/audit_media.py` reconoce el manifiesto actual y mantiene el parser legacy; una nueva auditoría de red escribe en `audit/current/`, no sobre el snapshot histórico. No equivale a revisar semántica. `python tools/thematic_media.py validate` necesita la evidencia privada `../visual-evidence`; un clon remoto sin ella no reproduce esa validación completa.
