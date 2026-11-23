@@ -243,9 +243,24 @@ span.bg-achiote{background-color:#B83B1A!important}
   #portada .border-t{margin-top:1.25rem!important;padding-top:1rem!important;gap:.75rem!important}
   #portada .mt-8{margin-top:1.15rem!important}
 }
+/* Floating Flipsnack magazine button & modal */
+.flipbook-fab{position:fixed;bottom:1.15rem;right:1.15rem;z-index:40;display:inline-flex;align-items:center;gap:.55rem;background:#0F4C3A;color:#FAF4E8;border:1.5px solid rgba(244,185,66,.75);padding:.75rem;border-radius:9999px;cursor:pointer;box-shadow:0 12px 28px -6px rgba(29,35,32,.36);transition:transform .22s cubic-bezier(.22,1,.36,1),background-color .2s ease,box-shadow .2s ease,opacity .2s ease}
+.flipbook-fab:hover{transform:translateY(-2px);background:#104E6B;box-shadow:0 16px 34px -6px rgba(16,78,107,.45)}
+.flipbook-fab.is-hidden-modal{opacity:0;pointer-events:none;transform:translateY(8px)}
+.flipbook-fab-label{display:none;font-size:.72rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;white-space:nowrap}
+@media(min-width:640px){.flipbook-fab{padding:.7rem 1.1rem}.flipbook-fab-label{display:inline}}
+.flipbook-modal{position:fixed;inset:0;z-index:60;background:rgba(29,35,32,.92);backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center;padding:.75rem}
+.flipbook-modal.hidden{display:none}
+.flipbook-dialog{width:100%;max-width:72rem;background:#1D2320;color:#FAF4E8;border:1px solid rgba(244,185,66,.28);border-radius:1.25rem;overflow:hidden;box-shadow:0 25px 60px -15px rgba(0,0,0,.6);animation:modalPopIn .2s cubic-bezier(.22,1,.36,1)}
+.flipbook-header{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.85rem 1.25rem;border-bottom:1px solid rgba(250,244,232,.12)}
+.flipbook-stage{position:relative;width:100%;height:72dvh;min-height:360px;background:#141916;display:flex;align-items:center;justify-content:center}
+@media(min-width:640px){.flipbook-stage{height:78vh;min-height:480px}}
+.flipbook-stage iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+.flipbook-loading{font-size:.875rem;color:rgba(250,244,232,.7);letter-spacing:.02em}
+
 @media(max-width:400px){header > div:nth-child(2){gap:.25rem}#lb-caption{font-size:.875rem}#lb-original-name{overflow-wrap:anywhere}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*::before,*::after{transition:none!important;animation:none!important}.reveal{opacity:1;transform:none}.video-carousel-track{scroll-behavior:auto!important}}
-@media print{*{transition:none!important;animation:none!important}.reveal{opacity:1!important;transform:none!important}.photo-open{position:relative!important;height:180px!important}figure{height:auto!important;min-height:240px}.artistic-fallback{position:absolute!important}figure figcaption{position:relative!important;background:#1D2320!important;padding:1rem!important;opacity:1!important}[id^="mosaic-c"]{grid-auto-rows:auto!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:1rem!important}[id^="mosaic-c"]>*{grid-column:auto!important;grid-row:auto!important}.video-carousel-viewport{-webkit-mask-image:none!important;mask-image:none!important;overflow:visible!important}.video-carousel-track{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;padding:0!important;overflow:visible!important}.video-slide{opacity:1!important;transform:none!important;filter:none!important}.video-nav-btn,.video-dots{display:none!important}}
+@media print{*{transition:none!important;animation:none!important}.no-print{display:none!important}.reveal{opacity:1!important;transform:none!important}.photo-open{position:relative!important;height:180px!important}figure{height:auto!important;min-height:240px}.artistic-fallback{position:absolute!important}figure figcaption{position:relative!important;background:#1D2320!important;padding:1rem!important;opacity:1!important}[id^="mosaic-c"]{grid-auto-rows:auto!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:1rem!important}[id^="mosaic-c"]>*{grid-column:auto!important;grid-row:auto!important}.video-carousel-viewport{-webkit-mask-image:none!important;mask-image:none!important;overflow:visible!important}.video-carousel-track{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;padding:0!important;overflow:visible!important}.video-slide{opacity:1!important;transform:none!important;filter:none!important}.video-nav-btn,.video-dots{display:none!important}}
 </style>
 </head>
 <body class="antialiased selection:bg-platano/40 selection:text-carbon">
@@ -1662,6 +1677,31 @@ span.bg-achiote{background-color:#B83B1A!important}
       }
     });
   </script>
+
+  <!-- Botón flotante y modal de Edición Revista (Flipsnack) -->
+  <button type="button" id="flipbook-fab" class="flipbook-fab no-print" aria-haspopup="dialog" aria-controls="flipbook-modal" aria-label="Abrir edición revista digital en Flipsnack">
+    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="#F4B942" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M2 4.5A2.5 2.5 0 0 1 4.5 2H12v18H4.5A2.5 2.5 0 0 0 2 22V4.5Z"/>
+      <path d="M22 4.5A2.5 2.5 0 0 0 19.5 2H12v18h7.5a2.5 2.5 0 0 1 2.5 2V4.5Z"/>
+    </svg>
+    <span class="flipbook-fab-label">Edición revista</span>
+  </button>
+
+  <div id="flipbook-modal" class="flipbook-modal hidden no-print" role="dialog" aria-modal="true" aria-labelledby="flipbook-title">
+    <div class="flipbook-dialog">
+      <div class="flipbook-header">
+        <div class="flex items-center gap-3 min-w-0">
+          <span class="px-2.5 py-1 rounded-full bg-selva text-platano text-[10px] font-bold uppercase tracking-widest shrink-0">15 págs</span>
+          <h3 id="flipbook-title" class="font-editorial font-bold text-base sm:text-lg text-coco truncate">Edición Revista · Marea &amp; Azotea</h3>
+        </div>
+        <button type="button" id="flipbook-close" aria-label="Cerrar edición revista" class="w-9 h-9 rounded-full bg-coco/10 hover:bg-achiote text-coco flex items-center justify-center text-xl font-bold transition-colors cursor-pointer shrink-0">×</button>
+      </div>
+      <div id="flipbook-stage" class="flipbook-stage" data-flipsnack-src="https://player.flipsnack.com/index.html?hash=OEU3QUVFNUVGQjUrem41ZWh1N3diMQ==">
+        <p class="flipbook-loading">Cargando edición revista…</p>
+      </div>
+    </div>
+  </div>
+
 <script>
 /* Accessible behavior supplements; keep the reference's interaction design. */
 const syncHeaderHeight=()=>document.documentElement.style.setProperty('--header-height',document.querySelector('header').getBoundingClientRect().height+'px');
@@ -1751,8 +1791,8 @@ if(progressBar){
 
 // Body scroll lock for modals (re-entrant safe)
 let savedOverflow='',isScrollLocked=false;
-const lockScroll=()=>{if(!isScrollLocked){savedOverflow=document.documentElement.style.overflow;isScrollLocked=true;}document.documentElement.style.overflow='hidden';};
-const unlockScroll=()=>{document.documentElement.style.overflow=savedOverflow;document.body.style.overflow='';isScrollLocked=false;};
+const lockScroll=()=>{if(!isScrollLocked){savedOverflow=document.documentElement.style.overflow;isScrollLocked=true;}document.documentElement.style.overflow='hidden';document.getElementById('flipbook-fab')?.classList.add('is-hidden-modal');};
+const unlockScroll=()=>{document.documentElement.style.overflow=savedOverflow;document.body.style.overflow='';isScrollLocked=false;document.getElementById('flipbook-fab')?.classList.remove('is-hidden-modal');};
 
 let modalReturnFocus = null;
 const focusModal = (id) => {
@@ -1796,15 +1836,53 @@ document.addEventListener('keydown',e=>{
    mobileMenuBtn?.focus();
    return;
  }
- const modal=['glossary-modal','lightbox-modal'].map(id=>document.getElementById(id)).find(el=>el&&!el.classList.contains('hidden'));
+ const flipModal=document.getElementById('flipbook-modal');
+ if(e.key==='Escape'&&flipModal&&!flipModal.classList.contains('hidden')){
+   closeFlipbook();
+   return;
+ }
+ const modal=['glossary-modal','lightbox-modal','flipbook-modal'].map(id=>document.getElementById(id)).find(el=>el&&!el.classList.contains('hidden'));
  if(!modal||e.key!=='Tab')return;
- const els=[...modal.querySelectorAll('button,a[href],input,[tabindex]:not([tabindex="-1"])')].filter(el=>!el.disabled&&el.getClientRects().length);
+ const els=[...modal.querySelectorAll('button,a[href],input,iframe,[tabindex]:not([tabindex="-1"])')].filter(el=>!el.disabled&&el.getClientRects().length);
  if(!els.length)return;
  const first=els[0],last=els.at(-1);
  if(!modal.contains(document.activeElement)){e.preventDefault();first.focus();}
  else if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}
  else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}
 });
+
+// Lazy-loaded Flipsnack flipbook modal
+const flipbookFab=document.getElementById('flipbook-fab');
+const flipbookModal=document.getElementById('flipbook-modal');
+const flipbookClose=document.getElementById('flipbook-close');
+const flipbookStage=document.getElementById('flipbook-stage');
+function openFlipbook(){
+  if(!flipbookModal)return;
+  if(flipbookStage&&!flipbookStage.querySelector('iframe')){
+    const src=flipbookStage.dataset.flipsnackSrc;
+    if(src){
+      const iframe=document.createElement('iframe');
+      iframe.src=src;
+      iframe.title='Marea y Azotea — Edición Revista en Flipsnack';
+      iframe.allowFullscreen=true;
+      iframe.allow='autoplay; clipboard-read; clipboard-write';
+      flipbookStage.appendChild(iframe);
+    }
+  }
+  modalReturnFocus=document.activeElement;
+  flipbookModal.classList.remove('hidden');
+  lockScroll();
+  flipbookClose?.focus();
+}
+function closeFlipbook(){
+  if(!flipbookModal||flipbookModal.classList.contains('hidden'))return;
+  flipbookModal.classList.add('hidden');
+  unlockScroll();
+  modalReturnFocus?.focus({preventScroll:true});
+}
+flipbookFab?.addEventListener('click',openFlipbook);
+flipbookClose?.addEventListener('click',closeFlipbook);
+flipbookModal?.addEventListener('click',e=>{if(e.target===flipbookModal)closeFlipbook();});
 mobileMenuBtn.setAttribute('aria-controls','mobile-menu');mobileMenuBtn.setAttribute('aria-expanded','false');
 new MutationObserver(()=>mobileMenuBtn.setAttribute('aria-expanded',String(!mobileMenu.classList.contains('hidden')))).observe(mobileMenu,{attributes:true,attributeFilter:['class']});
 document.querySelectorAll('.g-tab').forEach(btn=>btn.setAttribute('aria-pressed',String(btn.dataset.cat===activeGlossaryCat)));

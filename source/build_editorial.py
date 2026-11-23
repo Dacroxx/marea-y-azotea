@@ -713,8 +713,33 @@ def build(runtime=False):
     manifest = [{k: r[k] for k in ('code', 'sourceId', 'curatedFileName', 'originalName', 'primaryCategory', 'visualDescription')} for r in photos]
     text = text.replace('  <script>\n    // =========================================================================', '<script id="published-photos" type="application/json">' + json.dumps(manifest, ensure_ascii=False).replace('<', '\\u003c') + '</script>\n  <script>\n    // =========================================================================', 1)
     text = text.replace('${query}', '${escapeHTML(query)}')
+    flipbook_html = '''
+  <!-- Botón flotante y modal de Edición Revista (Flipsnack) -->
+  <button type="button" id="flipbook-fab" class="flipbook-fab no-print" aria-haspopup="dialog" aria-controls="flipbook-modal" aria-label="Abrir edición revista digital en Flipsnack">
+    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="#F4B942" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M2 4.5A2.5 2.5 0 0 1 4.5 2H12v18H4.5A2.5 2.5 0 0 0 2 22V4.5Z"/>
+      <path d="M22 4.5A2.5 2.5 0 0 0 19.5 2H12v18h7.5a2.5 2.5 0 0 1 2.5 2V4.5Z"/>
+    </svg>
+    <span class="flipbook-fab-label">Edición revista</span>
+  </button>
+
+  <div id="flipbook-modal" class="flipbook-modal hidden no-print" role="dialog" aria-modal="true" aria-labelledby="flipbook-title">
+    <div class="flipbook-dialog">
+      <div class="flipbook-header">
+        <div class="flex items-center gap-3 min-w-0">
+          <span class="px-2.5 py-1 rounded-full bg-selva text-platano text-[10px] font-bold uppercase tracking-widest shrink-0">15 págs</span>
+          <h3 id="flipbook-title" class="font-editorial font-bold text-base sm:text-lg text-coco truncate">Edición Revista · Marea &amp; Azotea</h3>
+        </div>
+        <button type="button" id="flipbook-close" aria-label="Cerrar edición revista" class="w-9 h-9 rounded-full bg-coco/10 hover:bg-achiote text-coco flex items-center justify-center text-xl font-bold transition-colors cursor-pointer shrink-0">×</button>
+      </div>
+      <div id="flipbook-stage" class="flipbook-stage" data-flipsnack-src="https://player.flipsnack.com/index.html?hash=OEU3QUVFNUVGQjUrem41ZWh1N3diMQ==">
+        <p class="flipbook-loading">Cargando edición revista…</p>
+      </div>
+    </div>
+  </div>
+'''
     behavior = (ROOT / 'source/accessibility.js').read_text(encoding='utf-8')
-    text = text.replace('</body>', '<script>\n' + behavior + '\n</script>\n<noscript><p>Los mosaicos y el glosario interactivo requieren JavaScript. Las crónicas se pueden leer sin él.</p></noscript>\n</body>')
+    text = text.replace('</body>', flipbook_html + '\n<script>\n' + behavior + '\n</script>\n<noscript><p>Los mosaicos y el glosario interactivo requieren JavaScript. Las crónicas se pueden leer sin él.</p></noscript>\n</body>')
     extra = (ROOT / 'source/standalone.css').read_text(encoding='utf-8')
     text = text.replace('</head>', '<style id="editorial-refinements">' + extra + '</style>\n</head>')
     if not runtime:

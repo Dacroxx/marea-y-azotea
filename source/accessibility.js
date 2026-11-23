@@ -86,8 +86,8 @@ if(progressBar){
 
 // Body scroll lock for modals (re-entrant safe)
 let savedOverflow='',isScrollLocked=false;
-const lockScroll=()=>{if(!isScrollLocked){savedOverflow=document.documentElement.style.overflow;isScrollLocked=true;}document.documentElement.style.overflow='hidden';};
-const unlockScroll=()=>{document.documentElement.style.overflow=savedOverflow;document.body.style.overflow='';isScrollLocked=false;};
+const lockScroll=()=>{if(!isScrollLocked){savedOverflow=document.documentElement.style.overflow;isScrollLocked=true;}document.documentElement.style.overflow='hidden';document.getElementById('flipbook-fab')?.classList.add('is-hidden-modal');};
+const unlockScroll=()=>{document.documentElement.style.overflow=savedOverflow;document.body.style.overflow='';isScrollLocked=false;document.getElementById('flipbook-fab')?.classList.remove('is-hidden-modal');};
 
 let modalReturnFocus = null;
 const focusModal = (id) => {
@@ -131,15 +131,53 @@ document.addEventListener('keydown',e=>{
    mobileMenuBtn?.focus();
    return;
  }
- const modal=['glossary-modal','lightbox-modal'].map(id=>document.getElementById(id)).find(el=>el&&!el.classList.contains('hidden'));
+ const flipModal=document.getElementById('flipbook-modal');
+ if(e.key==='Escape'&&flipModal&&!flipModal.classList.contains('hidden')){
+   closeFlipbook();
+   return;
+ }
+ const modal=['glossary-modal','lightbox-modal','flipbook-modal'].map(id=>document.getElementById(id)).find(el=>el&&!el.classList.contains('hidden'));
  if(!modal||e.key!=='Tab')return;
- const els=[...modal.querySelectorAll('button,a[href],input,[tabindex]:not([tabindex="-1"])')].filter(el=>!el.disabled&&el.getClientRects().length);
+ const els=[...modal.querySelectorAll('button,a[href],input,iframe,[tabindex]:not([tabindex="-1"])')].filter(el=>!el.disabled&&el.getClientRects().length);
  if(!els.length)return;
  const first=els[0],last=els.at(-1);
  if(!modal.contains(document.activeElement)){e.preventDefault();first.focus();}
  else if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}
  else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}
 });
+
+// Lazy-loaded Flipsnack flipbook modal
+const flipbookFab=document.getElementById('flipbook-fab');
+const flipbookModal=document.getElementById('flipbook-modal');
+const flipbookClose=document.getElementById('flipbook-close');
+const flipbookStage=document.getElementById('flipbook-stage');
+function openFlipbook(){
+  if(!flipbookModal)return;
+  if(flipbookStage&&!flipbookStage.querySelector('iframe')){
+    const src=flipbookStage.dataset.flipsnackSrc;
+    if(src){
+      const iframe=document.createElement('iframe');
+      iframe.src=src;
+      iframe.title='Marea y Azotea — Edición Revista en Flipsnack';
+      iframe.allowFullscreen=true;
+      iframe.allow='autoplay; clipboard-read; clipboard-write';
+      flipbookStage.appendChild(iframe);
+    }
+  }
+  modalReturnFocus=document.activeElement;
+  flipbookModal.classList.remove('hidden');
+  lockScroll();
+  flipbookClose?.focus();
+}
+function closeFlipbook(){
+  if(!flipbookModal||flipbookModal.classList.contains('hidden'))return;
+  flipbookModal.classList.add('hidden');
+  unlockScroll();
+  modalReturnFocus?.focus({preventScroll:true});
+}
+flipbookFab?.addEventListener('click',openFlipbook);
+flipbookClose?.addEventListener('click',closeFlipbook);
+flipbookModal?.addEventListener('click',e=>{if(e.target===flipbookModal)closeFlipbook();});
 mobileMenuBtn.setAttribute('aria-controls','mobile-menu');mobileMenuBtn.setAttribute('aria-expanded','false');
 new MutationObserver(()=>mobileMenuBtn.setAttribute('aria-expanded',String(!mobileMenu.classList.contains('hidden')))).observe(mobileMenu,{attributes:true,attributeFilter:['class']});
 document.querySelectorAll('.g-tab').forEach(btn=>btn.setAttribute('aria-pressed',String(btn.dataset.cat===activeGlossaryCat)));
