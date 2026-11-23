@@ -1746,6 +1746,30 @@ if(!document.querySelector('.skip-to-content')){
   document.body.prepend(skip);
 }
 
+// Landmark & form control accessibility attributes
+const mainNav=document.querySelector('header nav');
+if(mainNav&&!mainNav.getAttribute('aria-label'))mainNav.setAttribute('aria-label','Navegación principal');
+const glossarySearch=document.getElementById('glossary-search');
+if(glossarySearch&&!glossarySearch.getAttribute('aria-label'))glossarySearch.setAttribute('aria-label','Buscar término en el glosario');
+document.querySelectorAll('svg').forEach(svg=>{
+  if(!svg.getAttribute('aria-label')&&!svg.querySelector('title'))svg.setAttribute('aria-hidden','true');
+});
+['glossary-modal','lightbox-modal'].forEach(id=>{
+  const m=document.getElementById(id);
+  if(m){m.setAttribute('role','dialog');m.setAttribute('aria-modal','true');m.setAttribute('aria-labelledby',id==='glossary-modal'?'gm-title':'lb-caption');}
+});
+const a11yLive=document.createElement('div');
+a11yLive.id='a11y-live-status';
+a11yLive.setAttribute('aria-live','polite');
+a11yLive.setAttribute('aria-atomic','true');
+a11yLive.style.cssText='position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap';
+document.body.appendChild(a11yLive);
+const announceGlossaryCount=()=>{
+  const n=document.querySelectorAll('#glossary-grid > button').length;
+  a11yLive.textContent=n===1?'Mostrando 1 término en el glosario':`Mostrando ${n} términos en el glosario`;
+};
+if(glossarySearch)glossarySearch.addEventListener('input',()=>setTimeout(announceGlossaryCount,50));
+
 // Accessible reading progress bar
 const progressBar=document.getElementById('reading-progress');
 if(progressBar){
