@@ -46,8 +46,8 @@ def build_videos_section(videos):
             vprev = f"https://drive.google.com/file/d/{v['sourceId']}/preview"
             cards.append(
                 f'<div class="rounded-3xl p-4 sm:p-5 shadow-md flex flex-col justify-between {card_bg}">'
-                f'<div class="w-full aspect-video rounded-2xl overflow-hidden bg-carbon/80">'
-                f'<iframe src="{vprev}" title="{escape(v["driveName"])}" loading="lazy" allow="autoplay; fullscreen" allowfullscreen class="w-full h-full border-0"></iframe>'
+                f'<div class="w-full rounded-2xl overflow-hidden bg-carbon/80" style="aspect-ratio: 16 / 9; min-height: 210px;">'
+                f'<iframe src="{vprev}" title="{escape(v["driveName"])}" loading="lazy" allow="autoplay; fullscreen" allowfullscreen style="width: 100%; height: 100%; min-height: 210px; border: 0;"></iframe>'
                 f'</div>'
                 f'<div class="mt-4 flex items-center justify-between gap-2">'
                 f'<span class="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-widest {badge_bg}">{escape(v["code"])}</span>'
