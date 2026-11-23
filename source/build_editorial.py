@@ -202,8 +202,23 @@ def build(runtime=False):
     # Portada y contadores globales
     text = text.replace('1r4OYEQtf00TzGKc7I8qH2Dg-lIHsKg9o', cover['sourceId'])
     text = text.replace('alt="Portada editorial Marea & Azotea"', 'alt="' + escape(cover['visualDescription'], quote=True) + '"')
-    text = text.replace('>78</span>', f'>{total_photos}</span>').replace('>18</span>', f'>{total_videos}</span>').replace('Memorias en Video</span>', 'Videos en Secuencia</span>').replace('1 / 78', f'1 / {total_photos}')
+    text = text.replace('>05</span>\n          <span class="uppercase tracking-wider text-[10px]">Crónicas Temáticas</span>', '>04</span>\n          <span class="uppercase tracking-wider text-[10px]">Ejes Temáticos</span>')
+    text = text.replace('>78</span>\n          <span class="uppercase tracking-wider text-[10px]">Postales de Taller</span>', f'>{total_photos}</span>\n          <span class="uppercase tracking-wider text-[10px]">Fotografías de Clase</span>')
+    text = text.replace('>18</span>\n          <span class="uppercase tracking-wider text-[10px]">Memorias en Video</span>', f'>{total_videos}</span>\n          <span class="uppercase tracking-wider text-[10px]">Videos en Secuencia</span>')
+    text = text.replace('Voces en el Glosario', 'Términos en el Glosario')
+    text = text.replace('1 / 78', f'1 / {total_photos}')
     text = text.replace('78 FOTOS ÚNICAS + 18 VIDEOS', f'{total_photos} FOTOS CURADAS · {total_videos} VIDEOS')
+    text = text.replace('Crónica viva de las Cocinas del Pacífico Colombiano', 'Bitácora de las Cocinas del Pacífico Colombiano')
+    text = text.replace(
+        'Un recorrido sensorial y gastronómico en cinco capítulos: de la piedra de moler y el perfume de la azotea hasta el coco recién estrujado, el pulso del manglar y la memoria viva del litoral.',
+        'Registro académico y fotográfico del semestre: utensilios tradicionales, hierbas de azotea, cocina de coco y mar, trabajo en brigada y secuencias en video.',
+    )
+    text = text.replace('Explorar la Crónica', 'Explorar la Bitácora')
+    text = text.replace('>Carta Editorial</span>', '>Presentación</span>')
+    text = text.replace(
+        'Cocinar el Pacífico es aprender a escuchar el territorio con las manos',
+        'Bitácora de prácticas en la asignatura Cocinas del Pacífico',
+    )
 
     # Navegación superior y menú móvil alineados a 4 Ejes + Videos + Glosario
     old_nav = '''      <nav class="hidden lg:flex items-center gap-5 text-xs font-semibold uppercase tracking-wider text-carbon/80">
@@ -320,11 +335,32 @@ def build(runtime=False):
     text = text.replace('href="#cronica-5" class="group rounded-3xl p-6 bg-chontaduro', 'href="#videos-eje" class="group rounded-3xl p-6 bg-chontaduro')
     text = text.replace('Coco, Tubérculos y Fogón</h4>', 'Fogón, Mar y Mesa</h4>')
 
-    # Actualizar encabezados de Crónica III (unifica Fogón + Mar), ocultar Crónica IV vacía, y alinear Crónica V como Eje IV
+    # Actualizar encabezados de Ejes I-IV y depurar lenguaje romantizado/exagerado
+    text = text.replace('>Crónica I</span>', '>Eje I</span>')
+    text = text.replace(
+        'Antes de la electricidad y el acero inoxidable, el pulso del Pacífico se talló en piedra, madera y manos pacientes.',
+        'Reconocimiento inicial de utensilios, maderas, fibras y materias primas que sostienen las técnicas tradicionales del Pacífico.',
+    )
+    text = text.replace('>Crónica II</span>', '>Eje II</span>')
+    text = text.replace(
+        'En el Pacífico, la sazón se aprende primero con la nariz y se cultiva a un paso de la cocina, elevada sobre la humedad de la tierra.',
+        'Cultivo doméstico en plataformas elevadas y preparación del refrito como base aromática de la cocina del litoral.',
+    )
+    text = text.replace('el aula entera cambió de temperatura y paisaje.', 'el trabajo aromático marcó el ritmo de la práctica en cocina.')
+    text = text.replace('el abrazo solar del', 'el color y tono terroso del')
+    text = text.replace('>Crónica III</span>', '>Eje III</span>')
+    text = text.replace('Alquimia del Fogón · Guisos y Raíces', 'Cocina en Práctica · Coco, Mar y Tubérculos')
     text = text.replace(
         '<h2 class="font-editorial font-black text-4xl sm:text-6xl text-carbon leading-[1.04]">\n          Coco, Tubérculos y Fogón\n        </h2>',
         '<h2 class="font-editorial font-black text-4xl sm:text-6xl text-carbon leading-[1.04]">\n          Fogón, Mar y Mesa del Pacífico\n        </h2>',
     )
+    text = text.replace(
+        'El tiempo en las ollas del Pacífico no se mide en cronómetros: se escucha hasta que el coco se vuelve seda y los tubérculos abrazan el caldo.',
+        'Extracción manual de leche de coco, manejo de fuegos lentos y cocción de mariscos, arroces y amasijos.',
+    )
+    text = text.replace('Pocas técnicas revelan tanto cariño como rallar y estrujar el coco a mano para separar sus dos vidas:', 'Rallar y estrujar el coco a mano permite separar sus dos extracciones:')
+    text = text.replace('monumentos del sabor', 'preparaciones representativas')
+    text = text.replace('las raíces generosas', 'los tubérculos tradicionales')
     text = text.replace('<article id="cronica-4"', '<article id="cronica-4" class="hidden"')
     text = text.replace('>Crónica V</span>', '>Eje IV</span>')
     text = text.replace('Espiritualidad, Fiesta y Ética Culinaria', 'Bitácora de Brigada, Cultura Viva y Ética Culinaria')
@@ -332,6 +368,16 @@ def build(runtime=False):
         '<h2 class="font-editorial font-black text-4xl sm:text-6xl text-marea leading-[1.04]">\n          Bebidas, Cultura Viva e Identidad\n        </h2>',
         '<h2 class="font-editorial font-black text-4xl sm:text-6xl text-marea leading-[1.04]">\n          Bitácora de Brigada y Cultura Viva\n        </h2>',
     )
+    text = text.replace(
+        'En el Pacífico se cocina cantando, se destila memoria y se defiende la vida a través de la soberanía alimentaria.',
+        'Trabajo en brigada, tradición oral, música vinculada al oficio culinario y bibliografía de la cátedra.',
+    )
+    text = text.replace('sazonan la memoria', 'acompañan las jornadas')
+    text = text.replace('para regalar brillo y sedosidad.', 'para dar brillo y estabilidad a la emulsión.')
+    text = text.replace('el sustento silencioso que equilibra la riqueza del coco.', 'la base amilácea que acompaña las preparaciones con coco.')
+    text = text.replace('Cuando el refrito suelta su primer perfume dulce y herbal, el olfato avisa el instante exacto para recibir el caldo.', 'El punto aromático del refrito indica el momento de incorporar los líquidos o fondos.')
+    text = text.replace('la cocina del Pacífico no entiende de fronteras políticas, sino de agua y memoria.', 'preparaciones emparentadas que comparten técnica y uso del plátano en todo el litoral.')
+    text = text.replace('Un tributo a las portadoras de tradición, a los ecosistemas de selva y manglar, y a cada aprendizaje vivido frente al fogón universitario.', 'Bitácora académica sobre cocinas del Pacífico colombiano, técnicas tradicionales y trabajo en aula.')
 
     # Cambio #5: Quitar por completo las franjas de Memorias en Movimiento dentro de las crónicas e insertar sección propia antes del Glosario
     text = re.sub(
