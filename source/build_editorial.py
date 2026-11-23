@@ -102,6 +102,53 @@ def build_videos_section(videos):
 '''
 
 
+def build_references_section():
+    return '''
+  <!-- ===================================================================== -->
+  <!-- 7. REFERENCIAS Y FUENTES BIBLIOGRÁFICAS                               -->
+  <!-- ===================================================================== -->
+  <section id="referencias" class="py-20 sm:py-24 bg-coco border-b border-selva/15">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="max-w-3xl reveal">
+        <span class="px-4 py-1.5 rounded-full bg-selva text-platano text-xs font-bold uppercase tracking-widest">Fuentes &amp; Repositorio</span>
+        <h2 class="mt-4 font-editorial font-black text-3xl sm:text-5xl text-selva leading-[1.08]">
+          Referencias y Documentación de Clase
+        </h2>
+        <p class="mt-3 text-base text-carbon/80 leading-relaxed">
+          Bibliografía consultada en el repositorio de la asignatura y publicaciones oficiales del Estado colombiano sobre cocinas tradicionales, biodiversidad y patrimonio cultural del Pacífico.
+        </p>
+      </div>
+
+      <div class="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div class="rounded-3xl bg-arena p-7 sm:p-8 border border-selva/15">
+          <h3 class="font-editorial font-bold text-2xl text-marea">Repositorio de la Materia (PUJ Cali)</h3>
+          <ul class="mt-5 space-y-3.5 text-sm text-carbon/90 leading-relaxed">
+            <li><strong>Arocha, Jaime (2007).</strong> <em>Encocaos con papa, ¿otro etnoboom usurpador?</em> Revista Colombiana de Antropología, vol. 43, pp. 91–117. Instituto Colombiano de Antropología e Historia (ICANH), Bogotá.</li>
+            <li><strong>Ministerio de Cultura de Colombia (2012).</strong> <em>Política para el conocimiento, la salvaguardia y el fomento de la alimentación y las cocinas tradicionales de Colombia.</em> Biblioteca Básica de Cocinas Tradicionales de Colombia (Tomo 17), Dirección de Patrimonio.</li>
+            <li><strong>Ministerio de Cultura &amp; Fundación ACUA (2018).</strong> <em>Biodiversidad, cocina e identidad en el Pacífico Colombiano: la cocina tradicional de Tumaco (Nariño) y Buenaventura (Valle del Cauca).</em> Cultura Culinaria y Biodiversidad.</li>
+            <li><strong>Ministerio de Cultura &amp; Fundación ACUA.</strong> <em>Saberes &amp; Sabores del Pacífico Colombiano: Buenaventura – Tumaco.</em> Cultura Culinaria y Biodiversidad.</li>
+            <li><strong>SENA · Grupo Fogones y Comunidades (2013).</strong> <em>Sabor Pacífico, Sabor a Memoria.</em> Servicio Nacional de Aprendizaje (SENA).</li>
+            <li><strong>Grueso Romero, Mary.</strong> <em>Cuando los ancestros llaman: poesía afrocolombiana.</em> Editorial Universidad del Cauca, Popayán.</li>
+            <li><strong>Palacios, Arnoldo (1949 / ed. 2010).</strong> <em>Las estrellas son negras.</em> Biblioteca de Literatura Afrocolombiana (Tomo II), Ministerio de Cultura, Bogotá.</li>
+            <li><strong>Material de cátedra.</strong> <em>El Festín de las Mujeres del Pacífico.</em> Archivo bibliográfico del curso Cocinas del Pacífico.</li>
+          </ul>
+        </div>
+
+        <div class="rounded-3xl bg-selva text-coco p-7 sm:p-8 shadow-lg">
+          <h3 class="font-editorial font-bold text-2xl text-platano">Publicaciones y Normativa del Estado Colombiano</h3>
+          <ul class="mt-5 space-y-3.5 text-sm text-coco/90 leading-relaxed">
+            <li><strong>Congreso de la República de Colombia (2021).</strong> <em>Ley 2158 de 2021</em>, por medio de la cual se reconoce, impulsa y protege el Viche/Biche y sus derivados como Patrimonio Cultural Inmaterial de la Nación y patrimonio colectivo de las comunidades negras del Pacífico.</li>
+            <li><strong>Presidencia de la República / MinCultura (2024).</strong> <em>Decreto 1456 de 2024</em>, reglamentación integral de la Ley 2158 de 2021 para la salvaguardia del Paisaje Cultural Vichero en Chocó, Valle del Cauca, Cauca y Nariño.</li>
+            <li><strong>Ministerio de Cultura de Colombia.</strong> <em>Biblioteca Básica de Cocinas Tradicionales de Colombia</em> y plataforma <em>GastroHerencia</em>: compilación regional de saberes culinarios (incluyendo <em>Saberes y Sabores del Pacífico: Guapi – Quibdó</em> y <em>El fogón de los ríos</em>).</li>
+            <li><strong>UNESCO &amp; Ministerio de Cultura de Colombia.</strong> <em>Músicas de marimba, cantos y bailes tradicionales del Pacífico Sur colombiano</em> (Lista Representativa del Patrimonio Cultural Inmaterial de la Humanidad), contexto cultural de instrumentos como el guasá y los cantos de cocina.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+'''
+
+
 def build(runtime=False):
     source = ROOT / 'source/editorial-template.html'
     assert hashlib.sha256(source.read_bytes()).hexdigest() == SOURCE_SHA256, 'Review source provenance before changing its checksum'
@@ -297,10 +344,23 @@ def build(runtime=False):
     )
     text = text.replace('  <!-- ===================================================================== -->\n  <!-- 6. GLOSARIO INTERACTIVO', build_videos_section(videos) + '\n  <!-- ===================================================================== -->\n  <!-- 6. GLOSARIO INTERACTIVO', 1)
 
-    # Cambio #6: Footer -> Aida Arteaga y David González
+    # Insertar sección #referencias antes del footer
+    text = text.replace('  <!-- ===================================================================== -->\n  <!-- 7. CONTRAPORTADA EDITORIAL', build_references_section() + '\n  <!-- ===================================================================== -->\n  <!-- 7. CONTRAPORTADA EDITORIAL', 1)
+
+    # Cambio #6: Footer -> Aida Arteaga y David González + Fotografía Estudiantes + enlace a #referencias
     text = text.replace(
         '<p class="font-editorial font-bold text-xl text-coco mt-1">Aida Arteaga</p>',
-        '<p class="font-editorial font-bold text-xl text-coco mt-1">Aida Arteaga y David González</p>',
+        '<p class="font-editorial font-bold text-xl text-coco mt-1">Aida Arteaga y David González</p>'
+        '\n              <span class="text-[10px] font-bold uppercase tracking-widest text-platano block mt-3">Fotografía y Registro</span>'
+        '\n              <p class="text-xs text-coco/85 mt-0.5">Estudiantes de Cocinas del Pacífico 2026-2</p>',
+    )
+    text = text.replace(
+        '↑ Volver a la Portada\n            </a>',
+        '↑ Volver a la Portada\n            </a>\n'
+        '            <a href="#referencias"\n'
+        '              class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-coco/10 hover:bg-selva text-coco border border-coco/20 font-semibold text-xs uppercase tracking-wider transition-colors">\n'
+        '              Referencias y Fuentes ↓\n'
+        '            </a>',
     )
 
     # Quitar botones de Guardar PDF (header y footer) y su listener
