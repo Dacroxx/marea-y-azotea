@@ -1,1 +1,138 @@
-[]
+[
+  {
+    "code": "V01",
+    "chronicle": "c1",
+    "sourceId": "1mdcyZkpukubLXidKDRsJshbKB0zwe1Y4",
+    "driveName": "TALLER SENSORIAL",
+    "title": "Taller sensorial: reconocimiento de saberes y utensilios",
+    "subtitle": "Registro en clase del acercamiento sensorial al territorio y sus herramientas."
+  },
+  {
+    "code": "V02",
+    "chronicle": "c1",
+    "sourceId": "1xgcRo3P70QxxAAobR2rT2N15DsyDt2iT",
+    "driveName": "MAIZ 1",
+    "title": "Molienda y trabajo del maíz (Parte 1)",
+    "subtitle": "Inicio de la secuencia sobre preparación y manejo tradicional del maíz."
+  },
+  {
+    "code": "V03",
+    "chronicle": "c1",
+    "sourceId": "1GCCVf-qsuQipr03QfvxNNVhswWw3rFUa",
+    "driveName": "MAIZ 2",
+    "title": "Molienda y trabajo del maíz (Parte 2)",
+    "subtitle": "Continuación de la secuencia del trabajo manual con el maíz en taller."
+  },
+  {
+    "code": "V04",
+    "chronicle": "c1",
+    "sourceId": "1tBD1QFVKhoF0ZkxCuiJSozUKRC8tf4p_",
+    "driveName": "MAIZ 3",
+    "title": "Molienda y trabajo del maíz (Parte 3)",
+    "subtitle": "Cierre de la secuencia sobre transformación del maíz en cocina."
+  },
+  {
+    "code": "V05",
+    "chronicle": "c2",
+    "sourceId": "1C6gwF92wXZxZbQJOgnagjAkOmyfzA78T",
+    "driveName": "REFRITO 1",
+    "title": "Preparación del refrito del Pacífico (Parte 1)",
+    "subtitle": "Inicio de la secuencia del sofrito aromático con hierbas de azotea y achiote."
+  },
+  {
+    "code": "V06",
+    "chronicle": "c2",
+    "sourceId": "18ckJQ0TpbAzEoX0JiWQ84eaiyyFsQydM",
+    "driveName": "REFRITO 2",
+    "title": "Preparación del refrito del Pacífico (Parte 2)",
+    "subtitle": "Integración progresiva de hierbas y aromas en el fogón."
+  },
+  {
+    "code": "V07",
+    "chronicle": "c2",
+    "sourceId": "1lq2UmZJo3SWYHuknDNPQzRgbYIMEkhT4",
+    "driveName": "REFRITO 3",
+    "title": "Preparación del refrito del Pacífico (Parte 3)",
+    "subtitle": "Desarrollo de color, textura y fragancia en el refrito."
+  },
+  {
+    "code": "V08",
+    "chronicle": "c2",
+    "sourceId": "1kgEcxXnSKmSbBlplWZlKXJMjFBVx0cv-",
+    "driveName": "REFRITO 4",
+    "title": "Preparación del refrito del Pacífico (Parte 4)",
+    "subtitle": "Punto final del refrito base antes de incorporar proteínas o fondos."
+  },
+  {
+    "code": "V09",
+    "chronicle": "c2",
+    "sourceId": "1Me_SNmmcVu_K08kGXqiWufIP1VF3niYI",
+    "driveName": "SOAZAR HOJAS DE PLATANO",
+    "title": "Soasado de hojas de plátano al fuego",
+    "subtitle": "Técnica de pasar la hoja sobre la llama para darle flexibilidad antes de envolver."
+  },
+  {
+    "code": "V10",
+    "chronicle": "c3",
+    "sourceId": "1JO3eiv9U79MSnTAaFX25qlm269X37nG_",
+    "driveName": "ARROZ COCO 1",
+    "title": "Arroz con coco (Parte 1)",
+    "subtitle": "Inicio de la secuencia de preparación del arroz con coco en clase."
+  },
+  {
+    "code": "V11",
+    "chronicle": "c3",
+    "sourceId": "1vFKvZ3HyJBBKLG-buAAQ4p_fZ0UEifTl",
+    "driveName": "ARROZ COCO 2",
+    "title": "Arroz con coco (Parte 2)",
+    "subtitle": "Reducción y cocción de la leche de coco para el arroz."
+  },
+  {
+    "code": "V12",
+    "chronicle": "c3",
+    "sourceId": "1zCk53VcuEZw9hJRafXgu7-WucEj2HR1j",
+    "driveName": "ARROZ COCO 3",
+    "title": "Arroz con coco (Parte 3)",
+    "subtitle": "Integración del grano y control del punto de cocción."
+  },
+  {
+    "code": "V13",
+    "chronicle": "c3",
+    "sourceId": "1WUen7UEKlocGtNjUiid9SBVOSH97FWAw",
+    "driveName": "ARROZ COCO 4",
+    "title": "Arroz con coco (Parte 4)",
+    "subtitle": "Resultado final de la secuencia de arroz con coco."
+  },
+  {
+    "code": "V14",
+    "chronicle": "c3",
+    "sourceId": "1Y3x37dvfH4P6DhqT2Q5ts5YZZQ75tuPN",
+    "driveName": "FUFU 1",
+    "title": "Preparación del fufú de plátano (Parte 1)",
+    "subtitle": "Inicio de la secuencia de cocción y majado tradicional del plátano."
+  },
+  {
+    "code": "V15",
+    "chronicle": "c3",
+    "sourceId": "1UE3Po7nW-OodattHiNdkIQRpErR1BbSI",
+    "driveName": "FUFU 2",
+    "title": "Preparación del fufú de plátano (Parte 2)",
+    "subtitle": "Trabajo manual de textura y consistencia de la masa tibia."
+  },
+  {
+    "code": "V16",
+    "chronicle": "c3",
+    "sourceId": "1voHJoORHTzZ98-ga7CrUqpRCossAi19n",
+    "driveName": "FUFU 3",
+    "title": "Preparación del fufú de plátano (Parte 3)",
+    "subtitle": "Cierre y armado final en la secuencia del fufú."
+  },
+  {
+    "code": "V17",
+    "chronicle": "c4",
+    "sourceId": "1XLs8ndNINy7hAIrZSLMuIxCQH75abvvd",
+    "driveName": "CAMARON",
+    "title": "Cocción de camarones al fogón",
+    "subtitle": "Registro en cocina de la preparación de camarones en refrito."
+  }
+]
