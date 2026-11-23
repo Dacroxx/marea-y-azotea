@@ -1,0 +1,2283 @@
+[
+  {
+    "number": 1,
+    "category": 4,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "bocados-dorados-cobertura-blanca",
+    "description": "Bocados redondos dorados sobre plato negro, con cobertura blanca rallada; ingredientes no confirmados.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 2,
+    "category": 4,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "bocados-dorados-cobertura-blanca",
+    "description": "Bocados dorados con cobertura blanca rallada sobre plato negro; al fondo, láminas amarillas.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 3,
+    "category": 4,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "bocados-dorados-cobertura-blanca",
+    "description": "Bocados dorados con cobertura blanca rallada sobre plato negro; al fondo, láminas amarillas.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 4,
+    "category": 2,
+    "secondary": [
+      4
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "mezcla-amarilla-fragmentos-sarten",
+    "description": "Mezcla amarilla húmeda con fragmentos verdes y rojos en sartén metálica; no se confirma receta ni hierbas.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 5,
+    "category": 3,
+    "secondary": [],
+    "status": "verified",
+    "confidence": "high",
+    "label": "crustaceo-entero-sostenido",
+    "description": "Crustáceo de caparazón oscuro con patas y pinzas, sostenido frente a una mesa de cocina; especie no determinada.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 6,
+    "category": 3,
+    "secondary": [],
+    "status": "verified",
+    "confidence": "high",
+    "label": "crustaceo-entero-sostenido",
+    "description": "Crustáceo de caparazón oscuro con patas y pinzas, sostenido frente a una mesa de cocina; especie no determinada.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 7,
+    "category": 4,
+    "secondary": [
+      1
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "platos-preparaciones-amarillas",
+    "description": "Mesa con varias preparaciones amarillas, una de granos y otra en láminas; no se confirma composición.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 8,
+    "category": 4,
+    "secondary": [
+      1
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "platos-preparaciones-amarillas",
+    "description": "Mesa con varias preparaciones amarillas, una de granos y otra en láminas; no se confirma composición.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 9,
+    "category": 4,
+    "secondary": [
+      1
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "mesa-platos-arroz-laminas",
+    "description": "Vista cenital de platos con arroz blanco, preparación amarilla, láminas amarillas y bocados con cobertura blanca.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 10,
+    "category": 4,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "plato-arroz-blanco",
+    "description": "Plato negro con arroz blanco y algunos fragmentos beige; no se confirma leche de coco ni plato específico.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 11,
+    "category": 4,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "plato-arroz-blanco",
+    "description": "Plato negro con arroz blanco y algunos fragmentos beige; no se confirma leche de coco ni plato específico.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 12,
+    "category": 3,
+    "secondary": [
+      4
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "preparacion-trozos-salsa-amarilla",
+    "description": "Plato negro con trozos que parecen pescado en salsa amarilla y fragmentos vegetales; no se confirma especie ni encocado.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 13,
+    "category": 3,
+    "secondary": [
+      4
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "preparacion-trozos-salsa-amarilla",
+    "description": "Plato negro con trozos que parecen pescado en salsa amarilla y fragmentos vegetales; no se confirma especie ni encocado.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 14,
+    "category": 0,
+    "secondary": [],
+    "status": "needs-human",
+    "confidence": "low",
+    "label": "grupo-en-cocina",
+    "description": "Personas con uniformes de cocina alrededor de una mesa; el alimento o actividad temática dominante no se distingue.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 15,
+    "category": 1,
+    "secondary": [
+      2
+    ],
+    "status": "verified",
+    "confidence": "high",
+    "label": "mesa-utensilios-ingredientes",
+    "description": "Mesa con recipientes de apariencia vegetal, utensilios de madera, hojas y pequeños ingredientes dispuestos sobre tela.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 16,
+    "category": 1,
+    "secondary": [
+      2
+    ],
+    "status": "verified",
+    "confidence": "high",
+    "label": "mesa-utensilios-ingredientes",
+    "description": "Vista superior de recipientes, utensilios de madera, hojas y pequeños ingredientes sobre una mesa cubierta con tela.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 17,
+    "category": 0,
+    "secondary": [],
+    "status": "needs-human",
+    "confidence": "low",
+    "label": "material-marron-sobre-papel",
+    "description": "Material marrón desmenuzado sobre papel blanco en un plato negro; no se identifica su naturaleza.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 18,
+    "category": 0,
+    "secondary": [],
+    "status": "needs-human",
+    "confidence": "low",
+    "label": "mano-material-marron",
+    "description": "Una mano toca material marrón desmenuzado dispuesto sobre papel blanco; ingrediente no identificado.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 19,
+    "category": 0,
+    "secondary": [],
+    "status": "needs-human",
+    "confidence": "low",
+    "label": "mano-material-marron",
+    "description": "Una mano toca material marrón desmenuzado dispuesto sobre papel blanco; ingrediente no identificado.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 20,
+    "category": 0,
+    "secondary": [],
+    "status": "needs-human",
+    "confidence": "low",
+    "label": "mano-material-marron",
+    "description": "Una mano toca material marrón desmenuzado dispuesto sobre papel blanco; ingrediente no identificado.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 21,
+    "category": 0,
+    "secondary": [],
+    "status": "needs-human",
+    "confidence": "low",
+    "label": "mano-material-marron",
+    "description": "Una mano toca material marrón desmenuzado dispuesto sobre papel blanco; ingrediente no identificado.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 22,
+    "category": 5,
+    "secondary": [
+      1
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "instrumento-tubos-y-recipientes",
+    "description": "Persona sostiene un instrumento formado por tubos junto a recipientes y botellas en una mesa; no se confirma música ni bebida específica.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 23,
+    "category": 5,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "lectura-libro-en-grupo",
+    "description": "Personas en uniforme de cocina; una sostiene un libro abierto y gesticula. No se confirma el contenido de la lectura.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 24,
+    "category": 0,
+    "secondary": [],
+    "status": "needs-human",
+    "confidence": "low",
+    "label": "pagina-libro-abierto",
+    "description": "Primer plano de una página de libro con texto impreso; el contenido no se transcribe ni se identifica con esta vista.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 25,
+    "category": 1,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "recipientes-cesteria-mesa",
+    "description": "Cestas, recipientes y objetos alargados sobre una mesa, con personas detrás; no se identifica el uso de cada objeto.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 26,
+    "category": 1,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "low",
+    "label": "tallos-hojas-sobre-piedra",
+    "description": "Tallos y hojas verdes sobre piedra; especie y uso por confirmar.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 27,
+    "category": 1,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "grupo-mesa-utensilios",
+    "description": "Grupo en uniformes de cocina alrededor de una mesa con hojas, recipientes y utensilios; no se confirma nombre de taller.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 28,
+    "category": 1,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "grupo-mesa-utensilios",
+    "description": "Grupo en uniformes de cocina alrededor de una mesa con hojas, recipientes y utensilios; no se confirma nombre de taller.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 29,
+    "category": 1,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "grupo-mesa-utensilios",
+    "description": "Grupo en uniformes de cocina alrededor de una mesa con hojas, recipientes y utensilios; no se confirma nombre de taller.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 30,
+    "category": 1,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "grupo-mesa-utensilios",
+    "description": "Grupo en uniformes de cocina alrededor de una mesa con hojas, recipientes y utensilios; no se confirma nombre de taller.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 31,
+    "category": 1,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "grupo-mesa-utensilios",
+    "description": "Grupo en uniformes de cocina alrededor de una mesa con hojas, recipientes y utensilios; no se confirma nombre de taller.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 32,
+    "category": 1,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "mesa-hojas-recipientes",
+    "description": "Mesa cubierta con hojas grandes, recipientes y utensilios, rodeada por personas en uniforme de cocina.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 33,
+    "category": 1,
+    "secondary": [
+      2
+    ],
+    "status": "verified",
+    "confidence": "high",
+    "label": "hojas-maiz-recipiente",
+    "description": "Hojas grandes, mazorca seca con envolturas, dos piezas vegetales redondas y pequeño recipiente con sustancias claras y oscuras.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 34,
+    "category": 1,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "cesta-frutos-rojos-recipiente",
+    "description": "Cesta con frutos rojos alargados y recipiente con fragmentos amarillentos sobre tela; ingredientes no confirmados.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 35,
+    "category": 1,
+    "secondary": [],
+    "status": "verified",
+    "confidence": "high",
+    "label": "cesta-utensilios-madera",
+    "description": "Primer plano de cesta y utensilios de madera; al fondo, una mano manipula material sobre papel.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 36,
+    "category": 1,
+    "secondary": [],
+    "status": "verified",
+    "confidence": "high",
+    "label": "mortero-madera-recipientes",
+    "description": "Mortero y mano de madera junto a recipientes negros, sobre tela y hojas.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 37,
+    "category": 1,
+    "secondary": [],
+    "status": "verified",
+    "confidence": "high",
+    "label": "mortero-madera-recipientes",
+    "description": "Mortero y mano de madera junto a recipientes negros, sobre tela y hojas.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 38,
+    "category": 0,
+    "secondary": [],
+    "status": "needs-human",
+    "confidence": "low",
+    "label": "cesta-frutos-rojos",
+    "description": "Una mano sostiene una cesta con frutos rojos brillantes; especie y eje temático no confirmados.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 39,
+    "category": 1,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "recipiente-primer-plano-grupo",
+    "description": "Recipiente oscuro en primer plano y personas alrededor de una mesa al fondo; imagen oscura, detalles limitados.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 40,
+    "category": 1,
+    "secondary": [],
+    "status": "verified",
+    "confidence": "high",
+    "label": "mortero-primer-plano",
+    "description": "Mortero de madera con mano y recipiente negro en primer plano; personas y utensilios detrás.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 41,
+    "category": 1,
+    "secondary": [],
+    "status": "verified",
+    "confidence": "high",
+    "label": "mortero-primer-plano",
+    "description": "Mortero de madera con mano y recipiente negro en primer plano; personas y utensilios detrás.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 42,
+    "category": 1,
+    "secondary": [],
+    "status": "verified",
+    "confidence": "high",
+    "label": "mortero-madera-detalle",
+    "description": "Detalle lateral de mortero y mano de madera sobre tela; fondo desenfocado.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 43,
+    "category": 1,
+    "secondary": [],
+    "status": "verified",
+    "confidence": "high",
+    "label": "mortero-madera-detalle",
+    "description": "Detalle lateral de mortero y mano de madera sobre tela; fondo desenfocado.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 44,
+    "category": 1,
+    "secondary": [],
+    "status": "verified",
+    "confidence": "high",
+    "label": "mortero-madera-detalle",
+    "description": "Detalle lateral de mortero y mano de madera sobre tela; fondo desenfocado.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 45,
+    "category": 2,
+    "secondary": [
+      1
+    ],
+    "status": "verified",
+    "confidence": "high",
+    "label": "hierbas-en-cesta",
+    "description": "Manojo de tallos y hojas verdes en cesta tejida; no se determina especie.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 46,
+    "category": 2,
+    "secondary": [
+      1
+    ],
+    "status": "verified",
+    "confidence": "high",
+    "label": "hierbas-en-cesta",
+    "description": "Manojo de tallos y hojas verdes en cesta tejida, sostenido por una persona; especie no determinada.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 47,
+    "category": 1,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "tejido-geometrico-amarillo-negro",
+    "description": "Detalle de tejido con patrón geométrico amarillo y oscuro; no se identifica comunidad ni procedencia.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 48,
+    "category": 1,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "tejido-geometrico-amarillo-negro",
+    "description": "Detalle de tejido con patrón geométrico amarillo y oscuro; no se identifica comunidad ni procedencia.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 49,
+    "category": 5,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "instrumento-tubos-sostenido",
+    "description": "Persona en uniforme sostiene un instrumento de tubos; no se confirma interpretación musical ni contexto cultural específico.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 50,
+    "category": 5,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "instrumento-tubos-sostenido",
+    "description": "Persona en uniforme sostiene un instrumento de tubos; no se confirma interpretación musical ni contexto cultural específico.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 51,
+    "category": 2,
+    "secondary": [],
+    "status": "verified",
+    "confidence": "high",
+    "label": "picado-hojas-tabla-verde",
+    "description": "Manos pican material de hojas verdes con cuchillo sobre tabla verde; especie no determinada.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 52,
+    "category": 2,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "cuchillo-tabla-verde",
+    "description": "Manos y cuchillo sobre tabla verde con pequeños fragmentos vegetales; ingrediente no distinguible.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 53,
+    "category": 2,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "cuchillo-tabla-verde",
+    "description": "Manos y cuchillo sobre tabla verde con pequeños fragmentos vegetales; ingrediente no distinguible.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 54,
+    "category": 2,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "cuchillo-tabla-verde",
+    "description": "Manos y cuchillo sobre tabla verde con pequeños fragmentos vegetales; ingrediente no distinguible.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 55,
+    "category": 2,
+    "secondary": [],
+    "status": "verified",
+    "confidence": "high",
+    "label": "recipientes-hojas-tallos",
+    "description": "Recipientes metálicos con hojas verdes picadas, tallos y otros fragmentos vegetales junto a tabla de cortar.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 56,
+    "category": 2,
+    "secondary": [],
+    "status": "verified",
+    "confidence": "high",
+    "label": "separacion-hojas-tallos",
+    "description": "Manos separan material vegetal sobre un recipiente junto a tallos y hojas, con tabla y paño a un lado.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 57,
+    "category": 2,
+    "secondary": [
+      1
+    ],
+    "status": "verified",
+    "confidence": "high",
+    "label": "mortero-vegetales-picados",
+    "description": "Mortero metálico con pasta clara y recipiente metálico con vegetales blancos y verdes picados; especies no determinadas.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 58,
+    "category": 1,
+    "secondary": [
+      2
+    ],
+    "status": "verified",
+    "confidence": "high",
+    "label": "triturado-en-mortero",
+    "description": "Persona tritura mezcla marrón en un mortero; a un lado hay recipientes con líquidos y una mezcla verde.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 59,
+    "category": 1,
+    "secondary": [
+      2
+    ],
+    "status": "verified",
+    "confidence": "high",
+    "label": "triturado-en-mortero",
+    "description": "Persona tritura mezcla marrón en un mortero; a un lado hay recipientes con líquidos y una mezcla verde.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 60,
+    "category": 2,
+    "secondary": [],
+    "status": "verified",
+    "confidence": "high",
+    "label": "vegetales-picados-recipiente",
+    "description": "Mezcla de fragmentos verdes, blancos y rojos en un recipiente cubierto parcialmente con película transparente.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 61,
+    "category": 2,
+    "secondary": [],
+    "status": "verified",
+    "confidence": "high",
+    "label": "tallos-y-recortes-vegetales",
+    "description": "Recipiente metálico con tallos, hojas y recortes vegetales de varios colores; no se identifican especies.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 62,
+    "category": 1,
+    "secondary": [
+      4
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "hoja-sostenida-frente-fogon",
+    "description": "Manos sostienen una hoja grande rectangular frente a una cocina; no se confirma preparación de envoltorio.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 63,
+    "category": 4,
+    "secondary": [
+      1
+    ],
+    "status": "verified",
+    "confidence": "high",
+    "label": "hoja-sobre-llama",
+    "description": "Una hoja grande es sostenida sobre un quemador encendido de cocina.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 64,
+    "category": 4,
+    "secondary": [
+      1
+    ],
+    "status": "verified",
+    "confidence": "high",
+    "label": "hoja-sobre-llama",
+    "description": "Una hoja grande es sostenida sobre un quemador encendido de cocina.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 65,
+    "category": 4,
+    "secondary": [
+      1
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "mezcla-seca-clara",
+    "description": "Primer plano de una mezcla seca clara de textura harinosa con algunos grumos; ingrediente no identificado.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 66,
+    "category": 0,
+    "secondary": [],
+    "status": "needs-human",
+    "confidence": "low",
+    "label": "grupo-mesa-cocina",
+    "description": "Personas con uniforme frente a una mesa de cocina con utensilios; no se distingue preparación temática dominante.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 67,
+    "category": 0,
+    "secondary": [],
+    "status": "needs-human",
+    "confidence": "low",
+    "label": "persona-utensilios-mesa",
+    "description": "Persona en uniforme junto a utensilios y una hoja de papel en una mesa metálica; preparación no identificable.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 68,
+    "category": 0,
+    "secondary": [],
+    "status": "needs-human",
+    "confidence": "low",
+    "label": "persona-utensilios-mesa",
+    "description": "Persona en uniforme gesticula junto a utensilios sobre mesa metálica; preparación no identificable.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 69,
+    "category": 0,
+    "secondary": [],
+    "status": "needs-human",
+    "confidence": "low",
+    "label": "persona-utensilios-mesa",
+    "description": "Persona en uniforme gesticula junto a utensilios sobre mesa metálica; preparación no identificable.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 70,
+    "category": 0,
+    "secondary": [],
+    "status": "needs-human",
+    "confidence": "low",
+    "label": "persona-utensilios-mesa",
+    "description": "Persona en uniforme gesticula junto a utensilios sobre mesa metálica; una parte de la imagen está obstruida.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 71,
+    "category": 1,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "molino-metalico-granos-claros",
+    "description": "Molino manual metálico con granos claros y amarillentos en la tolva; ingrediente por confirmar. No se acredita ancestralidad del utensilio.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 72,
+    "category": 1,
+    "secondary": [
+      4
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "hojas-apiladas-bandeja",
+    "description": "Hojas grandes verdosas y amarillentas apiladas sobre una bandeja en la mesa; especie y uso por confirmar.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 73,
+    "category": 0,
+    "secondary": [],
+    "status": "needs-human",
+    "confidence": "low",
+    "label": "persona-grupo-en-cocina",
+    "description": "Personas en uniforme de cocina junto a mesa con paños y utensilios; actividad temática no distinguible.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 74,
+    "category": 0,
+    "secondary": [],
+    "status": "needs-human",
+    "confidence": "low",
+    "label": "grupo-preparacion-en-mesa",
+    "description": "Personas en uniforme manipulan recipientes sobre mesa; una mano en primer plano y el tamaño limitan la identificación de alimentos.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 75,
+    "category": 4,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "low",
+    "label": "mezcla-en-recipiente",
+    "description": "Personas en uniforme trabajan sobre recipientes metálicos y una preparación amarillenta; no se identifica receta.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 76,
+    "category": 4,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "low",
+    "label": "mezcla-en-recipiente",
+    "description": "Personas en uniforme trabajan sobre recipientes metálicos y una preparación amarillenta; no se identifica receta.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 77,
+    "category": 0,
+    "secondary": [],
+    "status": "needs-human",
+    "confidence": "low",
+    "label": "grupo-recipientes-cocina",
+    "description": "Grupo en uniforme alrededor de recipientes metálicos en cocina; alimento dominante no identificable.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 78,
+    "category": 0,
+    "secondary": [],
+    "status": "needs-human",
+    "confidence": "low",
+    "label": "grupo-frente-estufa",
+    "description": "Personas en uniforme frente a una estufa industrial; alimento o preparación no visible con detalle.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 79,
+    "category": 0,
+    "secondary": [],
+    "status": "needs-human",
+    "confidence": "low",
+    "label": "grupo-frente-estufa",
+    "description": "Personas en uniforme frente a una estufa industrial; alimento o preparación no visible con detalle.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 80,
+    "category": 1,
+    "secondary": [
+      4
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "disco-masa-amarilla-en-mano",
+    "description": "Una mano sostiene un disco de masa amarilla delante de una hoja grande; no se confirma ingrediente ni nombre.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 81,
+    "category": 3,
+    "secondary": [
+      2,
+      4
+    ],
+    "status": "verified",
+    "confidence": "high",
+    "label": "camarones-en-sarten",
+    "description": "Camarones curvados y trozos blancos sobre una mezcla amarilla con fragmentos verdes en sartén; no se confirma receta ni leche de coco.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 82,
+    "category": 1,
+    "secondary": [
+      3,
+      4
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "mesa-platos-laminas-arroz",
+    "description": "Mesa con láminas amarillas, discos amarillos, arroz y preparación con trozos en salsa; manos disponen un plato sobre hoja.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 83,
+    "category": 1,
+    "secondary": [
+      3,
+      4
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "mesa-platos-laminas-arroz",
+    "description": "Vista superior de láminas amarillas, discos amarillos, arroz y preparación con trozos en salsa; ingredientes no confirmados en conjunto.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 84,
+    "category": 1,
+    "secondary": [
+      3,
+      4
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "mesa-platos-laminas-arroz",
+    "description": "Vista superior de láminas amarillas, discos amarillos, arroz y preparación con trozos en salsa; ingredientes no confirmados en conjunto.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 85,
+    "category": 1,
+    "secondary": [
+      4,
+      5
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "mesa-preparaciones-vasos",
+    "description": "Mesa con pequeños plátanos, preparaciones amarillas, arroz, recipientes y una hilera de vasos con líquido marrón; bebida no identificada.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 86,
+    "category": 1,
+    "secondary": [
+      4,
+      5
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "mesa-preparaciones-vasos",
+    "description": "Mesa con pequeños plátanos, preparaciones amarillas, arroz, recipientes y una hilera de vasos con líquido marrón; bebida no identificada.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 87,
+    "category": 1,
+    "secondary": [
+      4,
+      5
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "mesa-preparaciones-vasos",
+    "description": "Mesa con pequeños plátanos, preparaciones amarillas, arroz, recipientes y una hilera de vasos con líquido marrón; bebida no identificada.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 88,
+    "category": 1,
+    "secondary": [
+      3,
+      4
+    ],
+    "status": "verified",
+    "confidence": "high",
+    "label": "mesa-platanos-platos",
+    "description": "Vista superior de un racimo de plátanos pequeños, láminas amarillas, arroz, discos y otras preparaciones en platos.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 89,
+    "category": 5,
+    "secondary": [
+      1,
+      4
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "hilera-vasos-y-platos",
+    "description": "Mesa con hilera de vasos con líquido marrón junto a arroz, racimo de plátanos y otras preparaciones; bebida no identificada.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 90,
+    "category": 5,
+    "secondary": [
+      1,
+      4
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "hilera-vasos-y-platos",
+    "description": "Vista cenital de hilera de vasos con líquido marrón y varios platos, incluido arroz y plátanos; bebida no identificada.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 91,
+    "category": 1,
+    "secondary": [
+      4
+    ],
+    "status": "verified",
+    "confidence": "high",
+    "label": "manos-racimo-platanos",
+    "description": "Manos manipulan un racimo de plátanos sobre una mesa con preparaciones amarillas y otros platos.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 92,
+    "category": 4,
+    "secondary": [
+      1
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "mesa-platos-arroz-laminas",
+    "description": "Vista cenital de arroz blanco, láminas amarillas, preparación de granos y bocados con cobertura blanca; recetas no confirmadas.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 93,
+    "category": 4,
+    "secondary": [
+      1
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "mesa-platos-arroz-laminas",
+    "description": "Vista cenital de arroz blanco, láminas amarillas, preparación de granos y bocados con cobertura blanca; recetas no confirmadas.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 94,
+    "category": 4,
+    "secondary": [],
+    "status": "verified",
+    "confidence": "high",
+    "label": "fritura-piezas-alargadas",
+    "description": "Piezas alargadas claras y piezas doradas se fríen en líquido burbujeante dentro de un recipiente metálico; masa no identificada.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 95,
+    "category": 4,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "bocados-dorados-en-cesta",
+    "description": "Cesta redonda con bocados ovalados dorados; ingredientes y nombre de preparación no confirmados.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 96,
+    "category": 4,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "bocados-dorados-en-cesta",
+    "description": "Cesta redonda con bocados ovalados dorados; ingredientes y nombre de preparación no confirmados.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 97,
+    "category": 4,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "bocados-dorados-en-cesta",
+    "description": "Cesta redonda con bocados ovalados dorados; ingredientes y nombre de preparación no confirmados.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 98,
+    "category": 4,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "bocados-dorados-en-cesta",
+    "description": "Cesta redonda con bocados ovalados dorados; ingredientes y nombre de preparación no confirmados.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 99,
+    "category": 4,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "bocados-dorados-en-cesta",
+    "description": "Primer plano de bocados ovalados dorados en una cesta; ingredientes y nombre de preparación no confirmados.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 100,
+    "category": 0,
+    "secondary": [],
+    "status": "needs-human",
+    "confidence": "low",
+    "label": "liquido-blanco-en-olla",
+    "description": "Olla con líquido blanco y utensilio metálico; no se confirma leche de coco, bebida ni preparación.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 101,
+    "category": 4,
+    "secondary": [
+      1
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "mesa-bocados-discos-liquido",
+    "description": "Mesa con bocados dorados, discos amarillos sobre hojas, una preparación plana amarillenta y un recipiente con líquido blanco.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 102,
+    "category": 4,
+    "secondary": [
+      1
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "mesa-bocados-discos-liquido",
+    "description": "Mesa con bocados dorados, discos amarillos sobre hojas, una preparación plana amarillenta y un recipiente con líquido blanco.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 103,
+    "category": 4,
+    "secondary": [
+      1
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "mesa-bocados-discos-salsas",
+    "description": "Bocados dorados, discos sobre hojas, preparación plana amarillenta, recipiente con líquido blanco y otro con líquido marrón.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 104,
+    "category": 4,
+    "secondary": [
+      1
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "mesa-bocados-discos-salsas",
+    "description": "Bocados dorados, discos sobre hojas, preparación plana amarillenta, recipiente con líquido blanco y otro con líquido marrón.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 105,
+    "category": 4,
+    "secondary": [
+      1
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "mesa-bocados-discos-salsas",
+    "description": "Bocados dorados, discos sobre hojas, preparación plana amarillenta, recipiente con líquido blanco y otro con líquido marrón.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 106,
+    "category": 4,
+    "secondary": [
+      1
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "mesa-bocados-discos-salsas",
+    "description": "Bocados dorados, discos sobre hojas, preparación plana amarillenta, recipiente con líquido blanco y otro con líquido marrón.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 107,
+    "category": 4,
+    "secondary": [
+      1
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "mesa-bocados-discos-salsas",
+    "description": "Bocados dorados, discos sobre hojas, preparación plana amarillenta, recipiente con líquido blanco y otro con líquido marrón.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 108,
+    "category": 4,
+    "secondary": [
+      1
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "mesa-bocados-discos-salsas",
+    "description": "Bocados dorados, discos sobre hojas, preparación plana amarillenta, recipiente con líquido blanco y otro con líquido marrón.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 109,
+    "category": 4,
+    "secondary": [
+      1,
+      3
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "platos-arroz-laminas-crustaceo",
+    "description": "Mesa con arroz blanco, láminas amarillas, bocados con cobertura blanca y un plato con crustáceo; recetas no confirmadas.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 110,
+    "category": 4,
+    "secondary": [
+      1,
+      3
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "platos-arroz-laminas-crustaceo",
+    "description": "Mesa con arroz blanco, láminas amarillas, bocados con cobertura blanca y un plato con crustáceo; recetas no confirmadas.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 111,
+    "category": 1,
+    "secondary": [
+      4
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "laminas-doradas-plato",
+    "description": "Láminas redondeadas amarillas y doradas apiladas sobre plato negro; parecen plátano aplanado, sin confirmar preparación.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 112,
+    "category": 1,
+    "secondary": [
+      4
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "laminas-doradas-plato",
+    "description": "Láminas redondeadas amarillas y doradas apiladas sobre plato negro; parecen plátano aplanado, sin confirmar preparación.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 113,
+    "category": 4,
+    "secondary": [
+      1
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "granos-anaranjados-laminas",
+    "description": "Plato negro con granos anaranjados y fragmentos rojos junto a láminas amarillas doradas; receta no confirmada.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 114,
+    "category": 4,
+    "secondary": [
+      1
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "granos-anaranjados-laminas",
+    "description": "Plato negro con granos anaranjados y fragmentos rojos junto a láminas amarillas doradas; receta no confirmada.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 115,
+    "category": 3,
+    "secondary": [],
+    "status": "verified",
+    "confidence": "high",
+    "label": "crustaceo-entero-sostenido",
+    "description": "Crustáceo de caparazón oscuro azulado con patas y pinzas sostenido con las manos; especie no determinada.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 116,
+    "category": 3,
+    "secondary": [],
+    "status": "verified",
+    "confidence": "high",
+    "label": "crustaceo-entero-sostenido",
+    "description": "Crustáceo de caparazón oscuro azulado con patas y pinzas sostenido con las manos; especie no determinada.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 117,
+    "category": 3,
+    "secondary": [],
+    "status": "verified",
+    "confidence": "high",
+    "label": "crustaceos-recipiente-metalico",
+    "description": "Varios crustáceos con pinzas y patas rojizas en un recipiente metálico; especie no determinada.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 118,
+    "category": 3,
+    "secondary": [],
+    "status": "verified",
+    "confidence": "high",
+    "label": "crustaceos-recipiente-metalico",
+    "description": "Varios crustáceos con pinzas y patas rojizas en un recipiente metálico; especie no determinada.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 119,
+    "category": 3,
+    "secondary": [
+      4
+    ],
+    "status": "verified",
+    "confidence": "high",
+    "label": "crustaceo-abierto-plato",
+    "description": "Crustáceo abierto con patas y pinzas rojas sobre un plato blanco con salsa; no se confirma receta ni leche de coco.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 120,
+    "category": 3,
+    "secondary": [
+      4
+    ],
+    "status": "verified",
+    "confidence": "high",
+    "label": "crustaceo-abierto-plato",
+    "description": "Crustáceo abierto con patas y pinzas rojas sobre un plato blanco con salsa; no se confirma receta ni leche de coco.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 121,
+    "category": 4,
+    "secondary": [
+      1,
+      3
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "platos-arroz-laminas-crustaceo",
+    "description": "Vista cenital de arroz blanco, láminas amarillas, preparación de granos, bocados con cobertura blanca y un plato con crustáceo.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 122,
+    "category": 2,
+    "secondary": [],
+    "status": "verified",
+    "confidence": "high",
+    "label": "picado-hojas-tabla-verde",
+    "description": "Manos pican material de hojas verdes con cuchillo sobre tabla verde; especie no determinada.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 123,
+    "category": 2,
+    "secondary": [],
+    "status": "verified",
+    "confidence": "high",
+    "label": "recipientes-hojas-tallos",
+    "description": "Recipientes metálicos con hojas verdes picadas, tallos y otros fragmentos vegetales junto a tabla de cortar.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 124,
+    "category": 2,
+    "secondary": [],
+    "status": "verified",
+    "confidence": "high",
+    "label": "separacion-hojas-tallos",
+    "description": "Manos separan material vegetal sobre un recipiente junto a tallos y hojas, con tabla y paño a un lado.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 125,
+    "category": 2,
+    "secondary": [
+      1
+    ],
+    "status": "verified",
+    "confidence": "high",
+    "label": "mortero-vegetales-picados",
+    "description": "Mortero metálico con pasta clara y recipiente metálico con vegetales blancos y verdes picados; especies no determinadas.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 126,
+    "category": 1,
+    "secondary": [
+      2
+    ],
+    "status": "verified",
+    "confidence": "high",
+    "label": "triturado-en-mortero",
+    "description": "Persona tritura mezcla marrón en un mortero; a un lado hay recipientes con líquidos y una mezcla verde.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 127,
+    "category": 1,
+    "secondary": [
+      2
+    ],
+    "status": "verified",
+    "confidence": "high",
+    "label": "triturado-en-mortero",
+    "description": "Persona tritura mezcla marrón en un mortero; a un lado hay recipientes con líquidos y una mezcla verde.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 128,
+    "category": 2,
+    "secondary": [],
+    "status": "verified",
+    "confidence": "high",
+    "label": "tallos-y-recortes-vegetales",
+    "description": "Recipiente metálico con tallos, hojas y recortes vegetales de varios colores; no se identifican especies.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 129,
+    "category": 1,
+    "secondary": [
+      4
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "hoja-sostenida-frente-fogon",
+    "description": "Manos sostienen una hoja grande rectangular frente a una cocina; no se confirma preparación de envoltorio.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 130,
+    "category": 4,
+    "secondary": [
+      1
+    ],
+    "status": "verified",
+    "confidence": "high",
+    "label": "hoja-sobre-llama",
+    "description": "Una hoja grande es sostenida sobre un quemador encendido de cocina.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 131,
+    "category": 4,
+    "secondary": [
+      1
+    ],
+    "status": "verified",
+    "confidence": "high",
+    "label": "hoja-sobre-llama",
+    "description": "Una hoja grande es sostenida sobre un quemador encendido de cocina.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 132,
+    "category": 0,
+    "secondary": [],
+    "status": "needs-human",
+    "confidence": "low",
+    "label": "persona-utensilios-mesa",
+    "description": "Persona en uniforme junto a utensilios y una hoja de papel en una mesa metálica; preparación no identificable.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 133,
+    "category": 0,
+    "secondary": [],
+    "status": "needs-human",
+    "confidence": "low",
+    "label": "persona-utensilios-mesa",
+    "description": "Persona en uniforme gesticula junto a utensilios sobre mesa metálica; preparación no identificable.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 134,
+    "category": 0,
+    "secondary": [],
+    "status": "needs-human",
+    "confidence": "low",
+    "label": "persona-utensilios-mesa",
+    "description": "Persona en uniforme gesticula junto a utensilios sobre mesa metálica; preparación no identificable.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 135,
+    "category": 0,
+    "secondary": [],
+    "status": "needs-human",
+    "confidence": "low",
+    "label": "persona-utensilios-mesa",
+    "description": "Persona en uniforme gesticula junto a utensilios sobre mesa metálica; una parte de la imagen está obstruida.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 136,
+    "category": 1,
+    "secondary": [
+      4
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "hojas-apiladas-bandeja",
+    "description": "Hojas grandes verdosas y amarillentas apiladas sobre una bandeja en la mesa; especie y uso por confirmar.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 137,
+    "category": 4,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "low",
+    "label": "mezcla-en-recipiente",
+    "description": "Personas en uniforme trabajan sobre recipientes metálicos y una preparación amarillenta; no se identifica receta.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 138,
+    "category": 4,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "low",
+    "label": "mezcla-en-recipiente",
+    "description": "Personas en uniforme trabajan sobre recipientes metálicos y una preparación amarillenta; no se identifica receta.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 139,
+    "category": 1,
+    "secondary": [
+      3,
+      4
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "mesa-platos-laminas-arroz",
+    "description": "Mesa con láminas amarillas, discos amarillos, arroz y preparación con trozos en salsa; manos disponen un plato sobre hoja.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 140,
+    "category": 1,
+    "secondary": [
+      3,
+      4
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "mesa-platos-laminas-arroz",
+    "description": "Vista superior de láminas amarillas, discos amarillos, arroz y preparación con trozos en salsa; ingredientes no confirmados en conjunto.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 141,
+    "category": 1,
+    "secondary": [
+      3,
+      4
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "mesa-platos-laminas-arroz",
+    "description": "Vista superior de láminas amarillas, discos amarillos, arroz y preparación con trozos en salsa; ingredientes no confirmados en conjunto.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 142,
+    "category": 1,
+    "secondary": [
+      4,
+      5
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "mesa-preparaciones-vasos",
+    "description": "Mesa con pequeños plátanos, preparaciones amarillas, arroz, recipientes y una hilera de vasos con líquido marrón; bebida no identificada.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 143,
+    "category": 1,
+    "secondary": [
+      4,
+      5
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "mesa-preparaciones-vasos",
+    "description": "Mesa con pequeños plátanos, preparaciones amarillas, arroz, recipientes y una hilera de vasos con líquido marrón; bebida no identificada.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 144,
+    "category": 1,
+    "secondary": [
+      4,
+      5
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "mesa-preparaciones-vasos",
+    "description": "Mesa con pequeños plátanos, preparaciones amarillas, arroz, recipientes y una hilera de vasos con líquido marrón; bebida no identificada.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 145,
+    "category": 1,
+    "secondary": [
+      4
+    ],
+    "status": "verified",
+    "confidence": "high",
+    "label": "manos-racimo-platanos",
+    "description": "Manos manipulan un racimo de plátanos sobre una mesa con preparaciones amarillas y otros platos.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 146,
+    "category": 0,
+    "secondary": [],
+    "status": "needs-human",
+    "confidence": "low",
+    "label": "grupo-en-cocina",
+    "description": "Personas con uniformes de cocina alrededor de una mesa; el alimento o actividad temática dominante no se distingue.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 147,
+    "category": 1,
+    "secondary": [
+      2
+    ],
+    "status": "verified",
+    "confidence": "high",
+    "label": "mesa-utensilios-ingredientes",
+    "description": "Mesa con recipientes de apariencia vegetal, utensilios de madera, hojas y pequeños ingredientes dispuestos sobre tela.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 148,
+    "category": 1,
+    "secondary": [
+      2
+    ],
+    "status": "verified",
+    "confidence": "high",
+    "label": "mesa-utensilios-ingredientes",
+    "description": "Vista superior de recipientes, utensilios de madera, hojas y pequeños ingredientes sobre una mesa cubierta con tela.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 149,
+    "category": 0,
+    "secondary": [],
+    "status": "needs-human",
+    "confidence": "low",
+    "label": "material-marron-sobre-papel",
+    "description": "Material marrón desmenuzado sobre papel blanco en un plato negro; no se identifica su naturaleza.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 150,
+    "category": 0,
+    "secondary": [],
+    "status": "needs-human",
+    "confidence": "low",
+    "label": "mano-material-marron",
+    "description": "Una mano toca material marrón desmenuzado dispuesto sobre papel blanco; ingrediente no identificado.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 151,
+    "category": 0,
+    "secondary": [],
+    "status": "needs-human",
+    "confidence": "low",
+    "label": "mano-material-marron",
+    "description": "Una mano toca material marrón desmenuzado dispuesto sobre papel blanco; ingrediente no identificado.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 152,
+    "category": 0,
+    "secondary": [],
+    "status": "needs-human",
+    "confidence": "low",
+    "label": "mano-material-marron",
+    "description": "Una mano toca material marrón desmenuzado dispuesto sobre papel blanco; ingrediente no identificado.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 153,
+    "category": 0,
+    "secondary": [],
+    "status": "needs-human",
+    "confidence": "low",
+    "label": "mano-material-marron",
+    "description": "Una mano toca material marrón desmenuzado dispuesto sobre papel blanco; ingrediente no identificado.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 154,
+    "category": 5,
+    "secondary": [
+      1
+    ],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "instrumento-tubos-y-recipientes",
+    "description": "Persona sostiene un instrumento formado por tubos junto a recipientes y botellas en una mesa; no se confirma música ni bebida específica.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 155,
+    "category": 5,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "lectura-libro-en-grupo",
+    "description": "Personas en uniforme de cocina; una sostiene un libro abierto y gesticula. No se confirma el contenido de la lectura.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 156,
+    "category": 0,
+    "secondary": [],
+    "status": "needs-human",
+    "confidence": "low",
+    "label": "pagina-libro-abierto",
+    "description": "Primer plano de una página de libro con texto impreso; el contenido no se transcribe ni se identifica con esta vista.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 157,
+    "category": 1,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "recipientes-cesteria-mesa",
+    "description": "Cestas, recipientes y objetos alargados sobre una mesa, con personas detrás; no se identifica el uso de cada objeto.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 158,
+    "category": 1,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "low",
+    "label": "tallos-hojas-sobre-piedra",
+    "description": "Tallos y hojas verdes sobre piedra; especie y uso por confirmar.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 159,
+    "category": 0,
+    "secondary": [],
+    "status": "needs-human",
+    "confidence": "low",
+    "label": "cesta-piezas-textura-reticulada",
+    "description": "Cesta con piezas marrones de superficie reticulada junto a un objeto liso negro y un elemento tejido amarillo; naturaleza no identificada.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 160,
+    "category": 1,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "grupo-mesa-utensilios",
+    "description": "Grupo en uniformes de cocina alrededor de una mesa con hojas, recipientes y utensilios; no se confirma nombre de taller.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 161,
+    "category": 1,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "grupo-mesa-utensilios",
+    "description": "Grupo en uniformes de cocina alrededor de una mesa con hojas, recipientes y utensilios; no se confirma nombre de taller.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 162,
+    "category": 1,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "grupo-mesa-utensilios",
+    "description": "Grupo en uniformes de cocina alrededor de una mesa con hojas, recipientes y utensilios; no se confirma nombre de taller.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 163,
+    "category": 1,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "grupo-mesa-utensilios",
+    "description": "Grupo en uniformes de cocina alrededor de una mesa con hojas, recipientes y utensilios; no se confirma nombre de taller.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 164,
+    "category": 1,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "grupo-mesa-utensilios",
+    "description": "Grupo en uniformes de cocina alrededor de una mesa con hojas, recipientes y utensilios; no se confirma nombre de taller.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 165,
+    "category": 1,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "mesa-hojas-recipientes",
+    "description": "Mesa cubierta con hojas grandes, recipientes y utensilios, rodeada por personas en uniforme de cocina.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 166,
+    "category": 1,
+    "secondary": [
+      2
+    ],
+    "status": "verified",
+    "confidence": "high",
+    "label": "hojas-maiz-recipiente",
+    "description": "Hojas grandes, mazorca seca con envolturas, dos piezas vegetales redondas y pequeño recipiente con sustancias claras y oscuras.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 167,
+    "category": 1,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "cesta-frutos-rojos-recipiente",
+    "description": "Cesta con frutos rojos alargados y recipiente con fragmentos amarillentos sobre tela; ingredientes no confirmados.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 168,
+    "category": 1,
+    "secondary": [],
+    "status": "verified",
+    "confidence": "high",
+    "label": "cesta-utensilios-madera",
+    "description": "Primer plano de cesta y utensilios de madera; al fondo, una mano manipula material sobre papel.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 169,
+    "category": 1,
+    "secondary": [],
+    "status": "verified",
+    "confidence": "high",
+    "label": "mortero-madera-recipientes",
+    "description": "Mortero y mano de madera junto a recipientes negros, sobre tela y hojas.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 170,
+    "category": 1,
+    "secondary": [],
+    "status": "verified",
+    "confidence": "high",
+    "label": "mortero-madera-recipientes",
+    "description": "Mortero y mano de madera junto a recipientes negros, sobre tela y hojas.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 171,
+    "category": 0,
+    "secondary": [],
+    "status": "needs-human",
+    "confidence": "low",
+    "label": "cesta-frutos-rojos",
+    "description": "Una mano sostiene una cesta con frutos rojos brillantes; especie y eje temático no confirmados.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 172,
+    "category": 1,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "recipiente-primer-plano-grupo",
+    "description": "Recipiente oscuro en primer plano y personas alrededor de una mesa al fondo; imagen oscura, detalles limitados.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 173,
+    "category": 1,
+    "secondary": [],
+    "status": "verified",
+    "confidence": "high",
+    "label": "mortero-primer-plano",
+    "description": "Mortero de madera con mano y recipiente negro en primer plano; personas y utensilios detrás.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 174,
+    "category": 1,
+    "secondary": [],
+    "status": "verified",
+    "confidence": "high",
+    "label": "mortero-primer-plano",
+    "description": "Mortero de madera con mano y recipiente negro en primer plano; personas y utensilios detrás.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 175,
+    "category": 1,
+    "secondary": [],
+    "status": "verified",
+    "confidence": "high",
+    "label": "mortero-madera-detalle",
+    "description": "Detalle lateral de mortero y mano de madera sobre tela; fondo desenfocado.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 176,
+    "category": 1,
+    "secondary": [],
+    "status": "verified",
+    "confidence": "high",
+    "label": "mortero-madera-detalle",
+    "description": "Detalle lateral de mortero y mano de madera sobre tela; fondo desenfocado.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 177,
+    "category": 1,
+    "secondary": [],
+    "status": "verified",
+    "confidence": "high",
+    "label": "mortero-madera-detalle",
+    "description": "Detalle lateral de mortero y mano de madera sobre tela; fondo desenfocado.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 178,
+    "category": 2,
+    "secondary": [
+      1
+    ],
+    "status": "verified",
+    "confidence": "high",
+    "label": "hierbas-en-cesta",
+    "description": "Manojo de tallos y hojas verdes en cesta tejida; no se determina especie.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 179,
+    "category": 2,
+    "secondary": [
+      1
+    ],
+    "status": "verified",
+    "confidence": "high",
+    "label": "hierbas-en-cesta",
+    "description": "Manojo de tallos y hojas verdes en cesta tejida, sostenido por una persona; especie no determinada.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 180,
+    "category": 1,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "tejido-geometrico-amarillo-negro",
+    "description": "Detalle de tejido con patrón geométrico amarillo y oscuro; no se identifica comunidad ni procedencia.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 181,
+    "category": 1,
+    "secondary": [],
+    "status": "provisional",
+    "confidence": "medium",
+    "label": "tejido-geometrico-amarillo-negro",
+    "description": "Detalle de tejido con patrón geométrico amarillo y oscuro; no se identifica comunidad ni procedencia.",
+    "inspection": "Foto examinada visualmente en hoja de contacto, orden de lectura izquierda-derecha y arriba-abajo."
+  },
+  {
+    "number": 182,
+    "category": 0,
+    "secondary": [],
+    "status": "uninspected-video",
+    "confidence": "none",
+    "label": "miniatura-vainas-verdes",
+    "description": "Miniatura estática: vainas verdes alargadas sobre superficie metálica, ligeramente desenfocadas. MOV no reproducido; contenido temporal y audio no inspeccionados.",
+    "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos."
+  },
+  {
+    "number": 183,
+    "category": 0,
+    "secondary": [],
+    "status": "uninspected-video",
+    "confidence": "none",
+    "label": "miniatura-quemador-encendido",
+    "description": "Miniatura estática: quemador de cocina con llama azul. MOV no reproducido; contenido temporal y audio no inspeccionados.",
+    "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos."
+  },
+  {
+    "number": 184,
+    "category": 0,
+    "secondary": [],
+    "status": "uninspected-video",
+    "confidence": "none",
+    "label": "miniatura-mano-mezcla-clara",
+    "description": "Miniatura estática: mano sobre mezcla granulada clara y amarillenta. MOV no reproducido; ingrediente, contenido temporal y audio no inspeccionados.",
+    "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos."
+  },
+  {
+    "number": 185,
+    "category": 0,
+    "secondary": [],
+    "status": "uninspected-video",
+    "confidence": "none",
+    "label": "miniatura-mezcla-seca-clara",
+    "description": "Miniatura estática: mezcla seca clara de textura harinosa. MOV no reproducido; ingrediente, contenido temporal y audio no inspeccionados.",
+    "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos."
+  },
+  {
+    "number": 186,
+    "category": 0,
+    "secondary": [],
+    "status": "uninspected-video",
+    "confidence": "none",
+    "label": "miniatura-vegetales-en-sarten",
+    "description": "Miniatura estática: mano con espátula y vegetales verdes y blancos en sartén. MOV no reproducido; contenido temporal y audio no inspeccionados.",
+    "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos."
+  },
+  {
+    "number": 187,
+    "category": 0,
+    "secondary": [],
+    "status": "uninspected-video",
+    "confidence": "none",
+    "label": "miniatura-cuchillo-hierbas",
+    "description": "Miniatura estática: cuchillo, manos y hojas verdes picadas sobre tabla verde. MOV no reproducido; especies, contenido temporal y audio no inspeccionados.",
+    "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos."
+  },
+  {
+    "number": 188,
+    "category": 0,
+    "secondary": [],
+    "status": "uninspected-video",
+    "confidence": "none",
+    "label": "miniatura-cuchillo-vegetal-rojo",
+    "description": "Miniatura estática: cuchillo y manos junto a fragmentos rojos en tabla verde. MOV no reproducido; ingrediente, contenido temporal y audio no inspeccionados.",
+    "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos."
+  },
+  {
+    "number": 189,
+    "category": 0,
+    "secondary": [],
+    "status": "uninspected-video",
+    "confidence": "none",
+    "label": "miniatura-olla-liquido-blanco",
+    "description": "Miniatura estática: olla con líquido blanco sobre cocina. MOV no reproducido; composición, contenido temporal y audio no inspeccionados.",
+    "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos."
+  },
+  {
+    "number": 190,
+    "category": 0,
+    "secondary": [],
+    "status": "uninspected-video",
+    "confidence": "none",
+    "label": "miniatura-mano-material-blanco",
+    "description": "Miniatura estática: mano con material blanco rallado o desmenuzado sobre un recipiente. MOV no reproducido; ingrediente, contenido temporal y audio no inspeccionados.",
+    "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos."
+  },
+  {
+    "number": 191,
+    "category": 0,
+    "secondary": [],
+    "status": "uninspected-video",
+    "confidence": "none",
+    "label": "miniatura-manos-camarones",
+    "description": "Miniatura estática: manos sobre camarones en un recipiente metálico. MOV no reproducido; especie, contenido temporal y audio no inspeccionados.",
+    "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos."
+  },
+  {
+    "number": 192,
+    "category": 0,
+    "secondary": [],
+    "status": "uninspected-video",
+    "confidence": "none",
+    "label": "miniatura-recipiente-liquido-blanco",
+    "description": "Miniatura estática: recipiente con líquido blanco. MOV no reproducido; composición, contenido temporal y audio no inspeccionados.",
+    "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos."
+  },
+  {
+    "number": 193,
+    "category": 0,
+    "secondary": [],
+    "status": "uninspected-video",
+    "confidence": "none",
+    "label": "miniatura-trozos-platano",
+    "description": "Miniatura estática: trozos gruesos de plátano con cáscara oscura y amarilla en recipiente. MOV no reproducido; contenido temporal y audio no inspeccionados.",
+    "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos."
+  },
+  {
+    "number": 194,
+    "category": 0,
+    "secondary": [],
+    "status": "uninspected-video",
+    "confidence": "none",
+    "label": "miniatura-hierbas-recipiente",
+    "description": "Miniatura estática: fragmentos verdes de hojas en recipiente metálico. MOV no reproducido; especies, contenido temporal y audio no inspeccionados.",
+    "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos."
+  },
+  {
+    "number": 195,
+    "category": 0,
+    "secondary": [],
+    "status": "uninspected-video",
+    "confidence": "none",
+    "label": "miniatura-piedra-manos",
+    "description": "Miniatura estática: manos y piedra oscura pequeña sobre una piedra grande plana. MOV no reproducido; acción completa y audio no inspeccionados.",
+    "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos."
+  },
+  {
+    "number": 196,
+    "category": 0,
+    "secondary": [],
+    "status": "uninspected-video",
+    "confidence": "none",
+    "label": "miniatura-piedra-materia-amarilla",
+    "description": "Miniatura estática: manos y materia amarilla sobre piedra plana con utensilio oscuro. MOV no reproducido; ingrediente, acción completa y audio no inspeccionados.",
+    "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos."
+  },
+  {
+    "number": 197,
+    "category": 0,
+    "secondary": [],
+    "status": "uninspected-video",
+    "confidence": "none",
+    "label": "miniatura-manos-piedra",
+    "description": "Miniatura estática: manos sobre piedra plana, junto a una pieza amarilla y utensilio oscuro. MOV no reproducido; ingrediente, acción completa y audio no inspeccionados.",
+    "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos."
+  },
+  {
+    "number": 198,
+    "category": 0,
+    "secondary": [],
+    "status": "uninspected-video",
+    "confidence": "none",
+    "label": "miniatura-grupo-piedra",
+    "description": "Miniatura estática: personas en uniforme alrededor de una mesa, con manos y piedra plana en primer plano. MOV no reproducido; contenido temporal y audio no inspeccionados.",
+    "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos."
+  },
+  {
+    "number": 199,
+    "category": 0,
+    "secondary": [],
+    "status": "uninspected-video",
+    "confidence": "none",
+    "label": "miniatura-vegetales-verdes-sarten",
+    "description": "Miniatura estática: mezcla verde y blanca picada en sartén. MOV no reproducido; ingredientes, contenido temporal y audio no inspeccionados.",
+    "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos."
+  },
+  {
+    "number": 200,
+    "category": 0,
+    "secondary": [],
+    "status": "uninspected-video",
+    "confidence": "none",
+    "label": "miniatura-granos-blancos-recipiente",
+    "description": "Miniatura estática: mano junto a granos blancos adheridos a un recipiente inclinado sobre otro. MOV no reproducido; contenido temporal y audio no inspeccionados.",
+    "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos."
+  },
+  {
+    "number": 201,
+    "category": 0,
+    "secondary": [],
+    "status": "uninspected-video",
+    "confidence": "none",
+    "label": "miniatura-polvo-marron-recipiente",
+    "description": "Miniatura estática: pequeña cantidad de material marrón en recipiente metálico. MOV no reproducido; ingrediente, contenido temporal y audio no inspeccionados.",
+    "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos."
+  },
+  {
+    "number": 202,
+    "category": 0,
+    "secondary": [],
+    "status": "uninspected-video",
+    "confidence": "none",
+    "label": "miniatura-dos-personas-cocina",
+    "description": "Miniatura estática: dos personas con uniforme de cocina junto a mesa y recipientes. MOV no reproducido; actividad temporal y audio no inspeccionados.",
+    "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos."
+  },
+  {
+    "number": 203,
+    "category": 0,
+    "secondary": [],
+    "status": "uninspected-video",
+    "confidence": "none",
+    "label": "miniatura-olla-liquido-claro",
+    "description": "Miniatura estática: olla con líquido blanquecino sobre cocina. MOV no reproducido; composición, contenido temporal y audio no inspeccionados.",
+    "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos."
+  },
+  {
+    "number": 204,
+    "category": 0,
+    "secondary": [],
+    "status": "uninspected-video",
+    "confidence": "none",
+    "label": "miniatura-platano-tabla-verde",
+    "description": "Miniatura estática: manos, cuchillo y plátano con cáscara sobre tabla verde. MOV no reproducido; contenido temporal y audio no inspeccionados.",
+    "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos."
+  },
+  {
+    "number": 205,
+    "category": 0,
+    "secondary": [],
+    "status": "uninspected-video",
+    "confidence": "none",
+    "label": "miniatura-cocina-mesa",
+    "description": "Miniatura estática: mesa, cocina industrial y parte de una persona; detalle limitado. MOV no reproducido; actividad y audio no inspeccionados.",
+    "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos."
+  },
+  {
+    "number": 206,
+    "category": 0,
+    "secondary": [],
+    "status": "uninspected-video",
+    "confidence": "none",
+    "label": "miniatura-trozos-claros-recipiente",
+    "description": "Miniatura estática: recipiente lleno de pequeños trozos claros y amarillentos. MOV no reproducido; ingrediente, contenido temporal y audio no inspeccionados.",
+    "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos."
+  },
+  {
+    "number": 207,
+    "category": 0,
+    "secondary": [],
+    "status": "uninspected-video",
+    "confidence": "none",
+    "label": "miniatura-trozos-claros-cuenco",
+    "description": "Miniatura estática: pequeños trozos claros y amarillentos en cuenco metálico. MOV no reproducido; ingrediente, contenido temporal y audio no inspeccionados.",
+    "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos."
+  },
+  {
+    "number": 208,
+    "category": 0,
+    "secondary": [],
+    "status": "uninspected-video",
+    "confidence": "none",
+    "label": "miniatura-hoja-amarillenta",
+    "description": "Miniatura estática: hoja grande amarillenta junto a recipiente metálico. MOV no reproducido; especie, contenido temporal y audio no inspeccionados.",
+    "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos."
+  },
+  {
+    "number": 209,
+    "category": 0,
+    "secondary": [],
+    "status": "uninspected-video",
+    "confidence": "none",
+    "label": "miniatura-mano-trozos-claros",
+    "description": "Miniatura estática: mano sobre pequeños trozos claros y amarillentos dentro de un recipiente. MOV no reproducido; ingrediente, contenido temporal y audio no inspeccionados.",
+    "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos."
+  },
+  {
+    "number": 210,
+    "category": 0,
+    "secondary": [],
+    "status": "uninspected-video",
+    "confidence": "none",
+    "label": "miniatura-mezcla-harinosa",
+    "description": "Miniatura estática: mezcla seca clara de textura harinosa. MOV no reproducido; ingrediente, contenido temporal y audio no inspeccionados.",
+    "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos."
+  },
+  {
+    "number": 211,
+    "category": 0,
+    "secondary": [],
+    "status": "uninspected-video",
+    "confidence": "none",
+    "label": "miniatura-corte-bloque-amarillo",
+    "description": "Miniatura estática: manos, cuchillo y un bloque amarillo cortado en láminas. MOV no reproducido; ingrediente, contenido temporal y audio no inspeccionados.",
+    "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos."
+  },
+  {
+    "number": 212,
+    "category": 0,
+    "secondary": [],
+    "status": "uninspected-video",
+    "confidence": "none",
+    "label": "miniatura-vainas-verdes",
+    "description": "Miniatura estática: vainas verdes alargadas sobre superficie metálica, ligeramente desenfocadas. MOV no reproducido; contenido temporal y audio no inspeccionados.",
+    "inspection": "Miniatura estática de MOV examinada; vídeo y audio NO reproducidos."
+  }
+]

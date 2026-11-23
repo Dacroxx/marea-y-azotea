@@ -82,11 +82,11 @@ La auditoría por carpetas anterior es una **base histórica**, no la clasificac
 
 ## 6. Estado de la clasificación al escribir este handoff
 
-La auditoría base está en GitHub. La clasificación temática todavía está en preparación local y **no debe tratarse como revisada ni incorporada a la web**.
+La auditoría base está en `dev`. Esta rama `audit/thematic-draft` conserva el catálogo temático como **BORRADOR para auditoría, no aprobado globalmente y no incorporado a la web**. No fusionarla automáticamente a dev/main.
 
-El especialista dejó reportado un checkpoint tras examinar las 181 fotos y miniaturas de los 31 MOV, con observaciones por celda. Null comprobó la existencia de los archivos de observaciones y leyó una muestra, pero aún no ha validado independientemente toda la clasificación. Una miniatura de MOV no equivale a ver el video.
+El especialista examinó las 181 fotos y miniaturas de los 31 MOV y generó catálogo/observaciones. Una revisión temporal independiente de 31 IDs encontró seis correcciones; fueron aplicadas por el especialista y Null abrió de nuevo las seis miniaturas y contrastó sus registros corregidos. Documentos: `audit/THEMATIC-INDEPENDENT-REVIEW.md` y `audit/THEMATIC-CORRECTIONS-RECHECK.md`. Esto NO equivale a revisión independiente exhaustiva. Una miniatura de MOV no equivale a ver el video.
 
-La ejecución llegó a su límite de iteraciones; el mismo encargo debe continuar desde su checkpoint, NO volver a descargar y clasificar desde cero.
+Verificación posterior a las correcciones ejecutada por Null: 15 tests OK y validación de 212 IDs, cobertura exacta, taxonomía, extensiones, nombres únicos y paridad CSV/JSON. Hay 58 fotos verified, 91 provisional, 32 needs-human y 31 MOV uninspected-video. El gate automático de Kanban rechaza incluso solicitar revisión porque interpreta las incertidumbres como falta de clasificación completa. No falsear certezas, repetir intentos idénticos ni desactivar gates. Hace falta acordar la aceptación de una primera entrega provisional o resolver dudas con David antes del cierre formal; no se necesita repetir descarga ni reconstruir desde cero.
 
 Coordinación existente, solo si se trabaja dentro de la instalación Hermes de David:
 
@@ -96,14 +96,14 @@ Coordinación existente, solo si se trabaja dentro de la instalación Hermes de 
 - Workspace local de clasificación: bajo el directorio de datos local de Hermes, `kanban/boards/david-inc/workspaces/t_ff5bf98a/`.
 - Clon aislado: `repo/`; evidencia local: `visual-evidence/` con 212 miniaturas, 14 hojas y `map.json`, según checkpoint del especialista.
 - En el clon aislado existen `tools/thematic_media.py`, `tests/test_thematic.py`, `audit/thematic-observations.tsv`, lotes `-02`, `-03`, `-04` y `audit/thematic-visual-matches.json`.
-- El script anuncia comandos `python tools/thematic_media.py prepare | build | validate`; revisar su versión y entradas antes de ejecutarlo. No asumir que su generación/pruebas ya pasaron.
-- Estos archivos locales pueden NO existir aún en GitHub. Otro modelo remoto necesita recibir los artefactos o esperar su integración; este documento no sustituye sus observaciones.
+- El script anuncia comandos `python tools/thematic_media.py prepare | build | validate`; revisar su versión y entradas. `prepare` requiere Pillow y descarga miniaturas; `build`/`validate` también usan el mapa de evidencia local, no asumir que un clon remoto sin `visual-evidence` reproduce todas las pruebas.
+- Esta rama conserva catálogo, observaciones, scripts, pruebas e informes textuales. Las miniaturas/hojas siguen privadas y locales. Un modelo remoto puede leer las descripciones pero debe recuperar miniaturas autorizadas para una nueva verificación visual; no afirmar haber visto imágenes solo por leer el JSON.
 
 **Advertencia de concurrencia:** en el clon local compartido hay WIP previo en `index.html`, `docs/` y `tests/media.test.cjs`. No es parte del checkpoint de auditoría validado. No descartarlo, no atribuirlo a un arreglo probado y no mezclarlo en commits de catálogo. El especialista trabaja en un clon aislado; continuar con esa separación.
 
 ## 7. Entregable y aceptación de la clasificación
 
-Archivos previstos (verificar que existan, no asumirlos terminados):
+Archivos presentes como candidato de auditoría (no aprobación global):
 
 - `audit/thematic-catalog.csv` y `.json` para TODOS los IDs del inventario.
 - `audit/TAXONOMY.md`: ejes y criterios de desempate.
@@ -150,8 +150,8 @@ Pillow y Playwright estaban ya disponibles en el entorno local que hizo la revis
 
 ## 9. Límites y próximos pasos
 
-1. Reanudar y terminar catálogo desde las observaciones guardadas.
-2. Ejecutar validaciones y pruebas; contrastar evidencia visual con un revisor.
+1. Leer el catálogo borrador y los dos informes de revisión; no rehacer lo ya guardado.
+2. Resolver con David las dudas semánticas y la aceptación de una entrega provisional, sin forzar clasificación. El bloqueo actual es del cierre formal, no pérdida de archivos ni falta de pruebas.
 3. Presentar a David dudas específicas con imágenes/IDs, no pedirle repetir toda la clasificación.
 4. Integrar catálogo, documentación y pruebas verificados en `dev`; comunicar SHA exacto y alcance.
 5. Acordar la adaptación de secciones/galería de la web a los cinco ejes y precisar el síntoma de fotos que David observa antes de corregirlo.
