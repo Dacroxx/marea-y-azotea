@@ -41,28 +41,43 @@ def build_videos_section(videos):
         if not grp_vids:
             continue
         cards = []
-        for v in grp_vids:
+        dots = []
+        for idx, v in enumerate(grp_vids):
             vurl = f"https://drive.google.com/file/d/{v['sourceId']}/view"
             vprev = f"https://drive.google.com/file/d/{v['sourceId']}/preview"
+            active_cls = ' is-active' if idx == 0 else ''
             cards.append(
-                f'<div class="rounded-3xl p-4 sm:p-5 shadow-md flex flex-col justify-between {card_bg}">'
+                f'<article class="video-slide rounded-3xl p-4 sm:p-5 shadow-md flex flex-col justify-between {card_bg}{active_cls}" data-slide-index="{idx}" data-video-src="{vprev}">'
                 f'<div class="w-full rounded-2xl overflow-hidden bg-carbon/80" style="aspect-ratio: 16 / 9; min-height: 210px;">'
                 f'<iframe src="{vprev}" title="{escape(v["driveName"])}" loading="lazy" allow="autoplay; fullscreen" allowfullscreen style="width: 100%; height: 100%; min-height: 210px; border: 0;"></iframe>'
                 f'</div>'
                 f'<div class="mt-4 flex items-center justify-between gap-2">'
                 f'<span class="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-widest {badge_bg}">{escape(v["code"])}</span>'
-                f'<a href="{vurl}" target="_blank" rel="noopener noreferrer" class="text-xs underline underline-offset-2 opacity-80 hover:opacity-100">Abrir en Drive ↗</a>'
+                f'<a href="{vurl}" target="_blank" rel="noopener noreferrer" class="text-xs underline underline-offset-2 opacity-85 hover:opacity-100">Abrir en Drive ↗</a>'
                 f'</div>'
                 f'<div class="mt-3">'
                 f'<h4 class="font-editorial font-bold text-lg leading-snug">{escape(v["driveName"])}</h4>'
                 f'<p class="text-xs opacity-85 mt-1.5 leading-relaxed">{escape(v["title"])}</p>'
                 f'</div>'
-                f'</div>'
+                f'</article>'
+            )
+            dots.append(
+                f'<button type="button" class="video-dot{active_cls}" data-dot-index="{idx}" aria-label="Ir al video {idx + 1}: {escape(v["driveName"])}"></button>'
             )
         blocks.append(
-            f'<div class="mt-10">'
-            f'<h3 class="font-editorial font-bold text-2xl text-marea mb-4">{escape(title)}</h3>'
-            f'<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">{"".join(cards)}</div>'
+            f'<div class="mt-12 video-group" data-video-group="{ckey}">'
+            f'<div class="flex flex-wrap items-center justify-between gap-4 mb-4">'
+            f'<h3 class="font-editorial font-bold text-2xl text-marea">{escape(title)}</h3>'
+            f'<div class="flex items-center gap-2">'
+            f'<span class="video-counter text-xs font-bold uppercase tracking-widest text-carbon/70 mr-2">1 / {len(grp_vids)}</span>'
+            f'<button type="button" class="video-nav-btn video-prev" aria-label="Video anterior de {escape(title)}" disabled>←</button>'
+            f'<button type="button" class="video-nav-btn video-next" aria-label="Siguiente video de {escape(title)}">→</button>'
+            f'</div>'
+            f'</div>'
+            f'<div class="video-carousel-viewport">'
+            f'<div class="video-carousel-track" role="region" aria-roledescription="carrusel" aria-label="{escape(title)}" tabindex="0">{"".join(cards)}</div>'
+            f'</div>'
+            f'<div class="video-dots flex items-center justify-center gap-2 mt-4">{"".join(dots)}</div>'
             f'</div>'
         )
 

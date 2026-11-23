@@ -102,7 +102,7 @@ setGlossaryCategory=function(cat){originalSetGlossaryCategory(cat);document.quer
 window.addEventListener('beforeprint',()=>{document.querySelectorAll('[id^="mosaic-c"] img').forEach(img=>img.loading='eager');});
 
 // Bulletproof .reveal visibility + active chapter scroll-spy
-const spyIds=['cronica-1','cronica-2','cronica-3','cronica-4','cronica-5','glosario'];
+const spyIds=['cronica-1','cronica-2','cronica-3','cronica-4','videos-eje','glosario'];
 const spyLinks=[...document.querySelectorAll('header nav a[href^="#"], #mobile-menu a[href^="#"]')];
 let scrollRaf=false;
 const syncScrollUI=()=>{
@@ -135,3 +135,100 @@ window.addEventListener('scroll',scheduleScrollUI,{passive:true});
 window.addEventListener('hashchange',()=>setTimeout(syncScrollUI,60));
 window.addEventListener('DOMContentLoaded',()=>setTimeout(syncScrollUI,80));
 syncScrollUI();
+
+// Center-focused horizontal video carousels
+const videoGroups=[...document.querySelectorAll('.video-group')];
+const resetGroupPlayback=(group)=>{
+  group.querySelectorAll('.video-slide').forEach(slide=>{
+    const iframe=slide.querySelector('iframe');
+    const base=slide.dataset.videoSrc;
+    if(iframe&&base&&iframe.getAttribute('src')!==base)iframe.setAttribute('src',base);
+  });
+};
+const activateCenteredSlide=(group)=>{
+  const active=group.querySelector('.video-slide.is-active');
+  if(!active)return;
+  const iframe=active.querySelector('iframe');
+  const base=active.dataset.videoSrc;
+  if(iframe&&base){
+    const target=base+(base.includes('?')?'&':'?')+'autoplay=1';
+    if(iframe.getAttribute('src')!==target)iframe.setAttribute('src',target);
+  }
+};
+videoGroups.forEach(group=>{
+  const track=group.querySelector('.video-carousel-track');
+  const slides=[...group.querySelectorAll('.video-slide')];
+  const dots=[...group.querySelectorAll('.video-dot')];
+  const prevBtn=group.querySelector('.video-prev');
+  const nextBtn=group.querySelector('.video-next');
+  const counter=group.querySelector('.video-counter');
+  if(!track||!slides.length)return;
+  let activeIdx=0;
+  let inView=false;
+
+  const setActive=(idx,shouldScroll,shouldPlay)=>{
+    idx=Math.max(0,Math.min(slides.length-1,idx));
+    const changed=idx!==activeIdx;
+    activeIdx=idx;
+    slides.forEach((s,i)=>s.classList.toggle('is-active',i===idx));
+    dots.forEach((d,i)=>d.classList.toggle('is-active',i===idx));
+    if(counter)counter.textContent=`${idx+1} / ${slides.length}`;
+    if(prevBtn)prevBtn.disabled=idx===0;
+    if(nextBtn)nextBtn.disabled=idx===slides.length-1;
+    if(shouldScroll){
+      const target=slides[idx];
+      const left=target.offsetLeft-(track.clientWidth-target.clientWidth)/2;
+      track.scrollTo({left:Math.max(0,left),behavior:'smooth'});
+    }
+    if(changed){
+      resetGroupPlayback(group);
+      if(shouldPlay&&inView)activateCenteredSlide(group);
+    }
+  };
+
+  prevBtn?.addEventListener('click',()=>setActive(activeIdx-1,true,true));
+  nextBtn?.addEventListener('click',()=>setActive(activeIdx+1,true,true));
+  dots.forEach((dot,i)=>dot.addEventListener('click',()=>setActive(i,true,true)));
+  slides.forEach((slide,i)=>slide.addEventListener('click',()=>{if(i!==activeIdx)setActive(i,true,true);}));
+  track.addEventListener('keydown',e=>{
+    if(e.key==='ArrowRight'){e.preventDefault();setActive(activeIdx+1,true,true);}
+    else if(e.key==='ArrowLeft'){e.preventDefault();setActive(activeIdx-1,true,true);}
+  });
+
+  let trackTimer=null;
+  track.addEventListener('scroll',()=>{
+    clearTimeout(trackTimer);
+    trackTimer=setTimeout(()=>{
+      const center=track.scrollLeft+track.clientWidth/2;
+      let bestIdx=activeIdx,bestDist=Infinity;
+      slides.forEach((s,i)=>{
+        const sCenter=s.offsetLeft+s.clientWidth/2;
+        const dist=Math.abs(sCenter-center);
+        if(dist<bestDist){bestDist=dist;bestIdx=i;}
+      });
+      if(bestIdx!==activeIdx)setActive(bestIdx,false,true);
+    },120);
+  },{passive:true});
+
+  group._setInView=(visible)=>{
+    inView=visible;
+    if(visible)activateCenteredSlide(group);
+    else resetGroupPlayback(group);
+  };
+  setActive(0,false,false);
+});
+
+if('IntersectionObserver' in window&&videoGroups.length){
+  const videoObserver=new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+      const group=entry.target;
+      clearTimeout(group._playTimer);
+      if(entry.isIntersecting){
+        group._playTimer=setTimeout(()=>group._setInView?.(true),320);
+      }else{
+        group._setInView?.(false);
+      }
+    });
+  },{threshold:0.55});
+  videoGroups.forEach(g=>videoObserver.observe(g));
+}
