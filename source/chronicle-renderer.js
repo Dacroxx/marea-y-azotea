@@ -24,7 +24,7 @@
           </button>
           <figcaption class="absolute inset-x-0 bottom-0 p-4 pt-10 bg-gradient-to-t from-carbon/85 via-carbon/40 to-transparent text-coco opacity-95 group-hover:opacity-100 transition-opacity">
             <p class="photo-description text-xs sm:text-[13px] leading-snug font-medium drop-shadow">${caption}</p>
-            <div class="file-line mt-2 text-[10px]"><span class="original-name">${name}</span><a class="photo-drive" href="${driveView(photo.id)}" target="_blank" rel="noopener noreferrer">Drive ↗</a></div>
+            <div class="file-line mt-2 text-[10px]"><span class="original-name">${name}</span></div>
           </figcaption></figure>`);
         (insertions.get(idx)||[]).forEach(c=>items.push(card(c)));
       });

@@ -43,7 +43,6 @@ def build_videos_section(videos):
         cards = []
         dots = []
         for idx, v in enumerate(grp_vids):
-            vurl = f"https://drive.google.com/file/d/{v['sourceId']}/view"
             vprev = f"https://drive.google.com/file/d/{v['sourceId']}/preview"
             active_cls = ' is-active' if idx == 0 else ''
             cards.append(
@@ -53,7 +52,6 @@ def build_videos_section(videos):
                 f'</div>'
                 f'<div class="mt-4 flex items-center justify-between gap-2">'
                 f'<span class="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-widest {badge_bg}">{escape(v["code"])}</span>'
-                f'<a href="{vurl}" target="_blank" rel="noopener noreferrer" class="text-xs underline underline-offset-2 opacity-85 hover:opacity-100">Abrir en Drive ↗</a>'
                 f'</div>'
                 f'<div class="mt-3">'
                 f'<h4 class="font-editorial font-bold text-lg leading-snug">{escape(v["driveName"])}</h4>'
@@ -362,6 +360,11 @@ def build(runtime=False):
         '              Referencias y Fuentes ↓\n'
         '            </a>',
     )
+
+    # Quitar enlaces de "Abrir en Drive" en Lightbox y tarjetas
+    text = re.sub(r'\s*<a id="lb-drive-btn".*?</a>', '', text, flags=re.S)
+    text = text.replace("document.getElementById('lb-drive-btn').href = driveView(item.id);", '')
+    text = re.sub(r'\s*<a href="\$\{driveView\([^)]+\)\}"[^>]*>\s*Abrir en Drive ↗\s*</a>', '', text, flags=re.S)
 
     # Quitar botones de Guardar PDF (header y footer) y su listener
     text = re.sub(r'\s*<button id="print-pdf-btn".*?</button>', '', text, flags=re.S)
