@@ -1,0 +1,49 @@
+number	category	secondary	status	confidence	label	description
+1	4		provisional	medium	bocados-dorados-cobertura-blanca	Bocados redondos dorados sobre plato negro, con cobertura blanca rallada; ingredientes no confirmados.
+2	4		provisional	medium	bocados-dorados-cobertura-blanca	Bocados dorados con cobertura blanca rallada sobre plato negro; al fondo, láminas amarillas.
+3	4		provisional	medium	bocados-dorados-cobertura-blanca	Bocados dorados con cobertura blanca rallada sobre plato negro; al fondo, láminas amarillas.
+4	2	4	provisional	medium	mezcla-amarilla-fragmentos-sarten	Mezcla amarilla húmeda con fragmentos verdes y rojos en sartén metálica; no se confirma receta ni hierbas.
+5	3		verified	high	crustaceo-entero-sostenido	Crustáceo de caparazón oscuro con patas y pinzas, sostenido frente a una mesa de cocina; especie no determinada.
+6	3		verified	high	crustaceo-entero-sostenido	Crustáceo de caparazón oscuro con patas y pinzas, sostenido frente a una mesa de cocina; especie no determinada.
+7	4	1	provisional	medium	platos-preparaciones-amarillas	Mesa con varias preparaciones amarillas, una de granos y otra en láminas; no se confirma composición.
+8	4	1	provisional	medium	platos-preparaciones-amarillas	Mesa con varias preparaciones amarillas, una de granos y otra en láminas; no se confirma composición.
+9	4	1	provisional	medium	mesa-platos-arroz-laminas	Vista cenital de platos con arroz blanco, preparación amarilla, láminas amarillas y bocados con cobertura blanca.
+10	4		provisional	medium	plato-arroz-blanco	Plato negro con arroz blanco y algunos fragmentos beige; no se confirma leche de coco ni plato específico.
+11	4		provisional	medium	plato-arroz-blanco	Plato negro con arroz blanco y algunos fragmentos beige; no se confirma leche de coco ni plato específico.
+12	3	4	provisional	medium	preparacion-trozos-salsa-amarilla	Plato negro con trozos que parecen pescado en salsa amarilla y fragmentos vegetales; no se confirma especie ni encocado.
+13	3	4	provisional	medium	preparacion-trozos-salsa-amarilla	Plato negro con trozos que parecen pescado en salsa amarilla y fragmentos vegetales; no se confirma especie ni encocado.
+14	0		needs-human	low	grupo-en-cocina	Personas con uniformes de cocina alrededor de una mesa; el alimento o actividad temática dominante no se distingue.
+15	1	2	verified	high	mesa-utensilios-ingredientes	Mesa con recipientes de apariencia vegetal, utensilios de madera, hojas y pequeños ingredientes dispuestos sobre tela.
+16	1	2	verified	high	mesa-utensilios-ingredientes	Vista superior de recipientes, utensilios de madera, hojas y pequeños ingredientes sobre una mesa cubierta con tela.
+17	0		needs-human	low	material-marron-sobre-papel	Material marrón desmenuzado sobre papel blanco en un plato negro; no se identifica su naturaleza.
+18	0		needs-human	low	mano-material-marron	Una mano toca material marrón desmenuzado dispuesto sobre papel blanco; ingrediente no identificado.
+19	0		needs-human	low	mano-material-marron	Una mano toca material marrón desmenuzado dispuesto sobre papel blanco; ingrediente no identificado.
+20	0		needs-human	low	mano-material-marron	Una mano toca material marrón desmenuzado dispuesto sobre papel blanco; ingrediente no identificado.
+21	0		needs-human	low	mano-material-marron	Una mano toca material marrón desmenuzado dispuesto sobre papel blanco; ingrediente no identificado.
+22	5	1	provisional	medium	instrumento-tubos-y-recipientes	Persona sostiene un instrumento formado por tubos junto a recipientes y botellas en una mesa; no se confirma música ni bebida específica.
+23	5		provisional	medium	lectura-libro-en-grupo	Personas en uniforme de cocina; una sostiene un libro abierto y gesticula. No se confirma el contenido de la lectura.
+24	0		needs-human	low	pagina-libro-abierto	Primer plano de una página de libro con texto impreso; el contenido no se transcribe ni se identifica con esta vista.
+25	1		provisional	medium	recipientes-cesteria-mesa	Cestas, recipientes y objetos alargados sobre una mesa, con personas detrás; no se identifica el uso de cada objeto.
+26	1		provisional	low	tallos-hojas-sobre-piedra	Tallos y hojas verdes sobre piedra; especie y uso por confirmar.
+27	1		provisional	medium	grupo-mesa-utensilios	Grupo en uniformes de cocina alrededor de una mesa con hojas, recipientes y utensilios; no se confirma nombre de taller.
+28	1		provisional	medium	grupo-mesa-utensilios	Grupo en uniformes de cocina alrededor de una mesa con hojas, recipientes y utensilios; no se confirma nombre de taller.
+29	1		provisional	medium	grupo-mesa-utensilios	Grupo en uniformes de cocina alrededor de una mesa con hojas, recipientes y utensilios; no se confirma nombre de taller.
+30	1		provisional	medium	grupo-mesa-utensilios	Grupo en uniformes de cocina alrededor de una mesa con hojas, recipientes y utensilios; no se confirma nombre de taller.
+31	1		provisional	medium	grupo-mesa-utensilios	Grupo en uniformes de cocina alrededor de una mesa con hojas, recipientes y utensilios; no se confirma nombre de taller.
+32	1		provisional	medium	mesa-hojas-recipientes	Mesa cubierta con hojas grandes, recipientes y utensilios, rodeada por personas en uniforme de cocina.
+33	1	2	verified	high	hojas-maiz-recipiente	Hojas grandes, mazorca seca con envolturas, dos piezas vegetales redondas y pequeño recipiente con sustancias claras y oscuras.
+34	1		provisional	medium	cesta-frutos-rojos-recipiente	Cesta con frutos rojos alargados y recipiente con fragmentos amarillentos sobre tela; ingredientes no confirmados.
+35	1		verified	high	cesta-utensilios-madera	Primer plano de cesta y utensilios de madera; al fondo, una mano manipula material sobre papel.
+36	1		verified	high	mortero-madera-recipientes	Mortero y mano de madera junto a recipientes negros, sobre tela y hojas.
+37	1		verified	high	mortero-madera-recipientes	Mortero y mano de madera junto a recipientes negros, sobre tela y hojas.
+38	0		needs-human	low	cesta-frutos-rojos	Una mano sostiene una cesta con frutos rojos brillantes; especie y eje temático no confirmados.
+39	1		provisional	medium	recipiente-primer-plano-grupo	Recipiente oscuro en primer plano y personas alrededor de una mesa al fondo; imagen oscura, detalles limitados.
+40	1		verified	high	mortero-primer-plano	Mortero de madera con mano y recipiente negro en primer plano; personas y utensilios detrás.
+41	1		verified	high	mortero-primer-plano	Mortero de madera con mano y recipiente negro en primer plano; personas y utensilios detrás.
+42	1		verified	high	mortero-madera-detalle	Detalle lateral de mortero y mano de madera sobre tela; fondo desenfocado.
+43	1		verified	high	mortero-madera-detalle	Detalle lateral de mortero y mano de madera sobre tela; fondo desenfocado.
+44	1		verified	high	mortero-madera-detalle	Detalle lateral de mortero y mano de madera sobre tela; fondo desenfocado.
+45	2	1	verified	high	hierbas-en-cesta	Manojo de tallos y hojas verdes en cesta tejida; no se determina especie.
+46	2	1	verified	high	hierbas-en-cesta	Manojo de tallos y hojas verdes en cesta tejida, sostenido por una persona; especie no determinada.
+47	1		provisional	medium	tejido-geometrico-amarillo-negro	Detalle de tejido con patrón geométrico amarillo y oscuro; no se identifica comunidad ni procedencia.
+48	1		provisional	medium	tejido-geometrico-amarillo-negro	Detalle de tejido con patrón geométrico amarillo y oscuro; no se identifica comunidad ni procedencia.

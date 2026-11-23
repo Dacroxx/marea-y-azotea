@@ -15,14 +15,29 @@ class MediaAuditTests(unittest.TestCase):
         parser.feed('<div class="flip-entry" id="entry-ABC"><a href="https://drive.google.com/file/d/ABC/view"><div class="flip-entry-title">Foto &amp; Mesa.JPG</div></a></div>')
         self.assertEqual(parser.entries, [{'id':'ABC','name':'Foto & Mesa.JPG','url':'https://drive.google.com/file/d/ABC/view'}])
 
-    def test_reference_extraction_counts(self):
+    def test_current_page_references_match_only_verified_photos(self):
         refs = module.references((ROOT/'index.html').read_text(encoding='utf-8'))
+        catalog = json.loads((ROOT/'audit/thematic-catalog.json').read_text(encoding='utf-8'))
+        expected = [r for r in catalog if r['reviewStatus']=='verified' and r['mediaType']=='photo']
+        self.assertEqual(len(refs), len(expected))
+        self.assertEqual(refs, [{'id':r['sourceId'], 'name':r['originalName'], 'category':r['primaryCategory'], 'kind':'photo'} for r in expected])
+
+    def test_historical_reference_snapshot_counts(self):
+        # The snapshot describes the old three-chapter site, not today's selection.
+        refs = json.loads((ROOT/'audit/page-references.json').read_text(encoding='utf-8'))
         self.assertEqual(len(refs), 50)
         self.assertEqual(len({r['id'] for r in refs}), 50)
         self.assertEqual(sum(r['kind']=='photo' for r in refs), 47)
         self.assertEqual(sum(r['kind']=='video' for r in refs), 3)
         self.assertEqual(sum(r['category']=='sensorial' for r in refs), 24)
         self.assertEqual(sum(r['category']=='agosto' for r in refs), 26)
+
+    def test_legacy_reference_parser_remains_available(self):
+        source = "const sensorialPhotos = [{id: 'A', name: 'A.HEIC'}]; const agostoPhotos = [{id: 'B', name: 'B.JPG'}]; const driveVideos = [{id: 'C', name: 'C.MOV', chapter: 'Taller Sensorial', localUrl: ''}];"
+        self.assertEqual(module.references(source), [
+            {'id':'A','name':'A.HEIC','category':'sensorial','kind':'photo'},
+            {'id':'B','name':'B.JPG','category':'agosto','kind':'photo'},
+            {'id':'C','name':'C.MOV','category':'sensorial','kind':'video'}])
 
     def test_snapshot_counts_are_consistent(self):
         summary = json.loads((ROOT/'audit/summary.json').read_text(encoding='utf-8'))

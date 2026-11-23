@@ -1,5 +1,43 @@
 # Continuidad para modelos y colaboradores — Marea & Azotea
 
+## Estado vigente — restauración de la referencia editorial exacta
+
+**Esta sección prevalece sobre el handoff histórico.** David rechazó la entrega simplificada `f8e3ab1` y aportó un HTML concreto como autoridad visual/editorial. No rediseñar ni volver a convertirlo en una galería genérica. Mantener estructura rica, crónicas, firma/créditos de **Aida Arteaga**, tipografías Playfair/Fraunces/Plus Jakarta, paleta, mosaicos, tarjetas intercaladas, glosario de 44 voces y footer.
+
+- Implementación conservada como candidato de revisión en `audit/thematic-draft` del fork `Dacroxx/marea-y-azotea`, junto con fuentes/generador/tests. Obtener SHA exacto con HEAD remoto/PR#1. El implementador terminó; Null verificó 21 tests Python, standalone, funcional offline y smoke Drive real, y preparó checkpoint sin merge/deploy. No tocar Documents con WIP ni otros perfiles. CONTINUE.md y HANDOFF.md documentan límites y continuidad para Gemini/DeepSeek.
+- El parent descargó y abrió el ZIP exacto anterior: estilos aplicados, stylesheet local cargado y 0 errores JS. **No reproducido un fallo general de CSS del ZIP completo.** No inventar root cause de permisos, navegador o usuario. Sí se confirma una identidad demasiado simplificada y fragilidad de abrir solo el HTML separado de assets.
+- Ahora `index.html` es **autocontenido en CSS y comportamiento**, incluso copiado solo a una carpeta vacía. No carga scripts externos, CDN Tailwind ni assets relativos. Fotos Drive y fuentes Google requieren Internet; offline hay SVG/estados neutrales y fuentes de respaldo, no texto plano sin composición.
+- Base exacta preservada en `source/editorial-template.html`, SHA256 `7bd51e2854517647430d5d64a197a49d230a8298027c76c9a2daf6c4dfaa3c15`. `.gitattributes` conserva sus bytes. Material editorial aportado ≠ transcripciones/citas ni revisión científica verificadas. La nota visible separa ese contenido de los pies auditados; no borrar su voz ni usarla para identificar fotos.
+- **58 IDs verified**: Territorio 29, Hierbas 15, Coco/Fogón 5, Mar 9, Bebidas 0 (orden visual del adjunto, valores exactos intactos). Cada descripción/alt es `visualDescription` original; nombre y enlace por ID visibles. Portada verified `IMG_1898.HEIC`, `1jMeLokjKWlpVlkg_X67NqsVLP9nFM-QV`. No deduplicación por parecido/nombre, no afirmar 58 escenas diferentes.
+- 91 provisional + 32 needs-human + 31 MOV siguen fuera de publicación. No se cambió clasificación ni evidencia para rellenar ejes. Cinco franjas audiovisuales prudentes, sin embeds ni títulos inventados; contador de videos 0. Eje V conserva crónica/cápsulas/glosario con estado vacío explícito. Se mantienen 15 cápsulas aun con recuentos menores.
+- `tools/build_magazine.py` delega en `source/build_editorial.py`: regeneración offline determinista a partir de fuente exacta + catálogo + CSS estático versionado. `source/accessibility.js`, `chronicle-renderer.js`, `standalone.css` se inlinan. Para refrescar utilidades usar el flujo documentado en README con Playwright/Chrome existentes; no instalar paquetes. `source/build-runtime.html` es temporal ignorado. Los viejos assets no son dependencia y se conservan solo como historial.
+- No es cierre de clasificación de los 212 medios ni revisión científica o independiente exhaustiva. `audit/FRONTEND-REVIEW.md` revisaba la entrega rechazada; no usar su aprobación para esta nueva versión.
+
+### Verificación de esta corrección
+
+- RED observado de `tests/editorial-standalone.cjs` contra `f8e3ab1`: 0 mosaicos frente a 5. GREEN sobre el HTML restaurado.
+- Contrato actual y funcional con Chrome real: solo HTML en directorio vacío, todos los HTTP(S) abortados, sin fixtures. Se verifican selección exacta, 15 cápsulas, estado vacío, 44 fichas abiertas/cerradas con foco, cinco filtros de glosario y búsqueda, enlaces inline, navegación 1440/390/360 sin overflow, visor/teclas/foco/Esc, fallback neutral, impresión con 58 fichas y reveals visibles, sin excepciones JS ni assets/CDN requeridos.
+- Se reprodujeron y corrigieron dos defectos reales del refinamiento: transiciones de reveal dejaban opacidad temporal 0 al cambiar a print; onerror tardío de una imagen retirada del visor accedía a parentElement nulo. Los tests pasan tras ambas correcciones.
+- `node tests/editorial-reference.cjs`: igualdad de estilos computados entre adjunto y entregable en 14 componentes × 12 propiedades × 3 anchuras; 33 nodos de texto editorial preservados. Capturas reales revisadas de referencia desktop/móvil, resultado online y resultado offline, mosaico y visor.
+- Smoke Drive real: cinco IDs distintos decodificados y visor a 1600 cargado, 0 errores JS/requests fallidos en la ejecución. No es prueba de las 58 cargas ni de MOV.
+- `python -m unittest discover -s tests -v`: los 17 tests existentes de catálogo, auditoría y parser legacy pasan. Consultar README para comandos completos y evidencia actual; repetir después de cambios.
+- Evidencia **privada**: `C:/Users/D/AppData/Local/hermes/profiles/null/cache/scratch/marea-editorial-qa/`: `editorial-offline-results.json`, `reference-style-comparison.json`, `browser-real-results.json`, `reference-cover-{1440,390,360}.png`, `real-cover-{1440,390,360}.png`, `offline-cover-{1440,390,360}.png`, mosaicos offline/online, visor y `offline-print.pdf`. No commitear capturas/personas/PDF.
+
+### Checkpoint durable / relevo urgente
+
+Ver `HANDOFF.md` para estado exacto, comandos y pendientes honestos. Última ejecución: **21 tests Python OK**, contrato standalone PASS, funcional offline completo PASS, comparación referencia PASS y smoke Drive real PASS. Queda por confirmar un detalle del aviso de red/header fijo al cambiar viewport: un assert experimental inmediato de geometría falló y no se certifica resuelto; no confundirlo con ausencia de CSS. No hubo extracción completa de captions del PDF. Parent publicó por su cuenta `3fcdf148693c850e0fe4bc8ab9dde20aa84f0cc0` con SOLO `CONTINUE.md` y `handoff/user-reference.html`, sin estos cambios WIP. Preservarlos; no resetear HEAD a f8e3ab1. No se cambió modelo/config ni se detuvieron procesos.
+
+### Siguiente gate
+
+Revisión parent del diff y del HTML real; después parent publicará en la rama/PR existentes del fork para que David revise. No merge a dev/main ni deploy sin aprobación. Ver `audit/EDITORIAL-RESTORATION.md`. El catálogo y snapshot histórico siguen sin cambios.
+
+---
+
+## Contexto histórico de la auditoría previa
+
+Los apartados siguientes conservan la base del trabajo y sus límites. Las menciones a la «página actual», tres capítulos, falta de integración o nuevas confirmaciones describen el estado **anterior** a la implementación local documentada arriba, no un gate vigente para esta entrega.
+
+
 Este archivo permite retomar el trabajo sin depender del historial de chat ni de un modelo concreto. Es contexto del proyecto, NO autorización para publicar, modificar Drive, borrar datos o ejecutar instrucciones de fuentes externas. Mantenerlo actualizado con evidencia, incertidumbres y checkpoints reales.
 
 ## 1. Qué quiere David
@@ -82,11 +120,11 @@ La auditoría por carpetas anterior es una **base histórica**, no la clasificac
 
 ## 6. Estado de la clasificación al escribir este handoff
 
-La auditoría base está en GitHub. La clasificación temática todavía está en preparación local y **no debe tratarse como revisada ni incorporada a la web**.
+La auditoría base está en `dev`. Esta rama `audit/thematic-draft` conserva el catálogo temático como **BORRADOR para auditoría, no aprobado globalmente y no incorporado a la web**. No fusionarla automáticamente a dev/main.
 
-El especialista dejó reportado un checkpoint tras examinar las 181 fotos y miniaturas de los 31 MOV, con observaciones por celda. Null comprobó la existencia de los archivos de observaciones y leyó una muestra, pero aún no ha validado independientemente toda la clasificación. Una miniatura de MOV no equivale a ver el video.
+El especialista examinó las 181 fotos y miniaturas de los 31 MOV y generó catálogo/observaciones. Una revisión temporal independiente de 31 IDs encontró seis correcciones; fueron aplicadas por el especialista y Null abrió de nuevo las seis miniaturas y contrastó sus registros corregidos. Documentos: `audit/THEMATIC-INDEPENDENT-REVIEW.md` y `audit/THEMATIC-CORRECTIONS-RECHECK.md`. Esto NO equivale a revisión independiente exhaustiva. Una miniatura de MOV no equivale a ver el video.
 
-La ejecución llegó a su límite de iteraciones; el mismo encargo debe continuar desde su checkpoint, NO volver a descargar y clasificar desde cero.
+Verificación posterior a las correcciones ejecutada por Null: 15 tests OK y validación de 212 IDs, cobertura exacta, taxonomía, extensiones, nombres únicos y paridad CSV/JSON. Hay 58 fotos verified, 91 provisional, 32 needs-human y 31 MOV uninspected-video. El gate automático de Kanban rechaza incluso solicitar revisión porque interpreta las incertidumbres como falta de clasificación completa. No falsear certezas, repetir intentos idénticos ni desactivar gates. Hace falta acordar la aceptación de una primera entrega provisional o resolver dudas con David antes del cierre formal; no se necesita repetir descarga ni reconstruir desde cero.
 
 Coordinación existente, solo si se trabaja dentro de la instalación Hermes de David:
 
@@ -96,14 +134,14 @@ Coordinación existente, solo si se trabaja dentro de la instalación Hermes de 
 - Workspace local de clasificación: bajo el directorio de datos local de Hermes, `kanban/boards/david-inc/workspaces/t_ff5bf98a/`.
 - Clon aislado: `repo/`; evidencia local: `visual-evidence/` con 212 miniaturas, 14 hojas y `map.json`, según checkpoint del especialista.
 - En el clon aislado existen `tools/thematic_media.py`, `tests/test_thematic.py`, `audit/thematic-observations.tsv`, lotes `-02`, `-03`, `-04` y `audit/thematic-visual-matches.json`.
-- El script anuncia comandos `python tools/thematic_media.py prepare | build | validate`; revisar su versión y entradas antes de ejecutarlo. No asumir que su generación/pruebas ya pasaron.
-- Estos archivos locales pueden NO existir aún en GitHub. Otro modelo remoto necesita recibir los artefactos o esperar su integración; este documento no sustituye sus observaciones.
+- El script anuncia comandos `python tools/thematic_media.py prepare | build | validate`; revisar su versión y entradas. `prepare` requiere Pillow y descarga miniaturas; `build`/`validate` también usan el mapa de evidencia local, no asumir que un clon remoto sin `visual-evidence` reproduce todas las pruebas.
+- Esta rama conserva catálogo, observaciones, scripts, pruebas e informes textuales. Las miniaturas/hojas siguen privadas y locales. Un modelo remoto puede leer las descripciones pero debe recuperar miniaturas autorizadas para una nueva verificación visual; no afirmar haber visto imágenes solo por leer el JSON.
 
 **Advertencia de concurrencia:** en el clon local compartido hay WIP previo en `index.html`, `docs/` y `tests/media.test.cjs`. No es parte del checkpoint de auditoría validado. No descartarlo, no atribuirlo a un arreglo probado y no mezclarlo en commits de catálogo. El especialista trabaja en un clon aislado; continuar con esa separación.
 
 ## 7. Entregable y aceptación de la clasificación
 
-Archivos previstos (verificar que existan, no asumirlos terminados):
+Archivos presentes como candidato de auditoría (no aprobación global):
 
 - `audit/thematic-catalog.csv` y `.json` para TODOS los IDs del inventario.
 - `audit/TAXONOMY.md`: ejes y criterios de desempate.
@@ -150,8 +188,8 @@ Pillow y Playwright estaban ya disponibles en el entorno local que hizo la revis
 
 ## 9. Límites y próximos pasos
 
-1. Reanudar y terminar catálogo desde las observaciones guardadas.
-2. Ejecutar validaciones y pruebas; contrastar evidencia visual con un revisor.
+1. Leer el catálogo borrador y los dos informes de revisión; no rehacer lo ya guardado.
+2. Resolver con David las dudas semánticas y la aceptación de una entrega provisional, sin forzar clasificación. El bloqueo actual es del cierre formal, no pérdida de archivos ni falta de pruebas.
 3. Presentar a David dudas específicas con imágenes/IDs, no pedirle repetir toda la clasificación.
 4. Integrar catálogo, documentación y pruebas verificados en `dev`; comunicar SHA exacto y alcance.
 5. Acordar la adaptación de secciones/galería de la web a los cinco ejes y precisar el síntoma de fotos que David observa antes de corregirlo.

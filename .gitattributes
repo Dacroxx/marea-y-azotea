@@ -1,0 +1,8 @@
+# Preserve the exact user attachment bytes and its provenance checksum.
+source/editorial-template.html -text
+# Generated deliverables / sources must rebuild identically across platforms.
+index.html text eol=lf
+source/*.py text eol=lf
+source/*.js text eol=lf
+source/*.css text eol=lf
+source/*.json text eol=lf
