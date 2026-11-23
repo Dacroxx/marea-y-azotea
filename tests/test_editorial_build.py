@@ -27,7 +27,8 @@ class EditorialBuildTests(unittest.TestCase):
         self.assertNotIn('cdn.tailwindcss.com',html)
         self.assertNotIn('href="assets/',html)
         self.assertNotRegex(html,r'[1-9]\d* registros audiovisuales')
-        self.assertIn('0 videos publicados · revisión pendiente',html)
+        self.assertIn('0 videos publicados · 29 en carpeta de revisión',html)
         self.assertNotIn('1 / 78',html)
+        self.assertIn('1 / 39',html)
 
 if __name__=='__main__': unittest.main()

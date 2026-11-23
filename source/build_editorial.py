@@ -13,38 +13,40 @@ def build(runtime=False):
     source = ROOT/'source/editorial-template.html'
     assert hashlib.sha256(source.read_bytes()).hexdigest() == SOURCE_SHA256, 'Review source provenance before changing its checksum'
     text = source.read_text(encoding='utf-8')
-    rows = json.loads((ROOT/'audit/thematic-catalog.json').read_text(encoding='utf-8'))
-    photos = [r for r in rows if r['mediaType']=='photo' and r['reviewStatus']=='verified']
-    assert len(photos)==58 and len({r['sourceId'] for r in photos})==58
-    cover = next(r for r in photos if r['sourceId']=='1jMeLokjKWlpVlkg_X67NqsVLP9nFM-QV')
+    photos = json.loads((ROOT/'audit/curated-selection.json').read_text(encoding='utf-8'))
+    assert len(photos)==39 and len({r['sourceId'] for r in photos})==39
+    cover = next(r for r in photos if r.get('isCover'))
     spans = ['sm:col-span-2 lg:row-span-2', '', '', 'lg:row-span-2', '', 'sm:col-span-2', '', '']
+    chron_counts = []
     for i, axis in enumerate(AXES,1):
-        selected = [r for r in photos if r['primaryCategory']==axis]
-        payload = [{'id':r['sourceId'], 'caption':r['visualDescription'], 'originalName':r['originalName'], 'primaryCategory':r['primaryCategory'], 'span':spans[n%len(spans)]} for n,r in enumerate(selected)]
-        pattern = rf'(c{i}: \{{.*?photos: )\[.*?\](,\s*cards:)'
+        ckey = f'c{i}'
+        selected = [r for r in photos if r['chronicle']==ckey]
+        chron_counts.append(len(selected))
+        payload = [{'id':r['sourceId'], 'caption':f"[{r['code']}] {r['visualDescription']}", 'originalName':r['curatedFileName'], 'primaryCategory':r['primaryCategory'], 'span':spans[n%len(spans)]} for n,r in enumerate(selected)]
+        pattern = rf'({ckey}: \{{.*?photos: )\[.*?\](,\s*cards:)'
         text, count = re.subn(pattern, lambda m:m[1]+json.dumps(payload,ensure_ascii=False)+m[2],text,count=1,flags=re.S)
         assert count==1
     text = re.sub(r'videos: \[.*?\]', 'videos: []',text,flags=re.S)
     text = text.replace('1r4OYEQtf00TzGKc7I8qH2Dg-lIHsKg9o',cover['sourceId'])
     text = text.replace('alt="Portada editorial Marea & Azotea"', 'alt="'+escape(cover['visualDescription'],quote=True)+'"')
-    text = text.replace('>78</span>', '>58</span>').replace('>18</span>', '>0</span>').replace('Memorias en Video</span>','Videos publicados</span>').replace('1 / 78','1 / 58')
-    counts = iter([29,15,5,9,0])
+    text = text.replace('>78</span>', '>39</span>').replace('>18</span>', '>0</span>').replace('Memorias en Video</span>','Videos publicados</span>').replace('1 / 78','1 / 39')
+    counts = iter(chron_counts)
     text = re.sub(r'\d+ fotos · \d+ videos',lambda m:f'{next(counts)} fotos · 0 videos',text)
-    text = re.sub(r'\d+ registros audiovisuales', '0 videos publicados · revisión pendiente', text)
-    text = re.sub(r'<!-- Mosaico Visual Editorial.*?-->', '<!-- Mosaico: selección verified + cápsulas editoriales -->',text)
-    text = re.sub(r'<!-- Franja Memorias en Movimiento.*?-->', '<!-- Archivo audiovisual pendiente de revisión -->',text)
+    text = re.sub(r'\d+ registros audiovisuales', '0 videos publicados · 29 en carpeta de revisión', text)
+    text = re.sub(r'<!-- Mosaico Visual Editorial.*?-->', '<!-- Mosaico: selección curada sin duplicados + cápsulas editoriales -->',text)
+    text = re.sub(r'<!-- Franja Memorias en Movimiento.*?-->', '<!-- Archivo audiovisual en revisión (carpeta 06 en Drive) -->',text)
     text = text.replace('img.parentElement.querySelector(', 'img.parentElement?.querySelector(')
-    text = text.replace('78 FOTOS ÚNICAS + 18 VIDEOS','58 IDS VERIFIED; VIDEOS PENDIENTES')
+    text = text.replace('78 FOTOS ÚNICAS + 18 VIDEOS','39 FOTOS CURADAS SIN DUPLICADOS; VIDEOS EN REVISIÓN')
     text = text.replace('Algunas fotografías se muestran en modo reserva. Asegúrate de que la carpeta compartida en Google Drive esté configurada como <em>"Cualquier persona con el enlace · Lector"</em>.','Algunas vistas previas no están disponibles. Puede deberse a la conexión, al servicio o al acceso al archivo; el enlace a Drive permite comprobarlo.')
     text = text.replace('Activa el acceso público en Google Drive o ábrela directamente desde el enlace.','Vista previa no disponible: comprueba la conexión, el servicio o el acceso mediante el enlace a Drive.')
-    note = '''<aside id="editorial-scope" class="mt-8 rounded-3xl bg-arena p-6 text-sm text-carbon leading-relaxed"><strong>Sobre esta edición.</strong> Las crónicas, las cápsulas y las 44 voces del glosario se conservan del material editorial aportado, con sus créditos originales a Aida Arteaga. No se presentan como citas transcritas ni revisión científica verificada. Los pies fotográficos son independientes: reproducen lo observable del catálogo, sin certificar recetas, especies, procedencias ni identidades. Se publican 58 IDs verified (puede haber escenas repetidas); quedan fuera 91 fotos provisionales, 32 por revisión humana y 31 MOV no inspeccionados. Portada: '''+escape(cover['originalName'])+'''.</aside>'''
+    note = '''<aside id="editorial-scope" class="mt-8 rounded-3xl bg-arena p-6 text-sm text-carbon leading-relaxed"><strong>Sobre esta edición.</strong> Las crónicas, las cápsulas y las 44 voces del glosario se conservan del material editorial aportado, con sus créditos originales a Aida Arteaga. Esta selección publica <strong>39 fotografías curadas y deduplicadas</strong> (9 en Taller Sensorial, 10 en Azotea, 11 en Coco/Fogón, 5 en Mar y 4 en Bitácora de Brigada/Cultura Viva), excluyendo tomas repetidas o de aula con celulares, mientras los 29 videos únicos permanecen en carpeta de revisión. Portada: '''+escape(cover['curatedFileName'])+'''.</aside>'''
     pos = text.index('        <!-- Tarjeta de Firma Editorial -->')
     idx = text[:pos].rfind('        </div>')
     text = text[:idx]+note+'\n'+text[idx:]
     start = text.index('    function buildChronicle(key)')
     end = text.index('    // =========================================================================',start)
     text = text[:start]+(ROOT/'source/chronicle-renderer.js').read_text(encoding='utf-8')+'\n\n'+text[end:]
-    manifest = [{k:r[k] for k in ('sourceId','originalName','primaryCategory','visualDescription','mediaType','reviewStatus')} for r in photos]
+    manifest = [{k:r[k] for k in ('code','sourceId','curatedFileName','originalName','primaryCategory','visualDescription')} for r in photos]
     text = text.replace('  <script>\n    // =========================================================================', '<script id="published-photos" type="application/json">'+json.dumps(manifest,ensure_ascii=False).replace('<','\\u003c')+'</script>\n  <script>\n    // =========================================================================',1)
     text = text.replace('${query}', '${escapeHTML(query)}')
     behavior = (ROOT/'source/accessibility.js').read_text(encoding='utf-8')
@@ -57,7 +59,7 @@ def build(runtime=False):
         assert 'cdn.tailwindcss.com' not in text
     target = ROOT/('source/build-runtime.html' if runtime else 'index.html')
     target.write_text(text,encoding='utf-8',newline='\n')
-    print(f'Built {target.name}: 58 verified IDs, five original chronicles, 44 glossary entries; runtime={runtime}')
+    print(f'Built {target.name}: 39 curated non-duplicate photos, five original chronicles, 44 glossary entries; runtime={runtime}')
 
 if __name__=='__main__':
     build('--runtime' in sys.argv)
