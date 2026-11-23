@@ -132,16 +132,54 @@
 <style id="editorial-refinements">/* Only portability, accessibility and readable audit captions; visual system is the supplied reference. */
 section[id],article[id] {scroll-margin-top:calc(var(--header-height,4.25rem) + 1rem)}
 #portada {padding-top:max(5rem,calc(var(--header-height,4.25rem) + .75rem))}
-.file-line{display:flex;align-items:flex-end;gap:.65rem;justify-content:space-between}
-.original-name{overflow-wrap:anywhere;min-width:0}
-.photo-drive{white-space:nowrap;text-decoration:underline;pointer-events:auto}
-figure figcaption{pointer-events:none}
+
+/* Skip link for keyboard navigation */
+.skip-to-content{position:fixed;top:-100px;left:1rem;z-index:100;background:#0F4C3A;color:#FAF4E8;padding:.65rem 1.1rem;border-radius:9999px;font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;box-shadow:0 8px 24px rgba(29,35,32,.25);transition:top .18s ease}
+.skip-to-content:focus{top:1rem;outline:3px solid #F4B942;outline-offset:3px}
+
+/* Active chapter indicator in sticky nav & mobile menu */
+header nav a{position:relative;padding-block:.35rem;border-radius:9999px}
+header nav a.is-active{color:#0F4C3A;font-weight:700}
+header nav a.is-active::after{content:'';position:absolute;left:.15rem;right:.15rem;bottom:-2px;height:2px;border-radius:9999px;background:#D94E28}
+header nav a[href="#glosario"].is-active{background:#0F4C3A;color:#FAF4E8}
+header nav a[href="#glosario"].is-active::after{display:none}
+#mobile-menu a.is-active{background:#EFE6D5;border-left:3px solid #D94E28;padding-left:.85rem;font-weight:700}
+
+/* Editorial typography & inline glossary links */
+h1,h2,h3,#lb-caption{text-wrap:balance}
+#editorial p,article .space-y-4 p{text-wrap:pretty}
+.glossary-link,.glossary-link-light{border-bottom:none;text-decoration:underline;text-decoration-style:dotted;text-decoration-thickness:2px;text-underline-offset:4px;padding:0 3px}
+.glossary-link{text-decoration-color:var(--achiote)}
+.glossary-link-light{text-decoration-color:var(--platano)}
+
+/* Mosaic figures, contrast-safe scrims & accessible Drive pill */
+[id^="mosaic-c"] figure{min-width:0;box-shadow:inset 0 0 0 1px rgba(29,35,32,.08),0 4px 14px rgba(29,35,32,.06)}
+figure figcaption{pointer-events:none;background:linear-gradient(to top,rgba(20,25,22,.94) 0%,rgba(20,25,22,.78) 58%,rgba(20,25,22,0) 100%)!important;padding-top:3.25rem!important}
+figure figcaption .photo-description{text-shadow:0 1px 2px rgba(0,0,0,.65);text-wrap:pretty}
+.file-line{display:flex;align-items:center;gap:.65rem;justify-content:space-between;margin-top:.55rem!important}
+.original-name{overflow-wrap:anywhere;min-width:0;opacity:.82;font-size:.65rem;letter-spacing:.01em}
+.photo-drive{white-space:nowrap;text-decoration:none;pointer-events:auto;display:inline-flex;align-items:center;gap:.2rem;padding:.22rem .58rem;min-height:26px;border-radius:9999px;background:rgba(250,244,232,.14);border:1px solid rgba(250,244,232,.32);color:#FAF4E8;font-weight:600;letter-spacing:.03em;transition:background-color .18s ease,border-color .18s ease}
+.photo-drive:hover{background:rgba(244,185,66,.92);border-color:#F4B942;color:#1D2320}
+.photo-drive:focus-visible{outline:2px solid #F4B942;outline-offset:2px}
 figure .photo-open:focus-visible{outline:4px solid #F4B942;outline-offset:-5px}
-[id^="mosaic-c"] figure{min-width:0}
 [id^="videos-c"] .audiovisual-pending{grid-column:1/-1}
-#glossary-modal > div{max-height:calc(100dvh - 2rem);overflow:auto}
-#lightbox-modal > div{max-height:calc(100dvh - 1.5rem);overflow:auto}
+
+/* Glossary cards & modals */
+#glossary-grid > button{transition:transform .2s cubic-bezier(.22,1,.36,1),box-shadow .2s ease,border-color .2s ease}
+#glossary-grid > button:hover{transform:translateY(-2px);box-shadow:0 10px 24px -8px rgba(15,76,58,.16)}
+#glossary-modal > div{max-height:calc(100dvh - 2rem);overflow:auto;animation:modalPopIn .2s cubic-bezier(.22,1,.36,1)}
+#lightbox-modal > div{max-height:calc(100dvh - 1.5rem);overflow:auto;animation:modalPopIn .2s cubic-bezier(.22,1,.36,1)}
+@keyframes modalPopIn{from{opacity:0;transform:translateY(8px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+
 :focus-visible{outline:3px solid #D94E28;outline-offset:4px}
+
+/* Mobile hero breathing room without altering h1 fontSize or #portada horizontal padding */
+@media(max-width:639px){
+  #portada{padding-bottom:2rem!important}
+  #portada .border-b{padding-bottom:.65rem!important;margin-bottom:1.1rem!important;gap:.25rem!important}
+  #portada .border-t{margin-top:1.25rem!important;padding-top:1rem!important;gap:.75rem!important}
+  #portada .mt-8{margin-top:1.15rem!important}
+}
 @media(max-width:400px){#print-pdf-btn{padding:.5rem;font-size:9px}header > div:nth-child(2){gap:.25rem}#lb-caption{font-size:.875rem}#lb-original-name{overflow-wrap:anywhere}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*::before,*::after{transition:none!important;animation:none!important}.reveal{opacity:1;transform:none}}
 @media print{*{transition:none!important;animation:none!important}.reveal{opacity:1!important;transform:none!important}.photo-open{position:relative!important;height:180px!important}figure{height:auto!important;min-height:240px}.artistic-fallback{position:absolute!important}figure figcaption{position:relative!important;background:#1D2320!important;padding:1rem!important;opacity:1!important}[id^="mosaic-c"]{grid-auto-rows:auto!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:1rem!important}[id^="mosaic-c"]>*{grid-column:auto!important;grid-row:auto!important}.original-name{font-size:9px!important}}
@@ -1699,26 +1737,65 @@ const syncHeaderHeight=()=>document.documentElement.style.setProperty('--header-
 syncHeaderHeight();
 if('ResizeObserver' in window)new ResizeObserver(syncHeaderHeight).observe(document.querySelector('header'));
 
+// Skip link for keyboard navigation
+if(!document.querySelector('.skip-to-content')){
+  const skip=document.createElement('a');
+  skip.href='#editorial';
+  skip.className='skip-to-content no-print';
+  skip.textContent='Saltar al contenido';
+  document.body.prepend(skip);
+}
+
+// Accessible reading progress bar
+const progressBar=document.getElementById('reading-progress');
+if(progressBar){
+  progressBar.setAttribute('role','progressbar');
+  progressBar.setAttribute('aria-label','Progreso de lectura');
+  progressBar.setAttribute('aria-valuemin','0');
+  progressBar.setAttribute('aria-valuemax','100');
+  progressBar.setAttribute('aria-valuenow','0');
+}
+
+// Body scroll lock for modals
+let savedOverflow='';
+const lockScroll=()=>{savedOverflow=document.documentElement.style.overflow;document.documentElement.style.overflow='hidden';};
+const unlockScroll=()=>{document.documentElement.style.overflow=savedOverflow;};
+
 let modalReturnFocus = null;
 const focusModal = (id) => {
   const el=document.getElementById(id);
   modalReturnFocus=document.activeElement;
+  lockScroll();
   el.setAttribute('role','dialog');el.setAttribute('aria-modal','true');
   el.setAttribute('aria-labelledby',id==='glossary-modal'?'gm-title':'lb-caption');
   el.querySelector('button').focus();
 };
 const originalOpenLightbox=openLightbox, originalCloseLightbox=closeLightbox;
 openLightbox=function(index){originalOpenLightbox(index);focusModal('lightbox-modal');};
-closeLightbox=function(){originalCloseLightbox();modalReturnFocus?.focus({preventScroll:true});};
+closeLightbox=function(){originalCloseLightbox();unlockScroll();modalReturnFocus?.focus({preventScroll:true});};
 const originalOpenGlossary=openGlossary,originalCloseGlossary=closeGlossary;
 openGlossary=function(key){originalOpenGlossary(key);focusModal('glossary-modal');};
-closeGlossary=function(){originalCloseGlossary();modalReturnFocus?.focus({preventScroll:true});};
+closeGlossary=function(){originalCloseGlossary();unlockScroll();modalReturnFocus?.focus({preventScroll:true});};
 const originalUpdateLightbox=updateLightbox;
 updateLightbox=function(){originalUpdateLightbox();const item=flatLightboxPhotos[currentLightboxIdx];if(!item)return;
  let name=document.getElementById('lb-original-name');
  if(!name){name=document.createElement('p');name.id='lb-original-name';name.className='text-xs text-coco/70 mt-2 text-center';document.getElementById('lb-caption').after(name);}
  name.textContent=item.originalName+' · '+item.primaryCategory;
 };
+
+// Lightbox touch swipe on mobile
+let lbTouchX=null,lbTouchY=null;
+const lbModal=document.getElementById('lightbox-modal');
+if(lbModal){
+  lbModal.addEventListener('touchstart',e=>{if(e.touches.length===1){lbTouchX=e.touches[0].clientX;lbTouchY=e.touches[0].clientY;}},{passive:true});
+  lbModal.addEventListener('touchend',e=>{
+    if(lbTouchX===null||e.changedTouches.length!==1)return;
+    const dx=e.changedTouches[0].clientX-lbTouchX,dy=e.changedTouches[0].clientY-lbTouchY;
+    lbTouchX=null;lbTouchY=null;
+    if(Math.abs(dx)>48&&Math.abs(dx)>Math.abs(dy)*1.4){if(dx<0)nextLightbox();else prevLightbox();}
+  },{passive:true});
+}
+
 document.addEventListener('keydown',e=>{
  const modal=['glossary-modal','lightbox-modal'].map(id=>document.getElementById(id)).find(el=>!el.classList.contains('hidden'));
  if(!modal||e.key!=='Tab')return;
@@ -1733,6 +1810,41 @@ document.querySelectorAll('.g-tab').forEach(btn=>btn.setAttribute('aria-pressed'
 const originalSetGlossaryCategory=setGlossaryCategory;
 setGlossaryCategory=function(cat){originalSetGlossaryCategory(cat);document.querySelectorAll('.g-tab').forEach(btn=>btn.setAttribute('aria-pressed',String(btn.dataset.cat===cat)));};
 window.addEventListener('beforeprint',()=>{document.querySelectorAll('[id^="mosaic-c"] img').forEach(img=>img.loading='eager');});
+
+// Bulletproof .reveal visibility + active chapter scroll-spy
+const spyIds=['cronica-1','cronica-2','cronica-3','cronica-4','cronica-5','glosario'];
+const spyLinks=[...document.querySelectorAll('header nav a[href^="#"], #mobile-menu a[href^="#"]')];
+let scrollRaf=false;
+const syncScrollUI=()=>{
+  scrollRaf=false;
+  const vh=window.innerHeight||900;
+  document.querySelectorAll('.reveal:not(.visible)').forEach(el=>{
+    const r=el.getBoundingClientRect();
+    if(r.top < vh + 120 && r.bottom > -120) el.classList.add('visible');
+    else if(r.bottom <= 0) el.classList.add('visible');
+  });
+  if(progressBar){
+    const docH=document.documentElement.scrollHeight-vh;
+    const pct=docH>0?Math.min(100,Math.max(0,Math.round((window.scrollY/docH)*100))):0;
+    progressBar.setAttribute('aria-valuenow',String(pct));
+  }
+  const offset=(parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--header-height'))||68)+48;
+  let activeId='';
+  for(const id of spyIds){
+    const sec=document.getElementById(id);
+    if(sec && sec.getBoundingClientRect().top <= offset) activeId=id;
+  }
+  spyLinks.forEach(a=>{
+    const match=a.getAttribute('href')==='#'+activeId;
+    a.classList.toggle('is-active',match);
+    if(match)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');
+  });
+};
+const scheduleScrollUI=()=>{if(!scrollRaf){scrollRaf=true;requestAnimationFrame(syncScrollUI);}};
+window.addEventListener('scroll',scheduleScrollUI,{passive:true});
+window.addEventListener('hashchange',()=>setTimeout(syncScrollUI,60));
+window.addEventListener('DOMContentLoaded',()=>setTimeout(syncScrollUI,80));
+syncScrollUI();
 
 </script>
 <noscript><p>Los mosaicos y el glosario interactivo requieren JavaScript. Las crónicas se pueden leer sin él.</p></noscript>
