@@ -208,16 +208,16 @@ def build(runtime=False):
     text = text.replace('Voces en el Glosario', 'Términos en el Glosario')
     text = text.replace('1 / 78', f'1 / {total_photos}')
     text = text.replace('78 FOTOS ÚNICAS + 18 VIDEOS', f'{total_photos} FOTOS CURADAS · {total_videos} VIDEOS')
-    text = text.replace('Crónica viva de las Cocinas del Pacífico Colombiano', 'Bitácora de las Cocinas del Pacífico Colombiano')
+    text = text.replace('Crónica viva de las Cocinas del Pacífico Colombiano', 'Crónica y bitácora de las Cocinas del Pacífico Colombiano')
     text = text.replace(
         'Un recorrido sensorial y gastronómico en cinco capítulos: de la piedra de moler y el perfume de la azotea hasta el coco recién estrujado, el pulso del manglar y la memoria viva del litoral.',
-        'Registro académico y fotográfico del semestre: utensilios tradicionales, hierbas de azotea, cocina de coco y mar, trabajo en brigada y secuencias en video.',
+        'Un recorrido por las prácticas de clase: de la piedra de moler y las hierbas de azotea hasta el coco rallado a mano, los frutos del mar, el trabajo en brigada y los registros en video.',
     )
-    text = text.replace('Explorar la Crónica', 'Explorar la Bitácora')
+    text = text.replace('Explorar la Crónica', 'Explorar la Revista')
     text = text.replace('>Carta Editorial</span>', '>Presentación</span>')
     text = text.replace(
         'Cocinar el Pacífico es aprender a escuchar el territorio con las manos',
-        'Bitácora de prácticas en la asignatura Cocinas del Pacífico',
+        'Aprender el Pacífico desde el fogón y la mesa compartida',
     )
 
     # Navegación superior y menú móvil alineados a 4 Ejes + Videos + Glosario
@@ -335,19 +335,19 @@ def build(runtime=False):
     text = text.replace('href="#cronica-5" class="group rounded-3xl p-6 bg-chontaduro', 'href="#videos-eje" class="group rounded-3xl p-6 bg-chontaduro')
     text = text.replace('Coco, Tubérculos y Fogón</h4>', 'Fogón, Mar y Mesa</h4>')
 
-    # Actualizar encabezados de Ejes I-IV y depurar lenguaje romantizado/exagerado
+    # Actualizar encabezados de Ejes I-IV con tono editorial equilibrado (cálido, natural y sin cursilerías)
     text = text.replace('>Crónica I</span>', '>Eje I</span>')
     text = text.replace(
         'Antes de la electricidad y el acero inoxidable, el pulso del Pacífico se talló en piedra, madera y manos pacientes.',
-        'Reconocimiento inicial de utensilios, maderas, fibras y materias primas que sostienen las técnicas tradicionales del Pacífico.',
+        'Antes de encender los fogones, el taller sensorial nos acercó al peso de la piedra, la madera, las fibras y los sabores base del litoral.',
     )
     text = text.replace('>Crónica II</span>', '>Eje II</span>')
     text = text.replace(
         'En el Pacífico, la sazón se aprende primero con la nariz y se cultiva a un paso de la cocina, elevada sobre la humedad de la tierra.',
-        'Cultivo doméstico en plataformas elevadas y preparación del refrito como base aromática de la cocina del litoral.',
+        'En el Pacífico, la sazón empieza en las huertas elevadas a un paso de la cocina y se construye en el refrito.',
     )
-    text = text.replace('el aula entera cambió de temperatura y paisaje.', 'el trabajo aromático marcó el ritmo de la práctica en cocina.')
-    text = text.replace('el abrazo solar del', 'el color y tono terroso del')
+    text = text.replace('el aula entera cambió de temperatura y paisaje.', 'el aula se llenó de aromas del litoral.')
+    text = text.replace('el abrazo solar del', 'el color cálido del')
     text = text.replace('>Crónica III</span>', '>Eje III</span>')
     text = text.replace('Alquimia del Fogón · Guisos y Raíces', 'Cocina en Práctica · Coco, Mar y Tubérculos')
     text = text.replace(
@@ -356,10 +356,10 @@ def build(runtime=False):
     )
     text = text.replace(
         'El tiempo en las ollas del Pacífico no se mide en cronómetros: se escucha hasta que el coco se vuelve seda y los tubérculos abrazan el caldo.',
-        'Extracción manual de leche de coco, manejo de fuegos lentos y cocción de mariscos, arroces y amasijos.',
+        'Leche de coco extraída a mano, fuegos lentos y cocciones donde el marisco, los arroces y los amasijos toman su punto.',
     )
-    text = text.replace('Pocas técnicas revelan tanto cariño como rallar y estrujar el coco a mano para separar sus dos vidas:', 'Rallar y estrujar el coco a mano permite separar sus dos extracciones:')
-    text = text.replace('monumentos del sabor', 'preparaciones representativas')
+    text = text.replace('Pocas técnicas revelan tanto cariño como rallar y estrujar el coco a mano para separar sus dos vidas:', 'Pocas técnicas dicen tanto de la cocina del Pacífico como rallar y estrujar el coco a mano para separar sus dos extracciones:')
+    text = text.replace('monumentos del sabor', 'platos emblemáticos')
     text = text.replace('las raíces generosas', 'los tubérculos tradicionales')
     text = text.replace('<article id="cronica-4"', '<article id="cronica-4" class="hidden"')
     text = text.replace('>Crónica V</span>', '>Eje IV</span>')
@@ -370,14 +370,14 @@ def build(runtime=False):
     )
     text = text.replace(
         'En el Pacífico se cocina cantando, se destila memoria y se defiende la vida a través de la soberanía alimentaria.',
-        'Trabajo en brigada, tradición oral, música vinculada al oficio culinario y bibliografía de la cátedra.',
+        'Trabajo en equipo, tradición oral, cantos vinculados al oficio y lecturas que contextualizan cada práctica en clase.',
     )
     text = text.replace('sazonan la memoria', 'acompañan las jornadas')
-    text = text.replace('para regalar brillo y sedosidad.', 'para dar brillo y estabilidad a la emulsión.')
-    text = text.replace('el sustento silencioso que equilibra la riqueza del coco.', 'la base amilácea que acompaña las preparaciones con coco.')
-    text = text.replace('Cuando el refrito suelta su primer perfume dulce y herbal, el olfato avisa el instante exacto para recibir el caldo.', 'El punto aromático del refrito indica el momento de incorporar los líquidos o fondos.')
+    text = text.replace('para regalar brillo y sedosidad.', 'para dar brillo y textura sedosa al plato.')
+    text = text.replace('el sustento silencioso que equilibra la riqueza del coco.', 'el acompañamiento que equilibra la intensidad del coco.')
+    text = text.replace('Cuando el refrito suelta su primer perfume dulce y herbal, el olfato avisa el instante exacto para recibir el caldo.', 'Cuando el refrito suelta su aroma herbal, avisa el momento justo para recibir el caldo.')
     text = text.replace('la cocina del Pacífico no entiende de fronteras políticas, sino de agua y memoria.', 'preparaciones emparentadas que comparten técnica y uso del plátano en todo el litoral.')
-    text = text.replace('Un tributo a las portadoras de tradición, a los ecosistemas de selva y manglar, y a cada aprendizaje vivido frente al fogón universitario.', 'Bitácora académica sobre cocinas del Pacífico colombiano, técnicas tradicionales y trabajo en aula.')
+    text = text.replace('Un tributo a las portadoras de tradición, a los ecosistemas de selva y manglar, y a cada aprendizaje vivido frente al fogón universitario.', 'Bitácora de las Cocinas del Pacífico: saberes tradicionales, ecosistemas del litoral y aprendizaje frente al fogón universitario.')
 
     # Cambio #5: Quitar por completo las franjas de Memorias en Movimiento dentro de las crónicas e insertar sección propia antes del Glosario
     text = re.sub(
