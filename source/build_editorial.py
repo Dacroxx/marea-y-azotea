@@ -43,23 +43,26 @@ def build_videos_section(videos):
         cards = []
         for v in grp_vids:
             vurl = f"https://drive.google.com/file/d/{v['sourceId']}/view"
+            vprev = f"https://drive.google.com/file/d/{v['sourceId']}/preview"
             cards.append(
-                f'<a href="{vurl}" target="_blank" rel="noopener noreferrer" '
-                f'class="group rounded-3xl p-6 shadow-md hover:-translate-y-1 hover:shadow-xl transition-all flex flex-col justify-between {card_bg}">'
-                f'<div class="flex items-center justify-between gap-2">'
+                f'<div class="rounded-3xl p-4 sm:p-5 shadow-md flex flex-col justify-between {card_bg}">'
+                f'<div class="w-full aspect-video rounded-2xl overflow-hidden bg-carbon/80">'
+                f'<iframe src="{vprev}" title="{escape(v["driveName"])}" loading="lazy" allow="autoplay; fullscreen" allowfullscreen class="w-full h-full border-0"></iframe>'
+                f'</div>'
+                f'<div class="mt-4 flex items-center justify-between gap-2">'
                 f'<span class="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-widest {badge_bg}">{escape(v["code"])}</span>'
-                f'<span class="text-xs opacity-75 group-hover:opacity-100">Ver en Drive ↗</span>'
+                f'<a href="{vurl}" target="_blank" rel="noopener noreferrer" class="text-xs underline underline-offset-2 opacity-80 hover:opacity-100">Abrir en Drive ↗</a>'
                 f'</div>'
-                f'<div class="mt-5">'
+                f'<div class="mt-3">'
                 f'<h4 class="font-editorial font-bold text-lg leading-snug">{escape(v["driveName"])}</h4>'
-                f'<p class="text-xs opacity-85 mt-2 leading-relaxed">{escape(v["title"])}</p>'
+                f'<p class="text-xs opacity-85 mt-1.5 leading-relaxed">{escape(v["title"])}</p>'
                 f'</div>'
-                f'</a>'
+                f'</div>'
             )
         blocks.append(
             f'<div class="mt-10">'
             f'<h3 class="font-editorial font-bold text-2xl text-marea mb-4">{escape(title)}</h3>'
-            f'<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">{"".join(cards)}</div>'
+            f'<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">{"".join(cards)}</div>'
             f'</div>'
         )
 
