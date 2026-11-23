@@ -285,6 +285,11 @@ def build(runtime=False):
         '<p class="font-editorial font-bold text-xl text-coco mt-1">Aida Arteaga y David González</p>',
     )
 
+    # Quitar botones de Guardar PDF (header y footer) y su listener
+    text = re.sub(r'\s*<button id="print-pdf-btn".*?</button>', '', text, flags=re.S)
+    text = re.sub(r'\s*<button type="button" onclick="window\.print\(\)".*?</button>', '', text, flags=re.S)
+    text = text.replace("document.getElementById('print-pdf-btn').addEventListener('click', () => window.print());", '')
+
     # Limpieza de textos técnicos/avisos
     text = text.replace('img.parentElement.querySelector(', 'img.parentElement?.querySelector(')
     text = text.replace('Algunas fotografías se muestran en modo reserva. Asegúrate de que la carpeta compartida en Google Drive esté configurada como <em>"Cualquier persona con el enlace · Lector"</em>.', 'Algunas vistas previas no están disponibles. Puede deberse a la conexión, al servicio o al acceso al archivo; el enlace a Drive permite comprobarlo.')
