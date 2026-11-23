@@ -33,5 +33,7 @@
         data.cards.forEach(c=>items.push(card(c)));
       }
       mosaicEl.innerHTML=items.join('');
-      videosEl.innerHTML='<div class="audiovisual-pending rounded-3xl p-7 bg-arena text-carbon border border-selva/20"><span class="text-[10px] font-bold uppercase tracking-widest text-marea">Archivo audiovisual · Pendiente</span><h4 class="font-editorial text-2xl mt-3">Memorias por revisar</h4><p class="text-sm mt-3 leading-relaxed">El archivo contiene 31 MOV no inspeccionados. No se reproducen ni se les asignan títulos, escenas o categorías hasta revisar su contenido. Esta franja conserva el lugar editorial de las memorias en movimiento.</p></div>';
+      if (videosEl && videosEl.parentElement) {
+        videosEl.parentElement.classList.add('hidden');
+      }
     }

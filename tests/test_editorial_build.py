@@ -27,7 +27,10 @@ class EditorialBuildTests(unittest.TestCase):
         self.assertNotIn('cdn.tailwindcss.com',html)
         self.assertNotIn('href="assets/',html)
         self.assertNotRegex(html,r'[1-9]\d* registros audiovisuales')
-        self.assertIn('4 videos publicados',html)
+        self.assertIn('id="videos-eje"',html)
+        self.assertIn('Crónica Estudiantes Cocina del Pacífico 2026-2',html)
+        self.assertIn('Aida Arteaga y David González',html)
+        self.assertNotIn('id="editorial-scope"',html)
         self.assertNotIn('1 / 78',html)
         self.assertIn('1 / 42',html)
 
