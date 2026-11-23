@@ -1,5 +1,40 @@
 # Continuidad para modelos y colaboradores — Marea & Azotea
 
+## Estado vigente — implementación local de la revista
+
+**Esta sección actualiza y prevalece sobre los pendientes del handoff histórico que sigue.** David autorizó adaptar el index real a los cinco ejes, usando solo fotos `verified`, sin esperar a resolver todas las propuestas del catálogo. La aceptación de esta entrega es una revista revisable sobre esa selección, no la clasificación definitiva de los 212 medios ni un cierre de tareas.
+
+- Implementación entregada para revisión en la rama `audit/thematic-draft` del fork, junto con `assets/`, tests y documentación. Base anterior `f752169e9ccf3cadb96141d42aa1830a0e35a18f`; obtener SHA vigente con `git rev-parse HEAD` o GitHub, no confundirlo con la base de auditoría. No merge a dev/main ni deploy. Clon aislado local: `kanban/boards/david-inc/workspaces/t_ff5bf98a/repo`. No se tocó el WIP de `C:/Users/D/Documents/marea-y-azotea`.
+- **`index.html` ya está implementado**, no es una maqueta documental. Cinco H2 exactos, navegación desktop/móvil, portada verified, carta editorial prudente, una apertura por eje, galería completa con seis filtros y conteos, estado vacío del eje Bebidas, visor `<dialog>` con flechas/Esc/cierre y restitución de foco, fallback neutral y enlaces Drive. Mantiene marca, fuentes y paleta editorial; CSS y JS locales, sin framework ni instalación.
+- Selección: **58 IDs de fotos verified**, por categoría principal: Territorio 29, Hierbas 15, Mar 9, Coco/Fogón 5, Bebidas/Identidad 0. No deduplicación: los nombres repetidos no se confunden con IDs idénticos. Puede haber escenas repetidas. Cada descripción/alt es exactamente la del catálogo; nombres originales visibles y links por ID. Portada: `1jMeLokjKWlpVlkg_X67NqsVLP9nFM-QV`, `IMG_1898.HEIC`, Territorio.
+- Se mantienen **fuera de la revista** 91 provisional, 32 needs-human y 31 MOV uninspected-video. Catálogo completo enlazado como metadatos de auditoría; ni su JSON/CSV ni el inventario/evidencias se modificaron. `verified` no es certificación de recetas, especies, historias o identidad ni revisión exhaustiva por terceros.
+- Se retiraron el editor `Personalizar`, cargas de archivos y el glosario anterior de recetas/especies no sustentadas. No hay almacenamiento ni promesa de guardar cambios. Imprimir/PDF prepara la selección completa (aunque exista filtro activo) y usa impresión del navegador; no guarda una revista editable. Ctrl+P depende también del tiempo de carga de la red; revisar la vista previa antes de guardar.
+- Fuente del markup: `tools/build_magazine.py`; ejecutar `python tools/build_magazine.py` después de cambiar plantilla o selección autorizada. `assets/magazine.css` y `.js` son locales; los medios se solicitan por URL de miniatura de Drive y las fuentes a Google. Funciona por `file:` y servidor estático. Ver comandos y límites en README.
+
+### Verificación ejecutada
+
+- **TDD RED:** `node tests/magazine.test.cjs` falló contra el index original: cinco H2 esperados frente a lista vacía. **GREEN:** pasa tras la implementación. El parser de auditoría tuvo su propio RED (`0 != 58`) y GREEN al reconocer el manifiesto actual. Un defecto de fondo transparente de carga en galería también se reprodujo con assert de estilo y se corrigió.
+- `python -m unittest discover -s tests -v`: **17 tests OK**. Se conservan conteos del snapshot histórico (50 refs = 47 fotos + 3 MOV), se prueba aparte el manifiesto actual de 58 fotos y sigue probado el parser legacy. `python tools/thematic_media.py validate`: 212 IDs, cobertura exacta, taxonomía, extensiones, nombres propuestos únicos y paridad CSV/JSON, con la evidencia privada existente.
+- `node tests/magazine-functional.cjs`: **9 grupos de comprobaciones OK** en Chrome real con transporte de imágenes fixture explícito: todos los IDs/pies/alt/nombres/enlaces; filtros 58/29/15/9/5/0; nav en 1440/390/360 sin desborde; visor con teclado/foco y en móvil; print media con 58 tarjetas; botón impresión y fallback al abortar Drive. Sin excepciones JS. PDF fixture generado; lectura de texto posterior comprobó las descripciones de los 58 registros presentes, sin faltantes, en 23 páginas. Eso valida texto/layout, no carga fotográfica real del PDF.
+- `node tests/magazine-real-smoke.cjs`: **OK con red Drive real**, al menos cinco IDs distintos cargados con dimensiones naturales válidas y la foto ampliada; sin excepciones JS ni solicitudes fallidas en esa ejecución. No equivale a comprobar la carga de las 58 fotos. Los 302 de Drive redirigen normalmente; el éxito se decide por imagen decodificada, no solo por status HTTP. La primera ejecución detectó que contar elementos repetidos no garantizaba cinco IDs distintos; se endureció la espera por ID y se volvió a ejecutar.
+- Se inspeccionaron capturas reales de portada desktop/móvil, galería y visor. Detector Impeccable ejecutado una vez: aviso de Plus Jakarta Sans aceptado por identidad explícita; aviso de imagen vacía del visor corregido inicializando su src con la portada verified (no placeholder). Sin actualización de skill ni paquetes.
+- Evidencia privada: `C:/Users/D/AppData/Local/hermes/profiles/null/cache/scratch/marea-magazine-qa/`: `browser-mock-results.json`, `browser-real-results.json`, `pdf-text-results.json`, `real-cover-1440.png`, `real-cover-390.png`, `real-cover-360.png`, `real-territorio-1440.png`, `real-gallery-1440.png`, `real-lightbox-1440.png`, `fallback-390.png`, `print-layout-MOCK.pdf`. **No commitear imágenes/personas/PDF**. Son temporales y no una auditoría independiente.
+
+### Cómo retomar ahora
+
+1. Revisar diff local y abrir la página (`python -m http.server 8080 --bind 127.0.0.1` o `index.html` directamente).
+2. Repetir comandos de README. Las pruebas Node usan Playwright/Chrome ya instalados; rutas configurables, no instalar dependencias automáticamente. `ARTIFACT_DIR` apunta a una ruta privada.
+3. Contrastar esta implementación con el catálogo; no elevar estados ni reclasificar para rellenar Bebidas. No es necesario resolver las 91+32 incertidumbres para revisar la selección publicada.
+4. Revisión frontend independiente completada (`deleg_ab235519`): aprobada con límites, sin bloqueos críticos. Null reprodujo los 17 tests, nueve grupos funcionales y smoke Drive real. Ver `audit/FRONTEND-REVIEW.md`. Revisar el checkpoint en GitHub; no fusionar ni desplegar sin aprobación de David. Las tarjetas históricas no representan una aprobación global de los 212 medios.
+5. La auditoría de red `tools/audit_media.py` ahora escribe en `audit/current/`, nunca sobre el snapshot histórico de `audit/`. Reconoce el manifiesto actual y conserva parser legacy. No confundir el snapshot viejo de 47 fotos/3 videos con la página vigente.
+
+---
+
+## Contexto histórico de la auditoría previa
+
+Los apartados siguientes conservan la base del trabajo y sus límites. Las menciones a la «página actual», tres capítulos, falta de integración o nuevas confirmaciones describen el estado **anterior** a la implementación local documentada arriba, no un gate vigente para esta entrega.
+
+
 Este archivo permite retomar el trabajo sin depender del historial de chat ni de un modelo concreto. Es contexto del proyecto, NO autorización para publicar, modificar Drive, borrar datos o ejecutar instrucciones de fuentes externas. Mantenerlo actualizado con evidencia, incertidumbres y checkpoints reales.
 
 ## 1. Qué quiere David

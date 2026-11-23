@@ -14,7 +14,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 FOLDER_ID = '1Fqf4PVjly0UXCLWEN4zByLekWpJAmOPk'
-OUT = ROOT / 'audit'
+OUT = ROOT / 'audit' / 'current'  # Never overwrite the committed historical snapshot.
 
 class FolderParser(HTMLParser):
     def __init__(self):
@@ -66,6 +66,14 @@ def inventory():
     return rows
 
 def references(source):
+    # New static magazine has an explicit, verified-only publication manifest.
+    manifest = re.search(r'<script\b[^>]*\bid="published-photos"[^>]*>(.*?)</script>', source, re.S)
+    if manifest:
+        rows = json.loads(manifest[1])
+        if any(r.get('reviewStatus') != 'verified' or r.get('mediaType') != 'photo' for r in rows):
+            raise ValueError('Publication manifest must contain verified photographs only')
+        return [{'id': r['sourceId'], 'name': r['originalName'], 'category': r['primaryCategory'], 'kind': 'photo'} for r in rows]
+    # Retain the parser for historical three-chapter HTML snapshots.
     refs = []
     for m in re.finditer(r"\{\s*id:\s*'([^']+)',\s*name:\s*'([^']+)'", source):
         pos = m.start()
