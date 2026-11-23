@@ -169,6 +169,106 @@ def build(runtime=False):
         'c5': [r for r in photos if r['chronicle'] == 'c5'],
     }
 
+    CURATED_CARDS = {
+        'c1': [
+            {
+                'insertAfterIndex': 2,
+                'span': 'sm:col-span-2',
+                'bgClass': 'bg-selva text-coco',
+                'tag': 'Ana Rosa Heredia · Saberes & Sabores (MinCultura)',
+                'tagClass': 'text-platano',
+                'quote': '“Nuestros platos son las joyas producto de nuestra tradición; olvidarnos de ellos es olvidar nuestra región.”',
+            },
+            {
+                'insertAfterIndex': 6,
+                'span': '',
+                'bgClass': 'bg-platano text-carbon',
+                'tag': 'Sabor Pacífico, Sabor a Memoria · SENA',
+                'tagClass': 'text-selva',
+                'quote': '“Quién conoce lo ancestral, descubre lo esencial.”',
+            },
+            {
+                'insertAfterIndex': 9,
+                'span': '',
+                'bgClass': 'bg-marea text-coco',
+                'tag': 'Apunte de taller · Piedra y masa',
+                'tagClass': 'text-platano',
+                'quote': 'En el territorio se distinguen dos piedras: una más rústica para quebrar el maíz y otra fina para molerlo hasta formar masa.',
+            },
+        ],
+        'c2': [
+            {
+                'insertAfterIndex': 2,
+                'span': 'sm:col-span-2',
+                'bgClass': 'bg-achiote text-coco',
+                'tag': 'Sabor Pacífico · Grupo Fogones y Comunidades',
+                'tagClass': 'text-platano',
+                'quote': '“Iniciamos con el refrito, confundido con el ahogao vallecaucano, pero de singular composición por las hierbas que lo integran.”',
+            },
+            {
+                'insertAfterIndex': 5,
+                'span': '',
+                'bgClass': 'bg-platano text-carbon',
+                'tag': 'Aliños de Azotea · Recetario SENA',
+                'tagClass': 'text-achiote',
+                'quote': 'Cebolla larga, ajíes dulces criollos, chillangua (cimarrón), albahaca negra (chirarán), oreganón y semillas de achiote.',
+            },
+        ],
+        'c3': [
+            {
+                'insertAfterIndex': 3,
+                'span': 'sm:col-span-2',
+                'bgClass': 'bg-marea text-coco',
+                'tag': 'Sabor Pacífico, Sabor a Memoria · SENA',
+                'tagClass': 'text-platano',
+                'quote': '“Al fondo, la cocina con su fogón y su barbacoa, donde pescados y carnes se ahúman lentamente con leña de mangle para el encocado o el sancocho con leche de coco.”',
+            },
+            {
+                'insertAfterIndex': 8,
+                'span': '',
+                'bgClass': 'bg-selva text-coco',
+                'tag': 'Saberes & Sabores · MinCultura / ACUA',
+                'tagClass': 'text-platano',
+                'quote': '“El almuerzo siempre lleva arroz con o sin coco, y plátano frito o cocido; sancocho o sudado de pescado con coco (encocado), jaiba, camarón o piangua.”',
+            },
+            {
+                'insertAfterIndex': 12,
+                'span': '',
+                'bgClass': 'bg-platano text-carbon',
+                'tag': 'Técnica del Coco · Práctica en clase',
+                'tagClass': 'text-selva',
+                'quote': 'La segunda leche cocina los tubérculos y carnes; la primera extracción se reserva para el cierre a fuego suave.',
+            },
+        ],
+        'c4': [],
+        'c5': [
+            {
+                'insertAfterIndex': 2,
+                'span': 'sm:col-span-2',
+                'bgClass': 'bg-selva text-coco',
+                'tag': 'Saberes & Sabores · MinCultura / ACUA',
+                'tagClass': 'text-platano',
+                'quote': '“Cuando se cocina y se canta las cosas saben mejor.”',
+            },
+            {
+                'insertAfterIndex': 5,
+                'span': '',
+                'bgClass': 'bg-marea text-coco',
+                'tag': 'Sabor Pacífico · Grupo Fogones y Comunidades',
+                'tagClass': 'text-platano',
+                'quote': '“… la cocina no solamente es comer, la cocina es cultura y arte… la buena comida alimenta hasta el alma.”',
+            },
+            {
+                'insertAfterIndex': 7,
+                'span': '',
+                'bgClass': 'bg-platano text-carbon',
+                'tag': 'Ley 2158 de 2021 · Patrimonio del Pacífico',
+                'tagClass': 'text-selva',
+                'quote': 'El viche o biche y sus derivados se reconocen como patrimonio cultural inmaterial y saber colectivo de las comunidades negras del Pacífico.',
+            },
+        ],
+    }
+
     for i in range(1, 6):
         ckey = f'c{i}'
         selected = grouped[ckey]
@@ -182,8 +282,14 @@ def build(runtime=False):
             }
             for n, r in enumerate(selected)
         ]
-        pattern = rf'({ckey}: \{{.*?photos: )\[.*?\](,\s*cards:)'
-        text, count = re.subn(pattern, lambda m: m[1] + json.dumps(payload, ensure_ascii=False) + m[2], text, count=1, flags=re.S)
+        pattern = rf'({ckey}: \{{.*?photos: )\[.*?\](,\s*cards: )\[.*?\](,\s*videos:)'
+        text, count = re.subn(
+            pattern,
+            lambda m, p=payload, cards=CURATED_CARDS[ckey]: m[1] + json.dumps(p, ensure_ascii=False) + m[2] + json.dumps(cards, ensure_ascii=False) + m[3],
+            text,
+            count=1,
+            flags=re.S,
+        )
         assert count == 1
 
     text = re.sub(r'videos: \[.*?\]', 'videos: []', text, flags=re.S)
