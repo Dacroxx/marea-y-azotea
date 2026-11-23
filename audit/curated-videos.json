@@ -4,8 +4,8 @@
     "chronicle": "c1",
     "sourceId": "1mdcyZkpukubLXidKDRsJshbKB0zwe1Y4",
     "driveName": "TALLER SENSORIAL",
-    "title": "Uso tradicional de la piedra de moler, el maíz, los bolones y el Juan Valerio.",
-    "subtitle": "Registro en clase del acercamiento sensorial al territorio y sus herramientas.",
+    "title": "Recorrido por el taller sensorial: piedra de moler, el maíz, el plátano, los bolones y el Juan Valerio.",
+    "subtitle": "Recorrido por el taller sensorial: piedra de moler, el maíz, el plátano, los bolones y el Juan Valerio.",
     "displayTitle": "Taller sensorial en clase"
   },
   {
@@ -14,8 +14,8 @@
     "sourceId": "1xgcRo3P70QxxAAobR2rT2N15DsyDt2iT",
     "driveName": "MAIZ 1",
     "title": "Selección, alistamiento e inicio de transformación del grano en brigada.",
-    "subtitle": "Inicio de la secuencia sobre preparación y manejo tradicional del maíz.",
-    "displayTitle": "Trabajo del maíz · Parte 1"
+    "subtitle": "Selección, alistamiento e inicio de transformación del grano en brigada.",
+    "displayTitle": "Trabajo del maíz · Selección y alistamiento"
   },
   {
     "code": "V03",
@@ -23,17 +23,17 @@
     "sourceId": "1GCCVf-qsuQipr03QfvxNNVhswWw3rFUa",
     "driveName": "MAIZ 2",
     "title": "Cocción, molienda y verificación de textura tradicional de la masa.",
-    "subtitle": "Continuación de la secuencia del trabajo manual con el maíz en taller.",
-    "displayTitle": "Trabajo del maíz · Parte 2"
+    "subtitle": "Cocción, molienda y verificación de textura tradicional de la masa.",
+    "displayTitle": "Trabajo del maíz · Cocción y molienda"
   },
   {
     "code": "V04",
     "chronicle": "c1",
     "sourceId": "1tBD1QFVKhoF0ZkxCuiJSozUKRC8tf4p_",
     "driveName": "MAIZ 3",
-    "title": "Formado y cierre de la preparación de maíz en el taller.",
-    "subtitle": "Cierre de la secuencia sobre transformación del maíz en cocina.",
-    "displayTitle": "Trabajo del maíz · Parte 3"
+    "title": "Formado y trabajo manual de la preparación de maíz en el taller.",
+    "subtitle": "Formado y trabajo manual de la preparación de maíz en el taller.",
+    "displayTitle": "Trabajo del maíz · Formado de la masa"
   },
   {
     "code": "V05",
@@ -41,8 +41,8 @@
     "sourceId": "1C6gwF92wXZxZbQJOgnagjAkOmyfzA78T",
     "driveName": "REFRITO 1",
     "title": "Reconocimiento y corte de hierbas de azotea, cebolla, ajo y ají dulce.",
-    "subtitle": "Inicio de la secuencia del sofrito aromático con hierbas de azotea y achiote.",
-    "displayTitle": "Refrito del Pacífico · Parte 1"
+    "subtitle": "Reconocimiento y corte de hierbas de azotea, cebolla, ajo y ají dulce.",
+    "displayTitle": "Refrito del Pacífico · Corte de hierbas"
   },
   {
     "code": "V06",
@@ -50,26 +50,26 @@
     "sourceId": "18ckJQ0TpbAzEoX0JiWQ84eaiyyFsQydM",
     "driveName": "REFRITO 2",
     "title": "Incorporación del aceite achiotado y control del calor para liberar aromas.",
-    "subtitle": "Integración progresiva de hierbas y aromas en el fogón.",
-    "displayTitle": "Refrito del Pacífico · Parte 2"
+    "subtitle": "Incorporación del aceite achiotado y control del calor para liberar aromas.",
+    "displayTitle": "Refrito del Pacífico · Aceite achiotado"
   },
   {
     "code": "V07",
     "chronicle": "c2",
     "sourceId": "1lq2UmZJo3SWYHuknDNPQzRgbYIMEkhT4",
     "driveName": "REFRITO 3",
-    "title": "Punto de integración, color y aroma de la base del refrito.",
-    "subtitle": "Desarrollo de color, textura y fragancia en el refrito.",
-    "displayTitle": "Refrito del Pacífico · Parte 3"
+    "title": "Integración, color y aroma de los vegetales y hierbas en el fogón.",
+    "subtitle": "Integración, color y aroma de los vegetales y hierbas en el fogón.",
+    "displayTitle": "Refrito del Pacífico · Integración al fuego"
   },
   {
     "code": "V08",
     "chronicle": "c2",
     "sourceId": "1kgEcxXnSKmSbBlplWZlKXJMjFBVx0cv-",
     "driveName": "REFRITO 4",
-    "title": "Textura final del refrito tradicional y retroalimentación en práctica.",
-    "subtitle": "Punto final del refrito base antes de incorporar proteínas o fondos.",
-    "displayTitle": "Refrito del Pacífico · Parte 4"
+    "title": "Punto del refrito tradicional y retroalimentación durante la práctica.",
+    "subtitle": "Punto del refrito tradicional y retroalimentación durante la práctica.",
+    "displayTitle": "Refrito del Pacífico · Textura del sofrito"
   },
   {
     "code": "V09",
@@ -77,7 +77,7 @@
     "sourceId": "1Me_SNmmcVu_K08kGXqiWufIP1VF3niYI",
     "driveName": "SOASAR HOJAS DE PLATANO",
     "title": "Técnica sobre el fuego para flexibilizar las hojas antes de envolver.",
-    "subtitle": "Técnica de pasar la hoja sobre la llama para darle flexibilidad antes de envolver.",
+    "subtitle": "Técnica sobre el fuego para flexibilizar las hojas antes de envolver.",
     "displayTitle": "Soasado de hojas de plátano"
   },
   {
@@ -85,45 +85,45 @@
     "chronicle": "c3",
     "sourceId": "1JO3eiv9U79MSnTAaFX25qlm269X37nG_",
     "driveName": "ARROZ COCO 1",
-    "title": "Alistamiento del coco y extracción manual de primera y segunda leche.",
-    "subtitle": "Inicio de la secuencia de preparación del arroz con coco en clase.",
-    "displayTitle": "Arroz con coco · Parte 1"
+    "title": "Alistamiento del coco y extracción manual de la primera y segunda leche.",
+    "subtitle": "Alistamiento del coco y extracción manual de la primera y segunda leche.",
+    "displayTitle": "Arroz con coco · Extracción de la leche"
   },
   {
     "code": "V11",
     "chronicle": "c3",
     "sourceId": "1vFKvZ3HyJBBKLG-buAAQ4p_fZ0UEifTl",
     "driveName": "ARROZ COCO 2",
-    "title": "Reducción de la leche de coco en caldero hasta formar el titoté.",
-    "subtitle": "Reducción y cocción de la leche de coco para el arroz.",
-    "displayTitle": "Arroz con coco · Parte 2"
+    "title": "Reducción de la leche de coco en el caldero hasta formar el titoté.",
+    "subtitle": "Reducción de la leche de coco en el caldero hasta formar el titoté.",
+    "displayTitle": "Arroz con coco · Reducción y titoté"
   },
   {
     "code": "V12",
     "chronicle": "c3",
     "sourceId": "1zCk53VcuEZw9hJRafXgu7-WucEj2HR1j",
     "driveName": "ARROZ COCO 3",
-    "title": "Incorporación del grano, ajuste con segunda leche y control del hervor.",
-    "subtitle": "Integración del grano y control del punto de cocción.",
-    "displayTitle": "Arroz con coco · Parte 3"
+    "title": "Incorporación del arroz, ajuste de líquido con segunda leche y hervor.",
+    "subtitle": "Incorporación del arroz, ajuste de líquido con segunda leche y hervor.",
+    "displayTitle": "Arroz con coco · Cocción del grano"
   },
   {
     "code": "V13",
     "chronicle": "c3",
     "sourceId": "1WUen7UEKlocGtNjUiid9SBVOSH97FWAw",
     "driveName": "ARROZ COCO 4",
-    "title": "Punto final de cocción, brillo y soltura del arroz listo para servir.",
-    "subtitle": "Resultado final de la secuencia de arroz con coco.",
-    "displayTitle": "Arroz con coco · Parte 4"
+    "title": "Verificación de cocción, brillo y soltura del grano listo para servir.",
+    "subtitle": "Verificación de cocción, brillo y soltura del grano listo para servir.",
+    "displayTitle": "Arroz con coco · Punto y soltura"
   },
   {
     "code": "V14",
     "chronicle": "c3",
     "sourceId": "1Y3x37dvfH4P6DhqT2Q5ts5YZZQ75tuPN",
     "driveName": "FUFU 1",
-    "title": "Pelado cuidadoso del plátano en equipo y alistamiento previo.",
-    "subtitle": "Inicio de la secuencia de cocción y majado tradicional del plátano.",
-    "displayTitle": "Fufú de plátano maduro · Parte 1"
+    "title": "Pelado del plátano maduro en equipo y alistamiento previo a la cocción.",
+    "subtitle": "Pelado del plátano maduro en equipo y alistamiento previo a la cocción.",
+    "displayTitle": "Fufú de plátano maduro · Alistamiento"
   },
   {
     "code": "V15",
@@ -131,16 +131,16 @@
     "sourceId": "1UE3Po7nW-OodattHiNdkIQRpErR1BbSI",
     "driveName": "FUFU 2",
     "title": "Majado manual del plátano cocido hasta lograr la consistencia tradicional.",
-    "subtitle": "Trabajo manual de textura y consistencia de la masa tibia.",
-    "displayTitle": "Fufú de plátano maduro · Parte 2"
+    "subtitle": "Majado manual del plátano cocido hasta lograr la consistencia tradicional.",
+    "displayTitle": "Fufú de plátano maduro · Majado manual"
   },
   {
     "code": "V16",
     "chronicle": "c3",
     "sourceId": "1voHJoORHTzZ98-ga7CrUqpRCossAi19n",
     "driveName": "FUFU 3",
-    "title": "Porcionado y armado final del fufú por la brigada en clase.",
-    "subtitle": "Cierre y armado final en la secuencia del fufú.",
-    "displayTitle": "Fufú de plátano maduro · Parte 3"
+    "title": "Porcionado y armado del fufú por la brigada de estudiantes en clase.",
+    "subtitle": "Porcionado y armado del fufú por la brigada de estudiantes en clase.",
+    "displayTitle": "Fufú de plátano maduro · Porcionado en brigada"
   }
 ]

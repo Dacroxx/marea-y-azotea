@@ -18,17 +18,17 @@ La base editorial y visual es el HTML aportado por David, preservado exactamente
 
 Se distingue **contenido editorial aportado** de **evidencia fotográfica**. Las crónicas, citas, recetas, identificaciones botánicas y voces del glosario no han sido verificadas como transcripciones ni revisión científica. Se conserva su voz con una nota de alcance visible, sin convertirla en prueba de lo que aparece en cada foto. La entrega estilística simplificada anterior fue rechazada. El parent abrió el ZIP completo anterior: CSS aplicado y cero errores JS; el fallo general de estilos **no se reprodujo**. Esta corrección restaura la identidad autorizada y elimina, además, la fragilidad de separar el HTML de sus assets; no atribuye una causa al equipo de David.
 
-## Selección curada: 42 fotografías y 16 videos en secuencia
+## Selección curada: 42 fotografías y 16 videos de clase
 
-| Eje en la revista | Fotografías | Videos en secuencia |
+| Eje en la revista | Fotografías | Videos por preparación |
 | --- | ---: | ---: |
-| Eje I · Taller Sensorial, Saberes y Herramientas | 11 | 4 (`Taller Sensorial`, `Maíz 1–3`) |
-| Eje II · Hierbas de Azotea y Aromas de la Selva | 8 | 5 (`Refrito 1–4`, `Soasado de hojas`) |
-| Eje III · Fogón, Mar y Mesa del Pacífico | 15 | 7 (`Arroz con coco 1–4`, `Fufú 1–3`) |
+| Eje I · Taller Sensorial, Saberes y Herramientas | 11 | 4 (`Taller Sensorial`, `Maíz`) |
+| Eje II · Hierbas de Azotea y Aromas de la Selva | 8 | 5 (`Refrito`, `Soasado de hojas`) |
+| Eje III · Fogón, Mar y Mesa del Pacífico | 15 | 7 (`Arroz con coco`, `Fufú`) |
 | Eje IV · Bitácora de Brigada y Cultura Viva | 8 | 0 |
 | **Total publicado** | **42** | **16** |
 
-Cada fotografía utiliza su título editorial limpio y la descripción técnica curada en [`audit/curated-selection.json`](audit/curated-selection.json) (revelados en hover/focus sobre la imagen y en el visor Lightbox), sin enlaces externos que saquen al lector hacia Google Drive. Los 16 videos en secuencia ([`audit/curated-videos.json`](audit/curated-videos.json)) se integran embebidos en su propia sección `#videos-eje`, seguidos por el glosario interactivo de 44 términos (`#glosario`) y la sección de referencias bibliográficas y normativa del Estado colombiano (`#referencias`).
+Cada fotografía utiliza su título editorial limpio y la descripción técnica curada en [`audit/curated-selection.json`](audit/curated-selection.json) (revelados en hover/focus sobre la imagen y en el visor Lightbox), sin enlaces externos que saquen al lector hacia Google Drive. Los 16 clips de video ([`audit/curated-videos.json`](audit/curated-videos.json)) se integran embebidos en su propia sección `#videos-eje` agrupados por preparación, seguidos por el glosario interactivo de 44 términos (`#glosario`) y la sección de referencias bibliográficas y normativa del Estado colombiano (`#referencias`).
 
 ## Regeneración reproducible, sin instalar paquetes
 

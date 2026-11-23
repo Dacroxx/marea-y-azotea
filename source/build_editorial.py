@@ -88,10 +88,10 @@ def build_videos_section(videos):
       <div class="max-w-3xl reveal">
         <span class="px-4 py-1.5 rounded-full bg-marea text-platano text-xs font-bold uppercase tracking-widest">Archivo Audiovisual</span>
         <h2 class="mt-4 font-editorial font-black text-4xl sm:text-5xl text-marea leading-[1.06]">
-          Videos de Clase en Secuencia
+          Videos y Momentos de Clase
         </h2>
         <p class="mt-4 text-base sm:text-lg text-carbon/80 leading-relaxed">
-          Registros audiovisuales de las prácticas en cocina ordenados por secuencia de preparación ({len(videos)} videos seleccionados).
+          Fragmentos y registros audiovisuales de las prácticas en cocina agrupados por preparación ({len(videos)} clips seleccionados).
         </p>
       </div>
       {"".join(blocks)}
@@ -310,7 +310,7 @@ def build(runtime=False):
     text = text.replace('alt="Portada editorial Marea & Azotea"', 'alt="' + escape(cover['visualDescription'], quote=True) + '"')
     text = text.replace('>05</span>\n          <span class="uppercase tracking-wider text-[10px]">Crónicas Temáticas</span>', '>04</span>\n          <span class="uppercase tracking-wider text-[10px]">Ejes Temáticos</span>')
     text = text.replace('>78</span>\n          <span class="uppercase tracking-wider text-[10px]">Postales de Taller</span>', f'>{total_photos}</span>\n          <span class="uppercase tracking-wider text-[10px]">Fotografías de Clase</span>')
-    text = text.replace('>18</span>\n          <span class="uppercase tracking-wider text-[10px]">Memorias en Video</span>', f'>{total_videos}</span>\n          <span class="uppercase tracking-wider text-[10px]">Videos en Secuencia</span>')
+    text = text.replace('>18</span>\n          <span class="uppercase tracking-wider text-[10px]">Memorias en Video</span>', f'>{total_videos}</span>\n          <span class="uppercase tracking-wider text-[10px]">Videos de Clase</span>')
     text = text.replace('Voces en el Glosario', 'Términos en el Glosario')
     text = text.replace('1 / 78', f'1 / {total_photos}')
     text = text.replace('78 FOTOS ÚNICAS + 18 VIDEOS', f'{total_photos} FOTOS CURADAS · {total_videos} VIDEOS')
@@ -361,7 +361,7 @@ def build(runtime=False):
       <a href="#cronica-2" class="block py-2.5 px-3 rounded-xl hover:bg-arena text-achiote">II · Azotea</a>
       <a href="#cronica-3" class="block py-2.5 px-3 rounded-xl hover:bg-arena text-chontaduro">III · Fogón, Mar &amp; Mesa</a>
       <a href="#cronica-5" class="block py-2.5 px-3 rounded-xl hover:bg-arena text-marea">IV · Brigada &amp; Cultura</a>
-      <a href="#videos-eje" class="block py-2.5 px-3 rounded-xl hover:bg-arena text-achiote">Videos en Secuencia</a>
+      <a href="#videos-eje" class="block py-2.5 px-3 rounded-xl hover:bg-arena text-achiote">Videos</a>
       <a href="#glosario" class="block py-2.5 px-3 rounded-xl bg-selva/10 text-selva">Glosario del Pacífico</a>
     </div>'''
     assert old_mobile in text
@@ -416,10 +416,10 @@ def build(runtime=False):
     )
     text = text.replace(
         'Organizamos nuestro archivo en cinco crónicas temáticas que dialogan entre sí. Cada capítulo entrelaza fotografía documental, memorias en movimiento y voces reales recogidas en el aula para honrar a las cocineras tradicionales, a las comunidades afrodescendientes e indígenas del Pacífico y a la responsabilidad ética que asumimos como futuros gastrónomos.',
-        'Organizamos esta bitácora en cuatro ejes temáticos y una sección audiovisual en secuencia, integrando las fotografías de clase, los registros de cocina y las voces recogidas durante el semestre.',
+        'Organizamos esta bitácora en cuatro ejes temáticos y una sección audiovisual agrupada por preparación, integrando las fotografías de clase, los fragmentos de cocina y las voces recogidas durante el semestre.',
     )
     text = text.replace('Cinco Crónicas del Litoral', 'Cuatro Ejes y Archivo Audiovisual')
-    text = text.replace('Selecciona cualquier capítulo para sumergirte en sus crónicas, mosaicos fotográficos y memorias en video.', 'Selecciona un eje para recorrer las fotografías de clase o ve directamente a la sección de videos en secuencia.')
+    text = text.replace('Selecciona cualquier capítulo para sumergirte en sus crónicas, mosaicos fotográficos y memorias en video.', 'Selecciona un eje para recorrer las fotografías de clase o ve directamente a la sección de videos por preparación.')
 
     # Actualizar las 5 tarjetas del Mapa de Lectura con los conteos reales y la nueva estructura
     c1_n, c2_n, c3_n, c5_n = len(grouped['c1']), len(grouped['c2']), len(grouped['c3']), len(grouped['c5'])
@@ -446,7 +446,7 @@ def build(runtime=False):
     )
     text = text.replace(
         '<h4 class="font-editorial font-bold text-xl leading-snug group-hover:text-carbon transition-colors">Bebidas y Cultura Viva</h4>\n              <p class="text-xs text-coco/90 mt-2">Viche, cantos de cocina, San Pacho y pueblos originarios.</p>',
-        '<h4 class="font-editorial font-bold text-xl leading-snug group-hover:text-carbon transition-colors">Videos</h4>\n              <p class="text-xs text-coco/90 mt-2">Taller sensorial, maíz, refrito, arroz con coco y fufú en secuencia.</p>',
+        '<h4 class="font-editorial font-bold text-xl leading-snug group-hover:text-carbon transition-colors">Videos</h4>\n              <p class="text-xs text-coco/90 mt-2">Momentos de taller sensorial, maíz, refrito, arroz con coco y fufú.</p>',
     )
     text = text.replace('href="#cronica-5" class="group rounded-3xl p-6 bg-chontaduro', 'href="#videos-eje" class="group rounded-3xl p-6 bg-chontaduro')
 
