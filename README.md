@@ -18,19 +18,17 @@ La base editorial y visual es el HTML aportado por David, preservado exactamente
 
 Se distingue **contenido editorial aportado** de **evidencia fotográfica**. Las crónicas, citas, recetas, identificaciones botánicas y voces del glosario no han sido verificadas como transcripciones ni revisión científica. Se conserva su voz con una nota de alcance visible, sin convertirla en prueba de lo que aparece en cada foto. La entrega estilística simplificada anterior fue rechazada. El parent abrió el ZIP completo anterior: CSS aplicado y cero errores JS; el fallo general de estilos **no se reprodujo**. Esta corrección restaura la identidad autorizada y elimina, además, la fragilidad de separar el HTML de sus assets; no atribuye una causa al equipo de David.
 
-## Selección fotográfica: 58 IDs verified
+## Selección curada: 42 fotografías y 16 videos en secuencia
 
-| Categoría principal exacta (orden visual de la referencia) | IDs publicados |
-| --- | ---: |
-| Territorio, Saberes y Herramientas Ancestrales | 29 |
-| Hierbas de Azotea y Aromas de la Selva | 15 |
-| Coco, Tubérculos y Fogón | 5 |
-| Frutos del Mar, Río y Manglar | 9 |
-| Bebidas, Cultura Viva e Identidad | 0 |
+| Eje en la revista | Fotografías | Videos en secuencia |
+| --- | ---: | ---: |
+| Eje I · Taller Sensorial, Saberes y Herramientas | 11 | 4 (`Taller Sensorial`, `Maíz 1–3`) |
+| Eje II · Hierbas de Azotea y Aromas de la Selva | 8 | 5 (`Refrito 1–4`, `Soasado de hojas`) |
+| Eje III · Fogón, Mar y Mesa del Pacífico | 15 | 7 (`Arroz con coco 1–4`, `Fufú 1–3`) |
+| Eje IV · Bitácora de Brigada y Cultura Viva | 8 | 0 |
+| **Total publicado** | **42** | **16** |
 
-Cada pie/alt reproduce `visualDescription` exactamente y muestra el nombre original y un enlace por ID. El visor conserva esa trazabilidad. La portada usa `IMG_1898.HEIC`, `1jMeLokjKWlpVlkg_X67NqsVLP9nFM-QV`, verificado en Territorio. `verified` significa sujeto visible y encaje temático amplio, no certificación de receta, especie, procedencia o identidad. No se deduplican escenas por nombre o parecido.
-
-No se publican 91 fotos `provisional`, 32 `needs-human` ni los 31 MOV `uninspected-video`. No se inventan títulos audiovisuales ni se incrustan videos sin revisar. Las franjas mantienen su espacio editorial como archivo pendiente, con cero videos publicados. El quinto eje conserva crónica, cápsulas y glosario, con estado visual vacío explícito. Los conteos de portada, sumario, franjas y visor reflejan la selección real. El catálogo de 212 registros y la auditoría histórica no se reclasificaron para encajar el diseño.
+Cada fotografía utiliza su título editorial limpio y la descripción técnica curada en [`audit/curated-selection.json`](audit/curated-selection.json) (revelados en hover/focus sobre la imagen y en el visor Lightbox), sin enlaces externos que saquen al lector hacia Google Drive. Los 16 videos en secuencia ([`audit/curated-videos.json`](audit/curated-videos.json)) se integran embebidos en su propia sección `#videos-eje`, seguidos por el glosario interactivo de 44 términos (`#glosario`) y la sección de referencias bibliográficas y normativa del Estado colombiano (`#referencias`).
 
 ## Regeneración reproducible, sin instalar paquetes
 

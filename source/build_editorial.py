@@ -60,7 +60,7 @@ def build_videos_section(videos):
                 f'</article>'
             )
             dots.append(
-                f'<button type="button" class="video-dot{active_cls}" data-dot-index="{idx}" aria-label="Ir al video {idx + 1}: {escape(v["driveName"])}"></button>'
+                f'<button type="button" class="video-dot{active_cls}" data-dot-index="{idx}" aria-label="Ir al video {idx + 1}: {escape(vtitle)}"></button>'
             )
         blocks.append(
             f'<div class="mt-12 video-group" data-video-group="{ckey}">'
@@ -124,11 +124,11 @@ def build_references_section():
             <li><strong>Arocha, Jaime (2007).</strong> <em>Encocaos con papa, ¿otro etnoboom usurpador?</em> Revista Colombiana de Antropología, vol. 43, pp. 91–117. Instituto Colombiano de Antropología e Historia (ICANH), Bogotá.</li>
             <li><strong>Ministerio de Cultura de Colombia (2012).</strong> <em>Política para el conocimiento, la salvaguardia y el fomento de la alimentación y las cocinas tradicionales de Colombia.</em> Biblioteca Básica de Cocinas Tradicionales de Colombia (Tomo 17), Dirección de Patrimonio.</li>
             <li><strong>Ministerio de Cultura &amp; Fundación ACUA (2018).</strong> <em>Biodiversidad, cocina e identidad en el Pacífico Colombiano: la cocina tradicional de Tumaco (Nariño) y Buenaventura (Valle del Cauca).</em> Cultura Culinaria y Biodiversidad.</li>
-            <li><strong>Ministerio de Cultura &amp; Fundación ACUA.</strong> <em>Saberes &amp; Sabores del Pacífico Colombiano: Buenaventura – Tumaco.</em> Cultura Culinaria y Biodiversidad.</li>
+            <li><strong>Ministerio de Cultura &amp; Fundación ACUA (2018).</strong> <em>Saberes &amp; Sabores del Pacífico Colombiano: Buenaventura – Tumaco.</em> Cultura Culinaria y Biodiversidad.</li>
             <li><strong>SENA · Grupo Fogones y Comunidades (2013).</strong> <em>Sabor Pacífico, Sabor a Memoria.</em> Servicio Nacional de Aprendizaje (SENA).</li>
-            <li><strong>Grueso Romero, Mary.</strong> <em>Cuando los ancestros llaman: poesía afrocolombiana.</em> Editorial Universidad del Cauca, Popayán.</li>
+            <li><strong>Grueso Romero, Mary (2015).</strong> <em>Cuando los ancestros llaman: poesía afrocolombiana.</em> Editorial Universidad del Cauca, Popayán.</li>
             <li><strong>Palacios, Arnoldo (1949 / ed. 2010).</strong> <em>Las estrellas son negras.</em> Biblioteca de Literatura Afrocolombiana (Tomo II), Ministerio de Cultura, Bogotá.</li>
-            <li><strong>Material de cátedra.</strong> <em>El Festín de las Mujeres del Pacífico.</em> Archivo bibliográfico del curso Cocinas del Pacífico.</li>
+            <li><strong>Material de cátedra (PUJ Cali).</strong> <em>El Festín de las Mujeres del Pacífico.</em> Archivo bibliográfico del curso Cocinas del Pacífico.</li>
           </ul>
         </div>
 
@@ -185,11 +185,11 @@ def build(runtime=False):
                 'bgClass': 'bg-platano text-carbon',
                 'tag': 'Sabor Pacífico, Sabor a Memoria · SENA',
                 'tagClass': 'text-selva',
-                'quote': '“Quién conoce lo ancestral, descubre lo esencial.”',
+                'quote': '“Quien conoce lo ancestral, descubre lo esencial.”',
             },
             {
                 'insertAfterIndex': 9,
-                'span': '',
+                'span': 'sm:col-span-2',
                 'bgClass': 'bg-marea text-coco',
                 'tag': 'Apunte de taller · Piedra y masa',
                 'tagClass': 'text-platano',
@@ -225,7 +225,7 @@ def build(runtime=False):
             },
             {
                 'insertAfterIndex': 8,
-                'span': '',
+                'span': 'sm:col-span-2',
                 'bgClass': 'bg-selva text-coco',
                 'tag': 'Saberes & Sabores · MinCultura / ACUA',
                 'tagClass': 'text-platano',
@@ -233,7 +233,7 @@ def build(runtime=False):
             },
             {
                 'insertAfterIndex': 12,
-                'span': '',
+                'span': 'sm:col-span-2',
                 'bgClass': 'bg-platano text-carbon',
                 'tag': 'Técnica del Coco · Práctica en clase',
                 'tagClass': 'text-selva',
@@ -252,7 +252,7 @@ def build(runtime=False):
             },
             {
                 'insertAfterIndex': 5,
-                'span': '',
+                'span': 'sm:col-span-2',
                 'bgClass': 'bg-marea text-coco',
                 'tag': 'Sabor Pacífico · Grupo Fogones y Comunidades',
                 'tagClass': 'text-platano',
@@ -260,7 +260,7 @@ def build(runtime=False):
             },
             {
                 'insertAfterIndex': 7,
-                'span': '',
+                'span': 'sm:col-span-2',
                 'bgClass': 'bg-platano text-carbon',
                 'tag': 'Ley 2158 de 2021 · Patrimonio del Pacífico',
                 'tagClass': 'text-selva',
@@ -278,7 +278,7 @@ def build(runtime=False):
                 'caption': r['visualDescription'],
                 'originalName': r.get('displayTitle', r['curatedFileName']),
                 'primaryCategory': r['primaryCategory'],
-                'span': spans[n % len(spans)],
+                'span': 'sm:col-span-2' if ((ckey == 'c3' and n == 14) or (ckey == 'c5' and n == 7)) else spans[n % len(spans)],
             }
             for n, r in enumerate(selected)
         ]
@@ -356,12 +356,12 @@ def build(runtime=False):
       <a href="#glosario" class="block py-2.5 px-3 rounded-xl bg-selva/10 text-selva">Glosario Interactivo del Pacífico</a>
     </div>'''
     new_mobile = '''    <div id="mobile-menu" class="hidden lg:hidden bg-coco border-t border-selva/15 px-4 py-4 space-y-1 text-xs font-semibold uppercase tracking-wider">
-      <a href="#editorial" class="block py-2.5 px-3 rounded-xl hover:bg-arena text-marea">Reflexión e Índice</a>
-      <a href="#cronica-1" class="block py-2.5 px-3 rounded-xl hover:bg-arena text-selva">I · Taller Sensorial y Saberes</a>
-      <a href="#cronica-2" class="block py-2.5 px-3 rounded-xl hover:bg-arena text-achiote">II · Azotea, Aromas y Mise en Place</a>
-      <a href="#cronica-3" class="block py-2.5 px-3 rounded-xl hover:bg-arena text-chontaduro">III · Fogón, Mar y Mesa del Pacífico</a>
-      <a href="#cronica-5" class="block py-2.5 px-3 rounded-xl hover:bg-arena text-marea">IV · Bitácora de Brigada y Cultura Viva</a>
-      <a href="#videos-eje" class="block py-2.5 px-3 rounded-xl hover:bg-arena text-achiote">Archivo Audiovisual en Secuencia</a>
+      <a href="#editorial" class="block py-2.5 px-3 rounded-xl hover:bg-arena text-marea">Presentación y Mapa de Lectura</a>
+      <a href="#cronica-1" class="block py-2.5 px-3 rounded-xl hover:bg-arena text-selva">I · Taller Sensorial</a>
+      <a href="#cronica-2" class="block py-2.5 px-3 rounded-xl hover:bg-arena text-achiote">II · Azotea</a>
+      <a href="#cronica-3" class="block py-2.5 px-3 rounded-xl hover:bg-arena text-chontaduro">III · Fogón, Mar &amp; Mesa</a>
+      <a href="#cronica-5" class="block py-2.5 px-3 rounded-xl hover:bg-arena text-marea">IV · Brigada &amp; Cultura</a>
+      <a href="#videos-eje" class="block py-2.5 px-3 rounded-xl hover:bg-arena text-achiote">Videos en Secuencia</a>
       <a href="#glosario" class="block py-2.5 px-3 rounded-xl bg-selva/10 text-selva">Glosario del Pacífico</a>
     </div>'''
     assert old_mobile in text
@@ -476,8 +476,38 @@ def build(runtime=False):
     text = text.replace('Pocas técnicas revelan tanto cariño como rallar y estrujar el coco a mano para separar sus dos vidas:', 'Pocas técnicas dicen tanto de la cocina del Pacífico como rallar y estrujar el coco a mano para separar sus dos extracciones:')
     text = text.replace('monumentos del sabor', 'platos emblemáticos')
     text = text.replace('las raíces generosas', 'los tubérculos tradicionales')
-    text = text.replace('<article id="cronica-4"', '<article id="cronica-4" class="hidden"')
+    old_c3_col2 = '''            A su alrededor florece también la tradición horneada de los
+            <button type="button" class="glossary-link" onclick="openGlossary('amasijos')">amasijos del Pacífico</button>,
+            recordándonos que la cocina costera es tan rica en texturas crocantes y masas tibias como en caldos profundos.'''
+    new_c3_col2 = '''            Con ellos dialogan los frutos de la <button type="button" class="glossary-link" onclick="openGlossary('bocana')">bocana</button>, la <button type="button" class="glossary-link" onclick="openGlossary('pesca_artesanal')">pesca artesanal</button> y la <button type="button" class="glossary-link" onclick="openGlossary('pesca_manglar')">pesca de manglar</button> —cangrejo azul, <button type="button" class="glossary-link" onclick="openGlossary('jaiba')">jaiba</button>, <button type="button" class="glossary-link" onclick="openGlossary('camaron_titi')">camarón tití</button> y <button type="button" class="glossary-link" onclick="openGlossary('piangua')">piangua</button>—, junto a la tradición horneada y frita de los <button type="button" class="glossary-link" onclick="openGlossary('amasijos')">amasijos del Pacífico</button>, que completan la mesa del litoral.'''
+    assert old_c3_col2 in text
+    text = text.replace(old_c3_col2, new_c3_col2, 1)
+
+    text = text.replace("chapterTitle: 'Crónica I · Territorio, Saberes y Herramientas Ancestrales'", "chapterTitle: 'Eje I · Taller Sensorial, Saberes y Herramientas'")
+    text = text.replace("chapterTitle: 'Crónica II · Hierbas de Azotea y Aromas de la Selva'", "chapterTitle: 'Eje II · Hierbas de Azotea y Aromas de la Selva'")
+    text = text.replace("chapterTitle: 'Crónica III · Coco, Tubérculos y Fogón'", "chapterTitle: 'Eje III · Fogón, Mar y Mesa del Pacífico'")
+    text = text.replace("chapterTitle: 'Crónica V · Bebidas, Cultura Viva e Identidad'", "chapterTitle: 'Eje IV · Bitácora de Brigada y Cultura Viva'")
+
+    text = text.replace('<article id="cronica-4" class="', '<article id="cronica-4" aria-hidden="true" class="hidden ')
+    text = text.replace("['c1', 'c2', 'c3', 'c4', 'c5'].forEach(buildChronicle);", "['c1', 'c2', 'c3', 'c5'].forEach(buildChronicle);")
+
+    MARIMBA_DIVIDER = '''  <!-- Separador Marimba -->
+  <div class="py-6 bg-coco" aria-hidden="true">
+    <div class="marimba-divider">
+      <span class="marimba-bar w-2 h-5"></span>
+      <span class="marimba-bar w-2 h-9"></span>
+      <span class="marimba-bar w-2 h-14"></span>
+      <span class="marimba-bar w-2 h-9"></span>
+      <span class="marimba-bar w-2 h-5"></span>
+    </div>
+  </div>
+
+  '''
+    text = text.replace('<article id="cronica-5"', MARIMBA_DIVIDER + '<article id="cronica-5"', 1)
+
     text = text.replace('>Crónica V</span>', '>Eje IV</span>')
+    text = text.replace('<!-- Cabecera de Crónica V -->', '<!-- Cabecera de Eje IV -->')
+    text = text.replace('<!-- Texto Editorial de Crónica V -->', '<!-- Texto Editorial de Eje IV -->')
     text = text.replace('Espiritualidad, Fiesta y Ética Culinaria', 'Bitácora de Brigada, Cultura Viva y Ética Culinaria')
     text = text.replace(
         '<h2 class="font-editorial font-black text-4xl sm:text-6xl text-marea leading-[1.04]">\n          Bebidas, Cultura Viva e Identidad\n        </h2>',
@@ -488,11 +518,13 @@ def build(runtime=False):
         'Trabajo en equipo, tradición oral, cantos vinculados al oficio y lecturas que contextualizan cada práctica en clase.',
     )
     text = text.replace('sazonan la memoria', 'acompañan las jornadas')
-    text = text.replace('para regalar brillo y sedosidad.', 'para dar brillo y textura sedosa al plato.')
-    text = text.replace('el sustento silencioso que equilibra la riqueza del coco.', 'el acompañamiento que equilibra la intensidad del coco.')
-    text = text.replace('Cuando el refrito suelta su primer perfume dulce y herbal, el olfato avisa el instante exacto para recibir el caldo.', 'Cuando el refrito suelta su aroma herbal, avisa el momento justo para recibir el caldo.')
-    text = text.replace('la cocina del Pacífico no entiende de fronteras políticas, sino de agua y memoria.', 'preparaciones emparentadas que comparten técnica y uso del plátano en todo el litoral.')
-    text = text.replace('Un tributo a las portadoras de tradición, a los ecosistemas de selva y manglar, y a cada aprendizaje vivido frente al fogón universitario.', 'Bitácora de las Cocinas del Pacífico: saberes tradicionales, ecosistemas del litoral y aprendizaje frente al fogón universitario.')
+    text = text.replace('transformarlo en masa viva.', 'transformarlo en masa homogénea.')
+    text = text.replace('escuchamos al plátano verde y al maduro contar historias sin fronteras.', 'trabajamos el plátano verde y el maduro en preparaciones que conectan a todo el litoral.')
+    text = text.replace('para regalar color limpio y aroma terroso sin amargor.', 'para aportar color limpio y aroma terroso sin amargor.')
+    text = text.replace(
+        'Crónica de las Cocinas del Pacífico. Un tributo a las portadoras de tradición, a los ecosistemas de selva y manglar, y a cada aprendizaje vivido frente al fogón universitario.',
+        'Crónica y bitácora de las Cocinas del Pacífico: saberes tradicionales, ecosistemas del litoral y aprendizaje frente al fogón universitario.',
+    )
 
     # Cambio #5: Quitar por completo las franjas de Memorias en Movimiento dentro de las crónicas e insertar sección propia antes del Glosario
     text = re.sub(
@@ -518,7 +550,7 @@ def build(runtime=False):
         '↑ Volver a la Portada\n            </a>\n'
         '            <a href="#referencias"\n'
         '              class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-coco/10 hover:bg-selva text-coco border border-coco/20 font-semibold text-xs uppercase tracking-wider transition-colors">\n'
-        '              Referencias y Fuentes ↓\n'
+        '              ↑ Referencias y Fuentes\n'
         '            </a>',
     )
 
@@ -534,8 +566,34 @@ def build(runtime=False):
 
     # Limpieza de textos técnicos/avisos
     text = text.replace('img.parentElement.querySelector(', 'img.parentElement?.querySelector(')
-    text = text.replace('Algunas fotografías se muestran en modo reserva. Asegúrate de que la carpeta compartida en Google Drive esté configurada como <em>"Cualquier persona con el enlace · Lector"</em>.', 'Algunas vistas previas no están disponibles. Puede deberse a la conexión, al servicio o al acceso al archivo; el enlace a Drive permite comprobarlo.')
-    text = text.replace('Activa el acceso público en Google Drive o ábrela directamente desde el enlace.', 'Vista previa no disponible: comprueba la conexión, el servicio o el acceso mediante el enlace a Drive.')
+    text = text.replace('Algunas fotografías se muestran en modo reserva. Asegúrate de que la carpeta compartida en Google Drive esté configurada como <em>"Cualquier persona con el enlace · Lector"</em>.', 'Algunas vistas previas no están disponibles temporalmente. Comprueba tu conexión a Internet o recarga la página.')
+    text = text.replace('Activa el acceso público en Google Drive o ábrela directamente desde el enlace.', 'Vista previa no disponible temporalmente: comprueba tu conexión a Internet.')
+
+    # Atributos de rendimiento en imágenes (cover y lightbox) y metadatos SEO / OpenGraph / Favicon
+    text = text.replace(
+        'id="cover-hero-img"',
+        'id="cover-hero-img"\n        fetchpriority="high"\n        decoding="async"',
+        1,
+    )
+    text = text.replace(
+        'class="max-h-[70vh] w-auto object-contain rounded-xl"',
+        'decoding="async"\n          class="max-h-[70vh] w-auto object-contain rounded-xl"',
+        1,
+    )
+    seo_meta = (
+        '  <meta name="author" content="Aida Arteaga, David González, Estudiantes de Cocinas del Pacífico 2026-2" />\n'
+        '  <meta name="theme-color" content="#0F4C3A" />\n'
+        '  <meta property="og:title" content="MAREA &amp; AZOTEA · Crónica y bitácora de las Cocinas del Pacífico Colombiano" />\n'
+        '  <meta property="og:description" content="Revista digital editorial de la cátedra Cocinas del Pacífico · Gastronomía y Artes Culinarias · Pontificia Universidad Javeriana Cali." />\n'
+        '  <meta property="og:type" content="article" />\n'
+        '  <meta property="og:locale" content="es_CO" />\n'
+        '  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 32 32\'%3E%3Ccircle cx=\'16\' cy=\'16\' r=\'16\' fill=\'%230F4C3A\'/%3E%3Cpath d=\'M5 20C8.5 17 12.5 17 16 20C19.5 23 23.5 23 27 20\' stroke=\'%23E9B44C\' stroke-width=\'2.4\' stroke-linecap=\'round\' fill=\'none\'/%3E%3Cpath d=\'M16 15.5C16 10.5 19.5 6.5 24.5 6.5C24.5 11.5 21 15.5 16 15.5Z\' fill=\'%23E9B44C\'/%3E%3C/svg%3E" />'
+    )
+    text = text.replace(
+        '<meta name="description" content="Revista digital editorial de la cátedra Cocinas del Pacífico · Gastronomía y Artes Culinarias · Pontificia Universidad Javeriana Cali." />',
+        '<meta name="description" content="Revista digital editorial de la cátedra Cocinas del Pacífico · Gastronomía y Artes Culinarias · Pontificia Universidad Javeriana Cali." />\n' + seo_meta,
+        1,
+    )
 
     # Cambio #4: NO insertar #editorial-scope ("Sobre esta edición...")
     start = text.index('    function buildChronicle(key)')

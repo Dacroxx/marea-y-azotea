@@ -13,10 +13,35 @@ if(!document.querySelector('.skip-to-content')){
 }
 
 // Landmark & form control accessibility attributes
+const hiddenC4=document.getElementById('cronica-4');
+if(hiddenC4&&hiddenC4.classList.contains('hidden'))hiddenC4.setAttribute('aria-hidden','true');
+const editorialSec=document.getElementById('editorial');
+if(editorialSec)editorialSec.setAttribute('tabindex','-1');
+if(!document.querySelector('main, [role="main"]')){
+  const header=document.querySelector('header');
+  const footer=document.querySelector('footer');
+  if(header&&footer&&header.parentNode===document.body){
+    const main=document.createElement('main');
+    main.id='main-content';
+    let node=header.nextSibling;
+    while(node&&node!==footer){
+      const next=node.nextSibling;
+      main.appendChild(node);
+      node=next;
+    }
+    document.body.insertBefore(main,footer);
+  }
+}
 const mainNav=document.querySelector('header nav');
 if(mainNav&&!mainNav.getAttribute('aria-label'))mainNav.setAttribute('aria-label','Navegación principal');
 const glossarySearch=document.getElementById('glossary-search');
 if(glossarySearch&&!glossarySearch.getAttribute('aria-label'))glossarySearch.setAttribute('aria-label','Buscar término en el glosario');
+const glossaryTabs=document.getElementById('glossary-tabs');
+if(glossaryTabs){
+  glossaryTabs.setAttribute('role','group');
+  glossaryTabs.setAttribute('aria-label','Filtrar términos por categoría');
+}
+document.querySelectorAll('.glossary-link, .glossary-link-light').forEach(btn=>btn.setAttribute('aria-haspopup','dialog'));
 document.querySelectorAll('svg').forEach(svg=>{
   if(!svg.getAttribute('aria-label')&&!svg.querySelector('title'))svg.setAttribute('aria-hidden','true');
 });
@@ -34,6 +59,19 @@ const announceGlossaryCount=()=>{
   const n=document.querySelectorAll('#glossary-grid > button').length;
   a11yLive.textContent=n===1?'Mostrando 1 término en el glosario':`Mostrando ${n} términos en el glosario`;
 };
+const decorateGlossaryCards=()=>{
+  document.querySelectorAll('#glossary-grid > button').forEach((btn,i)=>{
+    btn.setAttribute('aria-haspopup','dialog');
+    btn.style.setProperty('--stagger-idx',String(i));
+  });
+};
+decorateGlossaryCards();
+const originalRenderGlossaryGrid=renderGlossaryGrid;
+renderGlossaryGrid=function(){
+  originalRenderGlossaryGrid();
+  decorateGlossaryCards();
+  setTimeout(announceGlossaryCount,30);
+};
 if(glossarySearch)glossarySearch.addEventListener('input',()=>setTimeout(announceGlossaryCount,50));
 
 // Accessible reading progress bar
@@ -46,10 +84,10 @@ if(progressBar){
   progressBar.setAttribute('aria-valuenow','0');
 }
 
-// Body scroll lock for modals
-let savedOverflow='';
-const lockScroll=()=>{savedOverflow=document.documentElement.style.overflow;document.documentElement.style.overflow='hidden';};
-const unlockScroll=()=>{document.documentElement.style.overflow=savedOverflow;};
+// Body scroll lock for modals (re-entrant safe)
+let savedOverflow='',isScrollLocked=false;
+const lockScroll=()=>{if(!isScrollLocked){savedOverflow=document.documentElement.style.overflow;isScrollLocked=true;}document.documentElement.style.overflow='hidden';};
+const unlockScroll=()=>{document.documentElement.style.overflow=savedOverflow;document.body.style.overflow='';isScrollLocked=false;};
 
 let modalReturnFocus = null;
 const focusModal = (id) => {
@@ -70,7 +108,8 @@ const originalUpdateLightbox=updateLightbox;
 updateLightbox=function(){originalUpdateLightbox();const item=flatLightboxPhotos[currentLightboxIdx];if(!item)return;
  let name=document.getElementById('lb-original-name');
  if(!name){name=document.createElement('p');name.id='lb-original-name';name.className='text-xs text-coco/70 mt-2 text-center';document.getElementById('lb-caption').after(name);}
- name.textContent=item.originalName+' · '+item.primaryCategory;
+ const cleanCat=item.chapterTitle?item.chapterTitle.replace(/^Eje\s+[IVX]+\s*·\s*/,''):item.primaryCategory;
+ name.textContent=item.originalName+(cleanCat?' · '+cleanCat:'');
 };
 
 // Lightbox touch swipe on mobile
@@ -82,16 +121,23 @@ if(lbModal){
     if(lbTouchX===null||e.changedTouches.length!==1)return;
     const dx=e.changedTouches[0].clientX-lbTouchX,dy=e.changedTouches[0].clientY-lbTouchY;
     lbTouchX=null;lbTouchY=null;
-    if(Math.abs(dx)>48&&Math.abs(dx)>Math.abs(dy)*1.4){if(dx<0)nextLightbox();else prevLightbox();}
+    if(Math.abs(dx)>48&&Math.abs(dx)>Math.abs(dy)*1.4){if(dx<0)navigateLightbox(1);else navigateLightbox(-1);}
   },{passive:true});
 }
 
 document.addEventListener('keydown',e=>{
- const modal=['glossary-modal','lightbox-modal'].map(id=>document.getElementById(id)).find(el=>!el.classList.contains('hidden'));
+ if(e.key==='Escape'&&mobileMenu&&!mobileMenu.classList.contains('hidden')){
+   mobileMenu.classList.add('hidden');
+   mobileMenuBtn?.focus();
+   return;
+ }
+ const modal=['glossary-modal','lightbox-modal'].map(id=>document.getElementById(id)).find(el=>el&&!el.classList.contains('hidden'));
  if(!modal||e.key!=='Tab')return;
- const els=[...modal.querySelectorAll('button,a[href],input')].filter(el=>el.getClientRects().length);
+ const els=[...modal.querySelectorAll('button,a[href],input,[tabindex]:not([tabindex="-1"])')].filter(el=>!el.disabled&&el.getClientRects().length);
+ if(!els.length)return;
  const first=els[0],last=els.at(-1);
- if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}
+ if(!modal.contains(document.activeElement)){e.preventDefault();first.focus();}
+ else if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}
  else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}
 });
 mobileMenuBtn.setAttribute('aria-controls','mobile-menu');mobileMenuBtn.setAttribute('aria-expanded','false');
@@ -102,12 +148,14 @@ setGlossaryCategory=function(cat){originalSetGlossaryCategory(cat);document.quer
 window.addEventListener('beforeprint',()=>{document.querySelectorAll('[id^="mosaic-c"] img').forEach(img=>img.loading='eager');});
 
 // Bulletproof .reveal visibility + active chapter scroll-spy
-const spyIds=['cronica-1','cronica-2','cronica-3','cronica-4','videos-eje','glosario'];
+const spyIds=['cronica-1','cronica-2','cronica-3','cronica-5','videos-eje','glosario','referencias'];
 const spyLinks=[...document.querySelectorAll('header nav a[href^="#"], #mobile-menu a[href^="#"]')];
+const siteHeader=document.querySelector('header');
 let scrollRaf=false;
 const syncScrollUI=()=>{
   scrollRaf=false;
   const vh=window.innerHeight||900;
+  if(siteHeader)siteHeader.classList.toggle('is-scrolled',window.scrollY>24);
   document.querySelectorAll('.reveal:not(.visible)').forEach(el=>{
     const r=el.getBoundingClientRect();
     if(r.top < vh + 120 && r.bottom > -120) el.classList.add('visible');
@@ -122,7 +170,7 @@ const syncScrollUI=()=>{
   let activeId='';
   for(const id of spyIds){
     const sec=document.getElementById(id);
-    if(sec && sec.getBoundingClientRect().top <= offset) activeId=id;
+    if(sec && !sec.classList.contains('hidden') && sec.offsetParent !== null && sec.getBoundingClientRect().top <= offset) activeId=id;
   }
   spyLinks.forEach(a=>{
     const match=a.getAttribute('href')==='#'+activeId;
@@ -133,10 +181,14 @@ const syncScrollUI=()=>{
 const scheduleScrollUI=()=>{if(!scrollRaf){scrollRaf=true;requestAnimationFrame(syncScrollUI);}};
 window.addEventListener('scroll',scheduleScrollUI,{passive:true});
 window.addEventListener('hashchange',()=>setTimeout(syncScrollUI,60));
-window.addEventListener('DOMContentLoaded',()=>setTimeout(syncScrollUI,80));
+window.addEventListener('DOMContentLoaded',()=>{
+  decorateGlossaryCards();
+  setTimeout(syncScrollUI,80);
+});
 syncScrollUI();
 
 // Center-focused horizontal video carousels
+const prefersReducedMotion=()=>window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const videoGroups=[...document.querySelectorAll('.video-group')];
 const resetGroupPlayback=(group)=>{
   group.querySelectorAll('.video-slide').forEach(slide=>{
@@ -144,16 +196,6 @@ const resetGroupPlayback=(group)=>{
     const base=slide.dataset.videoSrc;
     if(iframe&&base&&iframe.getAttribute('src')!==base)iframe.setAttribute('src',base);
   });
-};
-const activateCenteredSlide=(group)=>{
-  const active=group.querySelector('.video-slide.is-active');
-  if(!active)return;
-  const iframe=active.querySelector('iframe');
-  const base=active.dataset.videoSrc;
-  if(iframe&&base){
-    const target=base+(base.includes('?')?'&':'?')+'autoplay=1';
-    if(iframe.getAttribute('src')!==target)iframe.setAttribute('src',target);
-  }
 };
 videoGroups.forEach(group=>{
   const track=group.querySelector('.video-carousel-track');
@@ -164,35 +206,47 @@ videoGroups.forEach(group=>{
   const counter=group.querySelector('.video-counter');
   if(!track||!slides.length)return;
   let activeIdx=0;
-  let inView=false;
 
-  const setActive=(idx,shouldScroll,shouldPlay)=>{
+  const setActive=(idx,shouldScroll)=>{
     idx=Math.max(0,Math.min(slides.length-1,idx));
     const changed=idx!==activeIdx;
     activeIdx=idx;
-    slides.forEach((s,i)=>s.classList.toggle('is-active',i===idx));
-    dots.forEach((d,i)=>d.classList.toggle('is-active',i===idx));
-    if(counter)counter.textContent=`${idx+1} / ${slides.length}`;
+    slides.forEach((s,i)=>{
+      const active=i===idx;
+      s.classList.toggle('is-active',active);
+      s.setAttribute('aria-hidden',String(!active));
+      const iframe=s.querySelector('iframe');
+      if(iframe)iframe.setAttribute('tabindex',active?'0':'-1');
+    });
+    dots.forEach((d,i)=>{
+      const active=i===idx;
+      d.classList.toggle('is-active',active);
+      if(active)d.setAttribute('aria-current','true');
+      else d.removeAttribute('aria-current');
+    });
+    if(counter){
+      counter.setAttribute('aria-live','polite');
+      counter.textContent=`${idx+1} / ${slides.length}`;
+    }
     if(prevBtn)prevBtn.disabled=idx===0;
     if(nextBtn)nextBtn.disabled=idx===slides.length-1;
     if(shouldScroll){
       const target=slides[idx];
       const left=target.offsetLeft-(track.clientWidth-target.clientWidth)/2;
-      track.scrollTo({left:Math.max(0,left),behavior:'smooth'});
+      track.scrollTo({left:Math.max(0,left),behavior:prefersReducedMotion()?'auto':'smooth'});
     }
     if(changed){
       resetGroupPlayback(group);
-      if(shouldPlay&&inView)activateCenteredSlide(group);
     }
   };
 
-  prevBtn?.addEventListener('click',()=>setActive(activeIdx-1,true,true));
-  nextBtn?.addEventListener('click',()=>setActive(activeIdx+1,true,true));
-  dots.forEach((dot,i)=>dot.addEventListener('click',()=>setActive(i,true,true)));
-  slides.forEach((slide,i)=>slide.addEventListener('click',()=>{if(i!==activeIdx)setActive(i,true,true);}));
+  prevBtn?.addEventListener('click',()=>setActive(activeIdx-1,true));
+  nextBtn?.addEventListener('click',()=>setActive(activeIdx+1,true));
+  dots.forEach((dot,i)=>dot.addEventListener('click',()=>setActive(i,true)));
+  slides.forEach((slide,i)=>slide.addEventListener('click',()=>{if(i!==activeIdx)setActive(i,true);}));
   track.addEventListener('keydown',e=>{
-    if(e.key==='ArrowRight'){e.preventDefault();setActive(activeIdx+1,true,true);}
-    else if(e.key==='ArrowLeft'){e.preventDefault();setActive(activeIdx-1,true,true);}
+    if(e.key==='ArrowRight'){e.preventDefault();setActive(activeIdx+1,true);}
+    else if(e.key==='ArrowLeft'){e.preventDefault();setActive(activeIdx-1,true);}
   });
 
   let trackTimer=null;
@@ -206,29 +260,9 @@ videoGroups.forEach(group=>{
         const dist=Math.abs(sCenter-center);
         if(dist<bestDist){bestDist=dist;bestIdx=i;}
       });
-      if(bestIdx!==activeIdx)setActive(bestIdx,false,true);
+      if(bestIdx!==activeIdx)setActive(bestIdx,false);
     },120);
   },{passive:true});
 
-  group._setInView=(visible)=>{
-    inView=visible;
-    if(visible)activateCenteredSlide(group);
-    else resetGroupPlayback(group);
-  };
-  setActive(0,false,false);
+  setActive(0,false);
 });
-
-if('IntersectionObserver' in window&&videoGroups.length){
-  const videoObserver=new IntersectionObserver(entries=>{
-    entries.forEach(entry=>{
-      const group=entry.target;
-      clearTimeout(group._playTimer);
-      if(entry.isIntersecting){
-        group._playTimer=setTimeout(()=>group._setInView?.(true),320);
-      }else{
-        group._setInView?.(false);
-      }
-    });
-  },{threshold:0.55});
-  videoGroups.forEach(g=>videoObserver.observe(g));
-}

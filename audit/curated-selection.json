@@ -132,18 +132,6 @@
     "displayTitle": "Trabajo grupal en el taller sensorial"
   },
   {
-    "code": "A01",
-    "chronicle": "c2",
-    "primaryCategory": "Hierbas de Azotea y Aromas de la Selva",
-    "sourceId": "1i7mYoDLLbmhNFozlnHWNdMKQJONIabM6",
-    "curatedDriveId": "1i7mYoDLLbmhNFozlnHWNdMKQJONIabM6",
-    "curatedFileName": "A01_Eje2_refrito-achiote-en-sarten__156eb8d0.JPG",
-    "originalName": "156eb8d0.JPG",
-    "visualDescription": "Preparación de tollo encocado, plato emblemático de la costa pacífica donde el pescado se integra con la profundidad del refrito con achiote y la cremosidad de la leche de coco.",
-    "isCover": false,
-    "displayTitle": "Tollo encocado"
-  },
-  {
     "code": "A02",
     "chronicle": "c2",
     "primaryCategory": "Hierbas de Azotea y Aromas de la Selva",
@@ -151,7 +139,7 @@
     "curatedDriveId": "11IMwgiaWWyDDUZ_HWdr1CDMOClastq3S",
     "curatedFileName": "A02_Eje2_ramo-hierbas-azotea-canasto__IMG_1908.HEIC",
     "originalName": "IMG_1908.HEIC",
-    "visualDescription": "Manojo de hierbas frescas de azotea —chillangua, chirarán, poleo y albahaca negra— cultivadas tradicionalmente en plataformas elevadas para protegerlas de la humedad y dar identidad aromática al fogón.",
+    "visualDescription": "Manojo de hierbas frescas de azotea —chillangua, chirarán (albahaca negra) y poleo— cultivadas tradicionalmente en plataformas elevadas para protegerlas de la humedad y dar identidad aromática al fogón.",
     "isCover": false,
     "displayTitle": "Manojo de hierbas de azotea"
   },
@@ -226,6 +214,18 @@
     "visualDescription": "Hierbas enteras y ajíes dulces dispuestos en tazón para su reconocimiento previo al corte, resaltando el trabajo con ingredientes frescos frente a los condimentos industriales.",
     "isCover": false,
     "displayTitle": "Hierbas enteras y ajíes dulces"
+  },
+  {
+    "code": "A01",
+    "chronicle": "c2",
+    "primaryCategory": "Hierbas de Azotea y Aromas de la Selva",
+    "sourceId": "1i7mYoDLLbmhNFozlnHWNdMKQJONIabM6",
+    "curatedDriveId": "1i7mYoDLLbmhNFozlnHWNdMKQJONIabM6",
+    "curatedFileName": "A01_Eje2_refrito-achiote-en-sarten__156eb8d0.JPG",
+    "originalName": "156eb8d0.JPG",
+    "visualDescription": "Preparación de tollo encocado, plato emblemático de la costa pacífica donde el pescado se integra con la profundidad del refrito con achiote y la cremosidad de la leche de coco.",
+    "isCover": false,
+    "displayTitle": "Tollo encocado"
   },
   {
     "code": "F01",

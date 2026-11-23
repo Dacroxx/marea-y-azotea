@@ -36,4 +36,42 @@ class EditorialBuildTests(unittest.TestCase):
         self.assertNotIn('1 / 78',html)
         self.assertIn('1 / 42',html)
 
+    def test_compiled_css_utilities_and_editorial_regressions(self):
+        html=(ROOT/'index.html').read_text(encoding='utf8')
+        all_css=(ROOT/'source/tailwind.generated.css').read_text(encoding='utf8')+'\n'+(ROOT/'source/standalone.css').read_text(encoding='utf8')
+        critical_classes=[
+            'opacity-0',
+            'group-focus-within:opacity-100',
+            'lg:grid-cols-2',
+            'space-y-3.5',
+            'w-10',
+            'h-10',
+            'group-hover:bg-marea',
+            'col-span-full',
+            'py-12',
+            'sm:p-5',
+            'sm:py-24',
+            'mt-1.5',
+            'mr-2',
+            'opacity-85',
+            'pt-12',
+            'via-carbon/60',
+            'leading-[1.06]',
+            'leading-[1.08]',
+        ]
+        for cls in critical_classes:
+            esc=''.join('\\'+c if c in ':/[].%' else c for c in cls)
+            self.assertIn('.'+esc,all_css,f'Missing compiled CSS rule for {cls}')
+        forbidden_strings=[
+            'Quién conoce lo ancestral',
+            'sueltura',
+            'chirarán, poleo y albahaca negra',
+            'enlace a Drive',
+            'Crónica V',
+            'nextLightbox',
+            'class="hidden" class=',
+        ]
+        for bad in forbidden_strings:
+            self.assertNotIn(bad,html,f'Editorial or runtime regression found: {bad}')
+
 if __name__=='__main__': unittest.main()
