@@ -336,11 +336,11 @@ def build(runtime=False):
         <a href="#glosario" class="px-3 py-1.5 rounded-full bg-selva/10 text-selva hover:bg-selva hover:text-coco transition-colors">Glosario</a>
       </nav>'''
     new_nav = '''      <nav class="hidden lg:flex items-center gap-5 text-xs font-semibold uppercase tracking-wider text-carbon/80">
-        <a href="#cronica-1" class="hover:text-selva transition-colors">I. Taller Sensorial</a>
-        <a href="#cronica-2" class="hover:text-achiote transition-colors">II. Azotea</a>
-        <a href="#cronica-3" class="hover:text-chontaduro transition-colors">III. Fogón, Mar &amp; Mesa</a>
-        <a href="#cronica-5" class="hover:text-marea transition-colors">IV. Brigada &amp; Cultura</a>
-        <a href="#videos-eje" class="hover:text-achiote transition-colors">Videos</a>
+        <a href="#cronica-1" class="hover:text-achiote transition-colors">I. Taller Sensorial</a>
+        <a href="#cronica-2" class="hover:text-selva transition-colors">II. Azotea</a>
+        <a href="#cronica-3" class="hover:text-marea transition-colors">III. Fogón, Mar &amp; Mesa</a>
+        <a href="#cronica-5" class="hover:text-achiote transition-colors">IV. Brigada &amp; Cultura</a>
+        <a href="#videos-eje" class="hover:text-marea transition-colors">Videos</a>
         <a href="#glosario" class="px-3 py-1.5 rounded-full bg-selva/10 text-selva hover:bg-selva hover:text-coco transition-colors">Glosario</a>
       </nav>'''
     assert old_nav in text
@@ -357,11 +357,11 @@ def build(runtime=False):
     </div>'''
     new_mobile = '''    <div id="mobile-menu" class="hidden lg:hidden bg-coco border-t border-selva/15 px-4 py-4 space-y-1 text-xs font-semibold uppercase tracking-wider">
       <a href="#editorial" class="block py-2.5 px-3 rounded-xl hover:bg-arena text-marea">Presentación y Mapa de Lectura</a>
-      <a href="#cronica-1" class="block py-2.5 px-3 rounded-xl hover:bg-arena text-selva">I · Taller Sensorial</a>
-      <a href="#cronica-2" class="block py-2.5 px-3 rounded-xl hover:bg-arena text-achiote">II · Azotea</a>
-      <a href="#cronica-3" class="block py-2.5 px-3 rounded-xl hover:bg-arena text-chontaduro">III · Fogón, Mar &amp; Mesa</a>
-      <a href="#cronica-5" class="block py-2.5 px-3 rounded-xl hover:bg-arena text-marea">IV · Brigada &amp; Cultura</a>
-      <a href="#videos-eje" class="block py-2.5 px-3 rounded-xl hover:bg-arena text-achiote">Videos</a>
+      <a href="#cronica-1" class="block py-2.5 px-3 rounded-xl hover:bg-arena text-carbon">I · Taller Sensorial</a>
+      <a href="#cronica-2" class="block py-2.5 px-3 rounded-xl hover:bg-arena text-selva">II · Azotea</a>
+      <a href="#cronica-3" class="block py-2.5 px-3 rounded-xl hover:bg-arena text-marea">III · Fogón, Mar &amp; Mesa</a>
+      <a href="#cronica-5" class="block py-2.5 px-3 rounded-xl hover:bg-arena text-achiote">IV · Brigada &amp; Cultura</a>
+      <a href="#videos-eje" class="block py-2.5 px-3 rounded-xl hover:bg-arena text-carbon">Videos</a>
       <a href="#glosario" class="block py-2.5 px-3 rounded-xl bg-selva/10 text-selva">Glosario del Pacífico</a>
     </div>'''
     assert old_mobile in text
@@ -421,53 +421,164 @@ def build(runtime=False):
     text = text.replace('Cinco Crónicas del Litoral', 'Cuatro Ejes y Archivo Audiovisual')
     text = text.replace('Selecciona cualquier capítulo para sumergirte en sus crónicas, mosaicos fotográficos y memorias en video.', 'Selecciona un eje para recorrer las fotografías de clase o ve directamente a la sección de videos por preparación.')
 
-    # Actualizar las 5 tarjetas del Mapa de Lectura con los conteos reales y la nueva estructura
+    # Actualizar las 5 tarjetas del Mapa de Lectura con colores semánticos por tema
     c1_n, c2_n, c3_n, c5_n = len(grouped['c1']), len(grouped['c2']), len(grouped['c3']), len(grouped['c5'])
-    text = text.replace('18 fotos · 4 videos', f'{c1_n} fotos')
-    text = text.replace('15 fotos · 3 videos', f'{c2_n} fotos', 1)
-    text = text.replace('15 fotos · 4 videos', f'{c3_n} fotos', 1)
-    text = text.replace('15 fotos · 4 videos', f'{c5_n} fotos', 1)
-    text = text.replace('15 fotos · 3 videos', f'{total_videos} videos', 1)
+    old_cards_grid = '''        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          <!-- Tarjeta I -->
+          <a href="#cronica-1" class="group rounded-3xl p-6 bg-selva text-coco shadow-md hover:-translate-y-1.5 hover:shadow-xl transition-all flex flex-col justify-between min-h-[210px]">
+            <div class="flex items-center justify-between">
+              <span class="font-editorial text-3xl font-black text-platano">I</span>
+              <span class="text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full bg-coco/15 text-coco">18 fotos · 4 videos</span>
+            </div>
+            <div class="mt-6">
+              <h4 class="font-editorial font-bold text-xl leading-snug group-hover:text-platano transition-colors">Territorio, Saberes y Herramientas</h4>
+              <p class="text-xs text-coco/75 mt-2">Piedra de moler, maíz, plátano, fufú y Juan Valerio.</p>
+            </div>
+          </a>
 
-    text = text.replace('Territorio, Saberes y Herramientas</h4>', 'Taller Sensorial</h4>')
-    text = text.replace('Piedra de moler, maíz, plátano, fufú y Juan Valerio.', 'Piedra de moler, utensilios tradicionales, maíz, bijao y despensa del litoral.')
-    text = text.replace('Hierbas de Azotea y Selva</h4>', 'Azotea</h4>')
-    text = text.replace('Chillangua, chirarán, poleo, pipilongo y refrito solar.', 'Chillangua, chirarán, poleo, pipilongo y refrito con achiote.')
-    text = text.replace('Coco, Tubérculos y Fogón</h4>', 'Fogón, Mar &amp; Mesa</h4>')
-    text = text.replace('Leche de coco artesanal, encocados, tapao y amasijos.', 'Leche de coco artesanal, encocados, mariscos, arroces y amasijos.')
-    text = text.replace(
-        '<h4 class="font-editorial font-bold text-xl leading-snug group-hover:text-platano transition-colors">Mar, Río y Manglar</h4>\n              <p class="text-xs text-coco/80 mt-2">Piangüeras, bocana, cangrejos, jaiba y biodiversidad.</p>',
-        '<h4 class="font-editorial font-bold text-xl leading-snug group-hover:text-platano transition-colors">Brigada &amp; Cultura</h4>\n              <p class="text-xs text-coco/80 mt-2">Trabajo en equipo, libros de consulta, guasá y tradición oral.</p>',
-    )
-    text = text.replace('href="#cronica-4"', 'href="#cronica-5"')
-    text = text.replace(
-        '<span class="font-editorial text-3xl font-black text-coco">V</span>',
-        '<span class="font-editorial text-2xl font-black text-coco">AV</span>',
-    )
-    text = text.replace(
-        '<h4 class="font-editorial font-bold text-xl leading-snug group-hover:text-carbon transition-colors">Bebidas y Cultura Viva</h4>\n              <p class="text-xs text-coco/90 mt-2">Viche, cantos de cocina, San Pacho y pueblos originarios.</p>',
-        '<h4 class="font-editorial font-bold text-xl leading-snug group-hover:text-carbon transition-colors">Videos</h4>\n              <p class="text-xs text-coco/90 mt-2">Momentos de taller sensorial, maíz, refrito, arroz con coco y fufú.</p>',
-    )
-    text = text.replace('href="#cronica-5" class="group rounded-3xl p-6 bg-chontaduro', 'href="#videos-eje" class="group rounded-3xl p-6 bg-chontaduro')
+          <!-- Tarjeta II -->
+          <a href="#cronica-2" class="group rounded-3xl p-6 bg-achiote text-coco shadow-md hover:-translate-y-1.5 hover:shadow-xl transition-all flex flex-col justify-between min-h-[210px]">
+            <div class="flex items-center justify-between">
+              <span class="font-editorial text-3xl font-black text-platano">II</span>
+              <span class="text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full bg-coco/15 text-coco">15 fotos · 3 videos</span>
+            </div>
+            <div class="mt-6">
+              <h4 class="font-editorial font-bold text-xl leading-snug group-hover:text-platano transition-colors">Hierbas de Azotea y Selva</h4>
+              <p class="text-xs text-coco/85 mt-2">Chillangua, chirarán, poleo, pipilongo y refrito solar.</p>
+            </div>
+          </a>
 
-    # Actualizar encabezados de Ejes I-IV con tono editorial equilibrado (cálido, natural y sin cursilerías)
-    text = text.replace('>Crónica I</span>', '>Eje I</span>')
+          <!-- Tarjeta III -->
+          <a href="#cronica-3" class="group rounded-3xl p-6 bg-platano text-carbon shadow-md hover:-translate-y-1.5 hover:shadow-xl transition-all flex flex-col justify-between min-h-[210px]">
+            <div class="flex items-center justify-between">
+              <span class="font-editorial text-3xl font-black text-selva">III</span>
+              <span class="text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full bg-carbon/10 text-carbon">15 fotos · 4 videos</span>
+            </div>
+            <div class="mt-6">
+              <h4 class="font-editorial font-bold text-xl leading-snug group-hover:text-achiote transition-colors">Coco, Tubérculos y Fogón</h4>
+              <p class="text-xs text-carbon/80 mt-2">Leche de coco artesanal, encocados, tapao y amasijos.</p>
+            </div>
+          </a>
+
+          <!-- Tarjeta IV -->
+          <a href="#cronica-4" class="group rounded-3xl p-6 bg-marea text-coco shadow-md hover:-translate-y-1.5 hover:shadow-xl transition-all flex flex-col justify-between min-h-[210px]">
+            <div class="flex items-center justify-between">
+              <span class="font-editorial text-3xl font-black text-platano">IV</span>
+              <span class="text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full bg-coco/15 text-coco">15 fotos · 4 videos</span>
+            </div>
+            <div class="mt-6">
+              <h4 class="font-editorial font-bold text-xl leading-snug group-hover:text-platano transition-colors">Mar, Río y Manglar</h4>
+              <p class="text-xs text-coco/80 mt-2">Piangüeras, bocana, cangrejos, jaiba y biodiversidad.</p>
+            </div>
+          </a>
+
+          <!-- Tarjeta V -->
+          <a href="#cronica-5" class="group rounded-3xl p-6 bg-chontaduro text-coco shadow-md hover:-translate-y-1.5 hover:shadow-xl transition-all flex flex-col justify-between min-h-[210px]">
+            <div class="flex items-center justify-between">
+              <span class="font-editorial text-3xl font-black text-coco">V</span>
+              <span class="text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full bg-carbon/20 text-coco">15 fotos · 3 videos</span>
+            </div>
+            <div class="mt-6">
+              <h4 class="font-editorial font-bold text-xl leading-snug group-hover:text-carbon transition-colors">Bebidas y Cultura Viva</h4>
+              <p class="text-xs text-coco/90 mt-2">Viche, cantos de cocina, San Pacho y pueblos originarios.</p>
+            </div>
+          </a>
+        </div>'''
+    new_cards_grid = f'''        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          <!-- Tarjeta I: Amarillo Plátano / Maíz / Fibras -->
+          <a href="#cronica-1" class="group rounded-3xl p-6 bg-platano text-carbon shadow-md hover:-translate-y-1.5 hover:shadow-xl transition-all flex flex-col justify-between min-h-[210px]">
+            <div class="flex items-center justify-between">
+              <span class="font-editorial text-3xl font-black text-selva">I</span>
+              <span class="text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full bg-carbon/10 text-carbon">{c1_n} fotos</span>
+            </div>
+            <div class="mt-6">
+              <h4 class="font-editorial font-bold text-xl leading-snug group-hover:text-selva transition-colors">Taller Sensorial</h4>
+              <p class="text-xs text-carbon/85 mt-2">Piedra de moler, utensilios tradicionales, maíz, bijao y despensa del litoral.</p>
+            </div>
+          </a>
+
+          <!-- Tarjeta II: Verde Selva / Hierbas de Azotea -->
+          <a href="#cronica-2" class="group rounded-3xl p-6 bg-selva text-coco shadow-md hover:-translate-y-1.5 hover:shadow-xl transition-all flex flex-col justify-between min-h-[210px]">
+            <div class="flex items-center justify-between">
+              <span class="font-editorial text-3xl font-black text-platano">II</span>
+              <span class="text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full bg-coco/15 text-coco">{c2_n} fotos</span>
+            </div>
+            <div class="mt-6">
+              <h4 class="font-editorial font-bold text-xl leading-snug group-hover:text-platano transition-colors">Azotea</h4>
+              <p class="text-xs text-coco/85 mt-2">Chillangua, chirarán, poleo, pipilongo y refrito con achiote.</p>
+            </div>
+          </a>
+
+          <!-- Tarjeta III: Azul Marea / Fogón, Mar y Mesa -->
+          <a href="#cronica-3" class="group rounded-3xl p-6 bg-marea text-coco shadow-md hover:-translate-y-1.5 hover:shadow-xl transition-all flex flex-col justify-between min-h-[210px]">
+            <div class="flex items-center justify-between">
+              <span class="font-editorial text-3xl font-black text-platano">III</span>
+              <span class="text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full bg-coco/15 text-coco">{c3_n} fotos</span>
+            </div>
+            <div class="mt-6">
+              <h4 class="font-editorial font-bold text-xl leading-snug group-hover:text-platano transition-colors">Fogón, Mar &amp; Mesa</h4>
+              <p class="text-xs text-coco/85 mt-2">Leche de coco artesanal, encocados, mariscos, arroces y amasijos.</p>
+            </div>
+          </a>
+
+          <!-- Tarjeta IV: Achiote / Terracota / Brigada y Cultura Viva -->
+          <a href="#cronica-5" class="group rounded-3xl p-6 bg-achiote text-coco shadow-md hover:-translate-y-1.5 hover:shadow-xl transition-all flex flex-col justify-between min-h-[210px]">
+            <div class="flex items-center justify-between">
+              <span class="font-editorial text-3xl font-black text-platano">IV</span>
+              <span class="text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full bg-coco/15 text-coco">{c5_n} fotos</span>
+            </div>
+            <div class="mt-6">
+              <h4 class="font-editorial font-bold text-xl leading-snug group-hover:text-platano transition-colors">Brigada &amp; Cultura</h4>
+              <p class="text-xs text-coco/85 mt-2">Trabajo en equipo, libros de consulta, guasá y tradición oral.</p>
+            </div>
+          </a>
+
+          <!-- Tarjeta AV: Carbón Editorial / Videos -->
+          <a href="#videos-eje" class="group rounded-3xl p-6 bg-carbon text-coco shadow-md hover:-translate-y-1.5 hover:shadow-xl transition-all flex flex-col justify-between min-h-[210px]">
+            <div class="flex items-center justify-between">
+              <span class="font-editorial text-2xl font-black text-platano">AV</span>
+              <span class="text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full bg-platano text-carbon">{total_videos} videos</span>
+            </div>
+            <div class="mt-6">
+              <h4 class="font-editorial font-bold text-xl leading-snug group-hover:text-platano transition-colors">Videos</h4>
+              <p class="text-xs text-coco/85 mt-2">Momentos de taller sensorial, maíz, refrito, arroz con coco y fufú.</p>
+            </div>
+          </a>
+        </div>'''
+    assert old_cards_grid in text
+    text = text.replace(old_cards_grid, new_cards_grid, 1)
+
+    # Actualizar encabezados de Ejes I-IV sincronizados con sus colores semánticos
+    text = text.replace(
+        '<span class="px-4 py-1.5 rounded-full bg-selva text-platano text-xs font-bold uppercase tracking-widest">Crónica I</span>',
+        '<span class="px-4 py-1.5 rounded-full bg-platano text-carbon text-xs font-bold uppercase tracking-widest">Eje I</span>',
+    )
     text = text.replace(
         'Antes de la electricidad y el acero inoxidable, el pulso del Pacífico se talló en piedra, madera y manos pacientes.',
         'Antes de encender los fogones, el taller sensorial nos acercó al peso de la piedra, la madera, las fibras y los sabores base del litoral.',
     )
-    text = text.replace('>Crónica II</span>', '>Eje II</span>')
+    text = text.replace(
+        '<span class="px-4 py-1.5 rounded-full bg-achiote text-coco text-xs font-bold uppercase tracking-widest">Crónica II</span>',
+        '<span class="px-4 py-1.5 rounded-full bg-selva text-platano text-xs font-bold uppercase tracking-widest">Eje II</span>',
+    )
+    text = text.replace(
+        '<h2 class="font-editorial font-black text-4xl sm:text-6xl text-achiote leading-[1.04]">\n          Hierbas de Azotea y Aromas de la Selva\n        </h2>',
+        '<h2 class="font-editorial font-black text-4xl sm:text-6xl text-selva leading-[1.04]">\n          Hierbas de Azotea y Aromas de la Selva\n        </h2>',
+    )
     text = text.replace(
         'En el Pacífico, la sazón se aprende primero con la nariz y se cultiva a un paso de la cocina, elevada sobre la humedad de la tierra.',
         'En el Pacífico, la sazón empieza en las huertas elevadas a un paso de la cocina y se construye en el refrito.',
     )
     text = text.replace('el aula entera cambió de temperatura y paisaje.', 'el aula se llenó de aromas del litoral.')
     text = text.replace('el abrazo solar del', 'el color cálido del')
-    text = text.replace('>Crónica III</span>', '>Eje III</span>')
+    text = text.replace(
+        '<span class="px-4 py-1.5 rounded-full bg-platano text-carbon text-xs font-bold uppercase tracking-widest">Crónica III</span>',
+        '<span class="px-4 py-1.5 rounded-full bg-marea text-platano text-xs font-bold uppercase tracking-widest">Eje III</span>',
+    )
     text = text.replace('Alquimia del Fogón · Guisos y Raíces', 'Cocina en Práctica · Coco, Mar y Tubérculos')
     text = text.replace(
         '<h2 class="font-editorial font-black text-4xl sm:text-6xl text-carbon leading-[1.04]">\n          Coco, Tubérculos y Fogón\n        </h2>',
-        '<h2 class="font-editorial font-black text-4xl sm:text-6xl text-carbon leading-[1.04]">\n          Fogón, Mar y Mesa del Pacífico\n        </h2>',
+        '<h2 class="font-editorial font-black text-4xl sm:text-6xl text-marea leading-[1.04]">\n          Fogón, Mar y Mesa del Pacífico\n        </h2>',
     )
     text = text.replace(
         'El tiempo en las ollas del Pacífico no se mide en cronómetros: se escucha hasta que el coco se vuelve seda y los tubérculos abrazan el caldo.',
