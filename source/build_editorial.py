@@ -43,12 +43,17 @@ def build_videos_section(videos):
         dots = []
         for idx, v in enumerate(grp_vids):
             vprev = f"https://drive.google.com/file/d/{v['sourceId']}/preview"
+            vthumb = f"https://drive.google.com/thumbnail?id={v['sourceId']}&sz=w800"
             vtitle = v.get('displayTitle', v['driveName'])
             active_cls = ' is-active' if idx == 0 else ''
             cards.append(
                 f'<article class="video-slide rounded-3xl p-4 sm:p-5 shadow-md flex flex-col justify-between {card_bg}{active_cls}" data-slide-index="{idx}" data-video-src="{vprev}">'
-                f'<div class="w-full rounded-2xl overflow-hidden bg-carbon/80" style="aspect-ratio: 16 / 9; min-height: 210px;">'
-                f'<iframe src="{vprev}" title="{escape(vtitle)}" loading="lazy" allow="autoplay; fullscreen" allowfullscreen style="width: 100%; height: 100%; min-height: 210px; border: 0;"></iframe>'
+                f'<div class="video-poster-box relative w-full rounded-2xl overflow-hidden bg-carbon/80" data-video-src="{vprev}" data-video-title="{escape(vtitle)}" style="aspect-ratio: 16 / 9; min-height: 210px;">'
+                f'<img src="{vthumb}" alt="{escape(vtitle)}" loading="lazy" decoding="async" class="w-full h-full object-cover opacity-85" onerror="this.classList.add(\'hidden\')" />'
+                f'<button type="button" class="video-play-btn" aria-label="Reproducir video: {escape(vtitle)}">'
+                f'<span class="video-play-circle" aria-hidden="true">▶</span>'
+                f'<span class="video-play-label">Ver clip</span>'
+                f'</button>'
                 f'</div>'
                 f'<div class="mt-4 flex items-center justify-between gap-2">'
                 f'<span class="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-widest {badge_bg}">{escape(v["code"])}</span>'

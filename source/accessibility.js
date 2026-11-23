@@ -206,7 +206,7 @@ ambStart?.addEventListener('click',()=>{
   if(!ambYtWrap)return;
   if(!ambIframe){
     ambIframe=document.createElement('iframe');
-    ambIframe.src='https://www.youtube.com/embed/videoseries?list=PLu6tcNIO60QZLhGkdA5pKm9ayYFgYWCsT&autoplay=1&enablejsapi=1&rel=0';
+    ambIframe.src='https://www.youtube-nocookie.com/embed/videoseries?list=PLu6tcNIO60QZLhGkdA5pKm9ayYFgYWCsT&autoplay=1&enablejsapi=1&rel=0';
     ambIframe.title='Música ambiental del Pacífico (YouTube)';
     ambIframe.allow='autoplay; encrypted-media';
     ambIframe.addEventListener('load',()=>{setTimeout(()=>sendYtCmd('setVolume',[35]),400);});
@@ -296,11 +296,32 @@ const prefersReducedMotion=()=>window.matchMedia&&window.matchMedia('(prefers-re
 const videoGroups=[...document.querySelectorAll('.video-group')];
 const resetGroupPlayback=(group)=>{
   group.querySelectorAll('.video-slide').forEach(slide=>{
-    const iframe=slide.querySelector('iframe');
-    const base=slide.dataset.videoSrc;
-    if(iframe&&base&&iframe.getAttribute('src')!==base)iframe.setAttribute('src',base);
+    const box=slide.querySelector('.video-poster-box');
+    const iframe=box?.querySelector('iframe');
+    if(iframe){
+      iframe.remove();
+      box.querySelector('img')?.classList.remove('hidden');
+      box.querySelector('.video-play-btn')?.classList.remove('hidden');
+    }
   });
 };
+document.querySelectorAll('.video-play-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const box=btn.closest('.video-poster-box');
+    if(!box||box.querySelector('iframe'))return;
+    const src=box.dataset.videoSrc;
+    if(!src)return;
+    const iframe=document.createElement('iframe');
+    iframe.src=src;
+    iframe.title=box.dataset.videoTitle||'Video de clase';
+    iframe.allow='autoplay; fullscreen';
+    iframe.allowFullscreen=true;
+    iframe.style.cssText='width:100%;height:100%;min-height:210px;border:0;';
+    btn.classList.add('hidden');
+    box.querySelector('img')?.classList.add('hidden');
+    box.appendChild(iframe);
+  });
+});
 videoGroups.forEach(group=>{
   const track=group.querySelector('.video-carousel-track');
   const slides=[...group.querySelectorAll('.video-slide')];
@@ -319,8 +340,8 @@ videoGroups.forEach(group=>{
       const active=i===idx;
       s.classList.toggle('is-active',active);
       s.setAttribute('aria-hidden',String(!active));
-      const iframe=s.querySelector('iframe');
-      if(iframe)iframe.setAttribute('tabindex',active?'0':'-1');
+      const focusTarget=s.querySelector('.video-play-btn, iframe');
+      if(focusTarget)focusTarget.setAttribute('tabindex',active?'0':'-1');
     });
     dots.forEach((d,i)=>{
       const active=i===idx;
