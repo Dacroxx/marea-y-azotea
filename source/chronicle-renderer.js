@@ -22,9 +22,9 @@
             <img src="${driveThumb(photo.id,1200)}" data-drive-id="${photo.id}" alt="${caption}" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" onerror="handleMosaicImgError(this)" />
             <span class="artistic-fallback hidden absolute inset-0 p-6 flex flex-col items-center justify-center text-center bg-gradient-to-br ${data.fallbackGrad} text-coco"><span class="font-fraunces italic text-lg">Vista previa no disponible</span><span class="text-xs mt-3">Conexión, servicio o acceso al archivo. Usa el enlace a Drive para comprobarlo.</span></span>
           </button>
-          <figcaption class="absolute inset-x-0 bottom-0 p-4 pt-10 bg-gradient-to-t from-carbon/85 via-carbon/40 to-transparent text-coco opacity-95 group-hover:opacity-100 transition-opacity">
-            <p class="photo-description text-xs sm:text-[13px] leading-snug font-medium drop-shadow">${caption}</p>
-            <div class="file-line mt-2 text-[10px]"><span class="original-name">${name}</span></div>
+          <figcaption class="pointer-events-none absolute inset-x-0 bottom-0 p-4 pt-12 bg-gradient-to-t from-carbon/90 via-carbon/60 to-transparent text-coco opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300">
+            <p class="font-editorial font-bold text-sm leading-snug text-platano drop-shadow">${name}</p>
+            <p class="photo-description text-xs leading-snug font-medium text-coco/95 mt-1 drop-shadow">${caption}</p>
           </figcaption></figure>`);
         (insertions.get(idx)||[]).forEach(c=>items.push(card(c)));
       });

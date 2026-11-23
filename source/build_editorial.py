@@ -33,7 +33,6 @@ def build_videos_section(videos):
         ('Taller Sensorial y Maíz', 'c1', 'bg-selva text-coco', 'bg-platano text-carbon'),
         ('Refrito y Soasado de Hoja', 'c2', 'bg-achiote text-coco', 'bg-coco text-achiote'),
         ('Arroz con Coco y Fufú', 'c3', 'bg-marea text-coco', 'bg-platano text-carbon'),
-        ('Camarón al Fogón', 'c4', 'bg-carbon text-coco', 'bg-platano text-carbon'),
     ]
     blocks = []
     for title, ckey, card_bg, badge_bg in groups:
@@ -44,17 +43,18 @@ def build_videos_section(videos):
         dots = []
         for idx, v in enumerate(grp_vids):
             vprev = f"https://drive.google.com/file/d/{v['sourceId']}/preview"
+            vtitle = v.get('displayTitle', v['driveName'])
             active_cls = ' is-active' if idx == 0 else ''
             cards.append(
                 f'<article class="video-slide rounded-3xl p-4 sm:p-5 shadow-md flex flex-col justify-between {card_bg}{active_cls}" data-slide-index="{idx}" data-video-src="{vprev}">'
                 f'<div class="w-full rounded-2xl overflow-hidden bg-carbon/80" style="aspect-ratio: 16 / 9; min-height: 210px;">'
-                f'<iframe src="{vprev}" title="{escape(v["driveName"])}" loading="lazy" allow="autoplay; fullscreen" allowfullscreen style="width: 100%; height: 100%; min-height: 210px; border: 0;"></iframe>'
+                f'<iframe src="{vprev}" title="{escape(vtitle)}" loading="lazy" allow="autoplay; fullscreen" allowfullscreen style="width: 100%; height: 100%; min-height: 210px; border: 0;"></iframe>'
                 f'</div>'
                 f'<div class="mt-4 flex items-center justify-between gap-2">'
                 f'<span class="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-widest {badge_bg}">{escape(v["code"])}</span>'
                 f'</div>'
                 f'<div class="mt-3">'
-                f'<h4 class="font-editorial font-bold text-lg leading-snug">{escape(v["driveName"])}</h4>'
+                f'<h4 class="font-editorial font-bold text-lg leading-snug">{escape(vtitle)}</h4>'
                 f'<p class="text-xs opacity-85 mt-1.5 leading-relaxed">{escape(v["title"])}</p>'
                 f'</div>'
                 f'</article>'
@@ -175,8 +175,8 @@ def build(runtime=False):
         payload = [
             {
                 'id': r['sourceId'],
-                'caption': f"[{r['code']}] {r['visualDescription']}",
-                'originalName': r['curatedFileName'],
+                'caption': r['visualDescription'],
+                'originalName': r.get('displayTitle', r['curatedFileName']),
                 'primaryCategory': r['primaryCategory'],
                 'span': spans[n % len(spans)],
             }
